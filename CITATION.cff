@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "Replicating automated science: Expected Parrot and Automated Social Science with a local Qwen model"
+message: "If you use this code or data, please cite it as below."
+type: software
+authors:
+  - family-names: Huang
+    given-names: Jeremy
+repository-code: "https://github.com/jeremyhuang-harvard/replicating-automated-science"
+license: MIT
+date-released: "2026-11-11"

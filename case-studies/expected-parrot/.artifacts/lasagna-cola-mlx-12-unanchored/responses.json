@@ -1,0 +1,182 @@
+[
+  {
+    "persona_id": "af-01",
+    "segment": "adventurous_foodie",
+    "answers": {
+      "appeal": 5,
+      "clarity": 4,
+      "uniqueness": 5,
+      "purchase_intent": 4,
+      "first_reaction": "This is a bold and creative twist on a cola, combining sweet and savory elements in a way that's both strange and intriguing.",
+      "concerns": "I'm not sure how the tomato sauce and cheese would interact with the cola flavor without making it taste overly cheesy or sour.",
+      "improvement": "Adding a note on how the flavors balance or a recipe suggestion for pairing it with food might help ease the hesitation."
+    },
+    "raw_output": "{\n  \"appeal\": 5,\n  \"clarity\": 4,\n  \"uniqueness\": 5,\n  \"purchase_intent\": 4,\n  \"first_reaction\": \"This is a bold and creative twist on a cola, combining sweet and savory elements in a way that's both strange and intriguing.\",\n  \"concerns\": \"I'm not sure how the tomato sauce and cheese would interact with the cola flavor without making it taste overly cheesy or sour.\",\n  \"improvement\": \"Adding a note on how the flavors balance or a recipe suggestion for pairing it with food might help ease the hesitation.\"\n}\n",
+    "error": null
+  },
+  {
+    "persona_id": "md-01",
+    "segment": "mainstream_drinker",
+    "answers": {
+      "appeal": 2,
+      "clarity": 3,
+      "uniqueness": 5,
+      "purchase_intent": 1,
+      "first_reaction": "It sounds unusual and a bit weird, but I can imagine the flavor combination being interesting.",
+      "concerns": "The idea of a cola with savory lasagna flavors seems strange and might not appeal to traditional soft drink consumers.",
+      "improvement": "Maybe add a more traditional sweet flavor to balance the savory elements."
+    },
+    "raw_output": "{\n  \"appeal\": 2,\n  \"clarity\": 3,\n  \"uniqueness\": 5,\n  \"purchase_intent\": 1,\n  \"first_reaction\": \"It sounds unusual and a bit weird, but I can imagine the flavor combination being interesting.\",\n  \"concerns\": \"The idea of a cola with savory lasagna flavors seems strange and might not appeal to traditional soft drink consumers.\",\n  \"improvement\": \"Maybe add a more traditional sweet flavor to balance the savory elements.\"\n}\n",
+    "error": null
+  },
+  {
+    "persona_id": "sh-01",
+    "segment": "skeptical_health_conscious",
+    "answers": {
+      "appeal": 2,
+      "clarity": 3,
+      "uniqueness": 4,
+      "purchase_intent": 2,
+      "first_reaction": "This sounds like a bizarre attempt to merge a cola with a meal, which feels unappealing and unnecessary.",
+      "concerns": "The idea of a drink containing cheese and tomato sauce raises health and safety concerns. It feels like a gimmick rather than a genuine product.",
+      "improvement": "If it were a more traditional beverage with no dairy or savory elements, it might be more appealing."
+    },
+    "raw_output": "{\n  \"appeal\": 2,\n  \"clarity\": 3,\n  \"uniqueness\": 4,\n  \"purchase_intent\": 2,\n  \"first_reaction\": \"This sounds like a bizarre attempt to merge a cola with a meal, which feels unappealing and unnecessary.\",\n  \"concerns\": \"The idea of a drink containing cheese and tomato sauce raises health and safety concerns. It feels like a gimmick rather than a genuine product.\",\n  \"improvement\": \"If it were a more traditional beverage with no dairy or savory elements, it might be more appealing.\"\n}\n",
+    "error": null
+  },
+  {
+    "persona_id": "af-02",
+    "segment": "adventurous_foodie",
+    "answers": {
+      "appeal": 4,
+      "clarity": 3,
+      "uniqueness": 5,
+      "purchase_intent": 3,
+      "first_reaction": "This sounds like a bold and unusual twist on a cola, mixing savory and sweet elements in a way I haven't seen before. It's definitely intriguing.",
+      "concerns": "I'm not sure how the savory ingredients would balance with the cola taste. It might be too strange for some, but I'm curious to try.",
+      "improvement": "Adding a note on the can explaining the flavor profile would help set expectations."
+    },
+    "raw_output": "{\n  \"appeal\": 4,\n  \"clarity\": 3,\n  \"uniqueness\": 5,\n  \"purchase_intent\": 3,\n  \"first_reaction\": \"This sounds like a bold and unusual twist on a cola, mixing savory and sweet elements in a way I haven't seen before. It's definitely intriguing.\",\n  \"concerns\": \"I'm not sure how the savory ingredients would balance with the cola taste. It might be too strange for some, but I'm curious to try.\",\n  \"improvement\": \"Adding a note on the can explaining the flavor profile would help set expectations.\"\n}\n",
+    "error": null
+  },
+  {
+    "persona_id": "md-02",
+    "segment": "mainstream_drinker",
+    "answers": {
+      "appeal": 2,
+      "clarity": 3,
+      "uniqueness": 4,
+      "purchase_intent": 2,
+      "first_reaction": "It sounds weird but kind of intriguing. I’m not sure if I’d want to try it, but I can see why someone would.",
+      "concerns": "The combination of cola and lasagna ingredients seems strange. I’m not sure how that would taste.",
+      "improvement": "Maybe have a clearer description of the taste and why it’s supposed to be fun."
+    },
+    "raw_output": "{\n  \"appeal\": 2,\n  \"clarity\": 3,\n  \"uniqueness\": 4,\n  \"purchase_intent\": 2,\n  \"first_reaction\": \"It sounds weird but kind of intriguing. I’m not sure if I’d want to try it, but I can see why someone would.\",\n  \"concerns\": \"The combination of cola and lasagna ingredients seems strange. I’m not sure how that would taste.\",\n  \"improvement\": \"Maybe have a clearer description of the taste and why it’s supposed to be fun.\"\n}\n",
+    "error": null
+  },
+  {
+    "persona_id": "sh-02",
+    "segment": "skeptical_health_conscious",
+    "answers": {
+      "appeal": 2,
+      "clarity": 3,
+      "uniqueness": 4,
+      "purchase_intent": 1,
+      "first_reaction": "This sounds like a bizarre attempt to merge a cola with a meal, which feels unappealing and unnecessary.",
+      "concerns": "The idea of a cola tasting like lasagna seems unhygienic and unhealthy, with no clear benefits.",
+      "improvement": "If it were proven to have actual health benefits or a unique, clear flavor profile, it might be worth trying."
+    },
+    "raw_output": "{\n  \"appeal\": 2,\n  \"clarity\": 3,\n  \"uniqueness\": 4,\n  \"purchase_intent\": 1,\n  \"first_reaction\": \"This sounds like a bizarre attempt to merge a cola with a meal, which feels unappealing and unnecessary.\",\n  \"concerns\": \"The idea of a cola tasting like lasagna seems unhygienic and unhealthy, with no clear benefits.\",\n  \"improvement\": \"If it were proven to have actual health benefits or a unique, clear flavor profile, it might be worth trying.\"\n}\n",
+    "error": null
+  },
+  {
+    "persona_id": "af-03",
+    "segment": "adventurous_foodie",
+    "answers": {
+      "appeal": 4,
+      "clarity": 3,
+      "uniqueness": 5,
+      "purchase_intent": 3,
+      "first_reaction": "This sounds like a bold and unusual twist on a cola, mixing savory and sweet elements in a way I haven't seen before. It's definitely intriguing.",
+      "concerns": "I'm worried about the combination of sweet cola with savory ingredients. It might not taste as good as it sounds.",
+      "improvement": "Maybe add a note about the balance between sweet and savory flavors to manage expectations."
+    },
+    "raw_output": "{\n  \"appeal\": 4,\n  \"clarity\": 3,\n  \"uniqueness\": 5,\n  \"purchase_intent\": 3,\n  \"first_reaction\": \"This sounds like a bold and unusual twist on a cola, mixing savory and sweet elements in a way I haven't seen before. It's definitely intriguing.\",\n  \"concerns\": \"I'm worried about the combination of sweet cola with savory ingredients. It might not taste as good as it sounds.\",\n  \"improvement\": \"Maybe add a note about the balance between sweet and savory flavors to manage expectations.\"\n}\n",
+    "error": null
+  },
+  {
+    "persona_id": "md-03",
+    "segment": "mainstream_drinker",
+    "answers": {
+      "appeal": 3,
+      "clarity": 4,
+      "uniqueness": 5,
+      "purchase_intent": 3,
+      "first_reaction": "I find the idea of a cola with lasagna flavors intriguing, but it sounds like a bold and unusual move for a cola.",
+      "concerns": "I'm concerned about the combination of savory and sweet flavors in a cola, which might not be balanced.",
+      "improvement": "Adding a note on the balance of flavors or offering a smaller sample size to test the concept."
+    },
+    "raw_output": "{\n  \"appeal\": 3,\n  \"clarity\": 4,\n  \"uniqueness\": 5,\n  \"purchase_intent\": 3,\n  \"first_reaction\": \"I find the idea of a cola with lasagna flavors intriguing, but it sounds like a bold and unusual move for a cola.\",\n  \"concerns\": \"I'm concerned about the combination of savory and sweet flavors in a cola, which might not be balanced.\",\n  \"improvement\": \"Adding a note on the balance of flavors or offering a smaller sample size to test the concept.\"\n}\n",
+    "error": null
+  },
+  {
+    "persona_id": "sh-03",
+    "segment": "skeptical_health_conscious",
+    "answers": {
+      "appeal": 2,
+      "clarity": 3,
+      "uniqueness": 4,
+      "purchase_intent": 2,
+      "first_reaction": "This sounds like a bizarre mix of food and drink, but the idea of having a lasagna-flavored cola is intriguing in a strange way.",
+      "concerns": "The combination of savory ingredients with a cola base seems unappealing and potentially unhealthy.",
+      "improvement": "If the product clearly explained the health benefits and used simpler, more familiar ingredients, it might be more appealing."
+    },
+    "raw_output": "{\n  \"appeal\": 2,\n  \"clarity\": 3,\n  \"uniqueness\": 4,\n  \"purchase_intent\": 2,\n  \"first_reaction\": \"This sounds like a bizarre mix of food and drink, but the idea of having a lasagna-flavored cola is intriguing in a strange way.\",\n  \"concerns\": \"The combination of savory ingredients with a cola base seems unappealing and potentially unhealthy.\",\n  \"improvement\": \"If the product clearly explained the health benefits and used simpler, more familiar ingredients, it might be more appealing.\"\n}\n",
+    "error": null
+  },
+  {
+    "persona_id": "af-04",
+    "segment": "adventurous_foodie",
+    "answers": {
+      "appeal": 4,
+      "clarity": 3,
+      "uniqueness": 5,
+      "purchase_intent": 3,
+      "first_reaction": "This sounds like a bold and creative twist on a cola, combining savory and sweet elements in a way that's both unusual and intriguing.",
+      "concerns": "I'm worried about the balance between the sweet cola base and the savory ingredients. It might be too overpowering or not harmonious.",
+      "improvement": "Adjust the flavor profile to ensure the savory elements complement the cola without overwhelming it."
+    },
+    "raw_output": "{\n  \"appeal\": 4,\n  \"clarity\": 3,\n  \"uniqueness\": 5,\n  \"purchase_intent\": 3,\n  \"first_reaction\": \"This sounds like a bold and creative twist on a cola, combining savory and sweet elements in a way that's both unusual and intriguing.\",\n  \"concerns\": \"I'm worried about the balance between the sweet cola base and the savory ingredients. It might be too overpowering or not harmonious.\",\n  \"improvement\": \"Adjust the flavor profile to ensure the savory elements complement the cola without overwhelming it.\"\n}\n",
+    "error": null
+  },
+  {
+    "persona_id": "md-04",
+    "segment": "mainstream_drinker",
+    "answers": {
+      "appeal": 3,
+      "clarity": 3,
+      "uniqueness": 4,
+      "purchase_intent": 2,
+      "first_reaction": "It sounds weird but kind of interesting. I wouldn't expect a cola to taste like lasagna, but I can imagine it being a conversation starter.",
+      "concerns": "The idea of a cola tasting like lasagna seems off-putting. I’m not sure I’d want to drink something that tastes like food.",
+      "improvement": "Maybe make it more like a traditional cola with some savory notes instead of fully replicating lasagna flavors."
+    },
+    "raw_output": "{\n  \"appeal\": 3,\n  \"clarity\": 3,\n  \"uniqueness\": 4,\n  \"purchase_intent\": 2,\n  \"first_reaction\": \"It sounds weird but kind of interesting. I wouldn't expect a cola to taste like lasagna, but I can imagine it being a conversation starter.\",\n  \"concerns\": \"The idea of a cola tasting like lasagna seems off-putting. I’m not sure I’d want to drink something that tastes like food.\",\n  \"improvement\": \"Maybe make it more like a traditional cola with some savory notes instead of fully replicating lasagna flavors.\"\n}\n",
+    "error": null
+  },
+  {
+    "persona_id": "sh-04",
+    "segment": "skeptical_health_conscious",
+    "answers": {
+      "appeal": 2,
+      "clarity": 3,
+      "uniqueness": 4,
+      "purchase_intent": 2,
+      "first_reaction": "This sounds like a strange mix of a cola and a meal, which is confusing and not very appealing.",
+      "concerns": "The idea of a cola tasting like lasagna raises health concerns and seems like a gimmick rather than a genuine product.",
+      "improvement": "If it actually tasted better than regular cola and had some nutritional value, it might be more appealing."
+    },
+    "raw_output": "{\n  \"appeal\": 2,\n  \"clarity\": 3,\n  \"uniqueness\": 4,\n  \"purchase_intent\": 2,\n  \"first_reaction\": \"This sounds like a strange mix of a cola and a meal, which is confusing and not very appealing.\",\n  \"concerns\": \"The idea of a cola tasting like lasagna raises health concerns and seems like a gimmick rather than a genuine product.\",\n  \"improvement\": \"If it actually tasted better than regular cola and had some nutritional value, it might be more appealing.\"\n}\n",
+    "error": null
+  }
+]

@@ -1,0 +1,12 @@
+study,statistic,value
+mug bargaining,deal rate,0.5185
+mug bargaining,mean price given a deal,14.3571
+bail setting,mean bail ($),22222.22
+lawyer interview,hire rate,0.6296
+lawyer interview,mean rating (0-100),72.4074
+lawyer interview,cells needing the recovery call,1
+art auction,mean final price ($),171.8519
+art auction,mean allocative efficiency,0.537
+art auction,share efficiently allocated,0.4074
+art auction,no-sale cells,10
+art auction,winners paying above their own valuation,3

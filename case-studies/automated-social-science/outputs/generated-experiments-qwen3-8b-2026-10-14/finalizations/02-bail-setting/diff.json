@@ -1,0 +1,73 @@
+{
+  "execution_additions": {
+    "respondent": "Judge",
+    "treatment_mappings": [
+      {
+        "agent": null,
+        "cause": "Severity of Tax Fraud",
+        "scope": "public",
+        "values": [
+          {
+            "instruction": "Set bail based on a tax fraud amount of $50,000.",
+            "value": "$50,000 fraud"
+          },
+          {
+            "instruction": "Set bail based on a tax fraud amount of $100,000.",
+            "value": "$100,000 fraud"
+          },
+          {
+            "instruction": "Set bail based on a tax fraud amount of $200,000.",
+            "value": "$200,000 fraud"
+          }
+        ]
+      },
+      {
+        "agent": null,
+        "cause": "Defendant's Criminal History",
+        "scope": "public",
+        "values": [
+          {
+            "instruction": "Set bail based on the defendant having no prior convictions.",
+            "value": "No prior convictions"
+          },
+          {
+            "instruction": "Set bail based on the defendant having one prior conviction.",
+            "value": "1 prior conviction"
+          },
+          {
+            "instruction": "Set bail based on the defendant having three prior convictions.",
+            "value": "3 prior convictions"
+          }
+        ]
+      },
+      {
+        "agent": null,
+        "cause": "Evidence Strength",
+        "scope": "public",
+        "values": [
+          {
+            "instruction": "Set bail based on weak evidence.",
+            "value": "Weak evidence"
+          },
+          {
+            "instruction": "Set bail based on moderate evidence.",
+            "value": "Moderate evidence"
+          },
+          {
+            "instruction": "Set bail based on strong evidence.",
+            "value": "Strong evidence"
+          }
+        ]
+      }
+    ],
+    "turn_order": [
+      "Judge",
+      "Defense Attorney",
+      "Prosecutor"
+    ]
+  },
+  "failed_attempts": [],
+  "finalized_hash": "6c43297d7dc7c573a04307bb6d8f30240923195b22d9303b24cac51d5e63af89",
+  "initial_hash": "fa9b2f7bf9b2fbb1e96f1f685f977930238fed5922cb1b1057be21dc590e4ef2",
+  "substantive_changes": []
+}

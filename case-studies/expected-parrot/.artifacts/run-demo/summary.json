@@ -1,0 +1,220 @@
+{
+  "counts": {
+    "panel": 12,
+    "ok": 12,
+    "failed": 0,
+    "by_segment": {
+      "adventurous_foodie": 4,
+      "mainstream_drinker": 4,
+      "skeptical_health_conscious": 4
+    }
+  },
+  "means": {
+    "overall": {
+      "appeal": 2.92,
+      "clarity": 4.42,
+      "uniqueness": 2.42,
+      "purchase_intent": 2.58
+    },
+    "by_segment": {
+      "adventurous_foodie": {
+        "appeal": 3,
+        "clarity": 4.5,
+        "uniqueness": 2.5,
+        "purchase_intent": 2.75
+      },
+      "mainstream_drinker": {
+        "appeal": 3.25,
+        "clarity": 4.25,
+        "uniqueness": 2.25,
+        "purchase_intent": 2.75
+      },
+      "skeptical_health_conscious": {
+        "appeal": 2.5,
+        "clarity": 4.5,
+        "uniqueness": 2.5,
+        "purchase_intent": 2.25
+      }
+    }
+  },
+  "distributions": {
+    "overall": {
+      "appeal": {
+        "1": 0,
+        "2": 3,
+        "3": 7,
+        "4": 2,
+        "5": 0
+      },
+      "clarity": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 7,
+        "5": 5
+      },
+      "uniqueness": {
+        "1": 0,
+        "2": 7,
+        "3": 5,
+        "4": 0,
+        "5": 0
+      },
+      "purchase_intent": {
+        "1": 0,
+        "2": 5,
+        "3": 7,
+        "4": 0,
+        "5": 0
+      }
+    },
+    "by_segment": {
+      "adventurous_foodie": {
+        "appeal": {
+          "1": 0,
+          "2": 1,
+          "3": 2,
+          "4": 1,
+          "5": 0
+        },
+        "clarity": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 2,
+          "5": 2
+        },
+        "uniqueness": {
+          "1": 0,
+          "2": 2,
+          "3": 2,
+          "4": 0,
+          "5": 0
+        },
+        "purchase_intent": {
+          "1": 0,
+          "2": 1,
+          "3": 3,
+          "4": 0,
+          "5": 0
+        }
+      },
+      "mainstream_drinker": {
+        "appeal": {
+          "1": 0,
+          "2": 0,
+          "3": 3,
+          "4": 1,
+          "5": 0
+        },
+        "clarity": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 3,
+          "5": 1
+        },
+        "uniqueness": {
+          "1": 0,
+          "2": 3,
+          "3": 1,
+          "4": 0,
+          "5": 0
+        },
+        "purchase_intent": {
+          "1": 0,
+          "2": 1,
+          "3": 3,
+          "4": 0,
+          "5": 0
+        }
+      },
+      "skeptical_health_conscious": {
+        "appeal": {
+          "1": 0,
+          "2": 2,
+          "3": 2,
+          "4": 0,
+          "5": 0
+        },
+        "clarity": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 2,
+          "5": 2
+        },
+        "uniqueness": {
+          "1": 0,
+          "2": 2,
+          "3": 2,
+          "4": 0,
+          "5": 0
+        },
+        "purchase_intent": {
+          "1": 0,
+          "2": 3,
+          "3": 1,
+          "4": 0,
+          "5": 0
+        }
+      }
+    }
+  },
+  "quotes": {
+    "adventurous_foodie": {
+      "first_reaction": {
+        "persona_id": "af-01",
+        "text": "Smoky Maple Seltzer is interesting enough that I'd taste it once. I'd need to taste it."
+      },
+      "concerns": {
+        "persona_id": "af-01",
+        "text": "About Smoky Maple Seltzer: Novelty can fade after one can unless the flavor is actually good."
+      },
+      "improvement": {
+        "persona_id": "af-01",
+        "text": "For Smoky Maple Seltzer: A small-batch sample pack so I can taste it before committing."
+      }
+    },
+    "mainstream_drinker": {
+      "first_reaction": {
+        "persona_id": "md-01",
+        "text": "I could see trying Smoky Maple Seltzer once if a friend had it. It's different, for better or worse."
+      },
+      "concerns": {
+        "persona_id": "md-01",
+        "text": "About Smoky Maple Seltzer: It might not taste like a drink I'd actually want, and the price could be too high for something unproven."
+      },
+      "improvement": {
+        "persona_id": "md-01",
+        "text": "For Smoky Maple Seltzer: A clear description that it tastes like a normal soda."
+      }
+    },
+    "skeptical_health_conscious": {
+      "first_reaction": {
+        "persona_id": "sh-01",
+        "text": "I don't see why anyone needs Smoky Maple Seltzer."
+      },
+      "concerns": {
+        "persona_id": "sh-01",
+        "text": "About Smoky Maple Seltzer: Flavorings and additives worry me, and the marketing tells me little about real benefits."
+      },
+      "improvement": {
+        "persona_id": "sh-01",
+        "text": "For Smoky Maple Seltzer: Third-party nutrition information on the label."
+      }
+    }
+  },
+  "warnings": [
+    "Segment adventurous_foodie has a small sample (n=4); treat its means as anecdotal.",
+    "Segment mainstream_drinker has a small sample (n=4); treat its means as anecdotal.",
+    "Segment skeptical_health_conscious has a small sample (n=4); treat its means as anecdotal."
+  ],
+  "limitations": [
+    "These are simulated hypotheses, not human evidence. No real consumer was surveyed.",
+    "Synthetic personas reflect the prompt, the model and its training data; they can be confidently wrong, overly agreeable, and less varied than real people.",
+    "Rating levels are not calibrated to real purchase behavior; compare concepts against each other, never read a mean as a forecast.",
+    "Segments are defined by explicit product attitudes written by the study author, not measured populations.",
+    "Validate any promising signal with a human panel before making decisions."
+  ]
+}

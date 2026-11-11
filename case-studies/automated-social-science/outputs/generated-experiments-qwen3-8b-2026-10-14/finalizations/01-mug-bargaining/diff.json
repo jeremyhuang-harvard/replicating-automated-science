@@ -1,0 +1,74 @@
+{
+  "execution_additions": {
+    "respondent": "Alice",
+    "treatment_mappings": [
+      {
+        "agent": null,
+        "cause": "initial offer",
+        "scope": "public",
+        "values": [
+          {
+            "instruction": "set the initial offer to $6",
+            "value": "$6"
+          },
+          {
+            "instruction": "set the initial offer to $8",
+            "value": "$8"
+          },
+          {
+            "instruction": "set the initial offer to $10",
+            "value": "$10"
+          }
+        ]
+      },
+      {
+        "agent": null,
+        "cause": "buyer's budget",
+        "scope": "public",
+        "values": [
+          {
+            "instruction": "set the buyer's budget to $5",
+            "value": "$5"
+          },
+          {
+            "instruction": "set the buyer's budget to $7",
+            "value": "$7"
+          },
+          {
+            "instruction": "set the buyer's budget to $9",
+            "value": "$9"
+          }
+        ]
+      },
+      {
+        "agent": null,
+        "cause": "mediator's presence",
+        "scope": "public",
+        "values": [
+          {
+            "instruction": "set the mediator's presence to mediator present",
+            "value": "mediator present"
+          },
+          {
+            "instruction": "set the mediator's presence to mediator absent",
+            "value": "mediator absent"
+          },
+          {
+            "instruction": "set the mediator's presence to mediator neutral",
+            "value": "mediator neutral"
+          }
+        ]
+      }
+    ],
+    "turn_order": [
+      "Alice",
+      "Bob",
+      "Charlie",
+      "Dana"
+    ]
+  },
+  "failed_attempts": [],
+  "finalized_hash": "15a0b432d91586186eb7b4a842c7eaa9705b2994a117197f2baf1187229a81ff",
+  "initial_hash": "069dbb63735728d0756b9e36371198b63e0baafd63addacdc71aa3504db510cd",
+  "substantive_changes": []
+}

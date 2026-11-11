@@ -1,0 +1,73 @@
+{
+  "execution_additions": {
+    "respondent": "Interviewer",
+    "treatment_mappings": [
+      {
+        "agent": null,
+        "cause": "Legal knowledge",
+        "scope": "public",
+        "values": [
+          {
+            "instruction": "Evaluate the candidate's legal knowledge based on their responses to the interview questions.",
+            "value": "Basic legal knowledge"
+          },
+          {
+            "instruction": "Evaluate the candidate's legal knowledge based on their responses to the interview questions.",
+            "value": "Intermediate legal knowledge"
+          },
+          {
+            "instruction": "Evaluate the candidate's legal knowledge based on their responses to the interview questions.",
+            "value": "Advanced legal knowledge"
+          }
+        ]
+      },
+      {
+        "agent": null,
+        "cause": "Communication clarity",
+        "scope": "public",
+        "values": [
+          {
+            "instruction": "Assess the candidate's communication clarity based on their responses to the interview questions.",
+            "value": "Unclear"
+          },
+          {
+            "instruction": "Assess the candidate's communication clarity based on their responses to the interview questions.",
+            "value": "Moderately clear"
+          },
+          {
+            "instruction": "Assess the candidate's communication clarity based on their responses to the interview questions.",
+            "value": "Very clear"
+          }
+        ]
+      },
+      {
+        "agent": null,
+        "cause": "Confidence level",
+        "scope": "public",
+        "values": [
+          {
+            "instruction": "Assess the candidate's confidence level based on their responses to the interview questions.",
+            "value": "Low confidence"
+          },
+          {
+            "instruction": "Assess the candidate's confidence level based on their responses to the interview questions.",
+            "value": "Moderate confidence"
+          },
+          {
+            "instruction": "Assess the candidate's confidence level based on their responses to the interview questions.",
+            "value": "High confidence"
+          }
+        ]
+      }
+    ],
+    "turn_order": [
+      "Interviewer",
+      "Candidate",
+      "Note-Taker"
+    ]
+  },
+  "failed_attempts": [],
+  "finalized_hash": "e34165c20f39a5b506ead1560ad27b84f2dbc5b8f18d22773461eb33eb2802f2",
+  "initial_hash": "41b81c27843c650f7aad043a711234dcd7d8e7f4d16b058776a1485ed7873365",
+  "substantive_changes": []
+}

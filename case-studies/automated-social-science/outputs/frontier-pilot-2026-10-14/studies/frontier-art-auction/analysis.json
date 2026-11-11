@@ -1,0 +1,641 @@
+{
+  "caveat": "Descriptive one-draw local-model evidence: one model draw per OA cell, not repeated sampling and not human behavior.",
+  "counts": {
+    "complete": 1,
+    "failed": 0,
+    "rows": 1
+  },
+  "main_effect_marginals": {
+    "Bid increment": [
+      {
+        "level": 10,
+        "level_index": 0,
+        "n": 1,
+        "outcomes": {
+          "allocative_efficiency": {
+            "max": 1.0,
+            "mean": 1.0,
+            "min": 1.0,
+            "n": 1,
+            "non_null": 1,
+            "type": "bounded_number"
+          },
+          "efficient_allocation": {
+            "max": 1.0,
+            "mean": 1.0,
+            "min": 1.0,
+            "n": 1,
+            "non_null": 1,
+            "type": "binary"
+          },
+          "final_price": {
+            "max": 110.0,
+            "mean": 110.0,
+            "min": 110.0,
+            "n": 1,
+            "non_null": 1,
+            "type": "number"
+          },
+          "winner": {
+            "counts": {
+              "Bidder C": 1
+            },
+            "n": 1,
+            "proportions": {
+              "Bidder C": 1.0
+            },
+            "type": "category"
+          }
+        }
+      },
+      {
+        "level": 25,
+        "level_index": 1,
+        "n": 0,
+        "outcomes": {
+          "allocative_efficiency": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "bounded_number"
+          },
+          "efficient_allocation": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "binary"
+          },
+          "final_price": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "number"
+          },
+          "winner": {
+            "counts": {},
+            "n": 0,
+            "proportions": {},
+            "type": "category"
+          }
+        }
+      },
+      {
+        "level": 50,
+        "level_index": 2,
+        "n": 0,
+        "outcomes": {
+          "allocative_efficiency": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "bounded_number"
+          },
+          "efficient_allocation": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "binary"
+          },
+          "final_price": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "number"
+          },
+          "winner": {
+            "counts": {},
+            "n": 0,
+            "proportions": {},
+            "type": "category"
+          }
+        }
+      }
+    ],
+    "Bidder A valuation": [
+      {
+        "level": 100,
+        "level_index": 0,
+        "n": 1,
+        "outcomes": {
+          "allocative_efficiency": {
+            "max": 1.0,
+            "mean": 1.0,
+            "min": 1.0,
+            "n": 1,
+            "non_null": 1,
+            "type": "bounded_number"
+          },
+          "efficient_allocation": {
+            "max": 1.0,
+            "mean": 1.0,
+            "min": 1.0,
+            "n": 1,
+            "non_null": 1,
+            "type": "binary"
+          },
+          "final_price": {
+            "max": 110.0,
+            "mean": 110.0,
+            "min": 110.0,
+            "n": 1,
+            "non_null": 1,
+            "type": "number"
+          },
+          "winner": {
+            "counts": {
+              "Bidder C": 1
+            },
+            "n": 1,
+            "proportions": {
+              "Bidder C": 1.0
+            },
+            "type": "category"
+          }
+        }
+      },
+      {
+        "level": 200,
+        "level_index": 1,
+        "n": 0,
+        "outcomes": {
+          "allocative_efficiency": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "bounded_number"
+          },
+          "efficient_allocation": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "binary"
+          },
+          "final_price": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "number"
+          },
+          "winner": {
+            "counts": {},
+            "n": 0,
+            "proportions": {},
+            "type": "category"
+          }
+        }
+      },
+      {
+        "level": 300,
+        "level_index": 2,
+        "n": 0,
+        "outcomes": {
+          "allocative_efficiency": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "bounded_number"
+          },
+          "efficient_allocation": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "binary"
+          },
+          "final_price": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "number"
+          },
+          "winner": {
+            "counts": {},
+            "n": 0,
+            "proportions": {},
+            "type": "category"
+          }
+        }
+      }
+    ],
+    "Bidder B valuation": [
+      {
+        "level": 100,
+        "level_index": 0,
+        "n": 1,
+        "outcomes": {
+          "allocative_efficiency": {
+            "max": 1.0,
+            "mean": 1.0,
+            "min": 1.0,
+            "n": 1,
+            "non_null": 1,
+            "type": "bounded_number"
+          },
+          "efficient_allocation": {
+            "max": 1.0,
+            "mean": 1.0,
+            "min": 1.0,
+            "n": 1,
+            "non_null": 1,
+            "type": "binary"
+          },
+          "final_price": {
+            "max": 110.0,
+            "mean": 110.0,
+            "min": 110.0,
+            "n": 1,
+            "non_null": 1,
+            "type": "number"
+          },
+          "winner": {
+            "counts": {
+              "Bidder C": 1
+            },
+            "n": 1,
+            "proportions": {
+              "Bidder C": 1.0
+            },
+            "type": "category"
+          }
+        }
+      },
+      {
+        "level": 200,
+        "level_index": 1,
+        "n": 0,
+        "outcomes": {
+          "allocative_efficiency": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "bounded_number"
+          },
+          "efficient_allocation": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "binary"
+          },
+          "final_price": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "number"
+          },
+          "winner": {
+            "counts": {},
+            "n": 0,
+            "proportions": {},
+            "type": "category"
+          }
+        }
+      },
+      {
+        "level": 300,
+        "level_index": 2,
+        "n": 0,
+        "outcomes": {
+          "allocative_efficiency": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "bounded_number"
+          },
+          "efficient_allocation": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "binary"
+          },
+          "final_price": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "number"
+          },
+          "winner": {
+            "counts": {},
+            "n": 0,
+            "proportions": {},
+            "type": "category"
+          }
+        }
+      }
+    ],
+    "Bidder C valuation": [
+      {
+        "level": 100,
+        "level_index": 0,
+        "n": 1,
+        "outcomes": {
+          "allocative_efficiency": {
+            "max": 1.0,
+            "mean": 1.0,
+            "min": 1.0,
+            "n": 1,
+            "non_null": 1,
+            "type": "bounded_number"
+          },
+          "efficient_allocation": {
+            "max": 1.0,
+            "mean": 1.0,
+            "min": 1.0,
+            "n": 1,
+            "non_null": 1,
+            "type": "binary"
+          },
+          "final_price": {
+            "max": 110.0,
+            "mean": 110.0,
+            "min": 110.0,
+            "n": 1,
+            "non_null": 1,
+            "type": "number"
+          },
+          "winner": {
+            "counts": {
+              "Bidder C": 1
+            },
+            "n": 1,
+            "proportions": {
+              "Bidder C": 1.0
+            },
+            "type": "category"
+          }
+        }
+      },
+      {
+        "level": 200,
+        "level_index": 1,
+        "n": 0,
+        "outcomes": {
+          "allocative_efficiency": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "bounded_number"
+          },
+          "efficient_allocation": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "binary"
+          },
+          "final_price": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "number"
+          },
+          "winner": {
+            "counts": {},
+            "n": 0,
+            "proportions": {},
+            "type": "category"
+          }
+        }
+      },
+      {
+        "level": 300,
+        "level_index": 2,
+        "n": 0,
+        "outcomes": {
+          "allocative_efficiency": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "bounded_number"
+          },
+          "efficient_allocation": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "binary"
+          },
+          "final_price": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "number"
+          },
+          "winner": {
+            "counts": {},
+            "n": 0,
+            "proportions": {},
+            "type": "category"
+          }
+        }
+      }
+    ],
+    "Information regime": [
+      {
+        "level": "private",
+        "level_index": 0,
+        "n": 1,
+        "outcomes": {
+          "allocative_efficiency": {
+            "max": 1.0,
+            "mean": 1.0,
+            "min": 1.0,
+            "n": 1,
+            "non_null": 1,
+            "type": "bounded_number"
+          },
+          "efficient_allocation": {
+            "max": 1.0,
+            "mean": 1.0,
+            "min": 1.0,
+            "n": 1,
+            "non_null": 1,
+            "type": "binary"
+          },
+          "final_price": {
+            "max": 110.0,
+            "mean": 110.0,
+            "min": 110.0,
+            "n": 1,
+            "non_null": 1,
+            "type": "number"
+          },
+          "winner": {
+            "counts": {
+              "Bidder C": 1
+            },
+            "n": 1,
+            "proportions": {
+              "Bidder C": 1.0
+            },
+            "type": "category"
+          }
+        }
+      },
+      {
+        "level": "public ranges",
+        "level_index": 1,
+        "n": 0,
+        "outcomes": {
+          "allocative_efficiency": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "bounded_number"
+          },
+          "efficient_allocation": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "binary"
+          },
+          "final_price": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "number"
+          },
+          "winner": {
+            "counts": {},
+            "n": 0,
+            "proportions": {},
+            "type": "category"
+          }
+        }
+      },
+      {
+        "level": "public exact",
+        "level_index": 2,
+        "n": 0,
+        "outcomes": {
+          "allocative_efficiency": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "bounded_number"
+          },
+          "efficient_allocation": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "binary"
+          },
+          "final_price": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "number"
+          },
+          "winner": {
+            "counts": {},
+            "n": 0,
+            "proportions": {},
+            "type": "category"
+          }
+        }
+      }
+    ]
+  },
+  "outcome_summaries": {
+    "allocative_efficiency": {
+      "max": 1.0,
+      "mean": 1.0,
+      "min": 1.0,
+      "n": 1,
+      "non_null": 1,
+      "type": "bounded_number"
+    },
+    "efficient_allocation": {
+      "max": 1.0,
+      "mean": 1.0,
+      "min": 1.0,
+      "n": 1,
+      "non_null": 1,
+      "type": "binary"
+    },
+    "final_price": {
+      "max": 110.0,
+      "mean": 110.0,
+      "min": 110.0,
+      "n": 1,
+      "non_null": 1,
+      "type": "number"
+    },
+    "winner": {
+      "counts": {
+        "Bidder C": 1
+      },
+      "n": 1,
+      "proportions": {
+        "Bidder C": 1.0
+      },
+      "type": "category"
+    }
+  },
+  "schema_version": 1,
+  "study_id": "frontier-art-auction",
+  "study_summary": {
+    "efficient_allocation_rate": 1.0,
+    "mean_allocative_efficiency": 1.0,
+    "mean_final_price": 110.0,
+    "winner_counts": {
+      "Bidder C": 1
+    }
+  }
+}

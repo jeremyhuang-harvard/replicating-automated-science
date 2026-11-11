@@ -1,0 +1,82 @@
+{
+  "frontier-art-auction": [
+    {
+      "cell_hash": "2b34bbf582ec40a54a5ae0712d895f970c090481b7c1cd5850ad4ee13bbe413f",
+      "cell_id": "frontier-art-auction-01",
+      "indices": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "treatments": {
+        "Bid increment": 10,
+        "Bidder A valuation": 100,
+        "Bidder B valuation": 100,
+        "Bidder C valuation": 100,
+        "Information regime": "private"
+      }
+    }
+  ],
+  "frontier-bail-setting": [
+    {
+      "cell_hash": "618c5fc0a7e81b8ba1692b3ac8f9207cb938a8f4209af76163abe42ddbd39484",
+      "cell_id": "frontier-bail-setting-01",
+      "indices": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "treatments": {
+        "Alleged financial harm": 25000,
+        "Community ties": "weak",
+        "Evidence strength": "weak",
+        "Flight risk": "low",
+        "Prior convictions": 0
+      }
+    }
+  ],
+  "frontier-lawyer-interview": [
+    {
+      "cell_hash": "619e4917b09565a4daea63e2b25439b80be43a2ea140473dae2fda89d3400c03",
+      "cell_id": "frontier-lawyer-interview-01",
+      "indices": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "treatments": {
+        "Bar status": "not passed",
+        "Candidate height": 165,
+        "Communication clarity": "low",
+        "Legal reasoning performance": "weak",
+        "Relevant experience": 0
+      }
+    }
+  ],
+  "frontier-mug-bargaining": [
+    {
+      "cell_hash": "342d34d59ae40b66ad5aa4deb529d72fa38f66b6edf87b4b39b9e43f1dd12334",
+      "cell_id": "frontier-mug-bargaining-01",
+      "indices": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "treatments": {
+        "Buyer budget": 6,
+        "Negotiation procedure": "alternating offers",
+        "Outside option": "none",
+        "Seller attachment": "none",
+        "Seller reservation price": 4
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "base_seed": 2026101400,
+  "measurement_max_attempts": 3,
+  "measurement_temperature": 0.0,
+  "model": "mlx-community/Qwen3-8B-4bit",
+  "prompt_version": "frontier-prompts-v2",
+  "provider": "mlx-in-process",
+  "provider_configuration": {
+    "chat_template_config": {
+      "enable_thinking": false
+    },
+    "max_tokens": 384,
+    "model_id": "mlx-community/Qwen3-8B-4bit",
+    "persistent_model": true
+  },
+  "retrieval": false,
+  "schema_version": 1,
+  "subject_max_attempts": 2,
+  "subject_temperature": 0.3,
+  "thinking_enabled": false,
+  "tools": false
+}

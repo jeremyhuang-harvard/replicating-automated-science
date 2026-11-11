@@ -1,0 +1,1954 @@
+{
+  "frontier-art-auction": [
+    {
+      "cell_hash": "2b34bbf582ec40a54a5ae0712d895f970c090481b7c1cd5850ad4ee13bbe413f",
+      "cell_id": "frontier-art-auction-01",
+      "indices": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "treatments": {
+        "Bid increment": 10,
+        "Bidder A valuation": 100,
+        "Bidder B valuation": 100,
+        "Bidder C valuation": 100,
+        "Information regime": "private"
+      }
+    },
+    {
+      "cell_hash": "180c68afbc88981e2737f51bdf7872b40e1b21b11aa22db303dd432551feee5a",
+      "cell_id": "frontier-art-auction-02",
+      "indices": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "treatments": {
+        "Bid increment": 10,
+        "Bidder A valuation": 100,
+        "Bidder B valuation": 100,
+        "Bidder C valuation": 200,
+        "Information regime": "private"
+      }
+    },
+    {
+      "cell_hash": "77defa3abd5c6086be40955333e9f7a4500fade62a4654f191ac3ac46e18fe46",
+      "cell_id": "frontier-art-auction-03",
+      "indices": [
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "treatments": {
+        "Bid increment": 10,
+        "Bidder A valuation": 100,
+        "Bidder B valuation": 100,
+        "Bidder C valuation": 300,
+        "Information regime": "private"
+      }
+    },
+    {
+      "cell_hash": "464c735bed54840eb08ae2e8338584634715afb791826a87f369013539ae53e8",
+      "cell_id": "frontier-art-auction-04",
+      "indices": [
+        0,
+        1,
+        0,
+        1,
+        2
+      ],
+      "treatments": {
+        "Bid increment": 25,
+        "Bidder A valuation": 100,
+        "Bidder B valuation": 200,
+        "Bidder C valuation": 100,
+        "Information regime": "public exact"
+      }
+    },
+    {
+      "cell_hash": "c468b4ecbecd0f0bc83ae4d6f098959b482de5e0964308d50ed3b870116c5946",
+      "cell_id": "frontier-art-auction-05",
+      "indices": [
+        0,
+        1,
+        1,
+        1,
+        2
+      ],
+      "treatments": {
+        "Bid increment": 25,
+        "Bidder A valuation": 100,
+        "Bidder B valuation": 200,
+        "Bidder C valuation": 200,
+        "Information regime": "public exact"
+      }
+    },
+    {
+      "cell_hash": "32c65ecb96ad897226ef185de392015f65e88c5382ee12b6170e7c98f20ed761",
+      "cell_id": "frontier-art-auction-06",
+      "indices": [
+        0,
+        1,
+        2,
+        1,
+        2
+      ],
+      "treatments": {
+        "Bid increment": 25,
+        "Bidder A valuation": 100,
+        "Bidder B valuation": 200,
+        "Bidder C valuation": 300,
+        "Information regime": "public exact"
+      }
+    },
+    {
+      "cell_hash": "20314445e89fa9869121c950ebce27aabf63d3f57b2e5706875def7054ebfb3f",
+      "cell_id": "frontier-art-auction-07",
+      "indices": [
+        0,
+        2,
+        0,
+        2,
+        1
+      ],
+      "treatments": {
+        "Bid increment": 50,
+        "Bidder A valuation": 100,
+        "Bidder B valuation": 300,
+        "Bidder C valuation": 100,
+        "Information regime": "public ranges"
+      }
+    },
+    {
+      "cell_hash": "9890b2edd028c25854379e52c67f5874e3189b0dfd2b97794955a09a49b2b4a8",
+      "cell_id": "frontier-art-auction-08",
+      "indices": [
+        0,
+        2,
+        1,
+        2,
+        1
+      ],
+      "treatments": {
+        "Bid increment": 50,
+        "Bidder A valuation": 100,
+        "Bidder B valuation": 300,
+        "Bidder C valuation": 200,
+        "Information regime": "public ranges"
+      }
+    },
+    {
+      "cell_hash": "0cca6b737e6998913a4799db1757ee7d77997d194941dca55a2a578ae43227f2",
+      "cell_id": "frontier-art-auction-09",
+      "indices": [
+        0,
+        2,
+        2,
+        2,
+        1
+      ],
+      "treatments": {
+        "Bid increment": 50,
+        "Bidder A valuation": 100,
+        "Bidder B valuation": 300,
+        "Bidder C valuation": 300,
+        "Information regime": "public ranges"
+      }
+    },
+    {
+      "cell_hash": "8952f367060d08d22758b81dd769a710cc3e7baed071f474a575b81011b34782",
+      "cell_id": "frontier-art-auction-10",
+      "indices": [
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "treatments": {
+        "Bid increment": 25,
+        "Bidder A valuation": 200,
+        "Bidder B valuation": 100,
+        "Bidder C valuation": 100,
+        "Information regime": "public ranges"
+      }
+    },
+    {
+      "cell_hash": "cb3a254c0c6ff7b4a9d1c094e0cdadd54fcf53b53d64c1927b17098241905dc7",
+      "cell_id": "frontier-art-auction-11",
+      "indices": [
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "treatments": {
+        "Bid increment": 25,
+        "Bidder A valuation": 200,
+        "Bidder B valuation": 100,
+        "Bidder C valuation": 200,
+        "Information regime": "public ranges"
+      }
+    },
+    {
+      "cell_hash": "d659e39028fe58100959eb2f4e10bc3b03e3d22d8c5a2c358415f1013e009083",
+      "cell_id": "frontier-art-auction-12",
+      "indices": [
+        1,
+        0,
+        2,
+        1,
+        1
+      ],
+      "treatments": {
+        "Bid increment": 25,
+        "Bidder A valuation": 200,
+        "Bidder B valuation": 100,
+        "Bidder C valuation": 300,
+        "Information regime": "public ranges"
+      }
+    },
+    {
+      "cell_hash": "d0f79a35f63429b36804fb24ebd9f61b1d657350a415dea57394e252b0ef893a",
+      "cell_id": "frontier-art-auction-13",
+      "indices": [
+        1,
+        1,
+        0,
+        2,
+        0
+      ],
+      "treatments": {
+        "Bid increment": 50,
+        "Bidder A valuation": 200,
+        "Bidder B valuation": 200,
+        "Bidder C valuation": 100,
+        "Information regime": "private"
+      }
+    },
+    {
+      "cell_hash": "de0d7a105199417c08f9d55f3b4d4513270496a85fbf3adc282c331df206fece",
+      "cell_id": "frontier-art-auction-14",
+      "indices": [
+        1,
+        1,
+        1,
+        2,
+        0
+      ],
+      "treatments": {
+        "Bid increment": 50,
+        "Bidder A valuation": 200,
+        "Bidder B valuation": 200,
+        "Bidder C valuation": 200,
+        "Information regime": "private"
+      }
+    },
+    {
+      "cell_hash": "c01d42391775ec22b473da90815be07e4b0eeac4d3b5cc44f23426389426fcb1",
+      "cell_id": "frontier-art-auction-15",
+      "indices": [
+        1,
+        1,
+        2,
+        2,
+        0
+      ],
+      "treatments": {
+        "Bid increment": 50,
+        "Bidder A valuation": 200,
+        "Bidder B valuation": 200,
+        "Bidder C valuation": 300,
+        "Information regime": "private"
+      }
+    },
+    {
+      "cell_hash": "2b84cc5bba83b8243800047e075b5c28f2548f22666fc6341527a5eff96ff7b6",
+      "cell_id": "frontier-art-auction-16",
+      "indices": [
+        1,
+        2,
+        0,
+        0,
+        2
+      ],
+      "treatments": {
+        "Bid increment": 10,
+        "Bidder A valuation": 200,
+        "Bidder B valuation": 300,
+        "Bidder C valuation": 100,
+        "Information regime": "public exact"
+      }
+    },
+    {
+      "cell_hash": "1a6d58516d3ede3530fc16afd21d097a5bb5bd068dcb29d040bd7771517e8a0c",
+      "cell_id": "frontier-art-auction-17",
+      "indices": [
+        1,
+        2,
+        1,
+        0,
+        2
+      ],
+      "treatments": {
+        "Bid increment": 10,
+        "Bidder A valuation": 200,
+        "Bidder B valuation": 300,
+        "Bidder C valuation": 200,
+        "Information regime": "public exact"
+      }
+    },
+    {
+      "cell_hash": "96b5bfc1ab44b0a1829e6cc2314ae17bd6819a264e0e66ac90b4a7a8eaf0c46e",
+      "cell_id": "frontier-art-auction-18",
+      "indices": [
+        1,
+        2,
+        2,
+        0,
+        2
+      ],
+      "treatments": {
+        "Bid increment": 10,
+        "Bidder A valuation": 200,
+        "Bidder B valuation": 300,
+        "Bidder C valuation": 300,
+        "Information regime": "public exact"
+      }
+    },
+    {
+      "cell_hash": "6a6a16825c609116bc80ac9a50cfc73543b5cdb1bcf4c6f092757a885a8f6e08",
+      "cell_id": "frontier-art-auction-19",
+      "indices": [
+        2,
+        0,
+        0,
+        2,
+        2
+      ],
+      "treatments": {
+        "Bid increment": 50,
+        "Bidder A valuation": 300,
+        "Bidder B valuation": 100,
+        "Bidder C valuation": 100,
+        "Information regime": "public exact"
+      }
+    },
+    {
+      "cell_hash": "67b89f8f7a985dc0ccc59a2336a86d2224642da6b42569281b13fe13a95acbae",
+      "cell_id": "frontier-art-auction-20",
+      "indices": [
+        2,
+        0,
+        1,
+        2,
+        2
+      ],
+      "treatments": {
+        "Bid increment": 50,
+        "Bidder A valuation": 300,
+        "Bidder B valuation": 100,
+        "Bidder C valuation": 200,
+        "Information regime": "public exact"
+      }
+    },
+    {
+      "cell_hash": "3942faaf71dc2f6cf89d26d022b040d5a09aeec1abe47060cddbcc3f1b21e671",
+      "cell_id": "frontier-art-auction-21",
+      "indices": [
+        2,
+        0,
+        2,
+        2,
+        2
+      ],
+      "treatments": {
+        "Bid increment": 50,
+        "Bidder A valuation": 300,
+        "Bidder B valuation": 100,
+        "Bidder C valuation": 300,
+        "Information regime": "public exact"
+      }
+    },
+    {
+      "cell_hash": "807f19c029e432c046cacfab9b81ba278db2ad3b7cd67204baa7d6cfb0093d78",
+      "cell_id": "frontier-art-auction-22",
+      "indices": [
+        2,
+        1,
+        0,
+        0,
+        1
+      ],
+      "treatments": {
+        "Bid increment": 10,
+        "Bidder A valuation": 300,
+        "Bidder B valuation": 200,
+        "Bidder C valuation": 100,
+        "Information regime": "public ranges"
+      }
+    },
+    {
+      "cell_hash": "852125291a790b9745867c9b6005bbfa56b4e6d2b9b8cb29951e16ea2ae48420",
+      "cell_id": "frontier-art-auction-23",
+      "indices": [
+        2,
+        1,
+        1,
+        0,
+        1
+      ],
+      "treatments": {
+        "Bid increment": 10,
+        "Bidder A valuation": 300,
+        "Bidder B valuation": 200,
+        "Bidder C valuation": 200,
+        "Information regime": "public ranges"
+      }
+    },
+    {
+      "cell_hash": "29ac323d2f623a636d76363a7507315e794b0bdaa815897b491df374ab318956",
+      "cell_id": "frontier-art-auction-24",
+      "indices": [
+        2,
+        1,
+        2,
+        0,
+        1
+      ],
+      "treatments": {
+        "Bid increment": 10,
+        "Bidder A valuation": 300,
+        "Bidder B valuation": 200,
+        "Bidder C valuation": 300,
+        "Information regime": "public ranges"
+      }
+    },
+    {
+      "cell_hash": "9d32f638309a9b06449fd7e4d296712ee58b10d039a2eaa623e9385e66801974",
+      "cell_id": "frontier-art-auction-25",
+      "indices": [
+        2,
+        2,
+        0,
+        1,
+        0
+      ],
+      "treatments": {
+        "Bid increment": 25,
+        "Bidder A valuation": 300,
+        "Bidder B valuation": 300,
+        "Bidder C valuation": 100,
+        "Information regime": "private"
+      }
+    },
+    {
+      "cell_hash": "b845b2e6f49c328dfa861918a773eaa90b8a7af080376fbe19c1c05a717a4789",
+      "cell_id": "frontier-art-auction-26",
+      "indices": [
+        2,
+        2,
+        1,
+        1,
+        0
+      ],
+      "treatments": {
+        "Bid increment": 25,
+        "Bidder A valuation": 300,
+        "Bidder B valuation": 300,
+        "Bidder C valuation": 200,
+        "Information regime": "private"
+      }
+    },
+    {
+      "cell_hash": "1de12a3ae4f58b6bb13a63059e7780a9c9674101614346702dbb77449a81570c",
+      "cell_id": "frontier-art-auction-27",
+      "indices": [
+        2,
+        2,
+        2,
+        1,
+        0
+      ],
+      "treatments": {
+        "Bid increment": 25,
+        "Bidder A valuation": 300,
+        "Bidder B valuation": 300,
+        "Bidder C valuation": 300,
+        "Information regime": "private"
+      }
+    }
+  ],
+  "frontier-bail-setting": [
+    {
+      "cell_hash": "618c5fc0a7e81b8ba1692b3ac8f9207cb938a8f4209af76163abe42ddbd39484",
+      "cell_id": "frontier-bail-setting-01",
+      "indices": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "treatments": {
+        "Alleged financial harm": 25000,
+        "Community ties": "weak",
+        "Evidence strength": "weak",
+        "Flight risk": "low",
+        "Prior convictions": 0
+      }
+    },
+    {
+      "cell_hash": "0414db899d0a0ab80ed9dd744685b1fd5a6faff96e56168d1ff00b4c2729ada5",
+      "cell_id": "frontier-bail-setting-02",
+      "indices": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "treatments": {
+        "Alleged financial harm": 25000,
+        "Community ties": "weak",
+        "Evidence strength": "weak",
+        "Flight risk": "medium",
+        "Prior convictions": 0
+      }
+    },
+    {
+      "cell_hash": "4d6d979adf681b780ad06486d618b5da8b1fb5544f25a92f5f504271797e0f84",
+      "cell_id": "frontier-bail-setting-03",
+      "indices": [
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "treatments": {
+        "Alleged financial harm": 25000,
+        "Community ties": "weak",
+        "Evidence strength": "weak",
+        "Flight risk": "high",
+        "Prior convictions": 0
+      }
+    },
+    {
+      "cell_hash": "2feab1fd4d132ab7a6914dc9666bf826238b4f2f42aa2aa9959cf2e620a3db46",
+      "cell_id": "frontier-bail-setting-04",
+      "indices": [
+        0,
+        1,
+        0,
+        1,
+        2
+      ],
+      "treatments": {
+        "Alleged financial harm": 25000,
+        "Community ties": "moderate",
+        "Evidence strength": "strong",
+        "Flight risk": "low",
+        "Prior convictions": 1
+      }
+    },
+    {
+      "cell_hash": "5e5ccb0398ab52843605715d06b87e7f89c606c49e09431877d7a7948fbf4a58",
+      "cell_id": "frontier-bail-setting-05",
+      "indices": [
+        0,
+        1,
+        1,
+        1,
+        2
+      ],
+      "treatments": {
+        "Alleged financial harm": 25000,
+        "Community ties": "moderate",
+        "Evidence strength": "strong",
+        "Flight risk": "medium",
+        "Prior convictions": 1
+      }
+    },
+    {
+      "cell_hash": "941f3e2eeea479385c93a698a01c8ce44c9f58f9e5edf5e70ddae47bc73c0d4b",
+      "cell_id": "frontier-bail-setting-06",
+      "indices": [
+        0,
+        1,
+        2,
+        1,
+        2
+      ],
+      "treatments": {
+        "Alleged financial harm": 25000,
+        "Community ties": "moderate",
+        "Evidence strength": "strong",
+        "Flight risk": "high",
+        "Prior convictions": 1
+      }
+    },
+    {
+      "cell_hash": "9f3a5079a300e4ff2ce7fb9f000e4c4f31a86722e38adac329b4c9ad937f5e9b",
+      "cell_id": "frontier-bail-setting-07",
+      "indices": [
+        0,
+        2,
+        0,
+        2,
+        1
+      ],
+      "treatments": {
+        "Alleged financial harm": 25000,
+        "Community ties": "strong",
+        "Evidence strength": "moderate",
+        "Flight risk": "low",
+        "Prior convictions": 4
+      }
+    },
+    {
+      "cell_hash": "abdd5ae59c9c455c1e2f89aaae695ce1bf5adaf941ac486f8d275478b15f9539",
+      "cell_id": "frontier-bail-setting-08",
+      "indices": [
+        0,
+        2,
+        1,
+        2,
+        1
+      ],
+      "treatments": {
+        "Alleged financial harm": 25000,
+        "Community ties": "strong",
+        "Evidence strength": "moderate",
+        "Flight risk": "medium",
+        "Prior convictions": 4
+      }
+    },
+    {
+      "cell_hash": "2a0532e8ca52bd792c76ba04904800d61d1baa9a16c17eca12a4205b76424f4d",
+      "cell_id": "frontier-bail-setting-09",
+      "indices": [
+        0,
+        2,
+        2,
+        2,
+        1
+      ],
+      "treatments": {
+        "Alleged financial harm": 25000,
+        "Community ties": "strong",
+        "Evidence strength": "moderate",
+        "Flight risk": "high",
+        "Prior convictions": 4
+      }
+    },
+    {
+      "cell_hash": "61abf90310832e0d1fb1e338fd029f83138f45e1b693a8db5770059de82309e4",
+      "cell_id": "frontier-bail-setting-10",
+      "indices": [
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "treatments": {
+        "Alleged financial harm": 50000,
+        "Community ties": "moderate",
+        "Evidence strength": "moderate",
+        "Flight risk": "low",
+        "Prior convictions": 0
+      }
+    },
+    {
+      "cell_hash": "14d6e2695d2726c09e6c7805b9c69d65ec6fec032f34c99a7c66be124e417c28",
+      "cell_id": "frontier-bail-setting-11",
+      "indices": [
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "treatments": {
+        "Alleged financial harm": 50000,
+        "Community ties": "moderate",
+        "Evidence strength": "moderate",
+        "Flight risk": "medium",
+        "Prior convictions": 0
+      }
+    },
+    {
+      "cell_hash": "92c9a3df7450e064a9dc895f544941f0f452e0801add0f120391af1a1b53f29b",
+      "cell_id": "frontier-bail-setting-12",
+      "indices": [
+        1,
+        0,
+        2,
+        1,
+        1
+      ],
+      "treatments": {
+        "Alleged financial harm": 50000,
+        "Community ties": "moderate",
+        "Evidence strength": "moderate",
+        "Flight risk": "high",
+        "Prior convictions": 0
+      }
+    },
+    {
+      "cell_hash": "1b04bbe5445c02ae390f9c6464b47d41333033c0fc2470e278a4836a8c4ab93f",
+      "cell_id": "frontier-bail-setting-13",
+      "indices": [
+        1,
+        1,
+        0,
+        2,
+        0
+      ],
+      "treatments": {
+        "Alleged financial harm": 50000,
+        "Community ties": "strong",
+        "Evidence strength": "weak",
+        "Flight risk": "low",
+        "Prior convictions": 1
+      }
+    },
+    {
+      "cell_hash": "8d5da840ae902f7129310d25f513788a33534cc4c251aa04428f638da692a142",
+      "cell_id": "frontier-bail-setting-14",
+      "indices": [
+        1,
+        1,
+        1,
+        2,
+        0
+      ],
+      "treatments": {
+        "Alleged financial harm": 50000,
+        "Community ties": "strong",
+        "Evidence strength": "weak",
+        "Flight risk": "medium",
+        "Prior convictions": 1
+      }
+    },
+    {
+      "cell_hash": "9172631c8fb4ee5683767f80f26ca3f4e252557274ad39c97a74a40d9d61fc43",
+      "cell_id": "frontier-bail-setting-15",
+      "indices": [
+        1,
+        1,
+        2,
+        2,
+        0
+      ],
+      "treatments": {
+        "Alleged financial harm": 50000,
+        "Community ties": "strong",
+        "Evidence strength": "weak",
+        "Flight risk": "high",
+        "Prior convictions": 1
+      }
+    },
+    {
+      "cell_hash": "097e7fce64321f386a8f6615db593fae38e919c41d0ef4d4479fa5041f01751c",
+      "cell_id": "frontier-bail-setting-16",
+      "indices": [
+        1,
+        2,
+        0,
+        0,
+        2
+      ],
+      "treatments": {
+        "Alleged financial harm": 50000,
+        "Community ties": "weak",
+        "Evidence strength": "strong",
+        "Flight risk": "low",
+        "Prior convictions": 4
+      }
+    },
+    {
+      "cell_hash": "c1ddad828a8fc260315c9cb8cdc8b18516cb1a3e92733eefb1f659ad8d651e8f",
+      "cell_id": "frontier-bail-setting-17",
+      "indices": [
+        1,
+        2,
+        1,
+        0,
+        2
+      ],
+      "treatments": {
+        "Alleged financial harm": 50000,
+        "Community ties": "weak",
+        "Evidence strength": "strong",
+        "Flight risk": "medium",
+        "Prior convictions": 4
+      }
+    },
+    {
+      "cell_hash": "94113efce002aeef8c169526f6928b0a3ca7ae592e10ce90ea14d07ada63002e",
+      "cell_id": "frontier-bail-setting-18",
+      "indices": [
+        1,
+        2,
+        2,
+        0,
+        2
+      ],
+      "treatments": {
+        "Alleged financial harm": 50000,
+        "Community ties": "weak",
+        "Evidence strength": "strong",
+        "Flight risk": "high",
+        "Prior convictions": 4
+      }
+    },
+    {
+      "cell_hash": "16f1e88794d89f4714dc453bf3776c434714b453b64149832491a4964a8186ea",
+      "cell_id": "frontier-bail-setting-19",
+      "indices": [
+        2,
+        0,
+        0,
+        2,
+        2
+      ],
+      "treatments": {
+        "Alleged financial harm": 200000,
+        "Community ties": "strong",
+        "Evidence strength": "strong",
+        "Flight risk": "low",
+        "Prior convictions": 0
+      }
+    },
+    {
+      "cell_hash": "368d87a060cb0ea5ee40183935d3e3c9c3027a2eb9bffc3a601f0507cf840bd1",
+      "cell_id": "frontier-bail-setting-20",
+      "indices": [
+        2,
+        0,
+        1,
+        2,
+        2
+      ],
+      "treatments": {
+        "Alleged financial harm": 200000,
+        "Community ties": "strong",
+        "Evidence strength": "strong",
+        "Flight risk": "medium",
+        "Prior convictions": 0
+      }
+    },
+    {
+      "cell_hash": "b9276adb0f3db77336ed2fe621a0b97bf69931de8404149506a23b05002d721d",
+      "cell_id": "frontier-bail-setting-21",
+      "indices": [
+        2,
+        0,
+        2,
+        2,
+        2
+      ],
+      "treatments": {
+        "Alleged financial harm": 200000,
+        "Community ties": "strong",
+        "Evidence strength": "strong",
+        "Flight risk": "high",
+        "Prior convictions": 0
+      }
+    },
+    {
+      "cell_hash": "c25b6a73586d54c8bb237ed5bffc4286b76227d5b89c6e9a3d2dcbdfcf3179a0",
+      "cell_id": "frontier-bail-setting-22",
+      "indices": [
+        2,
+        1,
+        0,
+        0,
+        1
+      ],
+      "treatments": {
+        "Alleged financial harm": 200000,
+        "Community ties": "weak",
+        "Evidence strength": "moderate",
+        "Flight risk": "low",
+        "Prior convictions": 1
+      }
+    },
+    {
+      "cell_hash": "943ec4a0cc94b481805f0e07fb3cc900604fb869b3ce0834e55423eec8af9a39",
+      "cell_id": "frontier-bail-setting-23",
+      "indices": [
+        2,
+        1,
+        1,
+        0,
+        1
+      ],
+      "treatments": {
+        "Alleged financial harm": 200000,
+        "Community ties": "weak",
+        "Evidence strength": "moderate",
+        "Flight risk": "medium",
+        "Prior convictions": 1
+      }
+    },
+    {
+      "cell_hash": "11242433c6cb4eaf5f202cad1d816ac721e80c2013e518ca2a769ff9bc644eb5",
+      "cell_id": "frontier-bail-setting-24",
+      "indices": [
+        2,
+        1,
+        2,
+        0,
+        1
+      ],
+      "treatments": {
+        "Alleged financial harm": 200000,
+        "Community ties": "weak",
+        "Evidence strength": "moderate",
+        "Flight risk": "high",
+        "Prior convictions": 1
+      }
+    },
+    {
+      "cell_hash": "cb85fb885b8fc411f417f051ce1e5b070916a5f203c2e47a8c25aa5eaf929a85",
+      "cell_id": "frontier-bail-setting-25",
+      "indices": [
+        2,
+        2,
+        0,
+        1,
+        0
+      ],
+      "treatments": {
+        "Alleged financial harm": 200000,
+        "Community ties": "moderate",
+        "Evidence strength": "weak",
+        "Flight risk": "low",
+        "Prior convictions": 4
+      }
+    },
+    {
+      "cell_hash": "a251b5bdbe68dcefc26c3dcc5c15a1cdf56df93fdaff29485b58e2d27488e76c",
+      "cell_id": "frontier-bail-setting-26",
+      "indices": [
+        2,
+        2,
+        1,
+        1,
+        0
+      ],
+      "treatments": {
+        "Alleged financial harm": 200000,
+        "Community ties": "moderate",
+        "Evidence strength": "weak",
+        "Flight risk": "medium",
+        "Prior convictions": 4
+      }
+    },
+    {
+      "cell_hash": "e31058f93ed13969747d65a7cf06a7cbdd3df7535fe2c17a139a528093dc5ea2",
+      "cell_id": "frontier-bail-setting-27",
+      "indices": [
+        2,
+        2,
+        2,
+        1,
+        0
+      ],
+      "treatments": {
+        "Alleged financial harm": 200000,
+        "Community ties": "moderate",
+        "Evidence strength": "weak",
+        "Flight risk": "high",
+        "Prior convictions": 4
+      }
+    }
+  ],
+  "frontier-lawyer-interview": [
+    {
+      "cell_hash": "619e4917b09565a4daea63e2b25439b80be43a2ea140473dae2fda89d3400c03",
+      "cell_id": "frontier-lawyer-interview-01",
+      "indices": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "treatments": {
+        "Bar status": "not passed",
+        "Candidate height": 165,
+        "Communication clarity": "low",
+        "Legal reasoning performance": "weak",
+        "Relevant experience": 0
+      }
+    },
+    {
+      "cell_hash": "3a514bf44d9dd72574337d41800587716a32402c07598f7d56647599a4c228ad",
+      "cell_id": "frontier-lawyer-interview-02",
+      "indices": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "treatments": {
+        "Bar status": "not passed",
+        "Candidate height": 165,
+        "Communication clarity": "medium",
+        "Legal reasoning performance": "weak",
+        "Relevant experience": 0
+      }
+    },
+    {
+      "cell_hash": "b212db6270af1f6a048d0f1e31bb1569cacfed3319e792292ebb1bf38ad3651f",
+      "cell_id": "frontier-lawyer-interview-03",
+      "indices": [
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "treatments": {
+        "Bar status": "not passed",
+        "Candidate height": 165,
+        "Communication clarity": "high",
+        "Legal reasoning performance": "weak",
+        "Relevant experience": 0
+      }
+    },
+    {
+      "cell_hash": "0c45fc4172dab9a47b9448e18992222e4847ad9c279d3b8496b1948e1b586c05",
+      "cell_id": "frontier-lawyer-interview-04",
+      "indices": [
+        0,
+        1,
+        0,
+        1,
+        2
+      ],
+      "treatments": {
+        "Bar status": "not passed",
+        "Candidate height": 195,
+        "Communication clarity": "low",
+        "Legal reasoning performance": "average",
+        "Relevant experience": 2
+      }
+    },
+    {
+      "cell_hash": "7896ebe239877ec8c7174a5a030e41f043ecb91dfbf5d9c114f38b295f75c763",
+      "cell_id": "frontier-lawyer-interview-05",
+      "indices": [
+        0,
+        1,
+        1,
+        1,
+        2
+      ],
+      "treatments": {
+        "Bar status": "not passed",
+        "Candidate height": 195,
+        "Communication clarity": "medium",
+        "Legal reasoning performance": "average",
+        "Relevant experience": 2
+      }
+    },
+    {
+      "cell_hash": "1bdfb8756acb4d4283dd6b7976694237fb06684cde9c2f9070cb879a481ed3e5",
+      "cell_id": "frontier-lawyer-interview-06",
+      "indices": [
+        0,
+        1,
+        2,
+        1,
+        2
+      ],
+      "treatments": {
+        "Bar status": "not passed",
+        "Candidate height": 195,
+        "Communication clarity": "high",
+        "Legal reasoning performance": "average",
+        "Relevant experience": 2
+      }
+    },
+    {
+      "cell_hash": "b626e7e4368568746a3420794dfc324aa397accb928f181254fa96082e2a3496",
+      "cell_id": "frontier-lawyer-interview-07",
+      "indices": [
+        0,
+        2,
+        0,
+        2,
+        1
+      ],
+      "treatments": {
+        "Bar status": "not passed",
+        "Candidate height": 180,
+        "Communication clarity": "low",
+        "Legal reasoning performance": "strong",
+        "Relevant experience": 6
+      }
+    },
+    {
+      "cell_hash": "f0f0fec3fd788fb5c1bc3a20aca447106d4adcc277485ab96b36ed4e13906cd4",
+      "cell_id": "frontier-lawyer-interview-08",
+      "indices": [
+        0,
+        2,
+        1,
+        2,
+        1
+      ],
+      "treatments": {
+        "Bar status": "not passed",
+        "Candidate height": 180,
+        "Communication clarity": "medium",
+        "Legal reasoning performance": "strong",
+        "Relevant experience": 6
+      }
+    },
+    {
+      "cell_hash": "c4ef47d08f0d42159323dea75a8d8886b3a5891256eb55539c0f8cc845c01c29",
+      "cell_id": "frontier-lawyer-interview-09",
+      "indices": [
+        0,
+        2,
+        2,
+        2,
+        1
+      ],
+      "treatments": {
+        "Bar status": "not passed",
+        "Candidate height": 180,
+        "Communication clarity": "high",
+        "Legal reasoning performance": "strong",
+        "Relevant experience": 6
+      }
+    },
+    {
+      "cell_hash": "8ceff097b383274b9cc057ea0f778450bbb262baa54b0b0582a3026d7fbd6093",
+      "cell_id": "frontier-lawyer-interview-10",
+      "indices": [
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "treatments": {
+        "Bar status": "results pending",
+        "Candidate height": 180,
+        "Communication clarity": "low",
+        "Legal reasoning performance": "weak",
+        "Relevant experience": 2
+      }
+    },
+    {
+      "cell_hash": "c85191cf19c523effa8794e39f091c054843b95a78202429dd7629aa7d1133de",
+      "cell_id": "frontier-lawyer-interview-11",
+      "indices": [
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "treatments": {
+        "Bar status": "results pending",
+        "Candidate height": 180,
+        "Communication clarity": "medium",
+        "Legal reasoning performance": "weak",
+        "Relevant experience": 2
+      }
+    },
+    {
+      "cell_hash": "3a7b30577186e4bbe29b9790f1b5ae0ed53409cc447a478f2254c1ca6d2a2184",
+      "cell_id": "frontier-lawyer-interview-12",
+      "indices": [
+        1,
+        0,
+        2,
+        1,
+        1
+      ],
+      "treatments": {
+        "Bar status": "results pending",
+        "Candidate height": 180,
+        "Communication clarity": "high",
+        "Legal reasoning performance": "weak",
+        "Relevant experience": 2
+      }
+    },
+    {
+      "cell_hash": "56814e26c3426d93a99201407e8846b56d3d29c627874ca2afc0bfd1dc2b5d93",
+      "cell_id": "frontier-lawyer-interview-13",
+      "indices": [
+        1,
+        1,
+        0,
+        2,
+        0
+      ],
+      "treatments": {
+        "Bar status": "results pending",
+        "Candidate height": 165,
+        "Communication clarity": "low",
+        "Legal reasoning performance": "average",
+        "Relevant experience": 6
+      }
+    },
+    {
+      "cell_hash": "c595352799f86fae7a7495628f4a22ef3c57babdb220f70b859d85bc70fd33c2",
+      "cell_id": "frontier-lawyer-interview-14",
+      "indices": [
+        1,
+        1,
+        1,
+        2,
+        0
+      ],
+      "treatments": {
+        "Bar status": "results pending",
+        "Candidate height": 165,
+        "Communication clarity": "medium",
+        "Legal reasoning performance": "average",
+        "Relevant experience": 6
+      }
+    },
+    {
+      "cell_hash": "0a19add772ba6f54a96385ea8100a76934e15976ae53f4c55d0367892aa6cd1d",
+      "cell_id": "frontier-lawyer-interview-15",
+      "indices": [
+        1,
+        1,
+        2,
+        2,
+        0
+      ],
+      "treatments": {
+        "Bar status": "results pending",
+        "Candidate height": 165,
+        "Communication clarity": "high",
+        "Legal reasoning performance": "average",
+        "Relevant experience": 6
+      }
+    },
+    {
+      "cell_hash": "b2778220d06cb6da94087e62cbbdbc0650a4cee1e76b563b004a607ca0888262",
+      "cell_id": "frontier-lawyer-interview-16",
+      "indices": [
+        1,
+        2,
+        0,
+        0,
+        2
+      ],
+      "treatments": {
+        "Bar status": "results pending",
+        "Candidate height": 195,
+        "Communication clarity": "low",
+        "Legal reasoning performance": "strong",
+        "Relevant experience": 0
+      }
+    },
+    {
+      "cell_hash": "932a0ce0167e054a7ec9dc2cbd6b6a040f72f4bd925f8e99f22080d0d9336043",
+      "cell_id": "frontier-lawyer-interview-17",
+      "indices": [
+        1,
+        2,
+        1,
+        0,
+        2
+      ],
+      "treatments": {
+        "Bar status": "results pending",
+        "Candidate height": 195,
+        "Communication clarity": "medium",
+        "Legal reasoning performance": "strong",
+        "Relevant experience": 0
+      }
+    },
+    {
+      "cell_hash": "aa66a71bffab21db29b052da47030fb6396ad119dd6760742279755c1a57dbcf",
+      "cell_id": "frontier-lawyer-interview-18",
+      "indices": [
+        1,
+        2,
+        2,
+        0,
+        2
+      ],
+      "treatments": {
+        "Bar status": "results pending",
+        "Candidate height": 195,
+        "Communication clarity": "high",
+        "Legal reasoning performance": "strong",
+        "Relevant experience": 0
+      }
+    },
+    {
+      "cell_hash": "b47729d776d80ec47aee47c1fd9f4c85d1e39e573886d5256930fd27608584b9",
+      "cell_id": "frontier-lawyer-interview-19",
+      "indices": [
+        2,
+        0,
+        0,
+        2,
+        2
+      ],
+      "treatments": {
+        "Bar status": "admitted",
+        "Candidate height": 195,
+        "Communication clarity": "low",
+        "Legal reasoning performance": "weak",
+        "Relevant experience": 6
+      }
+    },
+    {
+      "cell_hash": "259c9c4d382edec54315c75986cc7be88aa9a9e3610daa6dedf24e26b770ff04",
+      "cell_id": "frontier-lawyer-interview-20",
+      "indices": [
+        2,
+        0,
+        1,
+        2,
+        2
+      ],
+      "treatments": {
+        "Bar status": "admitted",
+        "Candidate height": 195,
+        "Communication clarity": "medium",
+        "Legal reasoning performance": "weak",
+        "Relevant experience": 6
+      }
+    },
+    {
+      "cell_hash": "df5b846bb8b173020d260d992a9879d3925cc32060ee13f2e8587876f7bd814b",
+      "cell_id": "frontier-lawyer-interview-21",
+      "indices": [
+        2,
+        0,
+        2,
+        2,
+        2
+      ],
+      "treatments": {
+        "Bar status": "admitted",
+        "Candidate height": 195,
+        "Communication clarity": "high",
+        "Legal reasoning performance": "weak",
+        "Relevant experience": 6
+      }
+    },
+    {
+      "cell_hash": "5d836c3cfe50c96121912aac5b37d1b8329c284315b7a2c6f0760d01f322d67a",
+      "cell_id": "frontier-lawyer-interview-22",
+      "indices": [
+        2,
+        1,
+        0,
+        0,
+        1
+      ],
+      "treatments": {
+        "Bar status": "admitted",
+        "Candidate height": 180,
+        "Communication clarity": "low",
+        "Legal reasoning performance": "average",
+        "Relevant experience": 0
+      }
+    },
+    {
+      "cell_hash": "f2ba12061b8cd8dcb2952463c6b7b2b3f95ad04aee7e4e538de8ece1817b68de",
+      "cell_id": "frontier-lawyer-interview-23",
+      "indices": [
+        2,
+        1,
+        1,
+        0,
+        1
+      ],
+      "treatments": {
+        "Bar status": "admitted",
+        "Candidate height": 180,
+        "Communication clarity": "medium",
+        "Legal reasoning performance": "average",
+        "Relevant experience": 0
+      }
+    },
+    {
+      "cell_hash": "a0a39d1a5e05c0d7538baa09d296d48fdb5eb3afe87c87d504d7d1de7c824d79",
+      "cell_id": "frontier-lawyer-interview-24",
+      "indices": [
+        2,
+        1,
+        2,
+        0,
+        1
+      ],
+      "treatments": {
+        "Bar status": "admitted",
+        "Candidate height": 180,
+        "Communication clarity": "high",
+        "Legal reasoning performance": "average",
+        "Relevant experience": 0
+      }
+    },
+    {
+      "cell_hash": "df2d97ba0cb5a3b06568a964904874d957d70324d4e4252d593509314aa28b93",
+      "cell_id": "frontier-lawyer-interview-25",
+      "indices": [
+        2,
+        2,
+        0,
+        1,
+        0
+      ],
+      "treatments": {
+        "Bar status": "admitted",
+        "Candidate height": 165,
+        "Communication clarity": "low",
+        "Legal reasoning performance": "strong",
+        "Relevant experience": 2
+      }
+    },
+    {
+      "cell_hash": "c1f2ae2a6d6bdfce04b98a4829693ffea274060ff22f87d9eca6e5ad68f87fe4",
+      "cell_id": "frontier-lawyer-interview-26",
+      "indices": [
+        2,
+        2,
+        1,
+        1,
+        0
+      ],
+      "treatments": {
+        "Bar status": "admitted",
+        "Candidate height": 165,
+        "Communication clarity": "medium",
+        "Legal reasoning performance": "strong",
+        "Relevant experience": 2
+      }
+    },
+    {
+      "cell_hash": "d4e6d36361a4476a70f46e2e8874d0ae1768477134c530759079fe33f13949c5",
+      "cell_id": "frontier-lawyer-interview-27",
+      "indices": [
+        2,
+        2,
+        2,
+        1,
+        0
+      ],
+      "treatments": {
+        "Bar status": "admitted",
+        "Candidate height": 165,
+        "Communication clarity": "high",
+        "Legal reasoning performance": "strong",
+        "Relevant experience": 2
+      }
+    }
+  ],
+  "frontier-mug-bargaining": [
+    {
+      "cell_hash": "342d34d59ae40b66ad5aa4deb529d72fa38f66b6edf87b4b39b9e43f1dd12334",
+      "cell_id": "frontier-mug-bargaining-01",
+      "indices": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "treatments": {
+        "Buyer budget": 6,
+        "Negotiation procedure": "alternating offers",
+        "Outside option": "none",
+        "Seller attachment": "none",
+        "Seller reservation price": 4
+      }
+    },
+    {
+      "cell_hash": "a1c52b6f0b4c26f74c306907546054a10df96ee8c7a164a51cdc2775824d919a",
+      "cell_id": "frontier-mug-bargaining-02",
+      "indices": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "treatments": {
+        "Buyer budget": 6,
+        "Negotiation procedure": "alternating offers",
+        "Outside option": "none",
+        "Seller attachment": "moderate",
+        "Seller reservation price": 4
+      }
+    },
+    {
+      "cell_hash": "ab3eaa066eef1bf634cda754c299bdfeb816de992e58eacd5ea6a29d228779d4",
+      "cell_id": "frontier-mug-bargaining-03",
+      "indices": [
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "treatments": {
+        "Buyer budget": 6,
+        "Negotiation procedure": "alternating offers",
+        "Outside option": "none",
+        "Seller attachment": "strong",
+        "Seller reservation price": 4
+      }
+    },
+    {
+      "cell_hash": "4c3c30d23de0dddc80728193d43ce4ac6eb33018eecc819f4173a968b3a7d7a7",
+      "cell_id": "frontier-mug-bargaining-04",
+      "indices": [
+        0,
+        1,
+        0,
+        1,
+        2
+      ],
+      "treatments": {
+        "Buyer budget": 6,
+        "Negotiation procedure": "buyer take-it-or-leave-it",
+        "Outside option": "buyer alternative",
+        "Seller attachment": "none",
+        "Seller reservation price": 10
+      }
+    },
+    {
+      "cell_hash": "a5d55bfb081bfbb6c3d0197d29399eb0009922c3905a8bd5a6de50b01c28767f",
+      "cell_id": "frontier-mug-bargaining-05",
+      "indices": [
+        0,
+        1,
+        1,
+        1,
+        2
+      ],
+      "treatments": {
+        "Buyer budget": 6,
+        "Negotiation procedure": "buyer take-it-or-leave-it",
+        "Outside option": "buyer alternative",
+        "Seller attachment": "moderate",
+        "Seller reservation price": 10
+      }
+    },
+    {
+      "cell_hash": "1f133a5c79193c5f40782232363b9c13cfce22a72bf56b0fff58d17bfb828348",
+      "cell_id": "frontier-mug-bargaining-06",
+      "indices": [
+        0,
+        1,
+        2,
+        1,
+        2
+      ],
+      "treatments": {
+        "Buyer budget": 6,
+        "Negotiation procedure": "buyer take-it-or-leave-it",
+        "Outside option": "buyer alternative",
+        "Seller attachment": "strong",
+        "Seller reservation price": 10
+      }
+    },
+    {
+      "cell_hash": "62ab2ae2dc25a8537c0847d09b65f174ab8e35fbbe5b28ec282e69e42b5be01c",
+      "cell_id": "frontier-mug-bargaining-07",
+      "indices": [
+        0,
+        2,
+        0,
+        2,
+        1
+      ],
+      "treatments": {
+        "Buyer budget": 6,
+        "Negotiation procedure": "seller take-it-or-leave-it",
+        "Outside option": "seller offer",
+        "Seller attachment": "none",
+        "Seller reservation price": 16
+      }
+    },
+    {
+      "cell_hash": "035127e5940e8223a39a8566c2866b0b86e8bb926af8418c52691379934c5a59",
+      "cell_id": "frontier-mug-bargaining-08",
+      "indices": [
+        0,
+        2,
+        1,
+        2,
+        1
+      ],
+      "treatments": {
+        "Buyer budget": 6,
+        "Negotiation procedure": "seller take-it-or-leave-it",
+        "Outside option": "seller offer",
+        "Seller attachment": "moderate",
+        "Seller reservation price": 16
+      }
+    },
+    {
+      "cell_hash": "17da001b01ee5c04f290614f5f8e85bf68b556f2dbb250a800d5e4ec90f2b921",
+      "cell_id": "frontier-mug-bargaining-09",
+      "indices": [
+        0,
+        2,
+        2,
+        2,
+        1
+      ],
+      "treatments": {
+        "Buyer budget": 6,
+        "Negotiation procedure": "seller take-it-or-leave-it",
+        "Outside option": "seller offer",
+        "Seller attachment": "strong",
+        "Seller reservation price": 16
+      }
+    },
+    {
+      "cell_hash": "a8328da90669df0adb3fd165960676993e04829b15b177b9d20e39799fee4a3b",
+      "cell_id": "frontier-mug-bargaining-10",
+      "indices": [
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "treatments": {
+        "Buyer budget": 12,
+        "Negotiation procedure": "seller take-it-or-leave-it",
+        "Outside option": "buyer alternative",
+        "Seller attachment": "none",
+        "Seller reservation price": 4
+      }
+    },
+    {
+      "cell_hash": "3a29e158b73516eb40c644dc640b3811767d97bb0b8fefc7cfe82c746c2c78dd",
+      "cell_id": "frontier-mug-bargaining-11",
+      "indices": [
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "treatments": {
+        "Buyer budget": 12,
+        "Negotiation procedure": "seller take-it-or-leave-it",
+        "Outside option": "buyer alternative",
+        "Seller attachment": "moderate",
+        "Seller reservation price": 4
+      }
+    },
+    {
+      "cell_hash": "7711d61a998b997b5e78decc81bb112dc75804d4ec413d202109cec496315a3f",
+      "cell_id": "frontier-mug-bargaining-12",
+      "indices": [
+        1,
+        0,
+        2,
+        1,
+        1
+      ],
+      "treatments": {
+        "Buyer budget": 12,
+        "Negotiation procedure": "seller take-it-or-leave-it",
+        "Outside option": "buyer alternative",
+        "Seller attachment": "strong",
+        "Seller reservation price": 4
+      }
+    },
+    {
+      "cell_hash": "e5ea5a4c406161380a25b46d56de12770cdf601e4f6926f76b8547fce4ae6fb1",
+      "cell_id": "frontier-mug-bargaining-13",
+      "indices": [
+        1,
+        1,
+        0,
+        2,
+        0
+      ],
+      "treatments": {
+        "Buyer budget": 12,
+        "Negotiation procedure": "alternating offers",
+        "Outside option": "seller offer",
+        "Seller attachment": "none",
+        "Seller reservation price": 10
+      }
+    },
+    {
+      "cell_hash": "5c3c7cd61451b2640d7bf9638be4d4b8a0c6a7ee6a416e447d01ff17742a751c",
+      "cell_id": "frontier-mug-bargaining-14",
+      "indices": [
+        1,
+        1,
+        1,
+        2,
+        0
+      ],
+      "treatments": {
+        "Buyer budget": 12,
+        "Negotiation procedure": "alternating offers",
+        "Outside option": "seller offer",
+        "Seller attachment": "moderate",
+        "Seller reservation price": 10
+      }
+    },
+    {
+      "cell_hash": "6b421bb0a2dcd7939e6efce473650405ea55f2aa6d6bc301241681090f061ddb",
+      "cell_id": "frontier-mug-bargaining-15",
+      "indices": [
+        1,
+        1,
+        2,
+        2,
+        0
+      ],
+      "treatments": {
+        "Buyer budget": 12,
+        "Negotiation procedure": "alternating offers",
+        "Outside option": "seller offer",
+        "Seller attachment": "strong",
+        "Seller reservation price": 10
+      }
+    },
+    {
+      "cell_hash": "95598e7f21d42ad7beef80a319fa6fafab8831a4fc92470519f869d147340d6b",
+      "cell_id": "frontier-mug-bargaining-16",
+      "indices": [
+        1,
+        2,
+        0,
+        0,
+        2
+      ],
+      "treatments": {
+        "Buyer budget": 12,
+        "Negotiation procedure": "buyer take-it-or-leave-it",
+        "Outside option": "none",
+        "Seller attachment": "none",
+        "Seller reservation price": 16
+      }
+    },
+    {
+      "cell_hash": "556c28f39efa7b261413cceb523b94669f15702065bce743aa52802af96c817f",
+      "cell_id": "frontier-mug-bargaining-17",
+      "indices": [
+        1,
+        2,
+        1,
+        0,
+        2
+      ],
+      "treatments": {
+        "Buyer budget": 12,
+        "Negotiation procedure": "buyer take-it-or-leave-it",
+        "Outside option": "none",
+        "Seller attachment": "moderate",
+        "Seller reservation price": 16
+      }
+    },
+    {
+      "cell_hash": "399b98799e82d1f137392c4aaed5460b1d535f3d3e93da2b744fff58fe2e4acd",
+      "cell_id": "frontier-mug-bargaining-18",
+      "indices": [
+        1,
+        2,
+        2,
+        0,
+        2
+      ],
+      "treatments": {
+        "Buyer budget": 12,
+        "Negotiation procedure": "buyer take-it-or-leave-it",
+        "Outside option": "none",
+        "Seller attachment": "strong",
+        "Seller reservation price": 16
+      }
+    },
+    {
+      "cell_hash": "7be75eb91b891e22b4cd59615d4dbf650a81d48b239d78272f11cb89ceff6597",
+      "cell_id": "frontier-mug-bargaining-19",
+      "indices": [
+        2,
+        0,
+        0,
+        2,
+        2
+      ],
+      "treatments": {
+        "Buyer budget": 18,
+        "Negotiation procedure": "buyer take-it-or-leave-it",
+        "Outside option": "seller offer",
+        "Seller attachment": "none",
+        "Seller reservation price": 4
+      }
+    },
+    {
+      "cell_hash": "49820977970391f6604595ae6c73ca1469e992650556e70fa5d18efe87bfed6b",
+      "cell_id": "frontier-mug-bargaining-20",
+      "indices": [
+        2,
+        0,
+        1,
+        2,
+        2
+      ],
+      "treatments": {
+        "Buyer budget": 18,
+        "Negotiation procedure": "buyer take-it-or-leave-it",
+        "Outside option": "seller offer",
+        "Seller attachment": "moderate",
+        "Seller reservation price": 4
+      }
+    },
+    {
+      "cell_hash": "3ea5a2e9e34d55c2f246c4efb3f543faeef2549b36664fb30367f1f31d77481c",
+      "cell_id": "frontier-mug-bargaining-21",
+      "indices": [
+        2,
+        0,
+        2,
+        2,
+        2
+      ],
+      "treatments": {
+        "Buyer budget": 18,
+        "Negotiation procedure": "buyer take-it-or-leave-it",
+        "Outside option": "seller offer",
+        "Seller attachment": "strong",
+        "Seller reservation price": 4
+      }
+    },
+    {
+      "cell_hash": "999b6384c146346bd4cff49904d436bb64fe76005aa71d238345322e7939a86b",
+      "cell_id": "frontier-mug-bargaining-22",
+      "indices": [
+        2,
+        1,
+        0,
+        0,
+        1
+      ],
+      "treatments": {
+        "Buyer budget": 18,
+        "Negotiation procedure": "seller take-it-or-leave-it",
+        "Outside option": "none",
+        "Seller attachment": "none",
+        "Seller reservation price": 10
+      }
+    },
+    {
+      "cell_hash": "b80952bb7191e142ca471e66052357c7871bf7144c66bb98f94f7621ed21029b",
+      "cell_id": "frontier-mug-bargaining-23",
+      "indices": [
+        2,
+        1,
+        1,
+        0,
+        1
+      ],
+      "treatments": {
+        "Buyer budget": 18,
+        "Negotiation procedure": "seller take-it-or-leave-it",
+        "Outside option": "none",
+        "Seller attachment": "moderate",
+        "Seller reservation price": 10
+      }
+    },
+    {
+      "cell_hash": "833165d1e5ddb2cb88ae8a20f97b32bd1a6a6bd6e2cd8077dd6af737b7dc13d8",
+      "cell_id": "frontier-mug-bargaining-24",
+      "indices": [
+        2,
+        1,
+        2,
+        0,
+        1
+      ],
+      "treatments": {
+        "Buyer budget": 18,
+        "Negotiation procedure": "seller take-it-or-leave-it",
+        "Outside option": "none",
+        "Seller attachment": "strong",
+        "Seller reservation price": 10
+      }
+    },
+    {
+      "cell_hash": "db2382cc77318515e953a25f0d1d3c7329c363be08101f4ac3a76439be2de396",
+      "cell_id": "frontier-mug-bargaining-25",
+      "indices": [
+        2,
+        2,
+        0,
+        1,
+        0
+      ],
+      "treatments": {
+        "Buyer budget": 18,
+        "Negotiation procedure": "alternating offers",
+        "Outside option": "buyer alternative",
+        "Seller attachment": "none",
+        "Seller reservation price": 16
+      }
+    },
+    {
+      "cell_hash": "73dde09ec3079e214fc8bf5b3d48d15645bd806345f19b092e05e45382bcd05c",
+      "cell_id": "frontier-mug-bargaining-26",
+      "indices": [
+        2,
+        2,
+        1,
+        1,
+        0
+      ],
+      "treatments": {
+        "Buyer budget": 18,
+        "Negotiation procedure": "alternating offers",
+        "Outside option": "buyer alternative",
+        "Seller attachment": "moderate",
+        "Seller reservation price": 16
+      }
+    },
+    {
+      "cell_hash": "33938e94e9d436b501fd03b54a06fe85890032f5e268b223853ccb5808ad2c85",
+      "cell_id": "frontier-mug-bargaining-27",
+      "indices": [
+        2,
+        2,
+        2,
+        1,
+        0
+      ],
+      "treatments": {
+        "Buyer budget": 18,
+        "Negotiation procedure": "alternating offers",
+        "Outside option": "buyer alternative",
+        "Seller attachment": "strong",
+        "Seller reservation price": 16
+      }
+    }
+  ]
+}

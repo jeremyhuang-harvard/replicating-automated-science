@@ -1,0 +1,80 @@
+{
+  "execution_additions": {
+    "respondent": "Agent A",
+    "treatment_mappings": [
+      {
+        "agent": "Agent A",
+        "cause": "Bidder Risk Tolerance",
+        "scope": "private",
+        "values": [
+          {
+            "instruction": "Bid conservatively, avoiding high-risk scenarios.",
+            "value": "Low"
+          },
+          {
+            "instruction": "Balance risk and reward in bidding decisions.",
+            "value": "Medium"
+          },
+          {
+            "instruction": "Take calculated risks to maximize potential returns.",
+            "value": "High"
+          }
+        ]
+      },
+      {
+        "agent": null,
+        "cause": "Starting Price",
+        "scope": "public",
+        "values": [
+          {
+            "instruction": "Begin bidding at the starting price of fifty dollars.",
+            "value": "50"
+          },
+          {
+            "instruction": "Begin bidding at the starting price of one hundred dollars.",
+            "value": "100"
+          },
+          {
+            "instruction": "Begin bidding at the starting price of one hundred fifty dollars.",
+            "value": "150"
+          }
+        ]
+      },
+      {
+        "agent": "Agent B",
+        "cause": "Bidding Strategy",
+        "scope": "private",
+        "values": [
+          {
+            "instruction": "Adhere to a cautious approach in bidding.",
+            "value": "Conservative"
+          },
+          {
+            "instruction": "Push forward with bold bids to secure the item.",
+            "value": "Aggressive"
+          },
+          {
+            "instruction": "Make decisions based on calculated and logical reasoning.",
+            "value": "Rational"
+          }
+        ]
+      }
+    ],
+    "turn_order": [
+      "Agent A",
+      "Agent B",
+      "Agent C"
+    ]
+  },
+  "failed_attempts": [
+    {
+      "attempt": 1,
+      "call_hash": "b2c62a350dd63ac6123ae57e241ca4e2fa90c4b9ecb0ed92fb544033a3a2fe2c",
+      "error": "Expecting property name enclosed in double quotes: line 20 column 11 (char 516)",
+      "status": "invalid"
+    }
+  ],
+  "finalized_hash": "7482d674e5e1bfd9bd28445ffd673813f79259d9d3beb1e19f7aabbe1d60e0f0",
+  "initial_hash": "89a04b0b080a157d04aa0fa1e8d046e40f22749586c14b95bbcaf28ce2a57e7e",
+  "substantive_changes": []
+}

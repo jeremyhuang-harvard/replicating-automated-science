@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Validating Expected Parrot — Lasagna Coke</title>
+<style>
+  :root { --navy:#0b1324; --ink:#172033; --muted:#647087; --line:#d9e0ea; --soft:#f4f7fb; --red:#d92332; --orange:#f29b38; --blue:#4b7bec; --green:#2fa36b; }
+  *{box-sizing:border-box}
+  html,body{width:1920px;height:1080px;margin:0;background:#eef2f7;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:var(--ink)}
+  .slide{width:1920px;height:1080px;padding:44px 54px 34px;display:flex;flex-direction:column;gap:22px;background:linear-gradient(135deg,#f8fafc 0%,#eef2f7 100%)}
+  header{display:flex;align-items:flex-end;justify-content:space-between}
+  h1{margin:0;font-size:52px;letter-spacing:-1.8px;line-height:1.02;color:var(--navy)}
+  .accent{color:var(--red)}
+  .subtitle{margin-top:9px;font-size:22px;color:var(--muted);font-weight:550}
+  .repo{font-size:18px;color:var(--muted);padding-bottom:4px;text-align:right}
+  .metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .metric{background:var(--navy);color:white;border-radius:12px;padding:13px 20px;display:flex;align-items:center;justify-content:center;gap:12px;box-shadow:0 5px 16px rgba(11,19,36,.10)}
+  .metric b{font-size:31px}.metric span{font-size:17px;color:#d9e2f1;font-weight:650;text-transform:uppercase;letter-spacing:.7px}
+  .body{display:grid;grid-template-columns:0.94fr 1.5fr;gap:22px;flex:1;min-height:0}
+  .card{background:white;border:1px solid var(--line);border-radius:14px;box-shadow:0 6px 20px rgba(26,44,72,.06);overflow:hidden}
+  .card-title{font-size:22px;font-weight:800;color:var(--navy);padding:18px 22px 13px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
+  .card-title small{font-size:14px;color:var(--muted);font-weight:650}
+  table{width:100%;border-collapse:collapse;table-layout:fixed}
+  th{background:var(--soft);font-size:15px;line-height:1.2;text-transform:uppercase;letter-spacing:.5px;color:#526078;padding:12px 12px;border-bottom:1px solid var(--line);text-align:center}
+  td{font-size:19px;padding:13px 12px;border-bottom:1px solid #e7ebf1;text-align:center;font-variant-numeric:tabular-nums}
+  tr:last-child td{border-bottom:none}
+  td:first-child,th:first-child{text-align:left}
+  .method td{font-size:17px;line-height:1.26;padding:16px 15px;vertical-align:top}
+  .method td:first-child{width:25%;font-weight:800;color:var(--navy)}
+  .pill{display:inline-block;border-radius:999px;padding:4px 9px;font-size:13px;font-weight:800;margin-bottom:6px}
+  .ep{background:#ffe7e9;color:#a71826}.local{background:#e7efff;color:#2957b6}.rep{background:#e4f5eb;color:#197849}
+  .muted{color:var(--muted);font-size:15px}
+  .right{display:grid;grid-template-rows:1fr 1fr .82fr;gap:16px;min-height:0}
+  .results th:first-child{width:31%}.results th:last-child{width:13%}
+  .results td{padding:10px 11px;font-size:18px}
+  .results .baseline{background:#f7f9fc}
+  .results .replicate{background:#f0faf4}
+  .results .public{background:#fff2f3;font-weight:800}
+  .seghead{font-size:13px}.adv{color:#bd6b0d}.main{color:#315fc4}.health{color:#1f8758}
+  .range{font-weight:850;color:var(--navy)}
+  .aggregate{display:grid;grid-template-columns:1.05fr .95fr;gap:16px}
+  .aggregate table th,.aggregate table td{padding:9px 11px;font-size:16px}
+  .takeaway{border-left:7px solid var(--red);background:#fff7f7;border-radius:9px;padding:14px 16px;display:flex;flex-direction:column;justify-content:center}
+  .takeaway b{font-size:20px;color:var(--navy);margin-bottom:6px}
+  .takeaway p{font-size:17px;line-height:1.35;margin:0;color:#3d485b}
+  footer{display:flex;justify-content:space-between;align-items:center;color:#667286;font-size:14px;padding:0 4px}
+  footer b{color:#26334a}
+</style>
+</head>
+<body>
+<div class="slide">
+  <header>
+    <div>
+      <h1>Validating <span class="accent">Expected Parrot</span>: Lasagna Coke</h1>
+      <div class="subtitle">We rebuilt the public study locally, then isolated persona and elicitation effects with Qwen.</div>
+    </div>
+    <div class="repo">validate-expected-parrot<br><b>Private reproducible baseline</b></div>
+  </header>
+
+  <div class="metrics">
+    <div class="metric"><b>12</b><span>personas</span></div>
+    <div class="metric"><b>3</b><span>segments</span></div>
+    <div class="metric"><b>7</b><span>questions</span></div>
+    <div class="metric"><b>84</b><span>EP model calls</span></div>
+  </div>
+
+  <div class="body">
+    <section class="card">
+      <div class="card-title">How the personas differed <small>baseline vs. Expected Parrot</small></div>
+      <table class="method">
+        <tr><th>Dimension</th><th><span class="pill local">OUR BASELINE</span></th><th><span class="pill ep">EP PERSONAS</span></th></tr>
+        <tr>
+          <td>Profile</td>
+          <td>Short attitude-based descriptions</td>
+          <td>Named, age-specific biographies with jobs and lifestyles</td>
+        </tr>
+        <tr>
+          <td><span class="adv">Adventurous</span></td>
+          <td>General novelty seeking</td>
+          <td>Chef • creator • trend follower • collector</td>
+        </tr>
+        <tr>
+          <td><span class="main">Mainstream</span></td>
+          <td>General preference for familiar soda</td>
+          <td>Habit • classic taste • bounded novelty • brand loyalty</td>
+        </tr>
+        <tr>
+          <td><span class="health">Health-conscious</span></td>
+          <td>General concern about sugar and processing</td>
+          <td>Labels • macros • food science • parental responsibility</td>
+        </tr>
+        <tr>
+          <td>Behavioral effect</td>
+          <td>More moderate, averaged responses</td>
+          <td>Stronger identity cues and clearer reasons to polarize</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="right">
+      <div class="card">
+        <div class="card-title">Overall appeal <small>segment mean, 1–5</small></div>
+        <table class="results">
+          <tr><th>Condition</th><th class="seghead adv">Adventurous</th><th class="seghead main">Mainstream</th><th class="seghead health">Health-conscious</th><th>Range</th></tr>
+          <tr class="baseline"><td>Our original baseline</td><td>4.25</td><td>2.50</td><td>2.00</td><td class="range">2.25</td></tr>
+          <tr class="replicate"><td>Our run + EP personas</td><td>4.00</td><td>1.75</td><td>1.75</td><td class="range">2.25</td></tr>
+          <tr class="public"><td>Expected Parrot</td><td>4.75</td><td>1.00</td><td>1.00</td><td class="range">3.75</td></tr>
+        </table>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Purchase intent <small>segment mean, 1–5</small></div>
+        <table class="results">
+          <tr><th>Condition</th><th class="seghead adv">Adventurous</th><th class="seghead main">Mainstream</th><th class="seghead health">Health-conscious</th><th>Range</th></tr>
+          <tr class="baseline"><td>Our original baseline</td><td>3.25</td><td>2.00</td><td>1.75</td><td class="range">1.50</td></tr>
+          <tr class="replicate"><td>Our run + EP personas</td><td>4.00</td><td>1.25</td><td>1.00</td><td class="range">3.00</td></tr>
+          <tr class="public"><td>Expected Parrot</td><td>4.50</td><td>3.00</td><td>1.50</td><td class="range">3.00</td></tr>
+        </table>
+      </div>
+
+      <div class="aggregate">
+        <div class="card">
+          <div class="card-title">Overall means <small>EP-like separate calls</small></div>
+          <table>
+            <tr><th>Measure</th><th>Our Qwen</th><th>EP</th></tr>
+            <tr><td>Appeal</td><td>2.25</td><td>2.25</td></tr>
+            <tr><td>Clarity</td><td>3.83</td><td>3.83</td></tr>
+            <tr><td>Uniqueness</td><td>3.08</td><td>3.00</td></tr>
+            <tr><td>Purchase intent</td><td>3.17</td><td>3.00</td></tr>
+          </table>
+        </div>
+        <div class="takeaway">
+          <b>Same average ≠ same mechanism</b>
+          <p>EP’s rich personas reproduced the <b>purchase-intent spread</b>. But subgroup errors canceled: Qwen was less enthusiastic among adventurous consumers and more willing among mainstream consumers.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <span><b>Key result:</b> Persona design explains much of the polarization; model + image + elicitation still matter.</span>
+    <span>Synthetic hypotheses—not population estimates.</span>
+  </footer>
+</div>
+</body>
+</html>

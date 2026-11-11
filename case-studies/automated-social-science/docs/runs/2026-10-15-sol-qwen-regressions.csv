@@ -1,0 +1,21 @@
+study,outcome,factor,beta,hc1_se,r_squared,n
+mug bargaining,Agreement (0/1),Buyer budget,0.222222,0.082817,0.700549,27
+mug bargaining,Agreement (0/1),Seller reservation price,-0.222222,0.068221,0.700549,27
+mug bargaining,Agreement (0/1),Seller attachment,0.055556,0.066586,0.700549,27
+mug bargaining,Agreement (0/1),Outside option,-0.222222,0.058978,0.700549,27
+mug bargaining,Agreement (0/1),Negotiation procedure,0.333333,0.082817,0.700549,27
+bail setting,Bail amount ($),Post-offense cooperation,-2777.777778,2510.632885,0.566749,27
+bail setting,Bail amount ($),Prior convictions,7777.777778,1842.070730,0.566749,27
+bail setting,Bail amount ($),Flight risk,6805.555556,2556.946223,0.566749,27
+bail setting,Bail amount ($),Community ties,-5833.333333,2481.375363,0.566749,27
+bail setting,Bail amount ($),Evidence strength,6111.111111,2621.251278,0.566749,27
+lawyer interview,Hiring rating (0-100),Bar status,8.888889,4.974460,0.396160,27
+lawyer interview,Hiring rating (0-100),Legal reasoning,7.777778,4.642838,0.396160,27
+lawyer interview,Hiring rating (0-100),Communication clarity,11.944444,4.559589,0.396160,27
+lawyer interview,Hiring rating (0-100),Relevant experience,4.444444,4.890282,0.396160,27
+lawyer interview,Hiring rating (0-100),Candidate height,0.000000,4.782016,0.396160,27
+art auction,Final price ($),Bidder A valuation,21.666667,22.335497,0.420276,27
+art auction,Final price ($),Bidder B valuation,17.222222,19.314301,0.420276,27
+art auction,Final price ($),Bidder C valuation,18.611111,20.277430,0.420276,27
+art auction,Final price ($),Bid increment,57.500000,22.130612,0.420276,27
+art auction,Final price ($),Information regime,-42.500000,16.265133,0.420276,27

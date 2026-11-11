@@ -1,0 +1,220 @@
+{
+  "counts": {
+    "panel": 3,
+    "ok": 3,
+    "failed": 0,
+    "by_segment": {
+      "adventurous_foodie": 1,
+      "mainstream_drinker": 1,
+      "skeptical_health_conscious": 1
+    }
+  },
+  "means": {
+    "overall": {
+      "appeal": 3.33,
+      "clarity": 3.33,
+      "uniqueness": 2.67,
+      "purchase_intent": 3
+    },
+    "by_segment": {
+      "adventurous_foodie": {
+        "appeal": 4,
+        "clarity": 4,
+        "uniqueness": 3,
+        "purchase_intent": 3
+      },
+      "mainstream_drinker": {
+        "appeal": 4,
+        "clarity": 3,
+        "uniqueness": 2,
+        "purchase_intent": 3
+      },
+      "skeptical_health_conscious": {
+        "appeal": 2,
+        "clarity": 3,
+        "uniqueness": 3,
+        "purchase_intent": 3
+      }
+    }
+  },
+  "distributions": {
+    "overall": {
+      "appeal": {
+        "1": 0,
+        "2": 1,
+        "3": 0,
+        "4": 2,
+        "5": 0
+      },
+      "clarity": {
+        "1": 0,
+        "2": 0,
+        "3": 2,
+        "4": 1,
+        "5": 0
+      },
+      "uniqueness": {
+        "1": 0,
+        "2": 1,
+        "3": 2,
+        "4": 0,
+        "5": 0
+      },
+      "purchase_intent": {
+        "1": 0,
+        "2": 0,
+        "3": 3,
+        "4": 0,
+        "5": 0
+      }
+    },
+    "by_segment": {
+      "adventurous_foodie": {
+        "appeal": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 1,
+          "5": 0
+        },
+        "clarity": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 1,
+          "5": 0
+        },
+        "uniqueness": {
+          "1": 0,
+          "2": 0,
+          "3": 1,
+          "4": 0,
+          "5": 0
+        },
+        "purchase_intent": {
+          "1": 0,
+          "2": 0,
+          "3": 1,
+          "4": 0,
+          "5": 0
+        }
+      },
+      "mainstream_drinker": {
+        "appeal": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 1,
+          "5": 0
+        },
+        "clarity": {
+          "1": 0,
+          "2": 0,
+          "3": 1,
+          "4": 0,
+          "5": 0
+        },
+        "uniqueness": {
+          "1": 0,
+          "2": 1,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "purchase_intent": {
+          "1": 0,
+          "2": 0,
+          "3": 1,
+          "4": 0,
+          "5": 0
+        }
+      },
+      "skeptical_health_conscious": {
+        "appeal": {
+          "1": 0,
+          "2": 1,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "clarity": {
+          "1": 0,
+          "2": 0,
+          "3": 1,
+          "4": 0,
+          "5": 0
+        },
+        "uniqueness": {
+          "1": 0,
+          "2": 0,
+          "3": 1,
+          "4": 0,
+          "5": 0
+        },
+        "purchase_intent": {
+          "1": 0,
+          "2": 0,
+          "3": 1,
+          "4": 0,
+          "5": 0
+        }
+      }
+    }
+  },
+  "quotes": {
+    "adventurous_foodie": {
+      "first_reaction": {
+        "persona_id": "af-01",
+        "text": "Love it: Pepper Maple Soda sounds like a fun, bold tasting experience. It's different, for better or worse."
+      },
+      "concerns": {
+        "persona_id": "af-01",
+        "text": "About Pepper Maple Soda: The risk is poor execution: the flavors need to balance, not just shock."
+      },
+      "improvement": {
+        "persona_id": "af-01",
+        "text": "For Pepper Maple Soda: Chef-style tasting notes or a collaboration that shows craft."
+      }
+    },
+    "mainstream_drinker": {
+      "first_reaction": {
+        "persona_id": "md-01",
+        "text": "I'd happily pick up Pepper Maple Soda next to my regular drinks. It's different, for better or worse."
+      },
+      "concerns": {
+        "persona_id": "md-01",
+        "text": "About Pepper Maple Soda: It might not taste like a drink I'd actually want, and the price could be too high for something unproven."
+      },
+      "improvement": {
+        "persona_id": "md-01",
+        "text": "For Pepper Maple Soda: A single-can trial size at the register."
+      }
+    },
+    "skeptical_health_conscious": {
+      "first_reaction": {
+        "persona_id": "sh-01",
+        "text": "Pepper Maple Soda reads like a marketing gimmick to me. It's different, for better or worse."
+      },
+      "concerns": {
+        "persona_id": "sh-01",
+        "text": "About Pepper Maple Soda: Flavorings and additives worry me, and the marketing tells me little about real benefits."
+      },
+      "improvement": {
+        "persona_id": "sh-01",
+        "text": "For Pepper Maple Soda: Third-party nutrition information on the label."
+      }
+    }
+  },
+  "warnings": [
+    "Segment adventurous_foodie has a small sample (n=1); treat its means as anecdotal.",
+    "Segment mainstream_drinker has a small sample (n=1); treat its means as anecdotal.",
+    "Segment skeptical_health_conscious has a small sample (n=1); treat its means as anecdotal."
+  ],
+  "limitations": [
+    "These are simulated hypotheses, not human evidence. No real consumer was surveyed.",
+    "Synthetic personas reflect the prompt, the model and its training data; they can be confidently wrong, overly agreeable, and less varied than real people.",
+    "Rating levels are not calibrated to real purchase behavior; compare concepts against each other, never read a mean as a forecast.",
+    "Segments are defined by explicit product attitudes written by the study author, not measured populations.",
+    "Validate any promising signal with a human panel before making decisions."
+  ]
+}

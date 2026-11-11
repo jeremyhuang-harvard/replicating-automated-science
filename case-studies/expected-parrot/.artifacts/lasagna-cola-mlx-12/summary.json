@@ -1,0 +1,220 @@
+{
+  "counts": {
+    "panel": 12,
+    "ok": 12,
+    "failed": 0,
+    "by_segment": {
+      "adventurous_foodie": 4,
+      "mainstream_drinker": 4,
+      "skeptical_health_conscious": 4
+    }
+  },
+  "means": {
+    "overall": {
+      "appeal": 3,
+      "clarity": 3,
+      "uniqueness": 3,
+      "purchase_intent": 3
+    },
+    "by_segment": {
+      "adventurous_foodie": {
+        "appeal": 3,
+        "clarity": 3,
+        "uniqueness": 3,
+        "purchase_intent": 3
+      },
+      "mainstream_drinker": {
+        "appeal": 3,
+        "clarity": 3,
+        "uniqueness": 3,
+        "purchase_intent": 3
+      },
+      "skeptical_health_conscious": {
+        "appeal": 3,
+        "clarity": 3,
+        "uniqueness": 3,
+        "purchase_intent": 3
+      }
+    }
+  },
+  "distributions": {
+    "overall": {
+      "appeal": {
+        "1": 0,
+        "2": 0,
+        "3": 12,
+        "4": 0,
+        "5": 0
+      },
+      "clarity": {
+        "1": 0,
+        "2": 0,
+        "3": 12,
+        "4": 0,
+        "5": 0
+      },
+      "uniqueness": {
+        "1": 0,
+        "2": 0,
+        "3": 12,
+        "4": 0,
+        "5": 0
+      },
+      "purchase_intent": {
+        "1": 0,
+        "2": 0,
+        "3": 12,
+        "4": 0,
+        "5": 0
+      }
+    },
+    "by_segment": {
+      "adventurous_foodie": {
+        "appeal": {
+          "1": 0,
+          "2": 0,
+          "3": 4,
+          "4": 0,
+          "5": 0
+        },
+        "clarity": {
+          "1": 0,
+          "2": 0,
+          "3": 4,
+          "4": 0,
+          "5": 0
+        },
+        "uniqueness": {
+          "1": 0,
+          "2": 0,
+          "3": 4,
+          "4": 0,
+          "5": 0
+        },
+        "purchase_intent": {
+          "1": 0,
+          "2": 0,
+          "3": 4,
+          "4": 0,
+          "5": 0
+        }
+      },
+      "mainstream_drinker": {
+        "appeal": {
+          "1": 0,
+          "2": 0,
+          "3": 4,
+          "4": 0,
+          "5": 0
+        },
+        "clarity": {
+          "1": 0,
+          "2": 0,
+          "3": 4,
+          "4": 0,
+          "5": 0
+        },
+        "uniqueness": {
+          "1": 0,
+          "2": 0,
+          "3": 4,
+          "4": 0,
+          "5": 0
+        },
+        "purchase_intent": {
+          "1": 0,
+          "2": 0,
+          "3": 4,
+          "4": 0,
+          "5": 0
+        }
+      },
+      "skeptical_health_conscious": {
+        "appeal": {
+          "1": 0,
+          "2": 0,
+          "3": 4,
+          "4": 0,
+          "5": 0
+        },
+        "clarity": {
+          "1": 0,
+          "2": 0,
+          "3": 4,
+          "4": 0,
+          "5": 0
+        },
+        "uniqueness": {
+          "1": 0,
+          "2": 0,
+          "3": 4,
+          "4": 0,
+          "5": 0
+        },
+        "purchase_intent": {
+          "1": 0,
+          "2": 0,
+          "3": 4,
+          "4": 0,
+          "5": 0
+        }
+      }
+    }
+  },
+  "quotes": {
+    "adventurous_foodie": {
+      "first_reaction": {
+        "persona_id": "af-01",
+        "text": "It’s bizarre and intriguing, like a culinary experiment that’s both alarming and tempting."
+      },
+      "concerns": {
+        "persona_id": "af-01",
+        "text": "The idea of a cola with cheese and tomato sauce feels unorthodox and might be off-putting to some."
+      },
+      "improvement": {
+        "persona_id": "af-01",
+        "text": "Adding a sample or a tasting note could help ease the hesitation and make the concept more approachable."
+      }
+    },
+    "mainstream_drinker": {
+      "first_reaction": {
+        "persona_id": "md-01",
+        "text": "It sounds unusual, but I'm not sure if I'd want to try a cola that tastes like lasagna."
+      },
+      "concerns": {
+        "persona_id": "md-01",
+        "text": "The combination of sweet cola with savory and cheese flavors might not be appealing to me."
+      },
+      "improvement": {
+        "persona_id": "md-01",
+        "text": "Maybe a lighter version with less cheese and tomato flavor to make it more palatable."
+      }
+    },
+    "skeptical_health_conscious": {
+      "first_reaction": {
+        "persona_id": "sh-01",
+        "text": "It sounds bizarre but intriguing. A cola with lasagna flavors? That's unconventional."
+      },
+      "concerns": {
+        "persona_id": "sh-01",
+        "text": "The combination of sweet and savory in a cola is unexpected and might not be palatable. Also, I'm wary of marketing a strange concept as a 'beverage'."
+      },
+      "improvement": {
+        "persona_id": "sh-01",
+        "text": "If it were clearly labeled as a savory-sweet experiment with no misleading claims, it might be more appealing."
+      }
+    }
+  },
+  "warnings": [
+    "Segment adventurous_foodie has a small sample (n=4); treat its means as anecdotal.",
+    "Segment mainstream_drinker has a small sample (n=4); treat its means as anecdotal.",
+    "Segment skeptical_health_conscious has a small sample (n=4); treat its means as anecdotal."
+  ],
+  "limitations": [
+    "These are simulated hypotheses, not human evidence. No real consumer was surveyed.",
+    "Synthetic personas reflect the prompt, the model and its training data; they can be confidently wrong, overly agreeable, and less varied than real people.",
+    "Rating levels are not calibrated to real purchase behavior; compare concepts against each other, never read a mean as a forecast.",
+    "Segments are defined by explicit product attitudes written by the study author, not measured populations.",
+    "Validate any promising signal with a human panel before making decisions."
+  ]
+}

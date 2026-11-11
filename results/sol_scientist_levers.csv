@@ -1,0 +1,21 @@
+study,outcome,lever,scientist_prediction,mean_low,mean_mid,mean_high,high_minus_low,ols_beta,hc1_se,r_squared,abs_t,cells_to_reverse
+mug bargaining,deal,Buyer budget,higher budgets weakly increase agreement and may increase price,0.2222,0.6667,0.6667,0.4444,0.222222,0.082817,0.700549,2.68,more than 3
+mug bargaining,deal,Seller reservation price,higher reservation prices reduce agreement and increase price conditional on agreement,0.7778,0.4444,0.3333,-0.4444,-0.222222,0.068221,0.700549,3.26,more than 3
+mug bargaining,deal,Seller attachment,greater attachment reduces agreement and raises the price required to sell,0.4444,0.5556,0.5556,0.1111,0.055556,0.066586,0.700549,0.83,2
+mug bargaining,deal,Outside option,the advantaged side's outside option shifts agreement and price toward that side,0.7778,0.4444,0.3333,-0.4444,-0.222222,0.058978,0.700549,3.77,more than 3
+mug bargaining,deal,Negotiation procedure,proposal rights affect price and possibly agreement,0.1111,0.6667,0.7778,0.6667,0.333333,0.082817,0.700549,4.02,more than 3
+bail setting,bail_amount,Post-offense cooperation,greater voluntary cooperation reduces bail,21666.6667,28888.8889,16111.1111,-5555.5556,-2777.777778,2510.632885,0.566749,1.11,3
+bail setting,bail_amount,Prior convictions,more prior convictions increase bail,13888.8889,23333.3333,29444.4444,15555.5556,7777.777778,1842.07073,0.566749,4.22,more than 3
+bail setting,bail_amount,Flight risk,greater flight risk increases bail,17500.0,18055.5556,31111.1111,13611.1111,6805.555556,2556.946223,0.566749,2.66,more than 3
+bail setting,bail_amount,Community ties,stronger community ties reduce bail,30000.0,18333.3333,18333.3333,-11666.6667,-5833.333333,2481.375363,0.566749,2.35,more than 3
+bail setting,bail_amount,Evidence strength,stronger evidence increases bail,16111.1111,22222.2222,28333.3333,12222.2222,6111.111111,2621.251278,0.566749,2.33,more than 3
+lawyer interview,rating,Bar status,stronger licensing status increases hiring,60.0,79.4444,77.7778,17.7778,8.888889,4.97446,0.39616,1.79,more than 3
+lawyer interview,rating,Legal reasoning performance,better legal reasoning increases hiring,59.4444,82.7778,75.0,15.5556,7.777778,4.642838,0.39616,1.68,more than 3
+lawyer interview,rating,Communication clarity,clearer communication increases hiring,57.2222,78.8889,81.1111,23.8889,11.944444,4.559589,0.39616,2.62,more than 3
+lawyer interview,rating,Relevant experience,more relevant experience increases hiring,63.3333,81.6667,72.2222,8.8889,4.444444,4.890282,0.39616,0.91,3
+lawyer interview,rating,Candidate height,height should have approximately no effect after substantive qualifications are held fixed,74.4444,68.3333,74.4444,0.0,0.0,4.782016,0.39616,0.0,zero effect
+art auction,final_price,Bidder A valuation,higher valuation weakly increases price and the chance A wins,145.0,182.2222,188.3333,43.3333,21.666667,22.335497,0.420276,0.97,3
+art auction,final_price,Bidder B valuation,higher valuation weakly increases price and the chance B wins,142.2222,196.6667,176.6667,34.4444,17.222222,19.314301,0.420276,0.89,2
+art auction,final_price,Bidder C valuation,higher valuation weakly increases price and the chance C wins,161.1111,156.1111,198.3333,37.2222,18.611111,20.27743,0.420276,0.92,3
+art auction,final_price,Bid increment,larger increments coarsen the final price and may increase deviation from the second-highest valuation,126.6667,147.2222,241.6667,115.0,57.5,22.130612,0.420276,2.6,more than 3
+art auction,final_price,Information regime,more public value information changes strategic bidding and may move price toward the second-highest valuation,211.6667,177.2222,126.6667,-85.0,-42.5,16.265133,0.420276,2.61,more than 3

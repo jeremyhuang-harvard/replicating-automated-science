@@ -1,0 +1,9 @@
+case_study,run,what,units,succeeded,failed,model_calls,minutes,note
+automated-social-science,canonical-designs-qwen3-8b-2026-10-14,Qwen proposes one design per scenario,4 scenarios,4,0,4,,4 of 4 designs valid on the first attempt
+automated-social-science,generated-experiments-qwen3-8b-2026-10-14,Qwen-designed factorials run with Qwen subjects,108 cells,106,2,585,18.6,10 finalization calls rejected before 4 were accepted
+automated-social-science,frontier-pilot-2026-10-14-schema-v1-failed,"frontier pilot, measurement parser v1",4 cells,0,4,42,2.3,every interaction finished; all 4 measurements rejected by the v1 parser
+automated-social-science,frontier-pilot-2026-10-14,frontier pilot after parser fix,4 cells,4,0,34,1.5,
+automated-social-science,frontier-planned-qwen-subjects-2026-10-14,GPT-Sol-designed studies run with Qwen subjects,108 cells,107,1,920,40.2,1 interview measurement failed 3 times; recovered by a separate logged call
+expected-parrot,lasagna-cola-mlx-12,first Qwen persona panel,12 personas,12,0,12,,48 of 48 ratings at the midpoint 3
+expected-parrot,lasagna-cola-mlx-12-unanchored,same panel after the midpoint fix,12 personas,12,0,12,,16 of 48 ratings at the midpoint 3
+expected-parrot,expected-parrot-qwen-replication-v2,EP personas under three elicitation conditions,3 x 12 personas,36,0,180,,"v1 directory holds the first two conditions, identical answers"

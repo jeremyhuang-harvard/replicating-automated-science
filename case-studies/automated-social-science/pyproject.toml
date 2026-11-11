@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "automated-social-science-replication"
+version = "0.1.0"
+description = "Durable, provider-neutral replication scaffold for automated social science experiments"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+license = { text = "MIT" }
+authors = [{ name = "Jeremy Huang" }]
+dependencies = []
+
+[project.scripts]
+assr-replication = "assr_replication.cli:main"
+assr-frontier = "assr_replication.frontier_cli:main"
+
+[dependency-groups]
+dev = [
+  "pytest>=8.3,<9",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/assr_replication"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]

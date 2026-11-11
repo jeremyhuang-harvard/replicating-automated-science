@@ -1,0 +1,260 @@
+{
+  "caveat": "Descriptive one-draw local-model evidence: one model draw per OA cell, not repeated sampling and not human behavior.",
+  "counts": {
+    "complete": 1,
+    "failed": 0,
+    "rows": 1
+  },
+  "main_effect_marginals": {
+    "Alleged financial harm": [
+      {
+        "level": 25000,
+        "level_index": 0,
+        "n": 1,
+        "outcomes": {
+          "bail_amount": {
+            "max": 10000.0,
+            "mean": 10000.0,
+            "min": 10000.0,
+            "n": 1,
+            "non_null": 1,
+            "type": "number"
+          }
+        }
+      },
+      {
+        "level": 50000,
+        "level_index": 1,
+        "n": 0,
+        "outcomes": {
+          "bail_amount": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "number"
+          }
+        }
+      },
+      {
+        "level": 200000,
+        "level_index": 2,
+        "n": 0,
+        "outcomes": {
+          "bail_amount": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "number"
+          }
+        }
+      }
+    ],
+    "Community ties": [
+      {
+        "level": "weak",
+        "level_index": 0,
+        "n": 1,
+        "outcomes": {
+          "bail_amount": {
+            "max": 10000.0,
+            "mean": 10000.0,
+            "min": 10000.0,
+            "n": 1,
+            "non_null": 1,
+            "type": "number"
+          }
+        }
+      },
+      {
+        "level": "moderate",
+        "level_index": 1,
+        "n": 0,
+        "outcomes": {
+          "bail_amount": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "number"
+          }
+        }
+      },
+      {
+        "level": "strong",
+        "level_index": 2,
+        "n": 0,
+        "outcomes": {
+          "bail_amount": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "number"
+          }
+        }
+      }
+    ],
+    "Evidence strength": [
+      {
+        "level": "weak",
+        "level_index": 0,
+        "n": 1,
+        "outcomes": {
+          "bail_amount": {
+            "max": 10000.0,
+            "mean": 10000.0,
+            "min": 10000.0,
+            "n": 1,
+            "non_null": 1,
+            "type": "number"
+          }
+        }
+      },
+      {
+        "level": "moderate",
+        "level_index": 1,
+        "n": 0,
+        "outcomes": {
+          "bail_amount": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "number"
+          }
+        }
+      },
+      {
+        "level": "strong",
+        "level_index": 2,
+        "n": 0,
+        "outcomes": {
+          "bail_amount": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "number"
+          }
+        }
+      }
+    ],
+    "Flight risk": [
+      {
+        "level": "low",
+        "level_index": 0,
+        "n": 1,
+        "outcomes": {
+          "bail_amount": {
+            "max": 10000.0,
+            "mean": 10000.0,
+            "min": 10000.0,
+            "n": 1,
+            "non_null": 1,
+            "type": "number"
+          }
+        }
+      },
+      {
+        "level": "medium",
+        "level_index": 1,
+        "n": 0,
+        "outcomes": {
+          "bail_amount": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "number"
+          }
+        }
+      },
+      {
+        "level": "high",
+        "level_index": 2,
+        "n": 0,
+        "outcomes": {
+          "bail_amount": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "number"
+          }
+        }
+      }
+    ],
+    "Prior convictions": [
+      {
+        "level": 0,
+        "level_index": 0,
+        "n": 1,
+        "outcomes": {
+          "bail_amount": {
+            "max": 10000.0,
+            "mean": 10000.0,
+            "min": 10000.0,
+            "n": 1,
+            "non_null": 1,
+            "type": "number"
+          }
+        }
+      },
+      {
+        "level": 1,
+        "level_index": 1,
+        "n": 0,
+        "outcomes": {
+          "bail_amount": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "number"
+          }
+        }
+      },
+      {
+        "level": 4,
+        "level_index": 2,
+        "n": 0,
+        "outcomes": {
+          "bail_amount": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "number"
+          }
+        }
+      }
+    ]
+  },
+  "outcome_summaries": {
+    "bail_amount": {
+      "max": 10000.0,
+      "mean": 10000.0,
+      "min": 10000.0,
+      "n": 1,
+      "non_null": 1,
+      "type": "number"
+    }
+  },
+  "schema_version": 1,
+  "study_id": "frontier-bail-setting",
+  "study_summary": {
+    "mean_bail_amount": 10000.0
+  }
+}

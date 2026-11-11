@@ -1,0 +1,7 @@
+condition,appeal_adventurous,appeal_mainstream,appeal_skeptical,appeal_range,purchase_adventurous,purchase_mainstream,purchase_skeptical,purchase_range
+"minimal personas, first prompt (anchored)",3.0,3.0,3.0,0.0,3.0,3.0,3.0,0.0
+"minimal personas, midpoint fix (original baseline)",4.25,2.5,2.0,2.25,3.25,2.0,1.75,1.5
+"EP personas, one call, full context",4.0,1.75,1.75,2.25,4.0,1.25,1.0,3.0
+"EP personas, separate calls, context only in Q1",3.25,1.5,2.0,1.75,3.75,3.75,2.0,1.75
+"EP personas as system prompt, separate calls, context only in Q1",3.5,1.75,1.25,2.25,3.75,3.25,2.0,1.75
+"public Expected Parrot run (cited, Claude + image)",4.75,1.0,1.0,3.75,4.5,3.0,1.5,3.0

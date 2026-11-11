@@ -1,0 +1,17 @@
+[
+  {
+    "persona_id": "af-01",
+    "segment": "adventurous_foodie",
+    "answers": {
+      "appeal": 3,
+      "clarity": 3,
+      "uniqueness": 3,
+      "purchase_intent": 3,
+      "first_reaction": "It's strange and intriguing, like a foodie's dream come true, but I'm not sure how the flavors would actually work together.",
+      "concerns": "I'm worried the savory flavors might clash or overwhelm the cola taste, making it unpleasant.",
+      "improvement": "Maybe test the flavor balance with a small sample group before launching."
+    },
+    "raw_output": "{\"appeal\": 3, \"clarity\": 3, \"uniqueness\": 3, \"purchase_intent\": 3, \"first_reaction\": \"It's strange and intriguing, like a foodie's dream come true, but I'm not sure how the flavors would actually work together.\", \"concerns\": \"I'm worried the savory flavors might clash or overwhelm the cola taste, making it unpleasant.\", \"improvement\": \"Maybe test the flavor balance with a small sample group before launching.\"}\n",
+    "error": null
+  }
+]

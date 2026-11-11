@@ -1,0 +1,170 @@
+{
+  "schema_version": "frontier-design-bundle-v1",
+  "designer": "GPT Sol frontier reasoning in Hermes",
+  "design_principle": "Use the four Manning et al. scenario seeds, permit different causal structures, and use a 27-run three-level orthogonal array for five factors per study so main effects are pairwise balanced within the one-hour execution budget.",
+  "studies": [
+    {
+      "study_id": "frontier-mug-bargaining",
+      "scenario": "two people bargaining over a mug",
+      "agents": [
+        {"name": "Buyer", "role": "potential buyer", "goal": "obtain the mug on favorable terms without exceeding the private budget", "constraints": ["may not claim a budget or outside option different from the assigned private information", "must negotiate using the assigned procedure"]},
+        {"name": "Seller", "role": "mug owner and potential seller", "goal": "sell on favorable terms without accepting less than the private reservation considerations allow", "constraints": ["may not claim a reservation price, attachment, or outside option different from the assigned private information", "must negotiate using the assigned procedure"]}
+      ],
+      "factors": [
+        {"name": "Buyer budget", "prediction": "higher budgets weakly increase agreement and may increase price", "levels": [
+          {"value": 6, "private": {"Buyer": "Your maximum total willingness to pay is $6."}},
+          {"value": 12, "private": {"Buyer": "Your maximum total willingness to pay is $12."}},
+          {"value": 18, "private": {"Buyer": "Your maximum total willingness to pay is $18."}}
+        ]},
+        {"name": "Seller reservation price", "prediction": "higher reservation prices reduce agreement and increase price conditional on agreement", "levels": [
+          {"value": 4, "private": {"Seller": "You will not voluntarily sell for less than $4."}},
+          {"value": 10, "private": {"Seller": "You will not voluntarily sell for less than $10."}},
+          {"value": 16, "private": {"Seller": "You will not voluntarily sell for less than $16."}}
+        ]},
+        {"name": "Seller attachment", "prediction": "greater attachment reduces agreement and raises the price required to sell", "levels": [
+          {"value": "none", "private": {"Seller": "You have no emotional attachment to the mug beyond its sale value."}},
+          {"value": "moderate", "private": {"Seller": "You have moderate sentimental attachment to the mug and need a meaningfully attractive offer to part with it."}},
+          {"value": "strong", "private": {"Seller": "You have strong sentimental attachment to the mug and are reluctant to sell unless the terms are exceptional."}}
+        ]},
+        {"name": "Outside option", "prediction": "the advantaged side's outside option shifts agreement and price toward that side", "levels": [
+          {"value": "none", "private": {"Buyer": "You have no alternative mug available.", "Seller": "You have no alternative buyer or standing offer."}},
+          {"value": "buyer alternative", "private": {"Buyer": "You can instead buy a comparable mug for $8.", "Seller": "You have no alternative buyer or standing offer."}},
+          {"value": "seller offer", "private": {"Buyer": "You have no alternative mug available.", "Seller": "You have a credible standing offer of $14 from another buyer."}}
+        ]},
+        {"name": "Negotiation procedure", "prediction": "proposal rights affect price and possibly agreement", "levels": [
+          {"value": "alternating offers", "public": "Use alternating offers and counteroffers until agreement or the final turn."},
+          {"value": "seller take-it-or-leave-it", "public": "The Seller states one take-it-or-leave-it price first; the Buyer must accept or reject it, after which later turns may only briefly confirm the result."},
+          {"value": "buyer take-it-or-leave-it", "public": "The Buyer states one take-it-or-leave-it price first; the Seller must accept or reject it, after which later turns may only briefly confirm the result."}
+        ]}
+      ],
+      "interaction": {"order": ["Buyer", "Seller"], "max_turns": 8},
+      "outcomes": [
+        {"name": "deal", "type": "binary", "question": "Did Buyer and Seller explicitly reach an agreement to exchange the mug? Return 1 for yes and 0 for no."},
+        {"name": "price", "type": "nullable_number", "question": "What exact dollar price did they explicitly agree on? Return null if no agreement price was reached."}
+      ]
+    },
+    {
+      "study_id": "frontier-bail-setting",
+      "scenario": "a judge is setting bail for a criminal defendant who committed 50,000 dollars in tax fraud",
+      "agents": [
+        {"name": "Prosecutor", "role": "state prosecutor", "goal": "recommend bail that addresses appearance and public-safety concerns", "constraints": ["must rely on the assigned case facts", "must not invent additional convictions or evidence"]},
+        {"name": "Defense Attorney", "role": "defense counsel", "goal": "argue for the least restrictive bail consistent with the assigned record", "constraints": ["must rely on the assigned case facts", "must not invent favorable evidence"]},
+        {"name": "Defendant", "role": "criminal defendant", "goal": "answer the court truthfully and seek release on affordable terms", "constraints": ["must not contradict the assigned record"]},
+        {"name": "Judge", "role": "bail judge", "goal": "set a specific dollar bail after weighing the presented record", "constraints": ["must state one final dollar bail amount on the final judicial turn", "must not introduce unassigned case facts"]}
+      ],
+      "factors": [
+        {"name": "Post-offense cooperation", "prediction": "greater voluntary cooperation reduces bail", "levels": [
+          {"value": "none", "public": "After being charged, the defendant provided no voluntary cooperation beyond legally required responses."},
+          {"value": "partial", "public": "After being charged, the defendant voluntarily provided some requested records but did not substantially assist the investigation."},
+          {"value": "extensive", "public": "After being charged, the defendant voluntarily provided complete records, assisted investigators, and took documented steps toward restitution."}
+        ]},
+        {"name": "Prior convictions", "prediction": "more prior convictions increase bail", "levels": [
+          {"value": 0, "public": "The defendant has no prior convictions."},
+          {"value": 1, "public": "The defendant has one prior conviction."},
+          {"value": 4, "public": "The defendant has four prior convictions."}
+        ]},
+        {"name": "Flight risk", "prediction": "greater flight risk increases bail", "levels": [
+          {"value": "low", "public": "The pretrial assessment rates flight risk as low."},
+          {"value": "medium", "public": "The pretrial assessment rates flight risk as moderate."},
+          {"value": "high", "public": "The pretrial assessment rates flight risk as high."}
+        ]},
+        {"name": "Community ties", "prediction": "stronger community ties reduce bail", "levels": [
+          {"value": "weak", "public": "The defendant has weak local community ties and no stable local employment."},
+          {"value": "moderate", "public": "The defendant has moderate local ties and intermittent local employment."},
+          {"value": "strong", "public": "The defendant has strong local family ties and stable local employment."}
+        ]},
+        {"name": "Evidence strength", "prediction": "stronger evidence increases bail", "levels": [
+          {"value": "weak", "public": "The currently disclosed evidence is weak and largely circumstantial."},
+          {"value": "moderate", "public": "The currently disclosed evidence is mixed but substantively incriminating."},
+          {"value": "strong", "public": "The currently disclosed evidence is strong and well corroborated."}
+        ]}
+      ],
+      "interaction": {"order": ["Prosecutor", "Defense Attorney", "Defendant", "Judge"], "max_turns": 8},
+      "outcomes": [
+        {"name": "bail_amount", "type": "number", "question": "What exact dollar bail amount did the Judge finally set?"}
+      ]
+    },
+    {
+      "study_id": "frontier-lawyer-interview",
+      "scenario": "A person is interviewing for a job as a lawyer",
+      "agents": [
+        {"name": "Interviewer", "role": "law-firm hiring interviewer", "goal": "assess the candidate and make a clear hiring recommendation", "constraints": ["must base the evaluation on the assigned application facts and interview", "must state a final recommendation on the last interviewer turn"]},
+        {"name": "Candidate", "role": "lawyer job candidate", "goal": "answer the interview questions accurately and present the candidacy effectively", "constraints": ["must display the assigned reasoning and communication level", "must not contradict assigned credentials or experience"]}
+      ],
+      "factors": [
+        {"name": "Bar status", "prediction": "stronger licensing status increases hiring", "levels": [
+          {"value": "not passed", "public": "The candidate has not passed the bar examination."},
+          {"value": "results pending", "public": "The candidate has taken the bar examination and results are pending."},
+          {"value": "admitted", "public": "The candidate passed the bar and is admitted to practice."}
+        ]},
+        {"name": "Legal reasoning performance", "prediction": "better legal reasoning increases hiring", "levels": [
+          {"value": "weak", "private": {"Candidate": "Give a legally weak answer that misses central issues and contains noticeable analytical gaps."}},
+          {"value": "average", "private": {"Candidate": "Give a competent but ordinary legal analysis that identifies the main issue without unusual depth."}},
+          {"value": "strong", "private": {"Candidate": "Give a precise, well-structured legal analysis that identifies counterarguments and practical implications."}}
+        ]},
+        {"name": "Communication clarity", "prediction": "clearer communication increases hiring", "levels": [
+          {"value": "low", "private": {"Candidate": "Communicate unclearly, with disorganized and difficult-to-follow answers."}},
+          {"value": "medium", "private": {"Candidate": "Communicate adequately, with mostly understandable but unpolished answers."}},
+          {"value": "high", "private": {"Candidate": "Communicate concisely and clearly, with organized and easy-to-follow answers."}}
+        ]},
+        {"name": "Relevant experience", "prediction": "more relevant experience increases hiring", "levels": [
+          {"value": 0, "public": "The candidate has no prior relevant legal work experience."},
+          {"value": 2, "public": "The candidate has two years of relevant legal work experience."},
+          {"value": 6, "public": "The candidate has six years of relevant legal work experience."}
+        ]},
+        {"name": "Candidate height", "prediction": "height should have approximately no effect after substantive qualifications are held fixed", "levels": [
+          {"value": 165, "public": "The candidate is 165 centimeters tall."},
+          {"value": 180, "public": "The candidate is 180 centimeters tall."},
+          {"value": 195, "public": "The candidate is 195 centimeters tall."}
+        ]}
+      ],
+      "interaction": {"order": ["Interviewer", "Candidate"], "max_turns": 6},
+      "outcomes": [
+        {"name": "hire", "type": "binary", "question": "Did the Interviewer give a final recommendation to hire the Candidate? Return 1 for hire and 0 for no hire."},
+        {"name": "rating", "type": "bounded_number", "minimum": 0, "maximum": 100, "question": "What overall suitability score from 0 to 100 is most consistent with the Interviewer's final evaluation?"}
+      ]
+    },
+    {
+      "study_id": "frontier-art-auction",
+      "scenario": "3 bidders participating in an auction for a piece of art starting at fifty dollars",
+      "agents": [
+        {"name": "Auctioneer", "role": "open ascending-auction auctioneer", "goal": "conduct the auction under the assigned rules and announce a winner and final price", "constraints": ["must enforce the assigned opening price and bid increment", "must announce the final winner and price on the final auctioneer turn"]},
+        {"name": "Bidder A", "role": "bidder", "goal": "win only when doing so is worthwhile relative to the private valuation", "constraints": ["must not knowingly bid above the assigned private valuation"]},
+        {"name": "Bidder B", "role": "bidder", "goal": "win only when doing so is worthwhile relative to the private valuation", "constraints": ["must not knowingly bid above the assigned private valuation"]},
+        {"name": "Bidder C", "role": "bidder", "goal": "win only when doing so is worthwhile relative to the private valuation", "constraints": ["must not knowingly bid above the assigned private valuation"]}
+      ],
+      "factors": [
+        {"name": "Bidder A valuation", "prediction": "higher valuation weakly increases price and the chance A wins", "levels": [
+          {"value": 100, "private": {"Bidder A": "Your private maximum value for the artwork is $100."}},
+          {"value": 200, "private": {"Bidder A": "Your private maximum value for the artwork is $200."}},
+          {"value": 300, "private": {"Bidder A": "Your private maximum value for the artwork is $300."}}
+        ]},
+        {"name": "Bidder B valuation", "prediction": "higher valuation weakly increases price and the chance B wins", "levels": [
+          {"value": 100, "private": {"Bidder B": "Your private maximum value for the artwork is $100."}},
+          {"value": 200, "private": {"Bidder B": "Your private maximum value for the artwork is $200."}},
+          {"value": 300, "private": {"Bidder B": "Your private maximum value for the artwork is $300."}}
+        ]},
+        {"name": "Bidder C valuation", "prediction": "higher valuation weakly increases price and the chance C wins", "levels": [
+          {"value": 100, "private": {"Bidder C": "Your private maximum value for the artwork is $100."}},
+          {"value": 200, "private": {"Bidder C": "Your private maximum value for the artwork is $200."}},
+          {"value": 300, "private": {"Bidder C": "Your private maximum value for the artwork is $300."}}
+        ]},
+        {"name": "Bid increment", "prediction": "larger increments coarsen the final price and may increase deviation from the second-highest valuation", "levels": [
+          {"value": 10, "public": "The auction starts at $50 and valid new bids must increase the standing price by at least $10."},
+          {"value": 25, "public": "The auction starts at $50 and valid new bids must increase the standing price by at least $25."},
+          {"value": 50, "public": "The auction starts at $50 and valid new bids must increase the standing price by at least $50."}
+        ]},
+        {"name": "Information regime", "prediction": "more public value information changes strategic bidding and may move price toward the second-highest valuation", "levels": [
+          {"value": "private", "public": "Each bidder knows only their own private valuation; do not reveal valuations unless a bidder chooses to signal strategically."},
+          {"value": "public ranges", "public_template": "The auctioneer publicly announces valuation ranges: Bidder A is in $${Bidder A valuation range}, Bidder B is in $${Bidder B valuation range}, and Bidder C is in $${Bidder C valuation range}. Exact valuations remain private."},
+          {"value": "public exact", "public_template": "The auctioneer publicly announces the exact valuations: Bidder A $${Bidder A valuation}, Bidder B $${Bidder B valuation}, Bidder C $${Bidder C valuation}."}
+        ]}
+      ],
+      "interaction": {"order": ["Auctioneer", "Bidder A", "Bidder B", "Bidder C"], "max_turns": 8},
+      "outcomes": [
+        {"name": "final_price", "type": "number", "question": "What final dollar price did the Auctioneer announce?"},
+        {"name": "winner", "type": "category", "allowed": ["Bidder A", "Bidder B", "Bidder C", "no sale"], "question": "Who did the Auctioneer announce as the winner?"}
+      ]
+    }
+  ]
+}

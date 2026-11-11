@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="716" font-family="Helvetica, Arial, sans-serif" font-size="11">
+<rect width="920" height="716" fill="white"/>
+<text x="20" y="26" font-size="16" font-weight="bold">How many single-draw cells must be deleted to reverse each theorised lever?</text>
+<text x="20" y="46" font-size="12" fill="#444">27 cells per study, one model draw each. Exhaustive search over deleting 1, 2 or 3 cells.</text>
+<text x="362" y="81" text-anchor="end">Qwen · mug bargaining · initial offer</text>
+<rect x="370" y="70" width="410.0" height="14" fill="#2e86c1"/>
+<text x="786.0" y="81">survives 3 deletions</text>
+<text x="362" y="99" text-anchor="end">Qwen · mug bargaining · buyer's budget</text>
+<rect x="370" y="88" width="410.0" height="14" fill="#2e86c1"/>
+<text x="786.0" y="99">survives 3 deletions</text>
+<text x="362" y="117" text-anchor="end">Qwen · mug bargaining · mediator's presence</text>
+<rect x="370" y="106" width="102.5" height="14" fill="#c0392b"/>
+<text x="478.5" y="117">1 cell</text>
+<text x="362" y="135" text-anchor="end">Qwen · bail setting · Severity of Tax Fraud</text>
+<rect x="370" y="124" width="205.0" height="14" fill="#e67e22"/>
+<text x="581.0" y="135">2 cells</text>
+<text x="362" y="153" text-anchor="end">Qwen · bail setting · Defendant's Criminal History</text>
+<rect x="370" y="142" width="410.0" height="14" fill="#2e86c1"/>
+<text x="786.0" y="153">survives 3 deletions</text>
+<text x="362" y="171" text-anchor="end">Qwen · bail setting · Evidence Strength</text>
+<rect x="370" y="160" width="410.0" height="14" fill="#2e86c1"/>
+<text x="786.0" y="171">survives 3 deletions</text>
+<text x="362" y="189" text-anchor="end">Qwen · lawyer interview · Legal knowledge</text>
+<rect x="370" y="178" width="410.0" height="14" fill="#2e86c1"/>
+<text x="786.0" y="189">survives 3 deletions</text>
+<text x="362" y="207" text-anchor="end">Qwen · lawyer interview · Communication clarity</text>
+<rect x="370" y="196" width="410.0" height="14" fill="#2e86c1"/>
+<text x="786.0" y="207">survives 3 deletions</text>
+<text x="362" y="225" text-anchor="end">Qwen · lawyer interview · Confidence level</text>
+<rect x="370" y="214" width="410.0" height="14" fill="#2e86c1"/>
+<text x="786.0" y="225">survives 3 deletions</text>
+<text x="362" y="243" text-anchor="end">Qwen · art auction · Bidder Risk Tolerance</text>
+<rect x="370" y="232" width="102.5" height="14" fill="#c0392b"/>
+<text x="478.5" y="243">1 cell</text>
+<text x="362" y="261" text-anchor="end">Qwen · art auction · Starting Price</text>
+<rect x="370" y="250" width="410.0" height="14" fill="#2e86c1"/>
+<text x="786.0" y="261">survives 3 deletions</text>
+<text x="362" y="279" text-anchor="end">Qwen · art auction · Bidding Strategy</text>
+<rect x="370" y="268" width="205.0" height="14" fill="#e67e22"/>
+<text x="581.0" y="279">2 cells</text>
+<text x="362" y="297" text-anchor="end">GPT-Sol · mug bargaining · Buyer budget</text>
+<rect x="370" y="286" width="410.0" height="14" fill="#2e86c1"/>
+<text x="786.0" y="297">survives 3 deletions</text>
+<text x="362" y="315" text-anchor="end">GPT-Sol · mug bargaining · Seller reservation price</text>
+<rect x="370" y="304" width="410.0" height="14" fill="#2e86c1"/>
+<text x="786.0" y="315">survives 3 deletions</text>
+<text x="362" y="333" text-anchor="end">GPT-Sol · mug bargaining · Seller attachment</text>
+<rect x="370" y="322" width="205.0" height="14" fill="#e67e22"/>
+<text x="581.0" y="333">2 cells</text>
+<text x="362" y="351" text-anchor="end">GPT-Sol · mug bargaining · Outside option</text>
+<rect x="370" y="340" width="410.0" height="14" fill="#2e86c1"/>
+<text x="786.0" y="351">survives 3 deletions</text>
+<text x="362" y="369" text-anchor="end">GPT-Sol · mug bargaining · Negotiation procedure</text>
+<rect x="370" y="358" width="410.0" height="14" fill="#2e86c1"/>
+<text x="786.0" y="369">survives 3 deletions</text>
+<text x="362" y="387" text-anchor="end">GPT-Sol · bail setting · Post-offense cooperation</text>
+<rect x="370" y="376" width="307.5" height="14" fill="#f1c40f"/>
+<text x="683.5" y="387">3 cells</text>
+<text x="362" y="405" text-anchor="end">GPT-Sol · bail setting · Prior convictions</text>
+<rect x="370" y="394" width="410.0" height="14" fill="#2e86c1"/>
+<text x="786.0" y="405">survives 3 deletions</text>
+<text x="362" y="423" text-anchor="end">GPT-Sol · bail setting · Flight risk</text>
+<rect x="370" y="412" width="410.0" height="14" fill="#2e86c1"/>
+<text x="786.0" y="423">survives 3 deletions</text>
+<text x="362" y="441" text-anchor="end">GPT-Sol · bail setting · Community ties</text>
+<rect x="370" y="430" width="410.0" height="14" fill="#2e86c1"/>
+<text x="786.0" y="441">survives 3 deletions</text>
+<text x="362" y="459" text-anchor="end">GPT-Sol · bail setting · Evidence strength</text>
+<rect x="370" y="448" width="410.0" height="14" fill="#2e86c1"/>
+<text x="786.0" y="459">survives 3 deletions</text>
+<text x="362" y="477" text-anchor="end">GPT-Sol · lawyer interview · Bar status</text>
+<rect x="370" y="466" width="410.0" height="14" fill="#2e86c1"/>
+<text x="786.0" y="477">survives 3 deletions</text>
+<text x="362" y="495" text-anchor="end">GPT-Sol · lawyer interview · Legal reasoning performance</text>
+<rect x="370" y="484" width="410.0" height="14" fill="#2e86c1"/>
+<text x="786.0" y="495">survives 3 deletions</text>
+<text x="362" y="513" text-anchor="end">GPT-Sol · lawyer interview · Communication clarity</text>
+<rect x="370" y="502" width="410.0" height="14" fill="#2e86c1"/>
+<text x="786.0" y="513">survives 3 deletions</text>
+<text x="362" y="531" text-anchor="end">GPT-Sol · lawyer interview · Relevant experience</text>
+<rect x="370" y="520" width="307.5" height="14" fill="#f1c40f"/>
+<text x="683.5" y="531">3 cells</text>
+<text x="362" y="549" text-anchor="end">GPT-Sol · lawyer interview · Candidate height</text>
+<rect x="370" y="538" width="15.4" height="14" fill="#9aa5b1"/>
+<text x="391.4" y="549">zero effect</text>
+<text x="362" y="567" text-anchor="end">GPT-Sol · art auction · Bidder A valuation</text>
+<rect x="370" y="556" width="307.5" height="14" fill="#f1c40f"/>
+<text x="683.5" y="567">3 cells</text>
+<text x="362" y="585" text-anchor="end">GPT-Sol · art auction · Bidder B valuation</text>
+<rect x="370" y="574" width="205.0" height="14" fill="#e67e22"/>
+<text x="581.0" y="585">2 cells</text>
+<text x="362" y="603" text-anchor="end">GPT-Sol · art auction · Bidder C valuation</text>
+<rect x="370" y="592" width="307.5" height="14" fill="#f1c40f"/>
+<text x="683.5" y="603">3 cells</text>
+<text x="362" y="621" text-anchor="end">GPT-Sol · art auction · Bid increment</text>
+<rect x="370" y="610" width="410.0" height="14" fill="#2e86c1"/>
+<text x="786.0" y="621">survives 3 deletions</text>
+<text x="362" y="639" text-anchor="end">GPT-Sol · art auction · Information regime</text>
+<rect x="370" y="628" width="410.0" height="14" fill="#2e86c1"/>
+<text x="786.0" y="639">survives 3 deletions</text>
+<text x="20" y="676" font-size="11" fill="#555">Qwen levers: reversal of the prediction verdict. GPT-Sol levers: reversal of the sign of the high-minus-low contrast on the primary outcome.</text>
+<text x="20" y="692" font-size="11" fill="#555">Red = one deleted draw reverses the lever. Blue = survives every deletion of up to three cells.</text>
+</svg>

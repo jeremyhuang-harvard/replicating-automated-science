@@ -1,0 +1,66 @@
+{
+  "study_id": "20261014T211515Z-135566",
+  "created_at": "2026-10-14T21:15:15.579734+00:00",
+  "engine": "mlx",
+  "model": "mlx-community/Qwen3-8B-4bit",
+  "seed": 11,
+  "concept": {
+    "title": "Lasagna Cola",
+    "description": "A limited-edition cola with savory tomato, ricotta, basil, and bolognese flavor notes. It is positioned as an intentionally strange collectible novelty drink."
+  },
+  "panel": [
+    {
+      "persona_id": "af-01",
+      "name": "Adventurous Foodie 1",
+      "segment": "adventurous_foodie",
+      "description": "Seeks out unusual flavor pairings and enjoys describing them to others.",
+      "attitudes": {
+        "novelty_seeking": 5,
+        "brand_loyalty": 1,
+        "health_concern": 2,
+        "price_sensitivity": 2
+      }
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "appeal",
+      "text": "Overall, how appealing is this product concept to you? (1 = not at all, 5 = extremely)",
+      "kind": "rating"
+    },
+    {
+      "question_id": "clarity",
+      "text": "How clear is it what this product is and how it would taste? (1 = very unclear, 5 = very clear)",
+      "kind": "rating"
+    },
+    {
+      "question_id": "uniqueness",
+      "text": "How different is this concept from drinks you already know? (1 = not at all, 5 = extremely)",
+      "kind": "rating"
+    },
+    {
+      "question_id": "purchase_intent",
+      "text": "How likely would you be to buy this if it were available? (1 = definitely not, 5 = definitely)",
+      "kind": "rating"
+    },
+    {
+      "question_id": "first_reaction",
+      "text": "In one or two sentences, what is your honest first reaction to this concept?",
+      "kind": "text"
+    },
+    {
+      "question_id": "concerns",
+      "text": "What, if anything, concerns or puts you off about this concept?",
+      "kind": "text"
+    },
+    {
+      "question_id": "improvement",
+      "text": "What one change would make you more likely to try it?",
+      "kind": "text"
+    }
+  ],
+  "prompts": {
+    "af-01": "You are role-playing a simulated survey respondent for a consumer concept test. Your answers are simulated hypotheses, not real human opinions.\n\nRESPONDENT PROFILE (Adventurous Foodie 1): Seeks out unusual flavor pairings and enjoys describing them to others.\nProduct attitudes: novelty seeking 5/5, brand loyalty 1/5, health concern 2/5, price sensitivity 2/5.\n\nPRODUCT CONCEPT\nTitle: Lasagna Cola\nDescription: A limited-edition cola with savory tomato, ricotta, basil, and bolognese flavor notes. It is positioned as an intentionally strange collectible novelty drink.\n\nSURVEY QUESTIONS (answer every one, staying in character and referring to the concept above):\n1. [appeal] (integer 1-5) Overall, how appealing is this product concept to you? (1 = not at all, 5 = extremely)\n2. [clarity] (integer 1-5) How clear is it what this product is and how it would taste? (1 = very unclear, 5 = very clear)\n3. [uniqueness] (integer 1-5) How different is this concept from drinks you already know? (1 = not at all, 5 = extremely)\n4. [purchase_intent] (integer 1-5) How likely would you be to buy this if it were available? (1 = definitely not, 5 = definitely)\n5. [first_reaction] (short text) In one or two sentences, what is your honest first reaction to this concept?\n6. [concerns] (short text) What, if anything, concerns or puts you off about this concept?\n7. [improvement] (short text) What one change would make you more likely to try it?\n\nRespond with ONE JSON object and nothing else: no markdown, no commentary. Use exactly these keys; rating values must be integers 1-5 and text values must be strings.\n{\"appeal\": 3, \"clarity\": 3, \"uniqueness\": 3, \"purchase_intent\": 3, \"first_reaction\": \"...\", \"concerns\": \"...\", \"improvement\": \"...\"}"
+  },
+  "schema_version": 1
+}

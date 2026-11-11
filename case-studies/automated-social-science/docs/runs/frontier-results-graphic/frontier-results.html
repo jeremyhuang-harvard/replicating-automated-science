@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=1800, initial-scale=1" />
+<title>GPT Sol × Qwen: Automated Social Science Results</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body { width: 1800px; height: 1350px; overflow: hidden; }
+  body { margin: 0; font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #07111f; color: #edf4ff; }
+  .page { width: 1800px; height: 1350px; padding: 56px 64px 42px; background:
+    radial-gradient(circle at 90% 6%, rgba(71,141,255,.18), transparent 31%),
+    radial-gradient(circle at 8% 60%, rgba(42,205,171,.10), transparent 28%),
+    #07111f; }
+  .top { display:flex; justify-content:space-between; align-items:flex-start; gap:40px; }
+  .eyebrow { color:#78a9ff; font-size:18px; font-weight:750; letter-spacing:.13em; text-transform:uppercase; }
+  h1 { margin:10px 0 8px; font-size:52px; line-height:1.05; letter-spacing:-.035em; max-width:1120px; }
+  .subtitle { margin:0; color:#9eb0c7; font-size:21px; line-height:1.35; }
+  .badge { flex:0 0 auto; padding:14px 20px; border:1px solid #2a4b71; border-radius:999px; color:#b9d2ff; background:rgba(29,64,105,.42); font-size:17px; font-weight:700; }
+
+  .metrics { display:grid; grid-template-columns:repeat(5,1fr); gap:12px; margin:28px 0 24px; }
+  .metric { background:rgba(16,31,52,.86); border:1px solid #203853; border-radius:14px; padding:16px 18px; }
+  .metric .big { font-size:27px; font-weight:800; letter-spacing:-.02em; }
+  .metric .label { color:#8fa3bb; font-size:14px; margin-top:3px; }
+
+  .studies { display:grid; grid-template-columns:1fr 1fr; gap:15px; }
+  .card { background:rgba(13,27,46,.94); border:1px solid #213a57; border-radius:18px; padding:20px 22px 18px; min-height:282px; position:relative; overflow:hidden; }
+  .card::after { content:""; position:absolute; right:-80px; top:-90px; width:210px; height:210px; border-radius:50%; background:var(--wash); filter:blur(1px); }
+  .card-head { display:flex; align-items:center; justify-content:space-between; position:relative; z-index:1; }
+  .card h2 { font-size:24px; margin:0; letter-spacing:-.02em; }
+  .outcome { font-size:13px; font-weight:750; padding:7px 10px; border-radius:999px; color:var(--accent); border:1px solid color-mix(in srgb, var(--accent) 40%, #203853); background:color-mix(in srgb, var(--accent) 10%, transparent); }
+  .headline { display:flex; gap:24px; margin:17px 0 13px; position:relative; z-index:1; }
+  .headline strong { display:block; font-size:30px; line-height:1; color:#fff; }
+  .headline span { color:#8fa3bb; font-size:13px; }
+  .effects { display:grid; grid-template-columns:1fr 1fr; gap:10px; position:relative; z-index:1; }
+  .effect { border-radius:11px; padding:11px 13px; background:#0a182a; border:1px solid #1b324c; }
+  .effect .name { color:#b6c4d6; font-size:13px; font-weight:700; }
+  .effect .delta { margin-top:4px; font-size:19px; font-weight:800; letter-spacing:-.015em; }
+  .effect .note { margin-top:2px; color:#748ba6; font-size:12px; }
+  .verdict { margin-top:12px; font-size:13px; color:#b9c6d5; position:relative; z-index:1; }
+  .ok { color:#45d3aa; font-weight:800; }
+  .mix { color:#ffbd63; font-weight:800; }
+  .warn { color:#ff7f8a; font-weight:800; }
+
+  .compare-title { margin:24px 0 10px; display:flex; justify-content:space-between; align-items:baseline; }
+  .compare-title h2 { margin:0; font-size:25px; }
+  .compare-title span { color:#758ca7; font-size:13px; }
+  .compare { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+  .compare-col { border:1px solid #203853; border-radius:14px; padding:15px 17px; background:rgba(12,25,43,.92); }
+  .compare-col.active { border-color:#3d75c4; background:linear-gradient(180deg, rgba(24,58,100,.92), rgba(12,25,43,.94)); }
+  .compare-col h3 { margin:0 0 7px; font-size:17px; }
+  .compare-col .tag { color:#74a8ff; font-size:12px; text-transform:uppercase; letter-spacing:.09em; font-weight:800; }
+  .compare-col p { margin:7px 0 0; color:#aab8ca; font-size:13px; line-height:1.35; }
+
+  .exposure { margin-top:14px; display:flex; gap:14px; align-items:center; padding:12px 15px; border:1px solid #1f394f; background:rgba(8,24,37,.9); border-radius:12px; }
+  .exposure b { color:#6ee0bd; font-size:13px; white-space:nowrap; }
+  .exposure span { color:#9eb0c3; font-size:13px; line-height:1.3; }
+  .footer { margin-top:10px; display:flex; justify-content:space-between; color:#607792; font-size:11px; }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="top">
+    <div>
+      <div class="eyebrow">Automated social science · crossed model roles</div>
+      <h1>GPT Sol designed the studies. Local Qwen generated the evidence.</h1>
+      <p class="subtitle">Same four scenarios as Manning, Zhu &amp; Horton — but five new factors per study and no requirement to reuse the paper’s causal models.</p>
+    </div>
+    <div class="badge">GPT scientist × Qwen subjects</div>
+  </div>
+
+  <div class="metrics">
+    <div class="metric"><div class="big">108 / 108</div><div class="label">interactions measured</div></div>
+    <div class="metric"><div class="big">4 × 27</div><div class="label">pairwise-balanced cells</div></div>
+    <div class="metric"><div class="big">5</div><div class="label">three-level factors / study</div></div>
+    <div class="metric"><div class="big">40.2 min</div><div class="label">recorded model-cell runtime</div></div>
+    <div class="metric"><div class="big">Qwen3-8B</div><div class="label">local, thinking disabled</div></div>
+  </div>
+
+  <div class="studies">
+    <section class="card" style="--accent:#50d4b0;--wash:rgba(80,212,176,.11)">
+      <div class="card-head"><h2>☕ Mug bargaining</h2><div class="outcome">deal + price</div></div>
+      <div class="headline"><div><strong>52%</strong><span>deal rate</span></div><div><strong>$14.36</strong><span>mean price when measured</span></div></div>
+      <div class="effects">
+        <div class="effect"><div class="name">Buyer budget · $6 → $18</div><div class="delta">22% → 67%</div><div class="note">deal rate; price $8.50 → $18</div></div>
+        <div class="effect"><div class="name">Seller floor · $4 → $16</div><div class="delta">78% → 33%</div><div class="note">deal rate fell as predicted</div></div>
+      </div>
+      <div class="verdict"><span class="ok">Clear:</span> budget, reservation price, outside options, procedure. <span class="mix">Miss:</span> attachment was not monotonic.</div>
+    </section>
+
+    <section class="card" style="--accent:#78a9ff;--wash:rgba(120,169,255,.12)">
+      <div class="card-head"><h2>⚖ Bail setting</h2><div class="outcome">dollar bail</div></div>
+      <div class="headline"><div><strong>$22.2k</strong><span>mean bail</span></div><div><strong>4 / 5</strong><span>clear predicted patterns</span></div></div>
+      <div class="effects">
+        <div class="effect"><div class="name">Prior convictions · 0 → 4</div><div class="delta">$13.9k → $29.4k</div><div class="note">strong monotonic increase</div></div>
+        <div class="effect"><div class="name">Flight risk · low → high</div><div class="delta">$17.5k → $31.1k</div><div class="note">evidence also rose monotonically</div></div>
+      </div>
+      <div class="verdict"><span class="ok">Clear:</span> priors, flight risk, evidence, community ties. <span class="mix">Mixed:</span> cooperation dipped only at the highest level.</div>
+    </section>
+
+    <section class="card" style="--accent:#d6a4ff;--wash:rgba(214,164,255,.11)">
+      <div class="card-head"><h2>💼 Lawyer interview</h2><div class="outcome">hire + 0–100 rating</div></div>
+      <div class="headline"><div><strong>63%</strong><span>hire rate</span></div><div><strong>72.4</strong><span>mean rating</span></div></div>
+      <div class="effects">
+        <div class="effect"><div class="name">Clarity · low → high</div><div class="delta">57 → 81</div><div class="note">hire rate 33% → 78%</div></div>
+        <div class="effect"><div class="name">Bar · not passed → admitted</div><div class="delta">33% → 78%</div><div class="note">hire recommendation</div></div>
+      </div>
+      <div class="verdict"><span class="ok">Placebo held:</span> height had no monotonic effect. <span class="mix">Mixed:</span> reasoning and experience peaked at middle levels.</div>
+    </section>
+
+    <section class="card" style="--accent:#ff9c72;--wash:rgba(255,156,114,.11)">
+      <div class="card-head"><h2>🖼 Art auction</h2><div class="outcome">price + allocation</div></div>
+      <div class="headline"><div><strong>$171.9</strong><span>mean final price</span></div><div><strong>54%</strong><span>mean allocative efficiency</span></div></div>
+      <div class="effects">
+        <div class="effect"><div class="name">Bid increment · $10 → $50</div><div class="delta">$127 → $242</div><div class="note">efficiency 70% → 28%</div></div>
+        <div class="effect"><div class="name">Private → exact public values</div><div class="delta">$212 → $127</div><div class="note">no-sale outcomes rose sharply</div></div>
+      </div>
+      <div class="verdict"><span class="warn">Fragile:</span> only 41% efficient allocations; 10 no-sales; 3 winners were measured above their own valuation.</div>
+    </section>
+  </div>
+
+  <div class="compare-title"><h2>What changed when the scientist model changed?</h2><span>Descriptive comparison — designs are not held fixed</span></div>
+  <div class="compare">
+    <div class="compare-col"><div class="tag">Published paper</div><h3>GPT-4 scientist + subjects</h3><p>1,073 full-factorial cells. More theory-anchored structure; the auction cleanly targeted second-price logic.</p></div>
+    <div class="compare-col"><div class="tag">Earlier replication</div><h3>Qwen scientist + Qwen subjects</h3><p>108 cells, 106 valid. Simpler three-factor designs; 9 of 12 predicted directions matched its own simulated evidence.</p></div>
+    <div class="compare-col active"><div class="tag">Current run</div><h3>GPT Sol scientist + Qwen subjects</h3><p>108 orthogonal-array cells, 108 measured. Richer tests and a placebo, but auction protocol compliance remained a major weakness.</p></div>
+  </div>
+
+  <div class="exposure"><b>WHAT QWEN SAW</b><span>Only its role, the public scenario and treatment instructions, its own private information, and the public transcript — never GPT’s predictions, analysis plan, the paper’s findings, or another agent’s private prompt.</span></div>
+  <div class="footer"><span>One local-model draw per cell · Not human behavior · Planner was not blinded to prior project context</span><span>Design and run: October 14–15, 2026 · Full prompts and raw calls preserved</span></div>
+</div>
+</body>
+</html>

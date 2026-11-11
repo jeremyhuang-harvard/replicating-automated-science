@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=1200, initial-scale=1" />
+<title>How Our Results Differ from Manning et al.</title>
+<style>
+*{box-sizing:border-box} html,body{width:1200px;height:1553px;overflow:hidden} body{margin:0;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f5f7fb;color:#152235}.page{width:1200px;height:1553px;padding:42px 78px 54px;background:linear-gradient(145deg,#fff 0%,#f7f9fd 70%,#edf4ff 100%)}
+.kicker{font-size:17px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:#3267b1}h1{font-size:47px;line-height:1.06;letter-spacing:-.035em;margin:12px 0 14px;max-width:950px}.dek{font-size:20px;line-height:1.45;color:#56677e;margin:0 0 24px;max-width:1010px}.thesis{border-left:7px solid #3b78cb;background:#eaf2ff;padding:18px 22px;border-radius:0 12px 12px 0;font-size:20px;line-height:1.42;font-weight:650;margin-bottom:24px}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:11px;margin-bottom:25px}.metric{border:1px solid #d7e0eb;background:#fff;border-radius:12px;padding:14px 16px}.metric b{display:block;font-size:24px;color:#163b70}.metric span{font-size:13px;color:#708096}
+.section-title{font-size:20px;margin:0 0 10px;color:#17365e}.designs{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-bottom:24px}.design{border-radius:14px;padding:17px 18px;border:1px solid #d8e1ec;background:#fff}.design.paper{border-top:5px solid #75879b}.design.ours{border-top:5px solid #3b78cb}.design h3{margin:0 0 7px;font-size:19px}.design ul{margin:0;padding-left:19px;color:#52647a;font-size:15px;line-height:1.45}.design li+li{margin-top:4px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.study{background:#fff;border:1px solid #d9e2ed;border-radius:13px;padding:16px 17px;min-height:205px}.study h3{font-size:19px;margin:0 0 8px}.study .paperline,.study .ourline{font-size:14px;line-height:1.4;margin:7px 0}.label{display:inline-block;font-size:11px;font-weight:850;letter-spacing:.07em;text-transform:uppercase;border-radius:5px;padding:3px 6px;margin-right:6px}.p{color:#596a7d;background:#e9edf2}.o{color:#245c9c;background:#e6f0ff}.finding{margin-top:9px;padding-top:9px;border-top:1px solid #e4e9f0;font-size:15px;line-height:1.38;color:#253b55}.finding strong{color:#173d6e}.warn{color:#a54b32;font-weight:750}
+.bottom{display:grid;grid-template-columns:1.25fr .75fr;gap:13px;margin-top:14px}.imp,.limits{border-radius:13px;padding:16px 18px}.imp{background:#17365e;color:#fff}.imp h2,.limits h2{font-size:19px;margin:0 0 8px}.imp p{font-size:15px;line-height:1.45;color:#dce9fa;margin:0}.limits{background:#fff4e8;border:1px solid #efd7ba}.limits ul{font-size:13px;line-height:1.4;color:#6e573f;margin:0;padding-left:17px}.limits li+li{margin-top:3px}.footer{display:flex;justify-content:space-between;gap:25px;margin-top:16px;padding-top:11px;border-top:1px solid #d7e0eb;color:#7a899b;font-size:11px;line-height:1.35}.footer div:first-child{max-width:730px}.footer div:last-child{text-align:right}
+</style>
+</head>
+<body><main class="page">
+<div class="kicker">Structural Model Replication · One-page comparison</div>
+<h1>How our GPT-Sol × Qwen results differ from Manning et al.</h1>
+<p class="dek">We retained the paper’s four settings—mug bargaining, bail, lawyer hiring, and an art auction—but let GPT Sol choose a new causal design and then used local Qwen agents to generate and measure the interactions.</p>
+<div class="thesis">The paper’s experiments were more theory-anchored and behaviorally disciplined. Our frontier-planned studies were broader and more diagnostic, but the auction revealed that a stronger scientist model cannot compensate for a smaller subject model that fails to follow the game’s rules.</div>
+<div class="metrics">
+  <div class="metric"><b>108 / 108</b><span>our interactions measured</span></div>
+  <div class="metric"><b>5 factors</b><span>per study in our design</span></div>
+  <div class="metric"><b>1,073 cells</b><span>across the paper’s designs</span></div>
+  <div class="metric"><b>40.2 min</b><span>our recorded model runtime</span></div>
+</div>
+<h2 class="section-title">The design changed before the results did</h2>
+<div class="designs">
+  <section class="design paper"><h3>Manning et al.</h3><ul><li>Full factorials with variables closely tied to bargaining, judicial behavior, hiring, and auction theory.</li><li>The auction provided a clean benchmark: prices should track the second-highest valuation.</li><li>1,073 treatment cells across the four published studies.</li></ul></section>
+  <section class="design ours"><h3>Our GPT-Sol × Qwen run</h3><ul><li>GPT Sol chose five three-level factors and multiple outcomes for each setting.</li><li>A 27-run orthogonal array per study estimated balanced main effects within the time budget.</li><li>Qwen saw only its role, assigned information, and public transcript—not GPT’s predictions or analysis plan.</li></ul></section>
+</div>
+<h2 class="section-title">Study-by-study differences</h2>
+<div class="grid">
+  <section class="study"><h3>☕ Mug bargaining</h3><p class="paperline"><span class="label p">Paper</span>Deal occurrence as budget, seller minimum, and attachment varied.</p><p class="ourline"><span class="label o">Ours</span>Deal and price as budget, reservation price, attachment, outside options, and bargaining procedure varied.</p><div class="finding"><strong>Our result:</strong> higher budgets increased deals; higher seller floors reduced them. Attachment was not monotonic, while procedure and outside options mattered strongly.</div></section>
+  <section class="study"><h3>⚖ Bail setting</h3><p class="paperline"><span class="label p">Paper</span>Focused on convictions, judge workload, and defendant remorse.</p><p class="ourline"><span class="label o">Ours</span>Used convictions, flight risk, community ties, evidence, and cooperation.</p><div class="finding"><strong>Our result:</strong> priors, flight risk, and evidence raised bail; strong ties lowered it. Cooperation produced a mixed, non-monotonic pattern.</div></section>
+  <section class="study"><h3>💼 Lawyer hiring</h3><p class="paperline"><span class="label p">Paper</span>Bar passage mattered strongly; friendliness and height were comparatively weak.</p><p class="ourline"><span class="label o">Ours</span>Added legal reasoning, clarity, experience, and retained height as a placebo.</p><div class="finding"><strong>Our result:</strong> bar status and clarity mattered; height had no monotonic effect. Reasoning and experience unexpectedly peaked at middle levels.</div></section>
+  <section class="study"><h3>🖼 Art auction</h3><p class="paperline"><span class="label p">Paper</span>Private values yielded prices close to the second-highest valuation, matching auction theory.</p><p class="ourline"><span class="label o">Ours</span>Added bid increments and information regimes to three bidder valuations.</p><div class="finding"><strong>Our result:</strong> only 41% of allocations were efficient; 10 cells ended with no sale, and <span class="warn">three winners exceeded their own assigned value</span>.</div></section>
+</div>
+<div class="bottom">
+  <section class="imp"><h2>Bottom line</h2><p>GPT Sol produced a richer experimental agenda than Qwen designed on its own: more factors, multiple outcomes, explicit placebo tests, and stronger separation between planner and subjects. But Manning et al.’s more structured experiments—especially the auction—generated cleaner theoretical behavior. The main lesson is that scientific-planning capability and simulated-subject reliability are separate bottlenecks.</p></section>
+  <section class="limits"><h2>Interpret cautiously</h2><ul><li>One Qwen interaction per condition.</li><li>Not evidence about human behavior.</li><li>Designs differ, so this is not a controlled model comparison.</li><li>GPT Sol was not blinded to prior project context.</li></ul></section>
+</div>
+<div class="footer"><div>Sources: Manning, Zhu &amp; Horton, <em>Automated Social Science</em> (arXiv:2404.11794); project reports and preserved run artifacts in <strong>structural-model-replication</strong>.</div><div>GPT Sol scientist × Qwen3-8B subjects<br/>Run completed October 15, 2026</div></div>
+</main></body></html>

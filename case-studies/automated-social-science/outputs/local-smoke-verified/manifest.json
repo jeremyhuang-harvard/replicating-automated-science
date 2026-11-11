@@ -1,0 +1,37 @@
+{
+  "artifacts": {
+    "manifest": "manifest.json",
+    "raw_calls": "raw_calls.jsonl",
+    "transcript": "transcript.jsonl"
+  },
+  "call_count": 3,
+  "completed_at": "2026-10-14T19:20:12.053246+00:00",
+  "model": "mlx-community/Qwen3-8B-4bit",
+  "privacy_policy": "own-private-attributes-plus-public-transcript",
+  "prompt_hashes": [
+    "d2a5c65a2da01fc0e57de0afc357fece48a6a3aaaa5d9dab1ed7bd057729133d",
+    "ca78b08471b57a25f521bd29d6ec6ba2262effb56db00ab34f0663bf6bb937ea",
+    "1e27837e9f43ddf40cbeb78a9044c28999cc7dc27d2bd974c342c25a89a6f180"
+  ],
+  "provider": "mlx-cli",
+  "provider_config": {
+    "chat_template_config": {
+      "enable_thinking": false
+    },
+    "executable": "mlx_lm.generate",
+    "max_tokens": 32,
+    "seed": 0,
+    "temperature": 0.0
+  },
+  "run_id": "c295d5710cb3b429",
+  "scenario": "Two people bargaining over a mug",
+  "schema_version": 1,
+  "started_at": "2026-10-14T19:20:04.100155+00:00",
+  "status": "complete",
+  "transcript_count": 3,
+  "turns": [
+    "buyer",
+    "seller",
+    "buyer"
+  ]
+}

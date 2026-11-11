@@ -1,0 +1,7 @@
+comparison,units,identical,total,note
+"pilot vs full run, frontier-mug-bargaining-01",subject turns,8,8,
+"pilot vs full run, frontier-lawyer-interview-01",subject turns,6,6,
+"pilot vs full run, frontier-art-auction-01",subject turns,8,8,
+"pilot vs full run, frontier-bail-setting-01",subject turns,0,8,design for this study was edited between runs
+"Expected Parrot replication v1 vs v2, rich_personas_joint_full_context",persona raw outputs,12,12,
+"Expected Parrot replication v1 vs v2, expected_parrot_like_separate_context_only_q1",persona raw outputs,12,12,

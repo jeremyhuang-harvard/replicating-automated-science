@@ -1,0 +1,47 @@
+[
+  {
+    "persona_id": "af-01",
+    "segment": "adventurous_foodie",
+    "answers": {
+      "appeal": 4,
+      "clarity": 4,
+      "uniqueness": 3,
+      "purchase_intent": 3,
+      "first_reaction": "Love it: Pepper Maple Soda sounds like a fun, bold tasting experience. It's different, for better or worse.",
+      "concerns": "About Pepper Maple Soda: The risk is poor execution: the flavors need to balance, not just shock.",
+      "improvement": "For Pepper Maple Soda: Chef-style tasting notes or a collaboration that shows craft."
+    },
+    "raw_output": "{\"appeal\": 4, \"clarity\": 4, \"uniqueness\": 3, \"purchase_intent\": 3, \"first_reaction\": \"Love it: Pepper Maple Soda sounds like a fun, bold tasting experience. It's different, for better or worse.\", \"concerns\": \"About Pepper Maple Soda: The risk is poor execution: the flavors need to balance, not just shock.\", \"improvement\": \"For Pepper Maple Soda: Chef-style tasting notes or a collaboration that shows craft.\"}",
+    "error": null
+  },
+  {
+    "persona_id": "md-01",
+    "segment": "mainstream_drinker",
+    "answers": {
+      "appeal": 4,
+      "clarity": 3,
+      "uniqueness": 2,
+      "purchase_intent": 3,
+      "first_reaction": "I'd happily pick up Pepper Maple Soda next to my regular drinks. It's different, for better or worse.",
+      "concerns": "About Pepper Maple Soda: It might not taste like a drink I'd actually want, and the price could be too high for something unproven.",
+      "improvement": "For Pepper Maple Soda: A single-can trial size at the register."
+    },
+    "raw_output": "{\"appeal\": 4, \"clarity\": 3, \"uniqueness\": 2, \"purchase_intent\": 3, \"first_reaction\": \"I'd happily pick up Pepper Maple Soda next to my regular drinks. It's different, for better or worse.\", \"concerns\": \"About Pepper Maple Soda: It might not taste like a drink I'd actually want, and the price could be too high for something unproven.\", \"improvement\": \"For Pepper Maple Soda: A single-can trial size at the register.\"}",
+    "error": null
+  },
+  {
+    "persona_id": "sh-01",
+    "segment": "skeptical_health_conscious",
+    "answers": {
+      "appeal": 2,
+      "clarity": 3,
+      "uniqueness": 3,
+      "purchase_intent": 3,
+      "first_reaction": "Pepper Maple Soda reads like a marketing gimmick to me. It's different, for better or worse.",
+      "concerns": "About Pepper Maple Soda: Flavorings and additives worry me, and the marketing tells me little about real benefits.",
+      "improvement": "For Pepper Maple Soda: Third-party nutrition information on the label."
+    },
+    "raw_output": "{\"appeal\": 2, \"clarity\": 3, \"uniqueness\": 3, \"purchase_intent\": 3, \"first_reaction\": \"Pepper Maple Soda reads like a marketing gimmick to me. It's different, for better or worse.\", \"concerns\": \"About Pepper Maple Soda: Flavorings and additives worry me, and the marketing tells me little about real benefits.\", \"improvement\": \"For Pepper Maple Soda: Third-party nutrition information on the label.\"}",
+    "error": null
+  }
+]

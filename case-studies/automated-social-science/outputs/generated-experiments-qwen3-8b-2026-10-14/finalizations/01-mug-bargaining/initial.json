@@ -1,0 +1,109 @@
+{
+  "agents": [
+    {
+      "constraints": [
+        "must sell mug for at least $5"
+      ],
+      "goal": "maximize profit",
+      "name": "Alice",
+      "role": "seller"
+    },
+    {
+      "constraints": [
+        "willing to pay at most $7"
+      ],
+      "goal": "minimize cost",
+      "name": "Bob",
+      "role": "buyer"
+    },
+    {
+      "constraints": [
+        "cannot intervene in negotiation"
+      ],
+      "goal": "assess negotiation tactics",
+      "name": "Charlie",
+      "role": "observer"
+    },
+    {
+      "constraints": [
+        "must remain neutral"
+      ],
+      "goal": "facilitate agreement",
+      "name": "Dana",
+      "role": "mediator"
+    }
+  ],
+  "causes": [
+    {
+      "hypothesis": "a higher initial offer from the seller leads to a higher agreement price",
+      "name": "initial offer",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "$6",
+        "$8",
+        "$10"
+      ]
+    },
+    {
+      "hypothesis": "a lower buyer budget leads to a lower agreement price",
+      "name": "buyer's budget",
+      "predicted_direction": "decrease",
+      "treatment_values": [
+        "$5",
+        "$7",
+        "$9"
+      ]
+    },
+    {
+      "hypothesis": "a mediator's presence leads to a more balanced agreement price",
+      "name": "mediator's presence",
+      "predicted_direction": "non_monotonic",
+      "treatment_values": [
+        "mediator present",
+        "mediator absent",
+        "mediator neutral"
+      ]
+    }
+  ],
+  "information_scope": {
+    "private": [
+      {
+        "agent": "Alice",
+        "information": [
+          "mug's true value",
+          "previous sale prices"
+        ]
+      },
+      {
+        "agent": "Bob",
+        "information": [
+          "his maximum willingness to pay",
+          "his financial constraints"
+        ]
+      }
+    ],
+    "public": [
+      "mug's market value",
+      "buyer's budget",
+      "seller's minimum price"
+    ]
+  },
+  "interaction": {
+    "max_turns": 8,
+    "order": [
+      "Alice",
+      "Bob",
+      "Dana",
+      "Charlie"
+    ],
+    "stopping_rule": "agreement reached or 8 turns elapsed"
+  },
+  "outcome": {
+    "measurement_question": "what is the final price negotiated between the seller and buyer?",
+    "name": "agreement price",
+    "operationalization": "the final price agreed upon by Alice and Bob",
+    "respondent": "Alice and Bob"
+  },
+  "scenario": "two people bargaining over a mug",
+  "schema_version": "scientist-design-v1"
+}

@@ -1,0 +1,32 @@
+{
+  "artifacts": {
+    "manifest": "manifest.json",
+    "raw_calls": "raw_calls.jsonl",
+    "transcript": "transcript.jsonl"
+  },
+  "call_count": 3,
+  "completed_at": "2026-10-14T19:18:37.225668+00:00",
+  "model": "mock-bargainer-v1",
+  "privacy_policy": "own-private-attributes-plus-public-transcript",
+  "prompt_hashes": [
+    "29438dd147c2bd771379fea897c4144f9a1bc9e983e7dcf445bbb4fbdd9e34b0",
+    "263b57ccec1863694ee19db551761aaa72969719b14bf8a80dac025b64c4857f",
+    "5b213f2a42772ee7c451b6bf61530ea68dae2e9d1c3ef94e669473d5a09842c8"
+  ],
+  "provider": "deterministic-mock",
+  "provider_config": {
+    "script": "mug-bargaining-v1",
+    "temperature": 0.0
+  },
+  "run_id": "cd24f522726faba0",
+  "scenario": "Two people bargaining over a mug",
+  "schema_version": 1,
+  "started_at": "2026-10-14T19:18:37.225181+00:00",
+  "status": "complete",
+  "transcript_count": 3,
+  "turns": [
+    "buyer",
+    "seller",
+    "buyer"
+  ]
+}

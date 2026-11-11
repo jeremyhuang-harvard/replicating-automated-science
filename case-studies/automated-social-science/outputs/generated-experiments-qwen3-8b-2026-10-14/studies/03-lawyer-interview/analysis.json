@@ -1,0 +1,56 @@
+{
+  "contrasts": {
+    "Communication clarity": 1.2380952380952372,
+    "Confidence level": 1.8819444444444446,
+    "Legal knowledge": 0.9920634920634912
+  },
+  "counts": {
+    "cells": 27,
+    "complete": 27,
+    "valid_measurements": 25
+  },
+  "direction_agreement": {
+    "Communication clarity": true,
+    "Confidence level": true,
+    "Legal knowledge": true
+  },
+  "label": "one-draw local-model evidence; not human behavior",
+  "marginal_means": {
+    "Communication clarity": [
+      6.928571428571429,
+      7.444444444444445,
+      8.166666666666666
+    ],
+    "Confidence level": [
+      6.5625,
+      7.5625,
+      8.444444444444445
+    ],
+    "Legal knowledge": [
+      7.222222222222222,
+      7.388888888888889,
+      8.214285714285714
+    ]
+  },
+  "ols": {
+    "coefficients": {
+      "Communication clarity": 0.6445053988157434,
+      "Confidence level": 0.9600313479623824,
+      "Legal knowledge": 0.32771682340647995,
+      "intercept": 5.5640020898641565
+    },
+    "features": [
+      "intercept",
+      "Legal knowledge",
+      "Communication clarity",
+      "Confidence level"
+    ]
+  },
+  "outcome_distribution": {
+    "max": 9.0,
+    "mean": 7.56,
+    "median": 8.0,
+    "min": 5.0,
+    "n": 25
+  }
+}

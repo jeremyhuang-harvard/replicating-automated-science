@@ -1,0 +1,182 @@
+[
+  {
+    "persona_id": "af-01",
+    "segment": "adventurous_foodie",
+    "answers": {
+      "appeal": 3,
+      "clarity": 5,
+      "uniqueness": 3,
+      "purchase_intent": 3,
+      "first_reaction": "Smoky Maple Seltzer is interesting enough that I'd taste it once. I'd need to taste it.",
+      "concerns": "About Smoky Maple Seltzer: Novelty can fade after one can unless the flavor is actually good.",
+      "improvement": "For Smoky Maple Seltzer: A small-batch sample pack so I can taste it before committing."
+    },
+    "raw_output": "{\"appeal\": 3, \"clarity\": 5, \"uniqueness\": 3, \"purchase_intent\": 3, \"first_reaction\": \"Smoky Maple Seltzer is interesting enough that I'd taste it once. I'd need to taste it.\", \"concerns\": \"About Smoky Maple Seltzer: Novelty can fade after one can unless the flavor is actually good.\", \"improvement\": \"For Smoky Maple Seltzer: A small-batch sample pack so I can taste it before committing.\"}",
+    "error": null
+  },
+  {
+    "persona_id": "md-01",
+    "segment": "mainstream_drinker",
+    "answers": {
+      "appeal": 3,
+      "clarity": 4,
+      "uniqueness": 2,
+      "purchase_intent": 3,
+      "first_reaction": "I could see trying Smoky Maple Seltzer once if a friend had it. It's different, for better or worse.",
+      "concerns": "About Smoky Maple Seltzer: It might not taste like a drink I'd actually want, and the price could be too high for something unproven.",
+      "improvement": "For Smoky Maple Seltzer: A clear description that it tastes like a normal soda."
+    },
+    "raw_output": "{\"appeal\": 3, \"clarity\": 4, \"uniqueness\": 2, \"purchase_intent\": 3, \"first_reaction\": \"I could see trying Smoky Maple Seltzer once if a friend had it. It's different, for better or worse.\", \"concerns\": \"About Smoky Maple Seltzer: It might not taste like a drink I'd actually want, and the price could be too high for something unproven.\", \"improvement\": \"For Smoky Maple Seltzer: A clear description that it tastes like a normal soda.\"}",
+    "error": null
+  },
+  {
+    "persona_id": "sh-01",
+    "segment": "skeptical_health_conscious",
+    "answers": {
+      "appeal": 2,
+      "clarity": 5,
+      "uniqueness": 3,
+      "purchase_intent": 3,
+      "first_reaction": "I don't see why anyone needs Smoky Maple Seltzer.",
+      "concerns": "About Smoky Maple Seltzer: Flavorings and additives worry me, and the marketing tells me little about real benefits.",
+      "improvement": "For Smoky Maple Seltzer: Third-party nutrition information on the label."
+    },
+    "raw_output": "{\"appeal\": 2, \"clarity\": 5, \"uniqueness\": 3, \"purchase_intent\": 3, \"first_reaction\": \"I don't see why anyone needs Smoky Maple Seltzer.\", \"concerns\": \"About Smoky Maple Seltzer: Flavorings and additives worry me, and the marketing tells me little about real benefits.\", \"improvement\": \"For Smoky Maple Seltzer: Third-party nutrition information on the label.\"}",
+    "error": null
+  },
+  {
+    "persona_id": "af-02",
+    "segment": "adventurous_foodie",
+    "answers": {
+      "appeal": 3,
+      "clarity": 5,
+      "uniqueness": 2,
+      "purchase_intent": 3,
+      "first_reaction": "Smoky Maple Seltzer is interesting enough that I'd taste it once. It's different, for better or worse.",
+      "concerns": "About Smoky Maple Seltzer: Novelty can fade after one can unless the flavor is actually good.",
+      "improvement": "For Smoky Maple Seltzer: A small-batch sample pack so I can taste it before committing."
+    },
+    "raw_output": "{\"appeal\": 3, \"clarity\": 5, \"uniqueness\": 2, \"purchase_intent\": 3, \"first_reaction\": \"Smoky Maple Seltzer is interesting enough that I'd taste it once. It's different, for better or worse.\", \"concerns\": \"About Smoky Maple Seltzer: Novelty can fade after one can unless the flavor is actually good.\", \"improvement\": \"For Smoky Maple Seltzer: A small-batch sample pack so I can taste it before committing.\"}",
+    "error": null
+  },
+  {
+    "persona_id": "md-02",
+    "segment": "mainstream_drinker",
+    "answers": {
+      "appeal": 3,
+      "clarity": 5,
+      "uniqueness": 2,
+      "purchase_intent": 2,
+      "first_reaction": "Smoky Maple Seltzer is okay, I guess, if it tastes close to a normal drink.",
+      "concerns": "About Smoky Maple Seltzer: It might not taste like a drink I'd actually want, and the price could be too high for something unproven.",
+      "improvement": "For Smoky Maple Seltzer: A single-can trial size at the register."
+    },
+    "raw_output": "{\"appeal\": 3, \"clarity\": 5, \"uniqueness\": 2, \"purchase_intent\": 2, \"first_reaction\": \"Smoky Maple Seltzer is okay, I guess, if it tastes close to a normal drink.\", \"concerns\": \"About Smoky Maple Seltzer: It might not taste like a drink I'd actually want, and the price could be too high for something unproven.\", \"improvement\": \"For Smoky Maple Seltzer: A single-can trial size at the register.\"}",
+    "error": null
+  },
+  {
+    "persona_id": "sh-02",
+    "segment": "skeptical_health_conscious",
+    "answers": {
+      "appeal": 3,
+      "clarity": 4,
+      "uniqueness": 2,
+      "purchase_intent": 2,
+      "first_reaction": "Smoky Maple Seltzer might be fine, but I'd want to see the ingredients first. The idea stays with me.",
+      "concerns": "About Smoky Maple Seltzer: I don't trust the positioning without evidence or a clear nutrition panel.",
+      "improvement": "For Smoky Maple Seltzer: Smaller portions or lower sodium and sugar."
+    },
+    "raw_output": "{\"appeal\": 3, \"clarity\": 4, \"uniqueness\": 2, \"purchase_intent\": 2, \"first_reaction\": \"Smoky Maple Seltzer might be fine, but I'd want to see the ingredients first. The idea stays with me.\", \"concerns\": \"About Smoky Maple Seltzer: I don't trust the positioning without evidence or a clear nutrition panel.\", \"improvement\": \"For Smoky Maple Seltzer: Smaller portions or lower sodium and sugar.\"}",
+    "error": null
+  },
+  {
+    "persona_id": "af-03",
+    "segment": "adventurous_foodie",
+    "answers": {
+      "appeal": 2,
+      "clarity": 4,
+      "uniqueness": 3,
+      "purchase_intent": 3,
+      "first_reaction": "I like weird drinks, but Smoky Maple Seltzer sounds like it misses the mark. The idea stays with me.",
+      "concerns": "About Smoky Maple Seltzer: The risk is poor execution: the flavors need to balance, not just shock.",
+      "improvement": "For Smoky Maple Seltzer: Chef-style tasting notes or a collaboration that shows craft."
+    },
+    "raw_output": "{\"appeal\": 2, \"clarity\": 4, \"uniqueness\": 3, \"purchase_intent\": 3, \"first_reaction\": \"I like weird drinks, but Smoky Maple Seltzer sounds like it misses the mark. The idea stays with me.\", \"concerns\": \"About Smoky Maple Seltzer: The risk is poor execution: the flavors need to balance, not just shock.\", \"improvement\": \"For Smoky Maple Seltzer: Chef-style tasting notes or a collaboration that shows craft.\"}",
+    "error": null
+  },
+  {
+    "persona_id": "md-03",
+    "segment": "mainstream_drinker",
+    "answers": {
+      "appeal": 3,
+      "clarity": 4,
+      "uniqueness": 3,
+      "purchase_intent": 3,
+      "first_reaction": "I could see trying Smoky Maple Seltzer once if a friend had it.",
+      "concerns": "About Smoky Maple Seltzer: I'm unsure what it tastes like and don't want to waste money on a weird flavor.",
+      "improvement": "For Smoky Maple Seltzer: A clear description that it tastes like a normal soda."
+    },
+    "raw_output": "{\"appeal\": 3, \"clarity\": 4, \"uniqueness\": 3, \"purchase_intent\": 3, \"first_reaction\": \"I could see trying Smoky Maple Seltzer once if a friend had it.\", \"concerns\": \"About Smoky Maple Seltzer: I'm unsure what it tastes like and don't want to waste money on a weird flavor.\", \"improvement\": \"For Smoky Maple Seltzer: A clear description that it tastes like a normal soda.\"}",
+    "error": null
+  },
+  {
+    "persona_id": "sh-03",
+    "segment": "skeptical_health_conscious",
+    "answers": {
+      "appeal": 2,
+      "clarity": 5,
+      "uniqueness": 2,
+      "purchase_intent": 2,
+      "first_reaction": "I don't see why anyone needs Smoky Maple Seltzer.",
+      "concerns": "About Smoky Maple Seltzer: I'd want the full ingredient list, sweeteners, and sodium before believing any of the claims.",
+      "improvement": "For Smoky Maple Seltzer: Smaller portions or lower sodium and sugar."
+    },
+    "raw_output": "{\"appeal\": 2, \"clarity\": 5, \"uniqueness\": 2, \"purchase_intent\": 2, \"first_reaction\": \"I don't see why anyone needs Smoky Maple Seltzer.\", \"concerns\": \"About Smoky Maple Seltzer: I'd want the full ingredient list, sweeteners, and sodium before believing any of the claims.\", \"improvement\": \"For Smoky Maple Seltzer: Smaller portions or lower sodium and sugar.\"}",
+    "error": null
+  },
+  {
+    "persona_id": "af-04",
+    "segment": "adventurous_foodie",
+    "answers": {
+      "appeal": 4,
+      "clarity": 4,
+      "uniqueness": 2,
+      "purchase_intent": 2,
+      "first_reaction": "Love it: Smoky Maple Seltzer sounds like a fun, bold tasting experience.",
+      "concerns": "About Smoky Maple Seltzer: Novelty can fade after one can unless the flavor is actually good.",
+      "improvement": "For Smoky Maple Seltzer: A small-batch sample pack so I can taste it before committing."
+    },
+    "raw_output": "{\"appeal\": 4, \"clarity\": 4, \"uniqueness\": 2, \"purchase_intent\": 2, \"first_reaction\": \"Love it: Smoky Maple Seltzer sounds like a fun, bold tasting experience.\", \"concerns\": \"About Smoky Maple Seltzer: Novelty can fade after one can unless the flavor is actually good.\", \"improvement\": \"For Smoky Maple Seltzer: A small-batch sample pack so I can taste it before committing.\"}",
+    "error": null
+  },
+  {
+    "persona_id": "md-04",
+    "segment": "mainstream_drinker",
+    "answers": {
+      "appeal": 4,
+      "clarity": 4,
+      "uniqueness": 2,
+      "purchase_intent": 3,
+      "first_reaction": "I'd happily pick up Smoky Maple Seltzer next to my regular drinks. I'd need to taste it.",
+      "concerns": "About Smoky Maple Seltzer: It feels too far from the sodas I know.",
+      "improvement": "For Smoky Maple Seltzer: A single-can trial size at the register."
+    },
+    "raw_output": "{\"appeal\": 4, \"clarity\": 4, \"uniqueness\": 2, \"purchase_intent\": 3, \"first_reaction\": \"I'd happily pick up Smoky Maple Seltzer next to my regular drinks. I'd need to taste it.\", \"concerns\": \"About Smoky Maple Seltzer: It feels too far from the sodas I know.\", \"improvement\": \"For Smoky Maple Seltzer: A single-can trial size at the register.\"}",
+    "error": null
+  },
+  {
+    "persona_id": "sh-04",
+    "segment": "skeptical_health_conscious",
+    "answers": {
+      "appeal": 3,
+      "clarity": 4,
+      "uniqueness": 3,
+      "purchase_intent": 2,
+      "first_reaction": "I'm undecided on Smoky Maple Seltzer; the claims need backing up. It's different, for better or worse.",
+      "concerns": "About Smoky Maple Seltzer: Flavorings and additives worry me, and the marketing tells me little about real benefits.",
+      "improvement": "For Smoky Maple Seltzer: Third-party nutrition information on the label."
+    },
+    "raw_output": "{\"appeal\": 3, \"clarity\": 4, \"uniqueness\": 3, \"purchase_intent\": 2, \"first_reaction\": \"I'm undecided on Smoky Maple Seltzer; the claims need backing up. It's different, for better or worse.\", \"concerns\": \"About Smoky Maple Seltzer: Flavorings and additives worry me, and the marketing tells me little about real benefits.\", \"improvement\": \"For Smoky Maple Seltzer: Third-party nutrition information on the label.\"}",
+    "error": null
+  }
+]

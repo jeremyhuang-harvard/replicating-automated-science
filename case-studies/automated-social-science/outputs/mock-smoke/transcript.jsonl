@@ -1,0 +1,3 @@
+{"agent": "buyer", "call_hash": "accc75d5903e3e10b8e1db4689c1664ee843d694d59a3a1fbafeb3585e6b6737", "content": "I can offer $45 for the mug.", "response_error": null, "turn": 0}
+{"agent": "seller", "call_hash": "e53c1edf22eeaae96aa2499b0bf8c1b7f99d55aa6bd3af8496810f4fdeb74a6c", "content": "I can sell it for $60.", "response_error": null, "turn": 1}
+{"agent": "buyer", "call_hash": "badec9d84e04874f81e4026c5defde1be5eacba0b959cf0c42683204e9f4d038", "content": "Agreed. I will pay $60 for the mug.", "response_error": null, "turn": 2}

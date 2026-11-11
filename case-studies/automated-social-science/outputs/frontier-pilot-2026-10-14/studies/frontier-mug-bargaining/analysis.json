@@ -1,0 +1,389 @@
+{
+  "caveat": "Descriptive one-draw local-model evidence: one model draw per OA cell, not repeated sampling and not human behavior.",
+  "counts": {
+    "complete": 1,
+    "failed": 0,
+    "rows": 1
+  },
+  "main_effect_marginals": {
+    "Buyer budget": [
+      {
+        "level": 6,
+        "level_index": 0,
+        "n": 1,
+        "outcomes": {
+          "deal": {
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0,
+            "n": 1,
+            "non_null": 1,
+            "type": "binary"
+          },
+          "price": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 1,
+            "non_null": 0,
+            "type": "nullable_number"
+          }
+        }
+      },
+      {
+        "level": 12,
+        "level_index": 1,
+        "n": 0,
+        "outcomes": {
+          "deal": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "binary"
+          },
+          "price": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "nullable_number"
+          }
+        }
+      },
+      {
+        "level": 18,
+        "level_index": 2,
+        "n": 0,
+        "outcomes": {
+          "deal": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "binary"
+          },
+          "price": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "nullable_number"
+          }
+        }
+      }
+    ],
+    "Negotiation procedure": [
+      {
+        "level": "alternating offers",
+        "level_index": 0,
+        "n": 1,
+        "outcomes": {
+          "deal": {
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0,
+            "n": 1,
+            "non_null": 1,
+            "type": "binary"
+          },
+          "price": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 1,
+            "non_null": 0,
+            "type": "nullable_number"
+          }
+        }
+      },
+      {
+        "level": "seller take-it-or-leave-it",
+        "level_index": 1,
+        "n": 0,
+        "outcomes": {
+          "deal": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "binary"
+          },
+          "price": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "nullable_number"
+          }
+        }
+      },
+      {
+        "level": "buyer take-it-or-leave-it",
+        "level_index": 2,
+        "n": 0,
+        "outcomes": {
+          "deal": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "binary"
+          },
+          "price": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "nullable_number"
+          }
+        }
+      }
+    ],
+    "Outside option": [
+      {
+        "level": "none",
+        "level_index": 0,
+        "n": 1,
+        "outcomes": {
+          "deal": {
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0,
+            "n": 1,
+            "non_null": 1,
+            "type": "binary"
+          },
+          "price": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 1,
+            "non_null": 0,
+            "type": "nullable_number"
+          }
+        }
+      },
+      {
+        "level": "buyer alternative",
+        "level_index": 1,
+        "n": 0,
+        "outcomes": {
+          "deal": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "binary"
+          },
+          "price": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "nullable_number"
+          }
+        }
+      },
+      {
+        "level": "seller offer",
+        "level_index": 2,
+        "n": 0,
+        "outcomes": {
+          "deal": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "binary"
+          },
+          "price": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "nullable_number"
+          }
+        }
+      }
+    ],
+    "Seller attachment": [
+      {
+        "level": "none",
+        "level_index": 0,
+        "n": 1,
+        "outcomes": {
+          "deal": {
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0,
+            "n": 1,
+            "non_null": 1,
+            "type": "binary"
+          },
+          "price": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 1,
+            "non_null": 0,
+            "type": "nullable_number"
+          }
+        }
+      },
+      {
+        "level": "moderate",
+        "level_index": 1,
+        "n": 0,
+        "outcomes": {
+          "deal": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "binary"
+          },
+          "price": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "nullable_number"
+          }
+        }
+      },
+      {
+        "level": "strong",
+        "level_index": 2,
+        "n": 0,
+        "outcomes": {
+          "deal": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "binary"
+          },
+          "price": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "nullable_number"
+          }
+        }
+      }
+    ],
+    "Seller reservation price": [
+      {
+        "level": 4,
+        "level_index": 0,
+        "n": 1,
+        "outcomes": {
+          "deal": {
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0,
+            "n": 1,
+            "non_null": 1,
+            "type": "binary"
+          },
+          "price": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 1,
+            "non_null": 0,
+            "type": "nullable_number"
+          }
+        }
+      },
+      {
+        "level": 10,
+        "level_index": 1,
+        "n": 0,
+        "outcomes": {
+          "deal": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "binary"
+          },
+          "price": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "nullable_number"
+          }
+        }
+      },
+      {
+        "level": 16,
+        "level_index": 2,
+        "n": 0,
+        "outcomes": {
+          "deal": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "binary"
+          },
+          "price": {
+            "max": null,
+            "mean": null,
+            "min": null,
+            "n": 0,
+            "non_null": 0,
+            "type": "nullable_number"
+          }
+        }
+      }
+    ]
+  },
+  "outcome_summaries": {
+    "deal": {
+      "max": 0.0,
+      "mean": 0.0,
+      "min": 0.0,
+      "n": 1,
+      "non_null": 1,
+      "type": "binary"
+    },
+    "price": {
+      "max": null,
+      "mean": null,
+      "min": null,
+      "n": 1,
+      "non_null": 0,
+      "type": "nullable_number"
+    }
+  },
+  "schema_version": 1,
+  "study_id": "frontier-mug-bargaining",
+  "study_summary": {
+    "deal_rate": 0.0,
+    "mean_price_on_recorded_deals": null
+  }
+}

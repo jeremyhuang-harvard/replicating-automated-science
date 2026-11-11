@@ -1,0 +1,220 @@
+{
+  "counts": {
+    "panel": 12,
+    "ok": 12,
+    "failed": 0,
+    "by_segment": {
+      "adventurous_foodie": 4,
+      "mainstream_drinker": 4,
+      "skeptical_health_conscious": 4
+    }
+  },
+  "means": {
+    "overall": {
+      "appeal": 3.08,
+      "clarity": 4.25,
+      "uniqueness": 4.67,
+      "purchase_intent": 2.67
+    },
+    "by_segment": {
+      "adventurous_foodie": {
+        "appeal": 4.5,
+        "clarity": 4.25,
+        "uniqueness": 5,
+        "purchase_intent": 4.25
+      },
+      "mainstream_drinker": {
+        "appeal": 2.5,
+        "clarity": 4.25,
+        "uniqueness": 4.5,
+        "purchase_intent": 2
+      },
+      "skeptical_health_conscious": {
+        "appeal": 2.25,
+        "clarity": 4.25,
+        "uniqueness": 4.5,
+        "purchase_intent": 1.75
+      }
+    }
+  },
+  "distributions": {
+    "overall": {
+      "appeal": {
+        "1": 0,
+        "2": 5,
+        "3": 3,
+        "4": 2,
+        "5": 2
+      },
+      "clarity": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 9,
+        "5": 3
+      },
+      "uniqueness": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 4,
+        "5": 8
+      },
+      "purchase_intent": {
+        "1": 2,
+        "2": 5,
+        "3": 2,
+        "4": 1,
+        "5": 2
+      }
+    },
+    "by_segment": {
+      "adventurous_foodie": {
+        "appeal": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 2,
+          "5": 2
+        },
+        "clarity": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 3,
+          "5": 1
+        },
+        "uniqueness": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 4
+        },
+        "purchase_intent": {
+          "1": 0,
+          "2": 0,
+          "3": 1,
+          "4": 1,
+          "5": 2
+        }
+      },
+      "mainstream_drinker": {
+        "appeal": {
+          "1": 0,
+          "2": 2,
+          "3": 2,
+          "4": 0,
+          "5": 0
+        },
+        "clarity": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 3,
+          "5": 1
+        },
+        "uniqueness": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 2,
+          "5": 2
+        },
+        "purchase_intent": {
+          "1": 1,
+          "2": 2,
+          "3": 1,
+          "4": 0,
+          "5": 0
+        }
+      },
+      "skeptical_health_conscious": {
+        "appeal": {
+          "1": 0,
+          "2": 3,
+          "3": 1,
+          "4": 0,
+          "5": 0
+        },
+        "clarity": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 3,
+          "5": 1
+        },
+        "uniqueness": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 2,
+          "5": 2
+        },
+        "purchase_intent": {
+          "1": 1,
+          "2": 3,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        }
+      }
+    }
+  },
+  "quotes": {
+    "adventurous_foodie": {
+      "first_reaction": {
+        "persona_id": "af-01",
+        "text": "Love it: Lasagna Cola sounds like a fun, bold tasting experience."
+      },
+      "concerns": {
+        "persona_id": "af-01",
+        "text": "About Lasagna Cola: The risk is poor execution: the flavors need to balance, not just shock."
+      },
+      "improvement": {
+        "persona_id": "af-01",
+        "text": "For Lasagna Cola: Chef-style tasting notes or a collaboration that shows craft."
+      }
+    },
+    "mainstream_drinker": {
+      "first_reaction": {
+        "persona_id": "md-01",
+        "text": "That's not what I expect from a soda, so Lasagna Cola is a pass."
+      },
+      "concerns": {
+        "persona_id": "md-01",
+        "text": "About Lasagna Cola: It feels too far from the sodas I know."
+      },
+      "improvement": {
+        "persona_id": "md-01",
+        "text": "For Lasagna Cola: A clear description that it tastes like a normal soda."
+      }
+    },
+    "skeptical_health_conscious": {
+      "first_reaction": {
+        "persona_id": "sh-01",
+        "text": "I don't see why anyone needs Lasagna Cola. I'd need to taste it."
+      },
+      "concerns": {
+        "persona_id": "sh-01",
+        "text": "About Lasagna Cola: I'd want the full ingredient list, sweeteners, and sodium before believing any of the claims. The sugar-free claim helps, but I'd still check the label."
+      },
+      "improvement": {
+        "persona_id": "sh-01",
+        "text": "For Lasagna Cola: Third-party nutrition information on the label."
+      }
+    }
+  },
+  "warnings": [
+    "Segment adventurous_foodie has a small sample (n=4); treat its means as anecdotal.",
+    "Segment mainstream_drinker has a small sample (n=4); treat its means as anecdotal.",
+    "Segment skeptical_health_conscious has a small sample (n=4); treat its means as anecdotal."
+  ],
+  "limitations": [
+    "These are simulated hypotheses, not human evidence. No real consumer was surveyed.",
+    "Synthetic personas reflect the prompt, the model and its training data; they can be confidently wrong, overly agreeable, and less varied than real people.",
+    "Rating levels are not calibrated to real purchase behavior; compare concepts against each other, never read a mean as a forecast.",
+    "Segments are defined by explicit product attitudes written by the study author, not measured populations.",
+    "Validate any promising signal with a human panel before making decisions."
+  ]
+}

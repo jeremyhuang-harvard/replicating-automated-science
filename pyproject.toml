@@ -1,0 +1,14 @@
+[project]
+name = "replicating-automated-science"
+version = "1.0.0"
+description = "Two replications of LLM social-science pipelines (Expected Parrot, Automated Social Science) with all saved outputs"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = []
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.uv]
+package = false

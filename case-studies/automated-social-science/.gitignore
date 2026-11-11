@@ -1,0 +1,38 @@
+# Secrets and local credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+credentials/
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+
+# Generated experiment outputs
+experiment_logs/
+raw_paid_data/
+data/raw/paid/
+*.paid.jsonl
+
+# Downloaded model weights and caches
+.cache/
+models/
+model_cache/
+mlx-models/
+huggingface/
+
+# Editors and OS
+.DS_Store
+.idea/
+.vscode/

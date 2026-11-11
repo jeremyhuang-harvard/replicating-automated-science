@@ -1,0 +1,154 @@
+{
+  "frontier-art-auction": {
+    "factors": [
+      {
+        "beta": 21.66666666666667,
+        "factor": "Bidder A valuation",
+        "prediction": "higher valuation weakly increases price and the chance A wins",
+        "se_hc1": 22.335497232117262
+      },
+      {
+        "beta": 17.222222222222225,
+        "factor": "Bidder B valuation",
+        "prediction": "higher valuation weakly increases price and the chance B wins",
+        "se_hc1": 19.314300545589354
+      },
+      {
+        "beta": 18.61111111111111,
+        "factor": "Bidder C valuation",
+        "prediction": "higher valuation weakly increases price and the chance C wins",
+        "se_hc1": 20.277430477081918
+      },
+      {
+        "beta": 57.500000000000014,
+        "factor": "Bid increment",
+        "prediction": "larger increments coarsen the final price and may increase deviation from the second-highest valuation",
+        "se_hc1": 22.130611985900174
+      },
+      {
+        "beta": -42.5,
+        "factor": "Information regime",
+        "prediction": "more public value information changes strategic bidding and may move price toward the second-highest valuation",
+        "se_hc1": 16.26513299190528
+      }
+    ],
+    "intercept": 99.35185185185165,
+    "n": 27,
+    "outcome": "Final price ($)",
+    "r2": 0.4202756862636142
+  },
+  "frontier-bail-setting": {
+    "factors": [
+      {
+        "beta": -2777.7777777777783,
+        "factor": "Post-offense cooperation",
+        "prediction": "greater voluntary cooperation reduces bail",
+        "se_hc1": 2510.632885117421
+      },
+      {
+        "beta": 7777.777777777777,
+        "factor": "Prior convictions",
+        "prediction": "more prior convictions increase bail",
+        "se_hc1": 1842.0707298527195
+      },
+      {
+        "beta": 6805.555555555556,
+        "factor": "Flight risk",
+        "prediction": "greater flight risk increases bail",
+        "se_hc1": 2556.9462227216786
+      },
+      {
+        "beta": -5833.333333333333,
+        "factor": "Community ties",
+        "prediction": "stronger community ties reduce bail",
+        "se_hc1": 2481.375362968272
+      },
+      {
+        "beta": 6111.1111111111095,
+        "factor": "Evidence strength",
+        "prediction": "stronger evidence increases bail",
+        "se_hc1": 2621.2512775098735
+      }
+    ],
+    "intercept": 10138.888888888861,
+    "n": 27,
+    "outcome": "Bail amount ($)",
+    "r2": 0.5667490002352388
+  },
+  "frontier-lawyer-interview": {
+    "factors": [
+      {
+        "beta": 8.888888888888886,
+        "factor": "Bar status",
+        "prediction": "stronger licensing status increases hiring",
+        "se_hc1": 4.974459557921443
+      },
+      {
+        "beta": 7.777777777777777,
+        "factor": "Legal reasoning performance",
+        "prediction": "better legal reasoning increases hiring",
+        "se_hc1": 4.642838300207463
+      },
+      {
+        "beta": 11.944444444444443,
+        "factor": "Communication clarity",
+        "prediction": "clearer communication increases hiring",
+        "se_hc1": 4.559589236701761
+      },
+      {
+        "beta": 4.444444444444444,
+        "factor": "Relevant experience",
+        "prediction": "more relevant experience increases hiring",
+        "se_hc1": 4.890281587745898
+      },
+      {
+        "beta": -2.220446049250313e-15,
+        "factor": "Candidate height",
+        "prediction": "height should have approximately no effect after substantive qualifications are held fixed",
+        "se_hc1": 4.782015880037953
+      }
+    ],
+    "intercept": 39.35185185185176,
+    "n": 27,
+    "outcome": "Hiring rating (0\u2013100)",
+    "r2": 0.3961595572354212
+  },
+  "frontier-mug-bargaining": {
+    "factors": [
+      {
+        "beta": 0.2222222222222222,
+        "factor": "Buyer budget",
+        "prediction": "higher budgets weakly increase agreement and may increase price",
+        "se_hc1": 0.08281733249999215
+      },
+      {
+        "beta": -0.2222222222222222,
+        "factor": "Seller reservation price",
+        "prediction": "higher reservation prices reduce agreement and increase price conditional on agreement",
+        "se_hc1": 0.06822114792713031
+      },
+      {
+        "beta": 0.05555555555555555,
+        "factor": "Seller attachment",
+        "prediction": "greater attachment reduces agreement and raises the price required to sell",
+        "se_hc1": 0.06658578279710697
+      },
+      {
+        "beta": -0.2222222222222222,
+        "factor": "Outside option",
+        "prediction": "the advantaged side's outside option shifts agreement and price toward that side",
+        "se_hc1": 0.05897750478732264
+      },
+      {
+        "beta": 0.3333333333333333,
+        "factor": "Negotiation procedure",
+        "prediction": "proposal rights affect price and possibly agreement",
+        "se_hc1": 0.0828173324999922
+      }
+    ],
+    "intercept": 0.3518518518518512,
+    "n": 27,
+    "outcome": "Agreement (0/1)",
+    "r2": 0.7005494505494505
+  }
+}

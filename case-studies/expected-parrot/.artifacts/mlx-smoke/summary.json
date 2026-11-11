@@ -1,0 +1,116 @@
+{
+  "counts": {
+    "panel": 1,
+    "ok": 1,
+    "failed": 0,
+    "by_segment": {
+      "adventurous_foodie": 1
+    }
+  },
+  "means": {
+    "overall": {
+      "appeal": 3,
+      "clarity": 3,
+      "uniqueness": 3,
+      "purchase_intent": 3
+    },
+    "by_segment": {
+      "adventurous_foodie": {
+        "appeal": 3,
+        "clarity": 3,
+        "uniqueness": 3,
+        "purchase_intent": 3
+      }
+    }
+  },
+  "distributions": {
+    "overall": {
+      "appeal": {
+        "1": 0,
+        "2": 0,
+        "3": 1,
+        "4": 0,
+        "5": 0
+      },
+      "clarity": {
+        "1": 0,
+        "2": 0,
+        "3": 1,
+        "4": 0,
+        "5": 0
+      },
+      "uniqueness": {
+        "1": 0,
+        "2": 0,
+        "3": 1,
+        "4": 0,
+        "5": 0
+      },
+      "purchase_intent": {
+        "1": 0,
+        "2": 0,
+        "3": 1,
+        "4": 0,
+        "5": 0
+      }
+    },
+    "by_segment": {
+      "adventurous_foodie": {
+        "appeal": {
+          "1": 0,
+          "2": 0,
+          "3": 1,
+          "4": 0,
+          "5": 0
+        },
+        "clarity": {
+          "1": 0,
+          "2": 0,
+          "3": 1,
+          "4": 0,
+          "5": 0
+        },
+        "uniqueness": {
+          "1": 0,
+          "2": 0,
+          "3": 1,
+          "4": 0,
+          "5": 0
+        },
+        "purchase_intent": {
+          "1": 0,
+          "2": 0,
+          "3": 1,
+          "4": 0,
+          "5": 0
+        }
+      }
+    }
+  },
+  "quotes": {
+    "adventurous_foodie": {
+      "first_reaction": {
+        "persona_id": "af-01",
+        "text": "It's strange and intriguing, like a foodie's dream come true, but I'm not sure how the flavors would actually work together."
+      },
+      "concerns": {
+        "persona_id": "af-01",
+        "text": "I'm worried the savory flavors might clash or overwhelm the cola taste, making it unpleasant."
+      },
+      "improvement": {
+        "persona_id": "af-01",
+        "text": "Maybe test the flavor balance with a small sample group before launching."
+      }
+    }
+  },
+  "warnings": [
+    "Segment adventurous_foodie has a small sample (n=1); treat its means as anecdotal."
+  ],
+  "limitations": [
+    "These are simulated hypotheses, not human evidence. No real consumer was surveyed.",
+    "Synthetic personas reflect the prompt, the model and its training data; they can be confidently wrong, overly agreeable, and less varied than real people.",
+    "Rating levels are not calibrated to real purchase behavior; compare concepts against each other, never read a mean as a forecast.",
+    "Segments are defined by explicit product attitudes written by the study author, not measured populations.",
+    "Validate any promising signal with a human panel before making decisions."
+  ]
+}
