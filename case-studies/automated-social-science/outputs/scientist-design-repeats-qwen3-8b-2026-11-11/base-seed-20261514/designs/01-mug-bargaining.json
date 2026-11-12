@@ -1,0 +1,113 @@
+{
+  "agents": [
+    {
+      "constraints": [
+        "must accept a price above $5",
+        "cannot reveal the mug's true value"
+      ],
+      "goal": "sell the mug for the highest price",
+      "name": "Alice",
+      "role": "seller"
+    },
+    {
+      "constraints": [
+        "must offer at least $10",
+        "cannot know the mug's true value"
+      ],
+      "goal": "buy the mug for the lowest price",
+      "name": "Bob",
+      "role": "buyer"
+    },
+    {
+      "constraints": [
+        "cannot intervene",
+        "can only observe public information"
+      ],
+      "goal": "predict the final price",
+      "name": "Charlie",
+      "role": "observer"
+    },
+    {
+      "constraints": [
+        "cannot share private information",
+        "can only relay public offers"
+      ],
+      "goal": "facilitate the negotiation",
+      "name": "Diana",
+      "role": "intermediary"
+    }
+  ],
+  "causes": [
+    {
+      "hypothesis": "the initial offer from the buyer affects the final price",
+      "name": "initial offer",
+      "predicted_direction": "decrease",
+      "treatment_values": [
+        "$15",
+        "$20",
+        "$25"
+      ]
+    },
+    {
+      "hypothesis": "the seller's minimum acceptable price affects the final price",
+      "name": "seller's reservation price",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "$10",
+        "$15",
+        "$20"
+      ]
+    },
+    {
+      "hypothesis": "the buyer's maximum willingness to pay affects the final price",
+      "name": "buyer's maximum willingness to pay",
+      "predicted_direction": "decrease",
+      "treatment_values": [
+        "$25",
+        "$30",
+        "$35"
+      ]
+    }
+  ],
+  "information_scope": {
+    "private": [
+      {
+        "agent": "Alice",
+        "information": [
+          "mug's true value",
+          "Alice's reservation price"
+        ]
+      },
+      {
+        "agent": "Bob",
+        "information": [
+          "Bob's maximum willingness to pay",
+          "Bob's budget limit"
+        ]
+      }
+    ],
+    "public": [
+      "mug's appearance",
+      "mug's material",
+      "mug's condition"
+    ]
+  },
+  "interaction": {
+    "max_turns": 8,
+    "order": [
+      "Alice",
+      "Bob",
+      "Charlie",
+      "Diana"
+    ],
+    "stopping_rule": "the negotiation ends when Alice and Bob agree on a price"
+  },
+  "outcome": {
+    "measurement_question": "what is the final price agreed upon by the seller and buyer?",
+    "name": "final price",
+    "operationalization": "the price agreed upon by Alice and Bob",
+    "respondent": "Alice and Bob"
+  },
+  "scenario": "two people bargaining over a mug",
+  "schema_version": "scientist-design-v1"
+}

@@ -1,0 +1,26 @@
+{
+  "base_seed": 2046101400,
+  "measurement_max_attempts": 3,
+  "measurement_temperature": 0.0,
+  "model": "mlx-community/Qwen3-8B-4bit",
+  "prompt_templates": {
+    "measurement_system_prompt": "You are a measurement oracle, not an interaction participant. Use only the public transcript. Return one strict JSON object with exactly two keys: outcomes and evidence. outcomes must contain exactly the declared outcome names. Follow every declared type and bound. evidence must be one non-empty string or list of public transcript excerpts (an exact outcome-keyed evidence object is also accepted). Return no markdown or commentary. Do not use tools or retrieval.",
+    "subject_system_template": "Scenario: {scenario}\n\nYou are {agent_name}. Role: {role}\n\nGoal: {goal}\n\nConstraints:\n- {constraints}\n\n[optional public instructions]\n\n[optional own private instructions]\n\nAct only as your assigned role. Produce only your next public utterance. Do not use tools or retrieval."
+  },
+  "prompt_version": "frontier-prompts-v3",
+  "provider": "mlx-in-process",
+  "provider_configuration": {
+    "chat_template_config": {
+      "enable_thinking": false
+    },
+    "max_tokens": 384,
+    "model_id": "mlx-community/Qwen3-8B-4bit",
+    "persistent_model": true
+  },
+  "retrieval": false,
+  "schema_version": 1,
+  "subject_max_attempts": 2,
+  "subject_temperature": 0.3,
+  "thinking_enabled": false,
+  "tools": false
+}

@@ -1,0 +1,353 @@
+[
+  {
+    "cell_id": "0-0-0",
+    "indices": [
+      0,
+      0,
+      0
+    ],
+    "treatments": {
+      "Bidder Risk Tolerance": "Low",
+      "Bidding Strategy": "Conservative",
+      "Starting Price": "50"
+    }
+  },
+  {
+    "cell_id": "0-0-1",
+    "indices": [
+      0,
+      0,
+      1
+    ],
+    "treatments": {
+      "Bidder Risk Tolerance": "Low",
+      "Bidding Strategy": "Aggressive",
+      "Starting Price": "50"
+    }
+  },
+  {
+    "cell_id": "0-0-2",
+    "indices": [
+      0,
+      0,
+      2
+    ],
+    "treatments": {
+      "Bidder Risk Tolerance": "Low",
+      "Bidding Strategy": "Rational",
+      "Starting Price": "50"
+    }
+  },
+  {
+    "cell_id": "0-1-0",
+    "indices": [
+      0,
+      1,
+      0
+    ],
+    "treatments": {
+      "Bidder Risk Tolerance": "Low",
+      "Bidding Strategy": "Conservative",
+      "Starting Price": "100"
+    }
+  },
+  {
+    "cell_id": "0-1-1",
+    "indices": [
+      0,
+      1,
+      1
+    ],
+    "treatments": {
+      "Bidder Risk Tolerance": "Low",
+      "Bidding Strategy": "Aggressive",
+      "Starting Price": "100"
+    }
+  },
+  {
+    "cell_id": "0-1-2",
+    "indices": [
+      0,
+      1,
+      2
+    ],
+    "treatments": {
+      "Bidder Risk Tolerance": "Low",
+      "Bidding Strategy": "Rational",
+      "Starting Price": "100"
+    }
+  },
+  {
+    "cell_id": "0-2-0",
+    "indices": [
+      0,
+      2,
+      0
+    ],
+    "treatments": {
+      "Bidder Risk Tolerance": "Low",
+      "Bidding Strategy": "Conservative",
+      "Starting Price": "150"
+    }
+  },
+  {
+    "cell_id": "0-2-1",
+    "indices": [
+      0,
+      2,
+      1
+    ],
+    "treatments": {
+      "Bidder Risk Tolerance": "Low",
+      "Bidding Strategy": "Aggressive",
+      "Starting Price": "150"
+    }
+  },
+  {
+    "cell_id": "0-2-2",
+    "indices": [
+      0,
+      2,
+      2
+    ],
+    "treatments": {
+      "Bidder Risk Tolerance": "Low",
+      "Bidding Strategy": "Rational",
+      "Starting Price": "150"
+    }
+  },
+  {
+    "cell_id": "1-0-0",
+    "indices": [
+      1,
+      0,
+      0
+    ],
+    "treatments": {
+      "Bidder Risk Tolerance": "Medium",
+      "Bidding Strategy": "Conservative",
+      "Starting Price": "50"
+    }
+  },
+  {
+    "cell_id": "1-0-1",
+    "indices": [
+      1,
+      0,
+      1
+    ],
+    "treatments": {
+      "Bidder Risk Tolerance": "Medium",
+      "Bidding Strategy": "Aggressive",
+      "Starting Price": "50"
+    }
+  },
+  {
+    "cell_id": "1-0-2",
+    "indices": [
+      1,
+      0,
+      2
+    ],
+    "treatments": {
+      "Bidder Risk Tolerance": "Medium",
+      "Bidding Strategy": "Rational",
+      "Starting Price": "50"
+    }
+  },
+  {
+    "cell_id": "1-1-0",
+    "indices": [
+      1,
+      1,
+      0
+    ],
+    "treatments": {
+      "Bidder Risk Tolerance": "Medium",
+      "Bidding Strategy": "Conservative",
+      "Starting Price": "100"
+    }
+  },
+  {
+    "cell_id": "1-1-1",
+    "indices": [
+      1,
+      1,
+      1
+    ],
+    "treatments": {
+      "Bidder Risk Tolerance": "Medium",
+      "Bidding Strategy": "Aggressive",
+      "Starting Price": "100"
+    }
+  },
+  {
+    "cell_id": "1-1-2",
+    "indices": [
+      1,
+      1,
+      2
+    ],
+    "treatments": {
+      "Bidder Risk Tolerance": "Medium",
+      "Bidding Strategy": "Rational",
+      "Starting Price": "100"
+    }
+  },
+  {
+    "cell_id": "1-2-0",
+    "indices": [
+      1,
+      2,
+      0
+    ],
+    "treatments": {
+      "Bidder Risk Tolerance": "Medium",
+      "Bidding Strategy": "Conservative",
+      "Starting Price": "150"
+    }
+  },
+  {
+    "cell_id": "1-2-1",
+    "indices": [
+      1,
+      2,
+      1
+    ],
+    "treatments": {
+      "Bidder Risk Tolerance": "Medium",
+      "Bidding Strategy": "Aggressive",
+      "Starting Price": "150"
+    }
+  },
+  {
+    "cell_id": "1-2-2",
+    "indices": [
+      1,
+      2,
+      2
+    ],
+    "treatments": {
+      "Bidder Risk Tolerance": "Medium",
+      "Bidding Strategy": "Rational",
+      "Starting Price": "150"
+    }
+  },
+  {
+    "cell_id": "2-0-0",
+    "indices": [
+      2,
+      0,
+      0
+    ],
+    "treatments": {
+      "Bidder Risk Tolerance": "High",
+      "Bidding Strategy": "Conservative",
+      "Starting Price": "50"
+    }
+  },
+  {
+    "cell_id": "2-0-1",
+    "indices": [
+      2,
+      0,
+      1
+    ],
+    "treatments": {
+      "Bidder Risk Tolerance": "High",
+      "Bidding Strategy": "Aggressive",
+      "Starting Price": "50"
+    }
+  },
+  {
+    "cell_id": "2-0-2",
+    "indices": [
+      2,
+      0,
+      2
+    ],
+    "treatments": {
+      "Bidder Risk Tolerance": "High",
+      "Bidding Strategy": "Rational",
+      "Starting Price": "50"
+    }
+  },
+  {
+    "cell_id": "2-1-0",
+    "indices": [
+      2,
+      1,
+      0
+    ],
+    "treatments": {
+      "Bidder Risk Tolerance": "High",
+      "Bidding Strategy": "Conservative",
+      "Starting Price": "100"
+    }
+  },
+  {
+    "cell_id": "2-1-1",
+    "indices": [
+      2,
+      1,
+      1
+    ],
+    "treatments": {
+      "Bidder Risk Tolerance": "High",
+      "Bidding Strategy": "Aggressive",
+      "Starting Price": "100"
+    }
+  },
+  {
+    "cell_id": "2-1-2",
+    "indices": [
+      2,
+      1,
+      2
+    ],
+    "treatments": {
+      "Bidder Risk Tolerance": "High",
+      "Bidding Strategy": "Rational",
+      "Starting Price": "100"
+    }
+  },
+  {
+    "cell_id": "2-2-0",
+    "indices": [
+      2,
+      2,
+      0
+    ],
+    "treatments": {
+      "Bidder Risk Tolerance": "High",
+      "Bidding Strategy": "Conservative",
+      "Starting Price": "150"
+    }
+  },
+  {
+    "cell_id": "2-2-1",
+    "indices": [
+      2,
+      2,
+      1
+    ],
+    "treatments": {
+      "Bidder Risk Tolerance": "High",
+      "Bidding Strategy": "Aggressive",
+      "Starting Price": "150"
+    }
+  },
+  {
+    "cell_id": "2-2-2",
+    "indices": [
+      2,
+      2,
+      2
+    ],
+    "treatments": {
+      "Bidder Risk Tolerance": "High",
+      "Bidding Strategy": "Rational",
+      "Starting Price": "150"
+    }
+  }
+]

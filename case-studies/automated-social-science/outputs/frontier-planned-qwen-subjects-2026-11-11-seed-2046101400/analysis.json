@@ -1,0 +1,1783 @@
+{
+  "caveat": "Descriptive one-draw local-model evidence; not human behavior.",
+  "schema_version": 1,
+  "studies": {
+    "frontier-art-auction": {
+      "caveat": "Descriptive one-draw local-model evidence: one model draw per OA cell, not repeated sampling and not human behavior.",
+      "counts": {
+        "complete": 27,
+        "failed": 0,
+        "rows": 27
+      },
+      "main_effect_marginals": {
+        "Bid increment": [
+          {
+            "level": 10,
+            "level_index": 0,
+            "n": 9,
+            "outcomes": {
+              "allocative_efficiency": {
+                "max": 1.0,
+                "mean": 0.48148148148148145,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "bounded_number"
+              },
+              "efficient_allocation": {
+                "max": 1.0,
+                "mean": 0.3333333333333333,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "binary"
+              },
+              "final_price": {
+                "max": 170.0,
+                "mean": 95.55555555555556,
+                "min": 50.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "number"
+              },
+              "winner": {
+                "counts": {
+                  "Bidder B": 1,
+                  "Bidder C": 4,
+                  "no sale": 4
+                },
+                "n": 9,
+                "proportions": {
+                  "Bidder B": 0.1111111111111111,
+                  "Bidder C": 0.4444444444444444,
+                  "no sale": 0.4444444444444444
+                },
+                "type": "category"
+              }
+            }
+          },
+          {
+            "level": 25,
+            "level_index": 1,
+            "n": 9,
+            "outcomes": {
+              "allocative_efficiency": {
+                "max": 1.0,
+                "mean": 0.6666666666666666,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "bounded_number"
+              },
+              "efficient_allocation": {
+                "max": 1.0,
+                "mean": 0.5555555555555556,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "binary"
+              },
+              "final_price": {
+                "max": 300.0,
+                "mean": 177.77777777777777,
+                "min": 50.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "number"
+              },
+              "winner": {
+                "counts": {
+                  "Bidder B": 1,
+                  "Bidder C": 6,
+                  "no sale": 2
+                },
+                "n": 9,
+                "proportions": {
+                  "Bidder B": 0.1111111111111111,
+                  "Bidder C": 0.6666666666666666,
+                  "no sale": 0.2222222222222222
+                },
+                "type": "category"
+              }
+            }
+          },
+          {
+            "level": 50,
+            "level_index": 2,
+            "n": 9,
+            "outcomes": {
+              "allocative_efficiency": {
+                "max": 1.0,
+                "mean": 0.37037037037037035,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "bounded_number"
+              },
+              "efficient_allocation": {
+                "max": 1.0,
+                "mean": 0.2222222222222222,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "binary"
+              },
+              "final_price": {
+                "max": 375.0,
+                "mean": 244.44444444444446,
+                "min": 50.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "number"
+              },
+              "winner": {
+                "counts": {
+                  "Bidder B": 1,
+                  "Bidder C": 4,
+                  "no sale": 4
+                },
+                "n": 9,
+                "proportions": {
+                  "Bidder B": 0.1111111111111111,
+                  "Bidder C": 0.4444444444444444,
+                  "no sale": 0.4444444444444444
+                },
+                "type": "category"
+              }
+            }
+          }
+        ],
+        "Bidder A valuation": [
+          {
+            "level": 100,
+            "level_index": 0,
+            "n": 9,
+            "outcomes": {
+              "allocative_efficiency": {
+                "max": 1.0,
+                "mean": 0.7037037037037037,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "bounded_number"
+              },
+              "efficient_allocation": {
+                "max": 1.0,
+                "mean": 0.6666666666666666,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "binary"
+              },
+              "final_price": {
+                "max": 375.0,
+                "mean": 169.44444444444446,
+                "min": 50.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "number"
+              },
+              "winner": {
+                "counts": {
+                  "Bidder B": 2,
+                  "Bidder C": 5,
+                  "no sale": 2
+                },
+                "n": 9,
+                "proportions": {
+                  "Bidder B": 0.2222222222222222,
+                  "Bidder C": 0.5555555555555556,
+                  "no sale": 0.2222222222222222
+                },
+                "type": "category"
+              }
+            }
+          },
+          {
+            "level": 200,
+            "level_index": 1,
+            "n": 9,
+            "outcomes": {
+              "allocative_efficiency": {
+                "max": 1.0,
+                "mean": 0.2962962962962963,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "bounded_number"
+              },
+              "efficient_allocation": {
+                "max": 1.0,
+                "mean": 0.2222222222222222,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "binary"
+              },
+              "final_price": {
+                "max": 350.0,
+                "mean": 170.55555555555554,
+                "min": 50.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "number"
+              },
+              "winner": {
+                "counts": {
+                  "Bidder C": 3,
+                  "no sale": 6
+                },
+                "n": 9,
+                "proportions": {
+                  "Bidder C": 0.3333333333333333,
+                  "no sale": 0.6666666666666666
+                },
+                "type": "category"
+              }
+            }
+          },
+          {
+            "level": 300,
+            "level_index": 2,
+            "n": 9,
+            "outcomes": {
+              "allocative_efficiency": {
+                "max": 1.0,
+                "mean": 0.5185185185185185,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "bounded_number"
+              },
+              "efficient_allocation": {
+                "max": 1.0,
+                "mean": 0.2222222222222222,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "binary"
+              },
+              "final_price": {
+                "max": 300.0,
+                "mean": 177.77777777777777,
+                "min": 50.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "number"
+              },
+              "winner": {
+                "counts": {
+                  "Bidder B": 1,
+                  "Bidder C": 6,
+                  "no sale": 2
+                },
+                "n": 9,
+                "proportions": {
+                  "Bidder B": 0.1111111111111111,
+                  "Bidder C": 0.6666666666666666,
+                  "no sale": 0.2222222222222222
+                },
+                "type": "category"
+              }
+            }
+          }
+        ],
+        "Bidder B valuation": [
+          {
+            "level": 100,
+            "level_index": 0,
+            "n": 9,
+            "outcomes": {
+              "allocative_efficiency": {
+                "max": 1.0,
+                "mean": 0.5555555555555556,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "bounded_number"
+              },
+              "efficient_allocation": {
+                "max": 1.0,
+                "mean": 0.4444444444444444,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "binary"
+              },
+              "final_price": {
+                "max": 250.0,
+                "mean": 152.77777777777777,
+                "min": 50.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "number"
+              },
+              "winner": {
+                "counts": {
+                  "Bidder C": 6,
+                  "no sale": 3
+                },
+                "n": 9,
+                "proportions": {
+                  "Bidder C": 0.6666666666666666,
+                  "no sale": 0.3333333333333333
+                },
+                "type": "category"
+              }
+            }
+          },
+          {
+            "level": 200,
+            "level_index": 1,
+            "n": 9,
+            "outcomes": {
+              "allocative_efficiency": {
+                "max": 1.0,
+                "mean": 0.4074074074074074,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "bounded_number"
+              },
+              "efficient_allocation": {
+                "max": 1.0,
+                "mean": 0.3333333333333333,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "binary"
+              },
+              "final_price": {
+                "max": 350.0,
+                "mean": 169.44444444444446,
+                "min": 50.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "number"
+              },
+              "winner": {
+                "counts": {
+                  "Bidder B": 2,
+                  "Bidder C": 2,
+                  "no sale": 5
+                },
+                "n": 9,
+                "proportions": {
+                  "Bidder B": 0.2222222222222222,
+                  "Bidder C": 0.2222222222222222,
+                  "no sale": 0.5555555555555556
+                },
+                "type": "category"
+              }
+            }
+          },
+          {
+            "level": 300,
+            "level_index": 2,
+            "n": 9,
+            "outcomes": {
+              "allocative_efficiency": {
+                "max": 1.0,
+                "mean": 0.5555555555555556,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "bounded_number"
+              },
+              "efficient_allocation": {
+                "max": 1.0,
+                "mean": 0.3333333333333333,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "binary"
+              },
+              "final_price": {
+                "max": 375.0,
+                "mean": 195.55555555555554,
+                "min": 50.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "number"
+              },
+              "winner": {
+                "counts": {
+                  "Bidder B": 1,
+                  "Bidder C": 6,
+                  "no sale": 2
+                },
+                "n": 9,
+                "proportions": {
+                  "Bidder B": 0.1111111111111111,
+                  "Bidder C": 0.6666666666666666,
+                  "no sale": 0.2222222222222222
+                },
+                "type": "category"
+              }
+            }
+          }
+        ],
+        "Bidder C valuation": [
+          {
+            "level": 100,
+            "level_index": 0,
+            "n": 9,
+            "outcomes": {
+              "allocative_efficiency": {
+                "max": 1.0,
+                "mean": 0.40740740740740744,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "bounded_number"
+              },
+              "efficient_allocation": {
+                "max": 1.0,
+                "mean": 0.2222222222222222,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "binary"
+              },
+              "final_price": {
+                "max": 350.0,
+                "mean": 167.22222222222223,
+                "min": 50.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "number"
+              },
+              "winner": {
+                "counts": {
+                  "Bidder B": 2,
+                  "Bidder C": 4,
+                  "no sale": 3
+                },
+                "n": 9,
+                "proportions": {
+                  "Bidder B": 0.2222222222222222,
+                  "Bidder C": 0.4444444444444444,
+                  "no sale": 0.3333333333333333
+                },
+                "type": "category"
+              }
+            }
+          },
+          {
+            "level": 200,
+            "level_index": 1,
+            "n": 9,
+            "outcomes": {
+              "allocative_efficiency": {
+                "max": 1.0,
+                "mean": 0.5555555555555556,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "bounded_number"
+              },
+              "efficient_allocation": {
+                "max": 1.0,
+                "mean": 0.3333333333333333,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "binary"
+              },
+              "final_price": {
+                "max": 325.0,
+                "mean": 179.44444444444446,
+                "min": 50.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "number"
+              },
+              "winner": {
+                "counts": {
+                  "Bidder B": 1,
+                  "Bidder C": 5,
+                  "no sale": 3
+                },
+                "n": 9,
+                "proportions": {
+                  "Bidder B": 0.1111111111111111,
+                  "Bidder C": 0.5555555555555556,
+                  "no sale": 0.3333333333333333
+                },
+                "type": "category"
+              }
+            }
+          },
+          {
+            "level": 300,
+            "level_index": 2,
+            "n": 9,
+            "outcomes": {
+              "allocative_efficiency": {
+                "max": 1.0,
+                "mean": 0.5555555555555556,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "bounded_number"
+              },
+              "efficient_allocation": {
+                "max": 1.0,
+                "mean": 0.5555555555555556,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "binary"
+              },
+              "final_price": {
+                "max": 375.0,
+                "mean": 171.11111111111111,
+                "min": 50.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "number"
+              },
+              "winner": {
+                "counts": {
+                  "Bidder C": 5,
+                  "no sale": 4
+                },
+                "n": 9,
+                "proportions": {
+                  "Bidder C": 0.5555555555555556,
+                  "no sale": 0.4444444444444444
+                },
+                "type": "category"
+              }
+            }
+          }
+        ],
+        "Information regime": [
+          {
+            "level": "private",
+            "level_index": 0,
+            "n": 9,
+            "outcomes": {
+              "allocative_efficiency": {
+                "max": 1.0,
+                "mean": 0.4444444444444444,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "bounded_number"
+              },
+              "efficient_allocation": {
+                "max": 1.0,
+                "mean": 0.3333333333333333,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "binary"
+              },
+              "final_price": {
+                "max": 350.0,
+                "mean": 200.0,
+                "min": 80.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "number"
+              },
+              "winner": {
+                "counts": {
+                  "Bidder C": 5,
+                  "no sale": 4
+                },
+                "n": 9,
+                "proportions": {
+                  "Bidder C": 0.5555555555555556,
+                  "no sale": 0.4444444444444444
+                },
+                "type": "category"
+              }
+            }
+          },
+          {
+            "level": "public ranges",
+            "level_index": 1,
+            "n": 9,
+            "outcomes": {
+              "allocative_efficiency": {
+                "max": 1.0,
+                "mean": 0.6666666666666666,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "bounded_number"
+              },
+              "efficient_allocation": {
+                "max": 1.0,
+                "mean": 0.5555555555555556,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "binary"
+              },
+              "final_price": {
+                "max": 375.0,
+                "mean": 191.66666666666666,
+                "min": 50.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "number"
+              },
+              "winner": {
+                "counts": {
+                  "Bidder B": 2,
+                  "Bidder C": 5,
+                  "no sale": 2
+                },
+                "n": 9,
+                "proportions": {
+                  "Bidder B": 0.2222222222222222,
+                  "Bidder C": 0.5555555555555556,
+                  "no sale": 0.2222222222222222
+                },
+                "type": "category"
+              }
+            }
+          },
+          {
+            "level": "public exact",
+            "level_index": 2,
+            "n": 9,
+            "outcomes": {
+              "allocative_efficiency": {
+                "max": 1.0,
+                "mean": 0.4074074074074074,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "bounded_number"
+              },
+              "efficient_allocation": {
+                "max": 1.0,
+                "mean": 0.2222222222222222,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "binary"
+              },
+              "final_price": {
+                "max": 250.0,
+                "mean": 126.11111111111111,
+                "min": 50.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "number"
+              },
+              "winner": {
+                "counts": {
+                  "Bidder B": 1,
+                  "Bidder C": 4,
+                  "no sale": 4
+                },
+                "n": 9,
+                "proportions": {
+                  "Bidder B": 0.1111111111111111,
+                  "Bidder C": 0.4444444444444444,
+                  "no sale": 0.4444444444444444
+                },
+                "type": "category"
+              }
+            }
+          }
+        ]
+      },
+      "outcome_summaries": {
+        "allocative_efficiency": {
+          "max": 1.0,
+          "mean": 0.5061728395061728,
+          "min": 0.0,
+          "n": 27,
+          "non_null": 27,
+          "type": "bounded_number"
+        },
+        "efficient_allocation": {
+          "max": 1.0,
+          "mean": 0.37037037037037035,
+          "min": 0.0,
+          "n": 27,
+          "non_null": 27,
+          "type": "binary"
+        },
+        "final_price": {
+          "max": 375.0,
+          "mean": 172.59259259259258,
+          "min": 50.0,
+          "n": 27,
+          "non_null": 27,
+          "type": "number"
+        },
+        "winner": {
+          "counts": {
+            "Bidder B": 3,
+            "Bidder C": 14,
+            "no sale": 10
+          },
+          "n": 27,
+          "proportions": {
+            "Bidder B": 0.1111111111111111,
+            "Bidder C": 0.5185185185185185,
+            "no sale": 0.37037037037037035
+          },
+          "type": "category"
+        }
+      },
+      "schema_version": 1,
+      "study_id": "frontier-art-auction",
+      "study_summary": {
+        "efficient_allocation_rate": 0.37037037037037035,
+        "mean_allocative_efficiency": 0.5061728395061728,
+        "mean_final_price": 172.59259259259258,
+        "winner_counts": {
+          "Bidder B": 3,
+          "Bidder C": 14,
+          "no sale": 10
+        }
+      }
+    },
+    "frontier-bail-setting": {
+      "caveat": "Descriptive one-draw local-model evidence: one model draw per OA cell, not repeated sampling and not human behavior.",
+      "counts": {
+        "complete": 27,
+        "failed": 0,
+        "rows": 27
+      },
+      "main_effect_marginals": {
+        "Community ties": [
+          {
+            "level": "weak",
+            "level_index": 0,
+            "n": 9,
+            "outcomes": {
+              "bail_amount": {
+                "max": 100000.0,
+                "mean": 26666.666666666668,
+                "min": 10000.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "number"
+              }
+            }
+          },
+          {
+            "level": "moderate",
+            "level_index": 1,
+            "n": 9,
+            "outcomes": {
+              "bail_amount": {
+                "max": 50000.0,
+                "mean": 25555.555555555555,
+                "min": 10000.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "number"
+              }
+            }
+          },
+          {
+            "level": "strong",
+            "level_index": 2,
+            "n": 9,
+            "outcomes": {
+              "bail_amount": {
+                "max": 25000.0,
+                "mean": 16666.666666666668,
+                "min": 5000.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "number"
+              }
+            }
+          }
+        ],
+        "Evidence strength": [
+          {
+            "level": "weak",
+            "level_index": 0,
+            "n": 9,
+            "outcomes": {
+              "bail_amount": {
+                "max": 50000.0,
+                "mean": 17222.222222222223,
+                "min": 5000.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "number"
+              }
+            }
+          },
+          {
+            "level": "moderate",
+            "level_index": 1,
+            "n": 9,
+            "outcomes": {
+              "bail_amount": {
+                "max": 50000.0,
+                "mean": 22222.222222222223,
+                "min": 10000.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "number"
+              }
+            }
+          },
+          {
+            "level": "strong",
+            "level_index": 2,
+            "n": 9,
+            "outcomes": {
+              "bail_amount": {
+                "max": 100000.0,
+                "mean": 29444.444444444445,
+                "min": 10000.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "number"
+              }
+            }
+          }
+        ],
+        "Flight risk": [
+          {
+            "level": "low",
+            "level_index": 0,
+            "n": 9,
+            "outcomes": {
+              "bail_amount": {
+                "max": 25000.0,
+                "mean": 15000.0,
+                "min": 5000.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "number"
+              }
+            }
+          },
+          {
+            "level": "medium",
+            "level_index": 1,
+            "n": 9,
+            "outcomes": {
+              "bail_amount": {
+                "max": 25000.0,
+                "mean": 17777.777777777777,
+                "min": 10000.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "number"
+              }
+            }
+          },
+          {
+            "level": "high",
+            "level_index": 2,
+            "n": 9,
+            "outcomes": {
+              "bail_amount": {
+                "max": 100000.0,
+                "mean": 36111.11111111111,
+                "min": 15000.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "number"
+              }
+            }
+          }
+        ],
+        "Post-offense cooperation": [
+          {
+            "level": "none",
+            "level_index": 0,
+            "n": 9,
+            "outcomes": {
+              "bail_amount": {
+                "max": 25000.0,
+                "mean": 21666.666666666668,
+                "min": 10000.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "number"
+              }
+            }
+          },
+          {
+            "level": "partial",
+            "level_index": 1,
+            "n": 9,
+            "outcomes": {
+              "bail_amount": {
+                "max": 100000.0,
+                "mean": 29444.444444444445,
+                "min": 5000.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "number"
+              }
+            }
+          },
+          {
+            "level": "extensive",
+            "level_index": 2,
+            "n": 9,
+            "outcomes": {
+              "bail_amount": {
+                "max": 50000.0,
+                "mean": 17777.777777777777,
+                "min": 10000.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "number"
+              }
+            }
+          }
+        ],
+        "Prior convictions": [
+          {
+            "level": 0,
+            "level_index": 0,
+            "n": 9,
+            "outcomes": {
+              "bail_amount": {
+                "max": 50000.0,
+                "mean": 20000.0,
+                "min": 10000.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "number"
+              }
+            }
+          },
+          {
+            "level": 1,
+            "level_index": 1,
+            "n": 9,
+            "outcomes": {
+              "bail_amount": {
+                "max": 25000.0,
+                "mean": 15555.555555555555,
+                "min": 5000.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "number"
+              }
+            }
+          },
+          {
+            "level": 4,
+            "level_index": 2,
+            "n": 9,
+            "outcomes": {
+              "bail_amount": {
+                "max": 100000.0,
+                "mean": 33333.333333333336,
+                "min": 10000.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "number"
+              }
+            }
+          }
+        ]
+      },
+      "outcome_summaries": {
+        "bail_amount": {
+          "max": 100000.0,
+          "mean": 22962.962962962964,
+          "min": 5000.0,
+          "n": 27,
+          "non_null": 27,
+          "type": "number"
+        }
+      },
+      "schema_version": 1,
+      "study_id": "frontier-bail-setting",
+      "study_summary": {
+        "mean_bail_amount": 22962.962962962964
+      }
+    },
+    "frontier-lawyer-interview": {
+      "caveat": "Descriptive one-draw local-model evidence: one model draw per OA cell, not repeated sampling and not human behavior.",
+      "counts": {
+        "complete": 26,
+        "failed": 1,
+        "rows": 27
+      },
+      "main_effect_marginals": {
+        "Bar status": [
+          {
+            "level": "not passed",
+            "level_index": 0,
+            "n": 8,
+            "outcomes": {
+              "hire": {
+                "max": 1.0,
+                "mean": 0.375,
+                "min": 0.0,
+                "n": 8,
+                "non_null": 8,
+                "type": "binary"
+              },
+              "rating": {
+                "max": 85.0,
+                "mean": 63.125,
+                "min": 45.0,
+                "n": 8,
+                "non_null": 8,
+                "type": "bounded_number"
+              }
+            }
+          },
+          {
+            "level": "results pending",
+            "level_index": 1,
+            "n": 9,
+            "outcomes": {
+              "hire": {
+                "max": 1.0,
+                "mean": 0.6666666666666666,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "binary"
+              },
+              "rating": {
+                "max": 95.0,
+                "mean": 76.66666666666667,
+                "min": 45.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "bounded_number"
+              }
+            }
+          },
+          {
+            "level": "admitted",
+            "level_index": 2,
+            "n": 9,
+            "outcomes": {
+              "hire": {
+                "max": 1.0,
+                "mean": 0.7777777777777778,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "binary"
+              },
+              "rating": {
+                "max": 95.0,
+                "mean": 80.55555555555556,
+                "min": 45.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "bounded_number"
+              }
+            }
+          }
+        ],
+        "Candidate height": [
+          {
+            "level": 165,
+            "level_index": 0,
+            "n": 9,
+            "outcomes": {
+              "hire": {
+                "max": 1.0,
+                "mean": 0.6666666666666666,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "binary"
+              },
+              "rating": {
+                "max": 95.0,
+                "mean": 80.55555555555556,
+                "min": 45.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "bounded_number"
+              }
+            }
+          },
+          {
+            "level": 180,
+            "level_index": 1,
+            "n": 8,
+            "outcomes": {
+              "hire": {
+                "max": 1.0,
+                "mean": 0.5,
+                "min": 0.0,
+                "n": 8,
+                "non_null": 8,
+                "type": "binary"
+              },
+              "rating": {
+                "max": 95.0,
+                "mean": 67.5,
+                "min": 45.0,
+                "n": 8,
+                "non_null": 8,
+                "type": "bounded_number"
+              }
+            }
+          },
+          {
+            "level": 195,
+            "level_index": 2,
+            "n": 9,
+            "outcomes": {
+              "hire": {
+                "max": 1.0,
+                "mean": 0.6666666666666666,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "binary"
+              },
+              "rating": {
+                "max": 95.0,
+                "mean": 72.77777777777777,
+                "min": 45.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "bounded_number"
+              }
+            }
+          }
+        ],
+        "Communication clarity": [
+          {
+            "level": "low",
+            "level_index": 0,
+            "n": 8,
+            "outcomes": {
+              "hire": {
+                "max": 1.0,
+                "mean": 0.25,
+                "min": 0.0,
+                "n": 8,
+                "non_null": 8,
+                "type": "binary"
+              },
+              "rating": {
+                "max": 95.0,
+                "mean": 57.5,
+                "min": 45.0,
+                "n": 8,
+                "non_null": 8,
+                "type": "bounded_number"
+              }
+            }
+          },
+          {
+            "level": "medium",
+            "level_index": 1,
+            "n": 9,
+            "outcomes": {
+              "hire": {
+                "max": 1.0,
+                "mean": 0.6666666666666666,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "binary"
+              },
+              "rating": {
+                "max": 95.0,
+                "mean": 76.11111111111111,
+                "min": 45.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "bounded_number"
+              }
+            }
+          },
+          {
+            "level": "high",
+            "level_index": 2,
+            "n": 9,
+            "outcomes": {
+              "hire": {
+                "max": 1.0,
+                "mean": 0.8888888888888888,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "binary"
+              },
+              "rating": {
+                "max": 95.0,
+                "mean": 86.11111111111111,
+                "min": 65.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "bounded_number"
+              }
+            }
+          }
+        ],
+        "Legal reasoning performance": [
+          {
+            "level": "weak",
+            "level_index": 0,
+            "n": 9,
+            "outcomes": {
+              "hire": {
+                "max": 1.0,
+                "mean": 0.3333333333333333,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "binary"
+              },
+              "rating": {
+                "max": 85.0,
+                "mean": 61.111111111111114,
+                "min": 45.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "bounded_number"
+              }
+            }
+          },
+          {
+            "level": "average",
+            "level_index": 1,
+            "n": 9,
+            "outcomes": {
+              "hire": {
+                "max": 1.0,
+                "mean": 0.7777777777777778,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "binary"
+              },
+              "rating": {
+                "max": 95.0,
+                "mean": 80.55555555555556,
+                "min": 45.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "bounded_number"
+              }
+            }
+          },
+          {
+            "level": "strong",
+            "level_index": 2,
+            "n": 8,
+            "outcomes": {
+              "hire": {
+                "max": 1.0,
+                "mean": 0.75,
+                "min": 0.0,
+                "n": 8,
+                "non_null": 8,
+                "type": "binary"
+              },
+              "rating": {
+                "max": 95.0,
+                "mean": 80.625,
+                "min": 45.0,
+                "n": 8,
+                "non_null": 8,
+                "type": "bounded_number"
+              }
+            }
+          }
+        ],
+        "Relevant experience": [
+          {
+            "level": 0,
+            "level_index": 0,
+            "n": 9,
+            "outcomes": {
+              "hire": {
+                "max": 1.0,
+                "mean": 0.4444444444444444,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "binary"
+              },
+              "rating": {
+                "max": 95.0,
+                "mean": 67.22222222222223,
+                "min": 45.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "bounded_number"
+              }
+            }
+          },
+          {
+            "level": 2,
+            "level_index": 1,
+            "n": 9,
+            "outcomes": {
+              "hire": {
+                "max": 1.0,
+                "mean": 0.6666666666666666,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "binary"
+              },
+              "rating": {
+                "max": 95.0,
+                "mean": 75.55555555555556,
+                "min": 45.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "bounded_number"
+              }
+            }
+          },
+          {
+            "level": 6,
+            "level_index": 2,
+            "n": 8,
+            "outcomes": {
+              "hire": {
+                "max": 1.0,
+                "mean": 0.75,
+                "min": 0.0,
+                "n": 8,
+                "non_null": 8,
+                "type": "binary"
+              },
+              "rating": {
+                "max": 95.0,
+                "mean": 79.375,
+                "min": 45.0,
+                "n": 8,
+                "non_null": 8,
+                "type": "bounded_number"
+              }
+            }
+          }
+        ]
+      },
+      "outcome_summaries": {
+        "hire": {
+          "max": 1.0,
+          "mean": 0.6153846153846154,
+          "min": 0.0,
+          "n": 26,
+          "non_null": 26,
+          "type": "binary"
+        },
+        "rating": {
+          "max": 95.0,
+          "mean": 73.84615384615384,
+          "min": 45.0,
+          "n": 26,
+          "non_null": 26,
+          "type": "bounded_number"
+        }
+      },
+      "schema_version": 1,
+      "study_id": "frontier-lawyer-interview",
+      "study_summary": {
+        "hire_rate": 0.6153846153846154,
+        "mean_rating": 73.84615384615384
+      }
+    },
+    "frontier-mug-bargaining": {
+      "caveat": "Descriptive one-draw local-model evidence: one model draw per OA cell, not repeated sampling and not human behavior.",
+      "counts": {
+        "complete": 27,
+        "failed": 0,
+        "rows": 27
+      },
+      "main_effect_marginals": {
+        "Buyer budget": [
+          {
+            "level": 6,
+            "level_index": 0,
+            "n": 9,
+            "outcomes": {
+              "deal": {
+                "max": 1.0,
+                "mean": 0.3333333333333333,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "binary"
+              },
+              "price": {
+                "max": 10.0,
+                "mean": 8.333333333333334,
+                "min": 7.0,
+                "n": 9,
+                "non_null": 3,
+                "type": "nullable_number"
+              }
+            }
+          },
+          {
+            "level": 12,
+            "level_index": 1,
+            "n": 9,
+            "outcomes": {
+              "deal": {
+                "max": 1.0,
+                "mean": 0.7777777777777778,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "binary"
+              },
+              "price": {
+                "max": 16.0,
+                "mean": 12.714285714285714,
+                "min": 8.0,
+                "n": 9,
+                "non_null": 7,
+                "type": "nullable_number"
+              }
+            }
+          },
+          {
+            "level": 18,
+            "level_index": 2,
+            "n": 9,
+            "outcomes": {
+              "deal": {
+                "max": 1.0,
+                "mean": 0.6666666666666666,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "binary"
+              },
+              "price": {
+                "max": 25.0,
+                "mean": 19.166666666666668,
+                "min": 18.0,
+                "n": 9,
+                "non_null": 6,
+                "type": "nullable_number"
+              }
+            }
+          }
+        ],
+        "Negotiation procedure": [
+          {
+            "level": "alternating offers",
+            "level_index": 0,
+            "n": 9,
+            "outcomes": {
+              "deal": {
+                "max": 1.0,
+                "mean": 0.3333333333333333,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "binary"
+              },
+              "price": {
+                "max": 13.0,
+                "mean": 9.333333333333334,
+                "min": 7.0,
+                "n": 9,
+                "non_null": 3,
+                "type": "nullable_number"
+              }
+            }
+          },
+          {
+            "level": "seller take-it-or-leave-it",
+            "level_index": 1,
+            "n": 9,
+            "outcomes": {
+              "deal": {
+                "max": 1.0,
+                "mean": 0.6666666666666666,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "binary"
+              },
+              "price": {
+                "max": 25.0,
+                "mean": 14.833333333333334,
+                "min": 8.0,
+                "n": 9,
+                "non_null": 6,
+                "type": "nullable_number"
+              }
+            }
+          },
+          {
+            "level": "buyer take-it-or-leave-it",
+            "level_index": 2,
+            "n": 9,
+            "outcomes": {
+              "deal": {
+                "max": 1.0,
+                "mean": 0.7777777777777778,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "binary"
+              },
+              "price": {
+                "max": 18.0,
+                "mean": 16.0,
+                "min": 10.0,
+                "n": 9,
+                "non_null": 7,
+                "type": "nullable_number"
+              }
+            }
+          }
+        ],
+        "Outside option": [
+          {
+            "level": "none",
+            "level_index": 0,
+            "n": 9,
+            "outcomes": {
+              "deal": {
+                "max": 1.0,
+                "mean": 0.8888888888888888,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "binary"
+              },
+              "price": {
+                "max": 25.0,
+                "mean": 15.5,
+                "min": 7.0,
+                "n": 9,
+                "non_null": 8,
+                "type": "nullable_number"
+              }
+            }
+          },
+          {
+            "level": "buyer alternative",
+            "level_index": 1,
+            "n": 9,
+            "outcomes": {
+              "deal": {
+                "max": 1.0,
+                "mean": 0.4444444444444444,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "binary"
+              },
+              "price": {
+                "max": 10.0,
+                "mean": 9.5,
+                "min": 8.0,
+                "n": 9,
+                "non_null": 4,
+                "type": "nullable_number"
+              }
+            }
+          },
+          {
+            "level": "seller offer",
+            "level_index": 2,
+            "n": 9,
+            "outcomes": {
+              "deal": {
+                "max": 1.0,
+                "mean": 0.4444444444444444,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "binary"
+              },
+              "price": {
+                "max": 18.0,
+                "mean": 16.75,
+                "min": 13.0,
+                "n": 9,
+                "non_null": 4,
+                "type": "nullable_number"
+              }
+            }
+          }
+        ],
+        "Seller attachment": [
+          {
+            "level": "none",
+            "level_index": 0,
+            "n": 9,
+            "outcomes": {
+              "deal": {
+                "max": 1.0,
+                "mean": 0.5555555555555556,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "binary"
+              },
+              "price": {
+                "max": 18.0,
+                "mean": 13.8,
+                "min": 7.0,
+                "n": 9,
+                "non_null": 5,
+                "type": "nullable_number"
+              }
+            }
+          },
+          {
+            "level": "moderate",
+            "level_index": 1,
+            "n": 9,
+            "outcomes": {
+              "deal": {
+                "max": 1.0,
+                "mean": 0.5555555555555556,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "binary"
+              },
+              "price": {
+                "max": 18.0,
+                "mean": 14.6,
+                "min": 8.0,
+                "n": 9,
+                "non_null": 5,
+                "type": "nullable_number"
+              }
+            }
+          },
+          {
+            "level": "strong",
+            "level_index": 2,
+            "n": 9,
+            "outcomes": {
+              "deal": {
+                "max": 1.0,
+                "mean": 0.6666666666666666,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "binary"
+              },
+              "price": {
+                "max": 25.0,
+                "mean": 14.5,
+                "min": 8.0,
+                "n": 9,
+                "non_null": 6,
+                "type": "nullable_number"
+              }
+            }
+          }
+        ],
+        "Seller reservation price": [
+          {
+            "level": 4,
+            "level_index": 0,
+            "n": 9,
+            "outcomes": {
+              "deal": {
+                "max": 1.0,
+                "mean": 0.8888888888888888,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "binary"
+              },
+              "price": {
+                "max": 18.0,
+                "mean": 12.125,
+                "min": 7.0,
+                "n": 9,
+                "non_null": 8,
+                "type": "nullable_number"
+              }
+            }
+          },
+          {
+            "level": 10,
+            "level_index": 1,
+            "n": 9,
+            "outcomes": {
+              "deal": {
+                "max": 1.0,
+                "mean": 0.5555555555555556,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "binary"
+              },
+              "price": {
+                "max": 25.0,
+                "mean": 16.8,
+                "min": 10.0,
+                "n": 9,
+                "non_null": 5,
+                "type": "nullable_number"
+              }
+            }
+          },
+          {
+            "level": 16,
+            "level_index": 2,
+            "n": 9,
+            "outcomes": {
+              "deal": {
+                "max": 1.0,
+                "mean": 0.3333333333333333,
+                "min": 0.0,
+                "n": 9,
+                "non_null": 9,
+                "type": "binary"
+              },
+              "price": {
+                "max": 16.0,
+                "mean": 16.0,
+                "min": 16.0,
+                "n": 9,
+                "non_null": 3,
+                "type": "nullable_number"
+              }
+            }
+          }
+        ]
+      },
+      "outcome_summaries": {
+        "deal": {
+          "max": 1.0,
+          "mean": 0.5925925925925926,
+          "min": 0.0,
+          "n": 27,
+          "non_null": 27,
+          "type": "binary"
+        },
+        "price": {
+          "max": 25.0,
+          "mean": 14.3125,
+          "min": 7.0,
+          "n": 27,
+          "non_null": 16,
+          "type": "nullable_number"
+        }
+      },
+      "schema_version": 1,
+      "study_id": "frontier-mug-bargaining",
+      "study_summary": {
+        "deal_rate": 0.5925925925925926,
+        "mean_price_on_recorded_deals": 14.3125
+      }
+    }
+  }
+}

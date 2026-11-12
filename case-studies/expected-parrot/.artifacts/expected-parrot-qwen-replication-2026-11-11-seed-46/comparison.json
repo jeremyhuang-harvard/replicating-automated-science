@@ -1,0 +1,124 @@
+{
+  "public_expected_parrot": {
+    "by_segment": {
+      "adventurous_foodie": {
+        "overall_appeal": 4.75,
+        "purchase_intent": 4.5
+      },
+      "mainstream_drinker": {
+        "overall_appeal": 1.0,
+        "purchase_intent": 3.0
+      },
+      "skeptical_health_conscious": {
+        "overall_appeal": 1.0,
+        "purchase_intent": 1.5
+      }
+    },
+    "polarization": {
+      "appeal_segment_range": 3.75,
+      "purchase_segment_range": 3.0
+    }
+  },
+  "rich_personas_joint_full_context": {
+    "overall": {
+      "overall_appeal": 2.58,
+      "concept_clarity": 3.25,
+      "uniqueness": 4.33,
+      "purchase_intent": 2.08
+    },
+    "by_segment": {
+      "adventurous_foodie": {
+        "overall_appeal": 4.25,
+        "concept_clarity": 4.25,
+        "uniqueness": 5,
+        "purchase_intent": 4.25
+      },
+      "mainstream_drinker": {
+        "overall_appeal": 1.75,
+        "concept_clarity": 2.75,
+        "uniqueness": 4,
+        "purchase_intent": 1
+      },
+      "skeptical_health_conscious": {
+        "overall_appeal": 1.75,
+        "concept_clarity": 2.75,
+        "uniqueness": 4,
+        "purchase_intent": 1
+      }
+    },
+    "polarization": {
+      "appeal_segment_range": 2.5,
+      "purchase_segment_range": 3.25,
+      "appeal_endpoint_share": 0.25,
+      "purchase_endpoint_share": 0.75
+    }
+  },
+  "expected_parrot_like_separate_context_only_q1": {
+    "overall": {
+      "overall_appeal": 2.25,
+      "concept_clarity": 3.83,
+      "uniqueness": 3.08,
+      "purchase_intent": 3.08
+    },
+    "by_segment": {
+      "adventurous_foodie": {
+        "overall_appeal": 3,
+        "concept_clarity": 4,
+        "uniqueness": 4.5,
+        "purchase_intent": 3.75
+      },
+      "mainstream_drinker": {
+        "overall_appeal": 1.75,
+        "concept_clarity": 4.25,
+        "uniqueness": 2,
+        "purchase_intent": 3.75
+      },
+      "skeptical_health_conscious": {
+        "overall_appeal": 2,
+        "concept_clarity": 3.25,
+        "uniqueness": 2.75,
+        "purchase_intent": 1.75
+      }
+    },
+    "polarization": {
+      "appeal_segment_range": 1.25,
+      "purchase_segment_range": 2.0,
+      "appeal_endpoint_share": 0.083,
+      "purchase_endpoint_share": 0.25
+    }
+  },
+  "expected_parrot_like_system_personas_separate_context_only_q1": {
+    "overall": {
+      "overall_appeal": 2.17,
+      "concept_clarity": 3.83,
+      "uniqueness": 3.33,
+      "purchase_intent": 2.92
+    },
+    "by_segment": {
+      "adventurous_foodie": {
+        "overall_appeal": 3.5,
+        "concept_clarity": 4,
+        "uniqueness": 4.5,
+        "purchase_intent": 3.75
+      },
+      "mainstream_drinker": {
+        "overall_appeal": 1.75,
+        "concept_clarity": 4,
+        "uniqueness": 2.5,
+        "purchase_intent": 3
+      },
+      "skeptical_health_conscious": {
+        "overall_appeal": 1.25,
+        "concept_clarity": 3.5,
+        "uniqueness": 3,
+        "purchase_intent": 2
+      }
+    },
+    "polarization": {
+      "appeal_segment_range": 2.25,
+      "purchase_segment_range": 1.75,
+      "appeal_endpoint_share": 0.333,
+      "purchase_endpoint_share": 0.083
+    }
+  }
+}

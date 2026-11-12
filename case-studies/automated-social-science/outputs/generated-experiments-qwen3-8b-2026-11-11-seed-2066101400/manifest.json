@@ -1,0 +1,64 @@
+{
+  "base_seed": 2066101400,
+  "checkpoints": [
+    {
+      "cells": 27,
+      "complete": 27,
+      "runtime_seconds": 360.04001912497915,
+      "study": "01-mug-bargaining",
+      "valid_measurements": 27
+    },
+    {
+      "cells": 27,
+      "complete": 27,
+      "runtime_seconds": 330.651889000088,
+      "study": "02-bail-setting",
+      "valid_measurements": 27
+    },
+    {
+      "cells": 27,
+      "complete": 27,
+      "runtime_seconds": 249.72176208300516,
+      "study": "03-lawyer-interview",
+      "valid_measurements": 27
+    },
+    {
+      "cells": 27,
+      "complete": 27,
+      "runtime_seconds": 76.4904713750584,
+      "study": "04-art-auction",
+      "valid_measurements": 27
+    }
+  ],
+  "completed_at": "2026-11-11T22:23:13.817633+00:00",
+  "counts": {
+    "cells_per_study": 27,
+    "studies": 4,
+    "total_cells": 108
+  },
+  "measurement_temperature": 0.0,
+  "model": "mlx-community/Qwen3-8B-4bit",
+  "provider": "mlx-in-process",
+  "provider_configuration": {
+    "chat_template_config": {
+      "enable_thinking": false
+    },
+    "max_tokens": 3200,
+    "model_id": "mlx-community/Qwen3-8B-4bit",
+    "persistent_model": true
+  },
+  "retrieval": false,
+  "retry_policy": {
+    "finalization": "up to 3 attempts for provider, JSON, or validation failure; retain all raw calls",
+    "measurement": "up to 3 attempts for provider, strict-JSON, or schema failure; retain all raw calls and failures",
+    "subject": "up to 2 attempts only for provider error or empty response; retain all raw calls and failures"
+  },
+  "run_type": "generated-factorial-local-model",
+  "runtime_seconds": 1016.9080521659926,
+  "schema_version": 1,
+  "started_at": "2026-11-11T22:06:16.922980+00:00",
+  "status": "complete",
+  "subject_temperature": 0.3,
+  "thinking_enabled": false,
+  "tools": false
+}

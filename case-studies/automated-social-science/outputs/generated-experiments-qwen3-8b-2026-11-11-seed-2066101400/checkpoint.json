@@ -1,0 +1,32 @@
+{
+  "completed_studies": [
+    {
+      "cells": 27,
+      "complete": 27,
+      "runtime_seconds": 360.04001912497915,
+      "study": "01-mug-bargaining",
+      "valid_measurements": 27
+    },
+    {
+      "cells": 27,
+      "complete": 27,
+      "runtime_seconds": 330.651889000088,
+      "study": "02-bail-setting",
+      "valid_measurements": 27
+    },
+    {
+      "cells": 27,
+      "complete": 27,
+      "runtime_seconds": 249.72176208300516,
+      "study": "03-lawyer-interview",
+      "valid_measurements": 27
+    },
+    {
+      "cells": 27,
+      "complete": 27,
+      "runtime_seconds": 76.4904713750584,
+      "study": "04-art-auction",
+      "valid_measurements": 27
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "agents": [
+    {
+      "constraints": [
+        "Bids only when confident in value",
+        "No overbidding"
+      ],
+      "goal": "Maximize profit while minimizing risk",
+      "name": "Agent A",
+      "role": "Conservative bidder"
+    },
+    {
+      "constraints": [
+        "Willing to overbid",
+        "Limits to maximum bid"
+      ],
+      "goal": "Achieve maximum possible profit",
+      "name": "Agent B",
+      "role": "Speculative bidder"
+    },
+    {
+      "constraints": [
+        "No direct bidding",
+        "Shares observations"
+      ],
+      "goal": "Predict market behavior",
+      "name": "Agent C",
+      "role": "Market observer"
+    }
+  ],
+  "causes": [
+    {
+      "hypothesis": "Higher confidence leads to higher bids",
+      "name": "Bidder confidence",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "High confidence",
+        "Moderate confidence",
+        "Low confidence"
+      ]
+    },
+    {
+      "hypothesis": "More observation leads to more accurate bidding",
+      "name": "Market observation",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "Active observation",
+        "Passive observation",
+        "No observation"
+      ]
+    },
+    {
+      "hypothesis": "Aggressive strategies lead to higher final prices",
+      "name": "Bidder strategy",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "Aggressive",
+        "Conservative",
+        "Neutral"
+      ]
+    }
+  ],
+  "information_scope": {
+    "private": [
+      {
+        "agent": "Agent A",
+        "information": [
+          "Private valuation",
+          "Risk tolerance",
+          "Bid history"
+        ]
+      },
+      {
+        "agent": "Agent B",
+        "information": [
+          "Private valuation",
+          "Profit margin",
+          "Bid history"
+        ]
+      },
+      {
+        "agent": "Agent C",
+        "information": [
+          "Market trends",
+          "Bidder behavior",
+          "Art history"
+        ]
+      }
+    ],
+    "public": [
+      "Starting price",
+      "Current highest bid",
+      "Number of bidders"
+    ]
+  },
+  "interaction": {
+    "max_turns": 3,
+    "order": [
+      "Agent A",
+      "Agent B",
+      "Agent C"
+    ],
+    "stopping_rule": "Auction ends when no further bids are placed"
+  },
+  "outcome": {
+    "measurement_question": "What is the final price of the art piece after the auction?",
+    "name": "Final auction price",
+    "operationalization": "The highest bid accepted by the auctioneer",
+    "respondent": "Auctioneer"
+  },
+  "scenario": "3 bidders participating in an auction for a piece of art starting at fifty dollars",
+  "schema_version": "scientist-design-v1"
+}

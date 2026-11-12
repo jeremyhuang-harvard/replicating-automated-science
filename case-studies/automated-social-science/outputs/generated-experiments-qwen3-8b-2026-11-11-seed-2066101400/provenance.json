@@ -1,0 +1,22 @@
+{
+  "stage": "qwen-designed-experiments",
+  "seed": 2066101400,
+  "command": [
+    "~/.local/share/uv/tools/mlx-lm/bin/python",
+    "-m",
+    "assr_replication.generated_cli",
+    "--initial-dir",
+    "outputs/canonical-designs-qwen3-8b-2026-10-14/designs",
+    "--output-dir",
+    "outputs/generated-experiments-qwen3-8b-2026-11-11-seed-2066101400",
+    "--model",
+    "mlx-community/Qwen3-8B-4bit",
+    "--base-seed",
+    "2066101400"
+  ],
+  "cwd": "case-studies/automated-social-science",
+  "started_at": "2026-11-11T22:06:14.808473+00:00",
+  "completed_at": "2026-11-11T22:23:13.899971+00:00",
+  "runtime_seconds": 1019.1,
+  "model": "mlx-community/Qwen3-8B-4bit"
+}

@@ -1,0 +1,108 @@
+{
+  "agents": [
+    {
+      "constraints": [
+        "Bids only above $50",
+        "No aggressive bidding"
+      ],
+      "goal": "Maximize profit while minimizing risk",
+      "name": "Agent A",
+      "role": "Conservative Collector"
+    },
+    {
+      "constraints": [
+        "Bids up to $200",
+        "Willing to outbid"
+      ],
+      "goal": "Achieve maximum return on investment",
+      "name": "Agent B",
+      "role": "Speculative Investor"
+    },
+    {
+      "constraints": [
+        "Bids up to $300",
+        "No price limits"
+      ],
+      "goal": "Secure the piece regardless of cost",
+      "name": "Agent C",
+      "role": "Private Collector"
+    }
+  ],
+  "causes": [
+    {
+      "hypothesis": "A more aggressive bidding strategy increases the final bid price",
+      "name": "Bidding Strategy",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "Aggressive",
+        "Conservative",
+        "Moderate"
+      ]
+    },
+    {
+      "hypothesis": "A higher starting price leads to a higher final bid price",
+      "name": "Starting Price",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "$50",
+        "$100",
+        "$150"
+      ]
+    },
+    {
+      "hypothesis": "More experienced bidders lead to higher final bid prices",
+      "name": "Bidder Experience",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "Novice",
+        "Intermediate",
+        "Expert"
+      ]
+    }
+  ],
+  "information_scope": {
+    "private": [
+      {
+        "agent": "Agent A",
+        "information": [
+          "Agent A's maximum bid",
+          "Agent B's past auction behavior"
+        ]
+      },
+      {
+        "agent": "Agent B",
+        "information": [
+          "Agent B's maximum bid",
+          "Agent C's past auction behavior"
+        ]
+      },
+      {
+        "agent": "Agent C",
+        "information": [
+          "Agent C's maximum bid",
+          "Agent A's past auction behavior"
+        ]
+      }
+    ],
+    "public": [
+      "Starting price of the auction"
+    ]
+  },
+  "interaction": {
+    "max_turns": 3,
+    "order": [
+      "Agent A",
+      "Agent B",
+      "Agent C"
+    ],
+    "stopping_rule": "The auction ends when all agents have placed their final bids"
+  },
+  "outcome": {
+    "measurement_question": "What is the final price paid for the art piece?",
+    "name": "Final Bid Price",
+    "operationalization": "The highest bid placed by any agent during the auction",
+    "respondent": "The auction house"
+  },
+  "scenario": "3 bidders participating in an auction for a piece of art starting at fifty dollars",
+  "schema_version": "scientist-design-v1"
+}

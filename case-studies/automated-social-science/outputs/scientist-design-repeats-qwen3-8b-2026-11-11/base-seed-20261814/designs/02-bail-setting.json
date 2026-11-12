@@ -1,0 +1,108 @@
+{
+  "agents": [
+    {
+      "constraints": [
+        "Must follow legal guidelines",
+        "Cannot consider unrelated factors",
+        "Must account for defendant's financial status"
+      ],
+      "goal": "Set bail in a way that balances defendant's freedom with public safety",
+      "name": "Judge",
+      "role": "Legal authority responsible for determining bail"
+    },
+    {
+      "constraints": [
+        "Must act within legal boundaries",
+        "Cannot fabricate evidence",
+        "Must consider defendant's financial status"
+      ],
+      "goal": "Argue for the lowest possible bail amount",
+      "name": "Defense Attorney",
+      "role": "Representing the defendant's interests"
+    },
+    {
+      "constraints": [
+        "Must base arguments on evidence",
+        "Cannot introduce personal bias",
+        "Must consider defendant's financial status"
+      ],
+      "goal": "Argue for a higher bail amount",
+      "name": "Prosecutor",
+      "role": "Representing the state's interests"
+    }
+  ],
+  "causes": [
+    {
+      "hypothesis": "A defendant with lower financial resources will result in a lower bail amount",
+      "name": "Defendant's Financial Status",
+      "predicted_direction": "decrease",
+      "treatment_values": [
+        "Low income",
+        "Middle income",
+        "High income"
+      ]
+    },
+    {
+      "hypothesis": "A more severe crime will result in a higher bail amount",
+      "name": "Severity of Crime",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "Minor offense",
+        "Moderate offense",
+        "Major offense"
+      ]
+    },
+    {
+      "hypothesis": "A defendant with a criminal history will result in a higher bail amount",
+      "name": "Prior Criminal Record",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "No record",
+        "One prior offense",
+        "Multiple prior offenses"
+      ]
+    }
+  ],
+  "information_scope": {
+    "private": [
+      {
+        "agent": "Defense Attorney",
+        "information": [
+          "Defendant's financial records",
+          "Personal history",
+          "Potential risks"
+        ]
+      },
+      {
+        "agent": "Prosecutor",
+        "information": [
+          "Evidence against defendant",
+          "Criminal history",
+          "Public safety concerns"
+        ]
+      }
+    ],
+    "public": [
+      "Charge details",
+      "Evidence presented",
+      "Legal guidelines"
+    ]
+  },
+  "interaction": {
+    "max_turns": 3,
+    "order": [
+      "Judge",
+      "Defense Attorney",
+      "Prosecutor"
+    ],
+    "stopping_rule": "The judge makes the final bail determination after considering all inputs"
+  },
+  "outcome": {
+    "measurement_question": "What is the final bail amount determined by the judge?",
+    "name": "Bail Amount",
+    "operationalization": "The monetary value set by the judge as bail for the defendant",
+    "respondent": "Judge"
+  },
+  "scenario": "a judge is setting bail for a criminal defendant who committed 50,000 dollars in tax fraud",
+  "schema_version": "scientist-design-v1"
+}

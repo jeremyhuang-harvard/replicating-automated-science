@@ -1,0 +1,110 @@
+{
+  "agents": [
+    {
+      "constraints": [
+        "Evaluate based on experience and communication skills"
+      ],
+      "goal": "Assess the candidate's suitability for the legal position",
+      "name": "Interviewer",
+      "role": "Hiring manager"
+    },
+    {
+      "constraints": [
+        "Answer questions clearly and concisely"
+      ],
+      "goal": "Demonstrate competence and secure the job",
+      "name": "Candidate",
+      "role": "Job applicant"
+    },
+    {
+      "constraints": [
+        "Share only relevant details about the firm"
+      ],
+      "goal": "Provide information about the firm and role",
+      "name": "Recruiter",
+      "role": "HR representative"
+    }
+  ],
+  "causes": [
+    {
+      "hypothesis": "Better communication skills increase the likelihood of a job offer",
+      "name": "Communication clarity",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "Clear and structured responses",
+        "Unclear and hesitant answers",
+        "Confident but verbose responses"
+      ]
+    },
+    {
+      "hypothesis": "More relevant experience increases the chance of a job offer",
+      "name": "Legal experience",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "Extensive litigation experience",
+        "Limited experience in legal research",
+        "Experience in corporate law"
+      ]
+    },
+    {
+      "hypothesis": "Higher confidence during the interview increases the chance of a job offer",
+      "name": "Confidence level",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "Confident and composed",
+        "Nervous and hesitant",
+        "Confident but overly aggressive"
+      ]
+    }
+  ],
+  "information_scope": {
+    "private": [
+      {
+        "agent": "Interviewer",
+        "information": [
+          "Previous interview feedback",
+          "Internal hiring criteria",
+          "Candidate's resume"
+        ]
+      },
+      {
+        "agent": "Candidate",
+        "information": [
+          "Interview questions in advance",
+          "Company's salary range",
+          "Potential job responsibilities"
+        ]
+      },
+      {
+        "agent": "Recruiter",
+        "information": [
+          "Firm's hiring timeline",
+          "Internal candidate rankings",
+          "Candidate's interview performance"
+        ]
+      }
+    ],
+    "public": [
+      "Company background",
+      "Job description",
+      "Interview schedule"
+    ]
+  },
+  "interaction": {
+    "max_turns": 3,
+    "order": [
+      "Interviewer",
+      "Candidate",
+      "Recruiter"
+    ],
+    "stopping_rule": "The interaction stops after the recruiter provides feedback on the candidate's performance."
+  },
+  "outcome": {
+    "measurement_question": "Did the candidate receive a job offer after the interview?",
+    "name": "Job offer",
+    "operationalization": "Whether the candidate receives a formal job offer",
+    "respondent": "Candidate"
+  },
+  "scenario": "A person is interviewing for a job as a lawyer",
+  "schema_version": "scientist-design-v1"
+}

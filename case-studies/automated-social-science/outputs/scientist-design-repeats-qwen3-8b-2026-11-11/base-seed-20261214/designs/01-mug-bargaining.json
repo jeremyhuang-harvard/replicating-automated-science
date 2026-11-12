@@ -1,0 +1,89 @@
+{
+  "agents": [
+    {
+      "constraints": [
+        "must accept a price above $5"
+      ],
+      "goal": "maximize profit from the sale",
+      "name": "Alice",
+      "role": "seller"
+    },
+    {
+      "constraints": [
+        "must offer at least $3"
+      ],
+      "goal": "minimize cost of the mug",
+      "name": "Bob",
+      "role": "buyer"
+    }
+  ],
+  "causes": [
+    {
+      "hypothesis": "A higher initial offer by Alice leads to a higher final price",
+      "name": "initial offer",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "$8",
+        "$10",
+        "$12"
+      ]
+    },
+    {
+      "hypothesis": "A lower counteroffer by Bob leads to a lower final price",
+      "name": "counteroffer",
+      "predicted_direction": "decrease",
+      "treatment_values": [
+        "$4",
+        "$5",
+        "$6"
+      ]
+    },
+    {
+      "hypothesis": "Higher mug quality leads to a higher final price",
+      "name": "mug quality",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "high",
+        "medium",
+        "low"
+      ]
+    }
+  ],
+  "information_scope": {
+    "private": [
+      {
+        "agent": "Alice",
+        "information": [
+          "initial offer",
+          "mug quality"
+        ]
+      },
+      {
+        "agent": "Bob",
+        "information": [
+          "counteroffer",
+          "mug quality"
+        ]
+      }
+    ],
+    "public": [
+      "mug quality"
+    ]
+  },
+  "interaction": {
+    "max_turns": 2,
+    "order": [
+      "Alice",
+      "Bob"
+    ],
+    "stopping_rule": "when both agents agree on a price"
+  },
+  "outcome": {
+    "measurement_question": "What is the final price agreed upon by the two agents?",
+    "name": "final price",
+    "operationalization": "the price agreed upon by Alice and Bob",
+    "respondent": "both agents"
+  },
+  "scenario": "two people bargaining over a mug",
+  "schema_version": "scientist-design-v1"
+}

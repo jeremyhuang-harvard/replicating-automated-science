@@ -7,12 +7,16 @@ Two kinds of tools now promise social science from language models: synthetic su
 (Expected Parrot) and a model that acts as both scientist and subjects (Manning, Zhu & Horton,
 *Automated Social Science*, 2024). We replicated both with a small local model, Qwen3-8B, then
 pushed them onto new problems to see where they break. Our conclusion: **the levers these agents
-theorise, and whether those levers then "work", move with the stochastic draw.**
+theorise, and whether those levers then "work", move with the stochastic draw.** Repeating every
+draw with new seeds confirmed this for *which* levers get theorised and for whether an effect looks
+statistically strong, and qualified it for the *direction* of an effect, which mostly repeats.
 
-This repository contains everything from that project, October 2026:
+This repository contains everything from that project (October 2026, plus the repeated-seed runs of
+November 2026):
 
 - **all of the saved outputs**: every run, including the failed first attempts, with every raw
-  model call, transcript, persona answer and measurement (nearly 1,900 model calls);
+  model call, transcript, persona answer and measurement (nearly 8,500 model calls, 6,709 of them in
+  the repeated-seed runs);
 - **our results**, regenerated from those outputs by one script that needs no key, no model and no
   network;
 - **our interpretation**, in [`my-takeaways.md`](my-takeaways.md), plus the original write-ups and
@@ -21,30 +25,55 @@ This repository contains everything from that project, October 2026:
 
 ## The headline result
 
-![How many single-draw cells must be deleted to reverse each lever](results/lever_fragility.svg)
+In October we ran every experiment cell and every scientist design once, so our evidence for
+instability was indirect: how many cells must be deleted before a lever's verdict reverses. In
+November we reran the same code with new seeds, about four hours of model time: ten more scientist
+designs per scenario, four more draws of all 216 experiment cells, and four more Expected Parrot
+panels.
 
-Each experiment cell was run once. For every lever a scientist model theorised, we asked: how many
-of the 27 cells must be deleted before its verdict reverses?
+**Which levers get theorised is the most draw-dependent step.** Redrawing Qwen's design for the same
+scenario with the same prompt gave 6 to 9 different lever sets in 11 draws per scenario. Only 5 of 40
+new draws repeated the original design's three levers, and the mean Jaccard overlap between two
+draws' lever names is 0.19 to 0.43, depending on the scenario. Some levers are near-certain
+(communication clarity or skills in the interview, 11 of 11 draws); others appear once (the mug
+study's "mediator's presence").
+
+![Does each lever give the same verdict on five independent draws of its 27 cells?](results/lever_verdicts_across_seeds.svg)
+
+**Given a design, the direction of most levers repeats; their strength does not.**
 
 | | Qwen designs, Qwen subjects | GPT-Sol designs, Qwen subjects |
 |---|---:|---:|
 | levers theorised | 12 | 20 |
-| scientist's predicted direction held | 9 of 12 | (not scored) |
-| \|coefficient / robust SE\| below 2 | 6 | 9 |
-| verdict reversed by deleting 1–2 of 27 cells | 4 | 2 |
-| reversed by deleting 3 cells | 0 | 4 |
-| survives every deletion of up to 3 cells | 8 | 13 (+1 placebo at exactly zero) |
+| independent draws of each 27-cell study | 5 | 5 |
+| same verdict in all five draws | 10 | 15 |
+| \|coefficient / robust SE\| > 2 in all five draws | 4 | 2 |
+| … in some draws but not others | 3 | 14 |
+| … in no draw | 5 | 4 |
+| deletion-fragile in the original (1–2 cells) and verdict changed in a new draw | 1 of 4 | 2 of 2 |
+| survived 3 deletions and verdict changed in a new draw | 1 of 8 | 1 of 13 |
 
-The big levers hold: prior convictions raise bail, the seller's reservation price kills mug deals.
-The small and surprising ones (the ones a "discovery" would rest on) often hinge on one or two
-draws. Two of Qwen's nine "confirmed" predictions reverse if two cells are dropped. In the
-Expected Parrot replication, the same 12 personas answering the same four items changed 14 of 48
-answers when the persona moved from the user prompt to the system prompt and the seed changed. Which levers get
-proposed at all also depends on who proposes them: three scientists given the same four scenarios
-chose 44 levers between them, and only two concepts were picked by all three.
+Qwen's own predictions held in 9, 10, 10, 9 and 10 of 12 levers across the five draws, so the
+original "9 of 12" was a typical draw, not a lucky one. The big levers hold every time (prior
+convictions raise bail, the seller's reservation price kills mug deals, communication clarity lifts
+interview ratings). What moves is whether a lever clears |t| > 2: for 17 of the 32 levers that
+depends on the draw. The deletion test was a rough guide: half of the six levers it flagged as
+fragile kept their verdict in every new draw, and the one Qwen lever that did change (mediator
+presence) turned out to have failed only in the original draw. In the auction, where auction theory
+says the bidder valuations should matter most, two of GPT-Sol's three valuation levers changed sign
+in one draw.
 
+**In Expected Parrot, wording mattered more than the seed.** The same 12 personas changed 14 of 48
+answers when the persona moved from the user prompt to the system prompt and the seed changed. With
+the prompt held fixed, a new seed alone changes 4 to 7 of 48 answers on average; the prompt change
+alone about 13.
+
+One caution on all of this: at the subjects' temperature (0.3) many cells replay almost the same
+conversation under a new seed (the same measured outcome in 31% to 87% of cell redraws, by study),
+so "repeats across seeds" is a statement about this model's sampling, not proof that a lever is real.
 What this does and does not show, the Expected Parrot polarisation result, and the runs that went
-wrong are in **[my-takeaways.md](my-takeaways.md)**.
+wrong are in **[my-takeaways.md](my-takeaways.md)**. The October deletion analysis is section 4 of
+[`results/RESULTS.md`](results/RESULTS.md).
 
 ## Where to look
 
@@ -86,6 +115,7 @@ analysis/make_results.py    builds results/ from the saved outputs (stdlib only)
 tests/                      checks that the outputs reproduce the reported numbers
 case-studies/
   DATA.md                   codebook for every output folder and file type
+  run_repeated_seeds.py     reruns the original commands with new seeds (November 2026)
   automated-social-science/ original code (src/, tests/), designs/, schemas/, docs/runs/,
                             vendor/original_scm/ (upstream files, MIT), outputs/ (all runs)
   expected-parrot/          original code (parrot_baseline/, experiments/, tests/), RESEARCH.md,
@@ -152,7 +182,17 @@ python3 -m parrot_baseline.cli run --engine mlx --output-dir .artifacts/my-mlx-1
   --seed 42 --concept-title "Lasagna Coke" --concept-description "<text from our manifest.json>"
 ~/.local/share/uv/tools/mlx-lm/bin/python experiments/expected_parrot_qwen_replication.py \
   --image <any image file> --output-dir .artifacts/my-qwen-replication
+
+# The repeated-seed study (from the repository root; resumable, sequential, ~4 h on a Mac mini)
+PARROT_IMAGE=<any image file> python3 case-studies/run_repeated_seeds.py pilot   # one draw per stage
+PARROT_IMAGE=<any image file> python3 case-studies/run_repeated_seeds.py all --k 10 --s 4
 ```
+
+`case-studies/run_repeated_seeds.py` only calls the commands above with new seeds and new output
+directories (seeds and folder names are listed in [`case-studies/DATA.md`](case-studies/DATA.md)).
+To hold the Qwen execution designs fixed it copies the original run's four `finalized.json` files
+into each new run folder first, which the generated-experiment runner treats as already compiled.
+Our new folders already exist, so it skips them; rename `DATE` in the script to make your own.
 
 Things to know before rerunning:
 
@@ -161,7 +201,7 @@ Things to know before rerunning:
 - **Same seeds give the same draws.** Our own reruns with the same seeds reproduced earlier outputs
   exactly; on other hardware or MLX versions they may not. Either way, a same-seed rerun confirms
   the pipeline, not the stability of any result. To see the variance,
-  change `--base-seed` / `--seed`.
+  change `--base-seed` / `--seed`, as `run_repeated_seeds.py` does.
 - **The GPT-Sol design bundle is an input**, `designs/frontier-planned-v1/designs.json`. It was
   written in a chat session, not by code, so there is nothing to rerun for that step. The runner's
   `--design-file` takes any bundle in the same format.
@@ -189,6 +229,12 @@ others:
    [`case-studies/DATA.md`](case-studies/DATA.md)). Nothing else in any output was edited.
 5. Added `case-studies/expected-parrot/uv.lock`, generated by `uv` in the original folder but not
    committed there.
+
+The repeated-seed study (November 2026) added files and changed no original code or output: the
+driver `case-studies/run_repeated_seeds.py`, the new run folders it wrote (path-scrubbed the same
+way as item 4), and new sections in `analysis/make_results.py`. The script's existing table functions
+gained an optional run-folder argument so the same code reads every draw; their output for the
+original runs is unchanged.
 
 The Expected Parrot code comes from branch `feat/runnable-baseline` (which contains `main`); the
 Automated Social Science code from branch `research/initial-runner` (which contains `main`).

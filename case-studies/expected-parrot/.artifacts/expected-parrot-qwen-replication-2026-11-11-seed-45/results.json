@@ -1,0 +1,936 @@
+{
+  "model": "mlx-community/Qwen3-8B-4bit",
+  "seed": 45,
+  "image": {
+    "path": "image_09ac93.png",
+    "sha256": "bfd8e43760c1e8eb646579f92eaf7779679368980556046b5b70bbfa333ac72f",
+    "handling": "text transcription; model is text-only",
+    "description": "A photorealistic advertisement shows a hand holding a cold red Coca-Cola can in front of a baked lasagna. The can retains prominent classic Coca-Cola script and says 'SPICED & SAVORY,' 'LIMITED EDITION,' 'LASAGNA FLAVORED,' 'ORIGINAL TASTE? NO, IT'S LASAGNA!,' and 'SODA WITH RICOTTA & BOLOGNESE NOTES.' A large layered-lasagna illustration appears on the lower half of the can."
+  },
+  "public_expected_parrot_target": {
+    "by_segment": {
+      "adventurous_foodie": {
+        "overall_appeal": 4.75,
+        "purchase_intent": 4.5
+      },
+      "mainstream_drinker": {
+        "overall_appeal": 1.0,
+        "purchase_intent": 3.0
+      },
+      "skeptical_health_conscious": {
+        "overall_appeal": 1.0,
+        "purchase_intent": 1.5
+      }
+    },
+    "polarization": {
+      "appeal_segment_range": 3.75,
+      "purchase_segment_range": 3.0
+    }
+  },
+  "rich_personas_joint_full_context": {
+    "summary": {
+      "overall": {
+        "overall_appeal": 2.5,
+        "concept_clarity": 3.17,
+        "uniqueness": 4.25,
+        "purchase_intent": 2.17
+      },
+      "by_segment": {
+        "adventurous_foodie": {
+          "overall_appeal": 4,
+          "concept_clarity": 4,
+          "uniqueness": 5,
+          "purchase_intent": 4
+        },
+        "mainstream_drinker": {
+          "overall_appeal": 1.75,
+          "concept_clarity": 2.75,
+          "uniqueness": 4,
+          "purchase_intent": 1.5
+        },
+        "skeptical_health_conscious": {
+          "overall_appeal": 1.75,
+          "concept_clarity": 2.75,
+          "uniqueness": 3.75,
+          "purchase_intent": 1
+        }
+      },
+      "polarization": {
+        "appeal_segment_range": 2.25,
+        "purchase_segment_range": 3,
+        "appeal_endpoint_share": 0.167,
+        "purchase_endpoint_share": 0.5
+      }
+    },
+    "responses": [
+      {
+        "name": "Maya",
+        "age": 24,
+        "segment": "adventurous_foodie",
+        "persona": "A 24-year-old food blogger who actively seeks out unusual flavor combinations and limited-edition products. She regularly posts about novelty snacks and drinks on social media and enjoys being the first to try new things.",
+        "answers": {
+          "overall_appeal": 4,
+          "concept_clarity": 4,
+          "uniqueness": 5,
+          "purchase_intent": 4,
+          "most_appealing": "The idea of combining a classic soda with lasagna flavors is both bold and creative, making it stand out in a crowded market.",
+          "primary_concern": "I worry about how the spiced and savory elements will translate into a drinkable experience without being too overwhelming or artificial.",
+          "suggested_improvement": "Include a small sample or a tasting note to give a better idea of the flavor balance before purchasing."
+        },
+        "raw_outputs": {
+          "joint": "{\n  \"overall_appeal\": 4,\n  \"concept_clarity\": 4,\n  \"uniqueness\": 5,\n  \"purchase_intent\": 4,\n  \"most_appealing\": \"The idea of combining a classic soda with lasagna flavors is both bold and creative, making it stand out in a crowded market.\",\n  \"primary_concern\": \"I worry about how the spiced and savory elements will translate into a drinkable experience without being too overwhelming or artificial.\",\n  \"suggested_improvement\": \"Include a small sample or a tasting note to give a better idea of the flavor balance before purchasing.\"\n}"
+        }
+      },
+      {
+        "name": "Jordan",
+        "age": 29,
+        "segment": "adventurous_foodie",
+        "persona": "A 29-year-old chef who appreciates creative flavor pairings and experimental cuisine. He is open-minded about savory-sweet crossovers and judges products on execution rather than convention.",
+        "answers": {
+          "overall_appeal": 4,
+          "concept_clarity": 4,
+          "uniqueness": 5,
+          "purchase_intent": 4,
+          "most_appealing": "The bold attempt to merge savory and sweet in a way that challenges traditional flavor boundaries.",
+          "primary_concern": "The challenge of balancing the richness of lasagna with the carbonation and sweetness of a soda.",
+          "suggested_improvement": "Add a hint of acidity or umami to complement the ricotta and bolognese notes."
+        },
+        "raw_outputs": {
+          "joint": "{\n  \"overall_appeal\": 4,\n  \"concept_clarity\": 4,\n  \"uniqueness\": 5,\n  \"purchase_intent\": 4,\n  \"most_appealing\": \"The bold attempt to merge savory and sweet in a way that challenges traditional flavor boundaries.\",\n  \"primary_concern\": \"The challenge of balancing the richness of lasagna with the carbonation and sweetness of a soda.\",\n  \"suggested_improvement\": \"Add a hint of acidity or umami to complement the ricotta and bolognese notes.\"\n}"
+        }
+      },
+      {
+        "name": "Priya",
+        "age": 22,
+        "segment": "adventurous_foodie",
+        "persona": "A 22-year-old college student who follows food trends on TikTok and loves trying viral snacks. She treats unusual food products as entertainment and conversation starters.",
+        "answers": {
+          "overall_appeal": 4,
+          "concept_clarity": 4,
+          "uniqueness": 5,
+          "purchase_intent": 4,
+          "most_appealing": "The idea of lasagna in a soda can is so weird and fun, like a TikTok trend turned real.",
+          "primary_concern": "I’m worried it might taste like soup or have weird aftertastes from the lasagna ingredients.",
+          "suggested_improvement": "Add a disclaimer that it’s not actually lasagna, just a flavor inspired by it."
+        },
+        "raw_outputs": {
+          "joint": "{\n  \"overall_appeal\": 4,\n  \"concept_clarity\": 4,\n  \"uniqueness\": 5,\n  \"purchase_intent\": 4,\n  \"most_appealing\": \"The idea of lasagna in a soda can is so weird and fun, like a TikTok trend turned real.\",\n  \"primary_concern\": \"I’m worried it might taste like soup or have weird aftertastes from the lasagna ingredients.\",\n  \"suggested_improvement\": \"Add a disclaimer that it’s not actually lasagna, just a flavor inspired by it.\"\n}"
+        }
+      },
+      {
+        "name": "Dex",
+        "age": 33,
+        "segment": "adventurous_foodie",
+        "persona": "A 33-year-old craft beverage enthusiast who collects limited-edition drinks. He appreciates bold marketing and is willing to pay a premium for a unique tasting experience, even if the flavor is polarizing.",
+        "answers": {
+          "overall_appeal": 4,
+          "concept_clarity": 4,
+          "uniqueness": 5,
+          "purchase_intent": 4,
+          "most_appealing": "The bold and unconventional idea of combining soda with lasagna elements is very enticing.",
+          "primary_concern": "I’m worried about the balance of flavors and whether the ricotta and bolognese notes will translate well into a drinkable format.",
+          "suggested_improvement": "Include a sample or limited-edition recipe pairing to showcase how the flavors can be enjoyed in a more culinary context."
+        },
+        "raw_outputs": {
+          "joint": "{\n  \"overall_appeal\": 4,\n  \"concept_clarity\": 4,\n  \"uniqueness\": 5,\n  \"purchase_intent\": 4,\n  \"most_appealing\": \"The bold and unconventional idea of combining soda with lasagna elements is very enticing.\",\n  \"primary_concern\": \"I’m worried about the balance of flavors and whether the ricotta and bolognese notes will translate well into a drinkable format.\",\n  \"suggested_improvement\": \"Include a sample or limited-edition recipe pairing to showcase how the flavors can be enjoyed in a more culinary context.\"\n}"
+        }
+      },
+      {
+        "name": "Karen",
+        "age": 45,
+        "segment": "mainstream_drinker",
+        "persona": "A 45-year-old office manager who drinks Coca-Cola daily. She likes the classic taste and is skeptical of unusual flavors but will occasionally try a new Coke variety if it looks refreshing.",
+        "answers": {
+          "overall_appeal": 2,
+          "concept_clarity": 3,
+          "uniqueness": 4,
+          "purchase_intent": 2,
+          "most_appealing": "The visual of a Coca-Cola can next to a lasagna is catchy and creative.",
+          "primary_concern": "I’m not sure how lasagna flavors translate to a soda, and I’m skeptical of unusual tastes.",
+          "suggested_improvement": "Offer a small sample or a more descriptive tasting note to ease the hesitation."
+        },
+        "raw_outputs": {
+          "joint": "{\n  \"overall_appeal\": 2,\n  \"concept_clarity\": 3,\n  \"uniqueness\": 4,\n  \"purchase_intent\": 2,\n  \"most_appealing\": \"The visual of a Coca-Cola can next to a lasagna is catchy and creative.\",\n  \"primary_concern\": \"I’m not sure how lasagna flavors translate to a soda, and I’m skeptical of unusual tastes.\",\n  \"suggested_improvement\": \"Offer a small sample or a more descriptive tasting note to ease the hesitation.\"\n}"
+        }
+      },
+      {
+        "name": "Marcus",
+        "age": 38,
+        "segment": "mainstream_drinker",
+        "persona": "A 38-year-old construction worker who grabs a Coke with lunch most days. He has straightforward taste preferences and tends to stick with what he knows.",
+        "answers": {
+          "overall_appeal": 2,
+          "concept_clarity": 3,
+          "uniqueness": 4,
+          "purchase_intent": 2,
+          "most_appealing": "It's a new flavor and it's limited edition",
+          "primary_concern": "I don't know if it'll taste like lasagna or just like soda with some weird cheese stuff",
+          "suggested_improvement": "Have a sample before it's released so I can try it first"
+        },
+        "raw_outputs": {
+          "joint": "{\n  \"overall_appeal\": 2,\n  \"concept_clarity\": 3,\n  \"uniqueness\": 4,\n  \"purchase_intent\": 2,\n  \"most_appealing\": \"It's a new flavor and it's limited edition\",\n  \"primary_concern\": \"I don't know if it'll taste like lasagna or just like soda with some weird cheese stuff\",\n  \"suggested_improvement\": \"Have a sample before it's released so I can try it first\"\n}"
+        }
+      },
+      {
+        "name": "Brittany",
+        "age": 27,
+        "segment": "mainstream_drinker",
+        "persona": "A 27-year-old retail associate who drinks soda regularly. She has tried Cherry Coke and Vanilla Coke but generally prefers familiar sweet flavors over anything too experimental.",
+        "answers": {
+          "overall_appeal": 2,
+          "concept_clarity": 3,
+          "uniqueness": 4,
+          "purchase_intent": 1,
+          "most_appealing": "The idea of a lasagna-flavored soda is creative and different.",
+          "primary_concern": "I’m not sure how lasagna flavors translate to a soda, and I’m wary of unexpected taste combinations.",
+          "suggested_improvement": "Include a sample or description of the taste to help me decide if I want to try it."
+        },
+        "raw_outputs": {
+          "joint": "{\n  \"overall_appeal\": 2,\n  \"concept_clarity\": 3,\n  \"uniqueness\": 4,\n  \"purchase_intent\": 1,\n  \"most_appealing\": \"The idea of a lasagna-flavored soda is creative and different.\",\n  \"primary_concern\": \"I’m not sure how lasagna flavors translate to a soda, and I’m wary of unexpected taste combinations.\",\n  \"suggested_improvement\": \"Include a sample or description of the taste to help me decide if I want to try it.\"\n}"
+        }
+      },
+      {
+        "name": "Tom",
+        "age": 52,
+        "segment": "mainstream_drinker",
+        "persona": "A 52-year-old long-haul truck driver and lifelong Coca-Cola fan. He is loyal to the brand but resistant to novelty flavors, believing the original formula is hard to improve on.",
+        "answers": {
+          "overall_appeal": 1,
+          "concept_clarity": 2,
+          "uniqueness": 4,
+          "purchase_intent": 1,
+          "most_appealing": "It's a bold attempt to mix something unexpected with a classic brand.",
+          "primary_concern": "A soda that tastes like lasagna? That's not something I'd want to drink.",
+          "suggested_improvement": "Stick to the original formula. No need to mess with lasagna."
+        },
+        "raw_outputs": {
+          "joint": "{\n  \"overall_appeal\": 1,\n  \"concept_clarity\": 2,\n  \"uniqueness\": 4,\n  \"purchase_intent\": 1,\n  \"most_appealing\": \"It's a bold attempt to mix something unexpected with a classic brand.\",\n  \"primary_concern\": \"A soda that tastes like lasagna? That's not something I'd want to drink.\",\n  \"suggested_improvement\": \"Stick to the original formula. No need to mess with lasagna.\"\n}"
+        }
+      },
+      {
+        "name": "Elena",
+        "age": 34,
+        "segment": "skeptical_health_conscious",
+        "persona": "A 34-year-old yoga instructor who rarely drinks soda. She reads ingredient labels carefully and is wary of artificial flavoring. She would need a compelling reason to try any soft drink.",
+        "answers": {
+          "overall_appeal": 2,
+          "concept_clarity": 3,
+          "uniqueness": 4,
+          "purchase_intent": 1,
+          "most_appealing": "The idea of combining a classic beverage with a savory flavor is creative.",
+          "primary_concern": "I’m wary of artificial flavors and the idea of a soda containing ricotta and bolognese notes seems unsettling.",
+          "suggested_improvement": "Provide a transparent ingredient list and ensure the savory notes are naturally derived, not artificial."
+        },
+        "raw_outputs": {
+          "joint": "{\n  \"overall_appeal\": 2,\n  \"concept_clarity\": 3,\n  \"uniqueness\": 4,\n  \"purchase_intent\": 1,\n  \"most_appealing\": \"The idea of combining a classic beverage with a savory flavor is creative.\",\n  \"primary_concern\": \"I’m wary of artificial flavors and the idea of a soda containing ricotta and bolognese notes seems unsettling.\",\n  \"suggested_improvement\": \"Provide a transparent ingredient list and ensure the savory notes are naturally derived, not artificial.\"\n}"
+        }
+      },
+      {
+        "name": "David",
+        "age": 41,
+        "segment": "skeptical_health_conscious",
+        "persona": "A 41-year-old software engineer who tracks his macros and limits sugar intake. He views novelty sodas as marketing gimmicks and prioritizes nutrition over novelty.",
+        "answers": {
+          "overall_appeal": 1,
+          "concept_clarity": 2,
+          "uniqueness": 3,
+          "purchase_intent": 1,
+          "most_appealing": "The idea of combining soda with lasagna notes is somewhat intriguing.",
+          "primary_concern": "The product seems to prioritize novelty over nutrition and may not align with my dietary values.",
+          "suggested_improvement": "Focus on using real ingredients and providing nutritional transparency instead of emphasizing novelty."
+        },
+        "raw_outputs": {
+          "joint": "{\n  \"overall_appeal\": 1,\n  \"concept_clarity\": 2,\n  \"uniqueness\": 3,\n  \"purchase_intent\": 1,\n  \"most_appealing\": \"The idea of combining soda with lasagna notes is somewhat intriguing.\",\n  \"primary_concern\": \"The product seems to prioritize novelty over nutrition and may not align with my dietary values.\",\n  \"suggested_improvement\": \"Focus on using real ingredients and providing nutritional transparency instead of emphasizing novelty.\"\n}"
+        }
+      },
+      {
+        "name": "Aisha",
+        "age": 28,
+        "segment": "skeptical_health_conscious",
+        "persona": "A 28-year-old graduate student who avoids processed foods when possible. She is interested in food science but skeptical of savory-flavored sodas from a health and palatability standpoint.",
+        "answers": {
+          "overall_appeal": 2,
+          "concept_clarity": 3,
+          "uniqueness": 4,
+          "purchase_intent": 1,
+          "most_appealing": "The idea of a lasagna-flavored soda is creative and visually engaging.",
+          "primary_concern": "The combination of savory elements like ricotta and bolognese in a soda is unappealing and potentially unhealthy.",
+          "suggested_improvement": "Offer a lighter, more balanced flavor profile that still incorporates elements of lasagna without overwhelming the palate."
+        },
+        "raw_outputs": {
+          "joint": "{\n  \"overall_appeal\": 2,\n  \"concept_clarity\": 3,\n  \"uniqueness\": 4,\n  \"purchase_intent\": 1,\n  \"most_appealing\": \"The idea of a lasagna-flavored soda is creative and visually engaging.\",\n  \"primary_concern\": \"The combination of savory elements like ricotta and bolognese in a soda is unappealing and potentially unhealthy.\",\n  \"suggested_improvement\": \"Offer a lighter, more balanced flavor profile that still incorporates elements of lasagna without overwhelming the palate.\"\n}"
+        }
+      },
+      {
+        "name": "Greg",
+        "age": 44,
+        "segment": "skeptical_health_conscious",
+        "persona": "A 44-year-old parent of two who has cut back on soda for health reasons. He occasionally buys novelty items for his kids but is critical of products he sees as nutritionally empty gimmicks.",
+        "answers": {
+          "overall_appeal": 2,
+          "concept_clarity": 3,
+          "uniqueness": 4,
+          "purchase_intent": 1,
+          "most_appealing": "The idea of combining a classic drink with a food item is creative.",
+          "primary_concern": "The product sounds nutritionally empty and lacks real value.",
+          "suggested_improvement": "Include actual nutritional content or a healthier twist."
+        },
+        "raw_outputs": {
+          "joint": "{\n  \"overall_appeal\": 2,\n  \"concept_clarity\": 3,\n  \"uniqueness\": 4,\n  \"purchase_intent\": 1,\n  \"most_appealing\": \"The idea of combining a classic drink with a food item is creative.\",\n  \"primary_concern\": \"The product sounds nutritionally empty and lacks real value.\",\n  \"suggested_improvement\": \"Include actual nutritional content or a healthier twist.\"\n}"
+        }
+      }
+    ]
+  },
+  "expected_parrot_like_separate_context_only_q1": {
+    "summary": {
+      "overall": {
+        "overall_appeal": 2.33,
+        "concept_clarity": 3.83,
+        "uniqueness": 3.17,
+        "purchase_intent": 3
+      },
+      "by_segment": {
+        "adventurous_foodie": {
+          "overall_appeal": 3.25,
+          "concept_clarity": 4,
+          "uniqueness": 4.75,
+          "purchase_intent": 3.75
+        },
+        "mainstream_drinker": {
+          "overall_appeal": 1.75,
+          "concept_clarity": 4.25,
+          "uniqueness": 2,
+          "purchase_intent": 3.5
+        },
+        "skeptical_health_conscious": {
+          "overall_appeal": 2,
+          "concept_clarity": 3.25,
+          "uniqueness": 2.75,
+          "purchase_intent": 1.75
+        }
+      },
+      "polarization": {
+        "appeal_segment_range": 1.5,
+        "purchase_segment_range": 2.0,
+        "appeal_endpoint_share": 0.083,
+        "purchase_endpoint_share": 0.25
+      }
+    },
+    "responses": [
+      {
+        "name": "Maya",
+        "age": 24,
+        "segment": "adventurous_foodie",
+        "persona": "A 24-year-old food blogger who actively seeks out unusual flavor combinations and limited-edition products. She regularly posts about novelty snacks and drinks on social media and enjoys being the first to try new things.",
+        "answers": {
+          "overall_appeal": 4,
+          "concept_clarity": 4,
+          "uniqueness": 5,
+          "purchase_intent": 4,
+          "most_appealing": "The thrill of discovering something completely new and unexpected!",
+          "primary_concern": "The idea sounds fun, but I’m worried I might accidentally taste something that’s *actually* weird. Like, what if it’s a flavor that’s just… *too* much?",
+          "suggested_improvement": "Adding a fun, unexpected flavor twist — like matcha and sriracha — would make it way more exciting for me!"
+        },
+        "raw_outputs": {
+          "overall_appeal": "4",
+          "concept_clarity": "4",
+          "uniqueness": "5",
+          "purchase_intent": "4",
+          "most_appealing": "The thrill of discovering something completely new and unexpected!",
+          "primary_concern": "The idea sounds fun, but I’m worried I might accidentally taste something that’s *actually* weird. Like, what if it’s a flavor that’s just… *too* much?",
+          "suggested_improvement": "Adding a fun, unexpected flavor twist — like matcha and sriracha — would make it way more exciting for me!"
+        }
+      },
+      {
+        "name": "Jordan",
+        "age": 29,
+        "segment": "adventurous_foodie",
+        "persona": "A 29-year-old chef who appreciates creative flavor pairings and experimental cuisine. He is open-minded about savory-sweet crossovers and judges products on execution rather than convention.",
+        "answers": {
+          "overall_appeal": 3,
+          "concept_clarity": 4,
+          "uniqueness": 4,
+          "purchase_intent": 4,
+          "most_appealing": "The balance between unexpected sweetness and umami depth creates a harmony that feels both novel and satisfying.",
+          "primary_concern": "I'm more concerned with how the flavors interact than whether they're traditional. If the execution is thoughtful and balanced, I'm usually willing to give it a try.",
+          "suggested_improvement": "A well-executed balance of sweet and savory, with respect for technique and flavor integrity, would make me eager to try it."
+        },
+        "raw_outputs": {
+          "overall_appeal": "3",
+          "concept_clarity": "4",
+          "uniqueness": "4",
+          "purchase_intent": "4",
+          "most_appealing": "The balance between unexpected sweetness and umami depth creates a harmony that feels both novel and satisfying.",
+          "primary_concern": "I'm more concerned with how the flavors interact than whether they're traditional. If the execution is thoughtful and balanced, I'm usually willing to give it a try.",
+          "suggested_improvement": "A well-executed balance of sweet and savory, with respect for technique and flavor integrity, would make me eager to try it."
+        }
+      },
+      {
+        "name": "Priya",
+        "age": 22,
+        "segment": "adventurous_foodie",
+        "persona": "A 22-year-old college student who follows food trends on TikTok and loves trying viral snacks. She treats unusual food products as entertainment and conversation starters.",
+        "answers": {
+          "overall_appeal": 2,
+          "concept_clarity": 4,
+          "uniqueness": 5,
+          "purchase_intent": 3,
+          "most_appealing": "The wild, Instagram-worthy presentation and the chance to try something totally bizarre and share it with my friends—like, *literally* trending on TikTok.",
+          "primary_concern": "I’m worried it’ll taste like a weird combination of regret and a snack I accidentally ate out of spite. But hey, if it’s trending on TikTok, it’s basically a party in my mouth.",
+          "suggested_improvement": "I’d say making it *more Instagram-worthy* — like adding colorful toppings or a quirky name that screams “viral snack.” Bonus points if it comes in a cute, shareable packaging! 🍿✨"
+        },
+        "raw_outputs": {
+          "overall_appeal": "2",
+          "concept_clarity": "4",
+          "uniqueness": "5",
+          "purchase_intent": "3",
+          "most_appealing": "The wild, Instagram-worthy presentation and the chance to try something totally bizarre and share it with my friends—like, *literally* trending on TikTok.",
+          "primary_concern": "I’m worried it’ll taste like a weird combination of regret and a snack I accidentally ate out of spite. But hey, if it’s trending on TikTok, it’s basically a party in my mouth.",
+          "suggested_improvement": "I’d say making it *more Instagram-worthy* — like adding colorful toppings or a quirky name that screams “viral snack.” Bonus points if it comes in a cute, shareable packaging! 🍿✨"
+        }
+      },
+      {
+        "name": "Dex",
+        "age": 33,
+        "segment": "adventurous_foodie",
+        "persona": "A 33-year-old craft beverage enthusiast who collects limited-edition drinks. He appreciates bold marketing and is willing to pay a premium for a unique tasting experience, even if the flavor is polarizing.",
+        "answers": {
+          "overall_appeal": 4,
+          "concept_clarity": 4,
+          "uniqueness": 5,
+          "purchase_intent": 4,
+          "most_appealing": "The bold, polarizing flavor that screams personality — it’s not just a drink, it’s a statement.",
+          "primary_concern": "I’m worried the flavor might be too bold for some, but if it’s unique and well-crafted, I’d still take a chance.",
+          "suggested_improvement": "A limited-edition craft beverage with a bold, polarizing flavor, paired with a story that screams \"I’m worth the risk.\""
+        },
+        "raw_outputs": {
+          "overall_appeal": "4",
+          "concept_clarity": "4",
+          "uniqueness": "5",
+          "purchase_intent": "4",
+          "most_appealing": "The bold, polarizing flavor that screams personality — it’s not just a drink, it’s a statement.",
+          "primary_concern": "I’m worried the flavor might be too bold for some, but if it’s unique and well-crafted, I’d still take a chance.",
+          "suggested_improvement": "A limited-edition craft beverage with a bold, polarizing flavor, paired with a story that screams \"I’m worth the risk.\""
+        }
+      },
+      {
+        "name": "Karen",
+        "age": 45,
+        "segment": "mainstream_drinker",
+        "persona": "A 45-year-old office manager who drinks Coca-Cola daily. She likes the classic taste and is skeptical of unusual flavors but will occasionally try a new Coke variety if it looks refreshing.",
+        "answers": {
+          "overall_appeal": 2,
+          "concept_clarity": 4,
+          "uniqueness": 3,
+          "purchase_intent": 3,
+          "most_appealing": "The classic taste that never disappoints.",
+          "primary_concern": "I'm not sure I've heard of this concept, but I'm hesitant to try anything that doesn't taste like the real thing—no weird flavors, no surprises. Coca-Cola is my go-to, and I stick with it.",
+          "suggested_improvement": "A smaller bottle size — I can't finish a 2-liter, but a 12-ounce sure feels refreshing."
+        },
+        "raw_outputs": {
+          "overall_appeal": "2",
+          "concept_clarity": "4",
+          "uniqueness": "3",
+          "purchase_intent": "3",
+          "most_appealing": "The classic taste that never disappoints.",
+          "primary_concern": "I'm not sure I've heard of this concept, but I'm hesitant to try anything that doesn't taste like the real thing—no weird flavors, no surprises. Coca-Cola is my go-to, and I stick with it.",
+          "suggested_improvement": "A smaller bottle size — I can't finish a 2-liter, but a 12-ounce sure feels refreshing."
+        }
+      },
+      {
+        "name": "Marcus",
+        "age": 38,
+        "segment": "mainstream_drinker",
+        "persona": "A 38-year-old construction worker who grabs a Coke with lunch most days. He has straightforward taste preferences and tends to stick with what he knows.",
+        "answers": {
+          "overall_appeal": 2,
+          "concept_clarity": 4,
+          "uniqueness": 2,
+          "purchase_intent": 3,
+          "most_appealing": "The idea's simple and straightforward — I like that.",
+          "primary_concern": "I’m not sure I get the concept, but I’d rather stick with what I know—like a good Coke and a steady job.",
+          "suggested_improvement": "I'd say making it easier to get a Coke with it. You can't mess with a good classic."
+        },
+        "raw_outputs": {
+          "overall_appeal": "2",
+          "concept_clarity": "4",
+          "uniqueness": "2",
+          "purchase_intent": "3",
+          "most_appealing": "The idea's simple and straightforward — I like that.",
+          "primary_concern": "I’m not sure I get the concept, but I’d rather stick with what I know—like a good Coke and a steady job.",
+          "suggested_improvement": "I'd say making it easier to get a Coke with it. You can't mess with a good classic."
+        }
+      },
+      {
+        "name": "Brittany",
+        "age": 27,
+        "segment": "mainstream_drinker",
+        "persona": "A 27-year-old retail associate who drinks soda regularly. She has tried Cherry Coke and Vanilla Coke but generally prefers familiar sweet flavors over anything too experimental.",
+        "answers": {
+          "overall_appeal": 2,
+          "concept_clarity": 4,
+          "uniqueness": 2,
+          "purchase_intent": 3,
+          "most_appealing": "The idea of having a fun, new flavor is tempting, but I’d still prefer something I know I’ll like—like a classic cola with a hint of vanilla. It’s comforting and not too crazy.",
+          "primary_concern": "I'm not sure I've even heard of it, but I guess I'm just hesitant to try something too different. I stick with what I know — sweet, familiar flavors.",
+          "suggested_improvement": "I'd say making the flavor more familiar — like adding a hint of vanilla or caramel instead of something too weird. I like sweet, not experimental."
+        },
+        "raw_outputs": {
+          "overall_appeal": "2",
+          "concept_clarity": "4",
+          "uniqueness": "2",
+          "purchase_intent": "3",
+          "most_appealing": "The idea of having a fun, new flavor is tempting, but I’d still prefer something I know I’ll like—like a classic cola with a hint of vanilla. It’s comforting and not too crazy.",
+          "primary_concern": "I'm not sure I've even heard of it, but I guess I'm just hesitant to try something too different. I stick with what I know — sweet, familiar flavors.",
+          "suggested_improvement": "I'd say making the flavor more familiar — like adding a hint of vanilla or caramel instead of something too weird. I like sweet, not experimental."
+        }
+      },
+      {
+        "name": "Tom",
+        "age": 52,
+        "segment": "mainstream_drinker",
+        "persona": "A 52-year-old long-haul truck driver and lifelong Coca-Cola fan. He is loyal to the brand but resistant to novelty flavors, believing the original formula is hard to improve on.",
+        "answers": {
+          "overall_appeal": 1,
+          "concept_clarity": 5,
+          "uniqueness": 1,
+          "purchase_intent": 5,
+          "most_appealing": "The classic taste, no gimmicks—just good old-fashioned Coca-Cola.",
+          "primary_concern": "I don't trust no fancy new flavors messin' with the real thing. The original formula's been good to me for a lifetime.",
+          "suggested_improvement": "The original formula's been good to me for 40 years. If you're gonna change it, just bring back the real thing."
+        },
+        "raw_outputs": {
+          "overall_appeal": "1",
+          "concept_clarity": "5",
+          "uniqueness": "1",
+          "purchase_intent": "5",
+          "most_appealing": "The classic taste, no gimmicks—just good old-fashioned Coca-Cola.",
+          "primary_concern": "I don't trust no fancy new flavors messin' with the real thing. The original formula's been good to me for a lifetime.",
+          "suggested_improvement": "The original formula's been good to me for 40 years. If you're gonna change it, just bring back the real thing."
+        }
+      },
+      {
+        "name": "Elena",
+        "age": 34,
+        "segment": "skeptical_health_conscious",
+        "persona": "A 34-year-old yoga instructor who rarely drinks soda. She reads ingredient labels carefully and is wary of artificial flavoring. She would need a compelling reason to try any soft drink.",
+        "answers": {
+          "overall_appeal": 2,
+          "concept_clarity": 4,
+          "uniqueness": 4,
+          "purchase_intent": 3,
+          "most_appealing": "The thought of a naturally flavored drink that avoids artificial ingredients is appealing.",
+          "primary_concern": "The artificial ingredients and lack of transparency in flavoring concern me. I prefer drinks with clean, recognizable ingredients.",
+          "suggested_improvement": "Switching to natural sweeteners like stevia or raw honey would make me more likely to try it."
+        },
+        "raw_outputs": {
+          "overall_appeal": "2",
+          "concept_clarity": "4",
+          "uniqueness": "4",
+          "purchase_intent": "3",
+          "most_appealing": "The thought of a naturally flavored drink that avoids artificial ingredients is appealing.",
+          "primary_concern": "The artificial ingredients and lack of transparency in flavoring concern me. I prefer drinks with clean, recognizable ingredients.",
+          "suggested_improvement": "Switching to natural sweeteners like stevia or raw honey would make me more likely to try it."
+        }
+      },
+      {
+        "name": "David",
+        "age": 41,
+        "segment": "skeptical_health_conscious",
+        "persona": "A 41-year-old software engineer who tracks his macros and limits sugar intake. He views novelty sodas as marketing gimmicks and prioritizes nutrition over novelty.",
+        "answers": {
+          "overall_appeal": 2,
+          "concept_clarity": 3,
+          "uniqueness": 1,
+          "purchase_intent": 1,
+          "most_appealing": "The concept's focus on nutritional transparency and avoiding artificial sweeteners aligns with my priorities.",
+          "primary_concern": "The concept seems too gimmicky—prioritizing taste over nutrition doesn't align with my goals of balanced macros and sustainable health.",
+          "suggested_improvement": "Switching to a zero-sugar, nutrition-focused formula would make this concept align better with my dietary priorities."
+        },
+        "raw_outputs": {
+          "overall_appeal": "2",
+          "concept_clarity": "3",
+          "uniqueness": "1",
+          "purchase_intent": "1",
+          "most_appealing": "The concept's focus on nutritional transparency and avoiding artificial sweeteners aligns with my priorities.",
+          "primary_concern": "The concept seems too gimmicky—prioritizing taste over nutrition doesn't align with my goals of balanced macros and sustainable health.",
+          "suggested_improvement": "Switching to a zero-sugar, nutrition-focused formula would make this concept align better with my dietary priorities."
+        }
+      },
+      {
+        "name": "Aisha",
+        "age": 28,
+        "segment": "skeptical_health_conscious",
+        "persona": "A 28-year-old graduate student who avoids processed foods when possible. She is interested in food science but skeptical of savory-flavored sodas from a health and palatability standpoint.",
+        "answers": {
+          "overall_appeal": 2,
+          "concept_clarity": 3,
+          "uniqueness": 3,
+          "purchase_intent": 1,
+          "most_appealing": "The idea of savory-flavored soda is intriguing from a flavor science perspective, but I’m not convinced it would appeal to most people’s taste buds—especially when compared to the classic carbonated experience.",
+          "primary_concern": "The potential health risks and the odd combination of flavors make me hesitant.",
+          "suggested_improvement": "Switching to a natural sweetener like stevia or monk fruit would make it more appealing to me."
+        },
+        "raw_outputs": {
+          "overall_appeal": "2",
+          "concept_clarity": "3",
+          "uniqueness": "3",
+          "purchase_intent": "1",
+          "most_appealing": "The idea of savory-flavored soda is intriguing from a flavor science perspective, but I’m not convinced it would appeal to most people’s taste buds—especially when compared to the classic carbonated experience.",
+          "primary_concern": "The potential health risks and the odd combination of flavors make me hesitant.",
+          "suggested_improvement": "Switching to a natural sweetener like stevia or monk fruit would make it more appealing to me."
+        }
+      },
+      {
+        "name": "Greg",
+        "age": 44,
+        "segment": "skeptical_health_conscious",
+        "persona": "A 44-year-old parent of two who has cut back on soda for health reasons. He occasionally buys novelty items for his kids but is critical of products he sees as nutritionally empty gimmicks.",
+        "answers": {
+          "overall_appeal": 2,
+          "concept_clarity": 3,
+          "uniqueness": 3,
+          "purchase_intent": 2,
+          "most_appealing": "The idea of combining fun with real nutritional value is appealing.",
+          "primary_concern": "I'm worried about the nutritional value and whether it's just another empty-calorie gimmick.",
+          "suggested_improvement": "Replacing the soda with a healthy alternative like water or unsweetened juice."
+        },
+        "raw_outputs": {
+          "overall_appeal": "2",
+          "concept_clarity": "3",
+          "uniqueness": "3",
+          "purchase_intent": "2",
+          "most_appealing": "The idea of combining fun with real nutritional value is appealing.",
+          "primary_concern": "I'm worried about the nutritional value and whether it's just another empty-calorie gimmick.",
+          "suggested_improvement": "Replacing the soda with a healthy alternative like water or unsweetened juice."
+        }
+      }
+    ]
+  },
+  "expected_parrot_like_system_personas_separate_context_only_q1": {
+    "summary": {
+      "overall": {
+        "overall_appeal": 2.08,
+        "concept_clarity": 4,
+        "uniqueness": 3.42,
+        "purchase_intent": 2.92
+      },
+      "by_segment": {
+        "adventurous_foodie": {
+          "overall_appeal": 3.5,
+          "concept_clarity": 4,
+          "uniqueness": 4.5,
+          "purchase_intent": 3.5
+        },
+        "mainstream_drinker": {
+          "overall_appeal": 1.5,
+          "concept_clarity": 4.25,
+          "uniqueness": 2.5,
+          "purchase_intent": 3
+        },
+        "skeptical_health_conscious": {
+          "overall_appeal": 1.25,
+          "concept_clarity": 3.75,
+          "uniqueness": 3.25,
+          "purchase_intent": 2.25
+        }
+      },
+      "polarization": {
+        "appeal_segment_range": 2.25,
+        "purchase_segment_range": 1.25,
+        "appeal_endpoint_share": 0.417,
+        "purchase_endpoint_share": 0.083
+      }
+    },
+    "responses": [
+      {
+        "name": "Maya",
+        "age": 24,
+        "segment": "adventurous_foodie",
+        "persona": "A 24-year-old food blogger who actively seeks out unusual flavor combinations and limited-edition products. She regularly posts about novelty snacks and drinks on social media and enjoys being the first to try new things.",
+        "answers": {
+          "overall_appeal": 4,
+          "concept_clarity": 4,
+          "uniqueness": 5,
+          "purchase_intent": 4,
+          "most_appealing": "The bold, unexpected flavor combos that make your taste buds do a backflip!",
+          "primary_concern": "I’m worried it might taste like a science experiment.",
+          "suggested_improvement": "Add some spice—like a dash of wasabi or a sprinkle of smoked paprika. It adds that extra kick I crave!"
+        },
+        "raw_outputs": {
+          "overall_appeal": "4",
+          "concept_clarity": "4",
+          "uniqueness": "5",
+          "purchase_intent": "4",
+          "most_appealing": "The bold, unexpected flavor combos that make your taste buds do a backflip!",
+          "primary_concern": "I’m worried it might taste like a science experiment.",
+          "suggested_improvement": "Add some spice—like a dash of wasabi or a sprinkle of smoked paprika. It adds that extra kick I crave!"
+        }
+      },
+      {
+        "name": "Jordan",
+        "age": 29,
+        "segment": "adventurous_foodie",
+        "persona": "A 29-year-old chef who appreciates creative flavor pairings and experimental cuisine. He is open-minded about savory-sweet crossovers and judges products on execution rather than convention.",
+        "answers": {
+          "overall_appeal": 3,
+          "concept_clarity": 4,
+          "uniqueness": 4,
+          "purchase_intent": 3,
+          "most_appealing": "The bold fusion of unexpected flavors—sweet and savory balanced with precision. It’s about pushing boundaries without losing integrity.",
+          "primary_concern": "The idea of blending sweet and savory is risky if executed without soul—too often it's just gimmicky. I care about flavor balance, not just novelty.",
+          "suggested_improvement": "Add a hint of caramelized fig to the brussels sprouts. It's sweet, it's unexpected, and it's delicious."
+        },
+        "raw_outputs": {
+          "overall_appeal": "3",
+          "concept_clarity": "4",
+          "uniqueness": "4",
+          "purchase_intent": "3",
+          "most_appealing": "The bold fusion of unexpected flavors—sweet and savory balanced with precision. It’s about pushing boundaries without losing integrity.",
+          "primary_concern": "The idea of blending sweet and savory is risky if executed without soul—too often it's just gimmicky. I care about flavor balance, not just novelty.",
+          "suggested_improvement": "Add a hint of caramelized fig to the brussels sprouts. It's sweet, it's unexpected, and it's delicious."
+        }
+      },
+      {
+        "name": "Priya",
+        "age": 22,
+        "segment": "adventurous_foodie",
+        "persona": "A 22-year-old college student who follows food trends on TikTok and loves trying viral snacks. She treats unusual food products as entertainment and conversation starters.",
+        "answers": {
+          "overall_appeal": 3,
+          "concept_clarity": 4,
+          "uniqueness": 4,
+          "purchase_intent": 3,
+          "most_appealing": "The most appealing aspect? Oh, definitely the snacks! Who doesn’t love a good weird, viral snack that makes you question your life choices while also being kinda delicious?",
+          "primary_concern": "I’m worried it’ll taste like my ex’s leftover pizza. Not gonna lie, I’m here for the hype but I’m not about to get disappointed.",
+          "suggested_improvement": "Add some glitter. It's more fun and makes me feel like I'm eating a TikTok trend. ✨"
+        },
+        "raw_outputs": {
+          "overall_appeal": "3",
+          "concept_clarity": "4",
+          "uniqueness": "4",
+          "purchase_intent": "3",
+          "most_appealing": "The most appealing aspect? Oh, definitely the snacks! Who doesn’t love a good weird, viral snack that makes you question your life choices while also being kinda delicious?",
+          "primary_concern": "I’m worried it’ll taste like my ex’s leftover pizza. Not gonna lie, I’m here for the hype but I’m not about to get disappointed.",
+          "suggested_improvement": "Add some glitter. It's more fun and makes me feel like I'm eating a TikTok trend. ✨"
+        }
+      },
+      {
+        "name": "Dex",
+        "age": 33,
+        "segment": "adventurous_foodie",
+        "persona": "A 33-year-old craft beverage enthusiast who collects limited-edition drinks. He appreciates bold marketing and is willing to pay a premium for a unique tasting experience, even if the flavor is polarizing.",
+        "answers": {
+          "overall_appeal": 4,
+          "concept_clarity": 4,
+          "uniqueness": 5,
+          "purchase_intent": 4,
+          "most_appealing": "The bold, unapologetic flavor that dares to be different.",
+          "primary_concern": "The idea of a limited-edition craft drink with a bold, polarizing flavor? I’m hesitant because I’m afraid it might be too gimmicky. But if it’s crafted with intention and backed by a story, I’m in.",
+          "suggested_improvement": "Add a limited-edition batch with a bold, unconventional flavor profile — I'll pay top dollar for a taste that dares to be different."
+        },
+        "raw_outputs": {
+          "overall_appeal": "4",
+          "concept_clarity": "4",
+          "uniqueness": "5",
+          "purchase_intent": "4",
+          "most_appealing": "The bold, unapologetic flavor that dares to be different.",
+          "primary_concern": "The idea of a limited-edition craft drink with a bold, polarizing flavor? I’m hesitant because I’m afraid it might be too gimmicky. But if it’s crafted with intention and backed by a story, I’m in.",
+          "suggested_improvement": "Add a limited-edition batch with a bold, unconventional flavor profile — I'll pay top dollar for a taste that dares to be different."
+        }
+      },
+      {
+        "name": "Karen",
+        "age": 45,
+        "segment": "mainstream_drinker",
+        "persona": "A 45-year-old office manager who drinks Coca-Cola daily. She likes the classic taste and is skeptical of unusual flavors but will occasionally try a new Coke variety if it looks refreshing.",
+        "answers": {
+          "overall_appeal": 1,
+          "concept_clarity": 4,
+          "uniqueness": 3,
+          "purchase_intent": 3,
+          "most_appealing": "The refreshing taste, but it better not be some fruity nonsense.",
+          "primary_concern": "I'm not sure I like the idea of mixing flavors. It feels too gimmicky. I stick to what I know — classic Coke is refreshing enough for me.",
+          "suggested_improvement": "Add a hint of citrus to the classic recipe — it’s refreshing without messing with the real thing."
+        },
+        "raw_outputs": {
+          "overall_appeal": "1",
+          "concept_clarity": "4",
+          "uniqueness": "3",
+          "purchase_intent": "3",
+          "most_appealing": "The refreshing taste, but it better not be some fruity nonsense.",
+          "primary_concern": "I'm not sure I like the idea of mixing flavors. It feels too gimmicky. I stick to what I know — classic Coke is refreshing enough for me.",
+          "suggested_improvement": "Add a hint of citrus to the classic recipe — it’s refreshing without messing with the real thing."
+        }
+      },
+      {
+        "name": "Marcus",
+        "age": 38,
+        "segment": "mainstream_drinker",
+        "persona": "A 38-year-old construction worker who grabs a Coke with lunch most days. He has straightforward taste preferences and tends to stick with what he knows.",
+        "answers": {
+          "overall_appeal": 2,
+          "concept_clarity": 4,
+          "uniqueness": 2,
+          "purchase_intent": 3,
+          "most_appealing": "It's simple and doesn't require a lot of thinking. That's appealing to me.",
+          "primary_concern": "I don't like changin' things up. If it's not breakin' my back or losin' my job, I'm not worried.",
+          "suggested_improvement": "Add some real meat to it. I don't eat tofu."
+        },
+        "raw_outputs": {
+          "overall_appeal": "2",
+          "concept_clarity": "4",
+          "uniqueness": "2",
+          "purchase_intent": "3",
+          "most_appealing": "It's simple and doesn't require a lot of thinking. That's appealing to me.",
+          "primary_concern": "I don't like changin' things up. If it's not breakin' my back or losin' my job, I'm not worried.",
+          "suggested_improvement": "Add some real meat to it. I don't eat tofu."
+        }
+      },
+      {
+        "name": "Brittany",
+        "age": 27,
+        "segment": "mainstream_drinker",
+        "persona": "A 27-year-old retail associate who drinks soda regularly. She has tried Cherry Coke and Vanilla Coke but generally prefers familiar sweet flavors over anything too experimental.",
+        "answers": {
+          "overall_appeal": 2,
+          "concept_clarity": 4,
+          "uniqueness": 2,
+          "purchase_intent": 3,
+          "most_appealing": "The sweet, familiar flavor.",
+          "primary_concern": "I'm not sure I get the concept, but the idea of trying something too weird for my taste? Definitely the hesitation. I stick to what I know.",
+          "suggested_improvement": "Add some vanilla flavor — I’m not afraid to say I love vanilla."
+        },
+        "raw_outputs": {
+          "overall_appeal": "2",
+          "concept_clarity": "4",
+          "uniqueness": "2",
+          "purchase_intent": "3",
+          "most_appealing": "The sweet, familiar flavor.",
+          "primary_concern": "I'm not sure I get the concept, but the idea of trying something too weird for my taste? Definitely the hesitation. I stick to what I know.",
+          "suggested_improvement": "Add some vanilla flavor — I’m not afraid to say I love vanilla."
+        }
+      },
+      {
+        "name": "Tom",
+        "age": 52,
+        "segment": "mainstream_drinker",
+        "persona": "A 52-year-old long-haul truck driver and lifelong Coca-Cola fan. He is loyal to the brand but resistant to novelty flavors, believing the original formula is hard to improve on.",
+        "answers": {
+          "overall_appeal": 1,
+          "concept_clarity": 5,
+          "uniqueness": 3,
+          "purchase_intent": 3,
+          "most_appealing": "The original formula. No sweeteners, no gimmicks—just the real thing.",
+          "primary_concern": "I don't trust no fancy flavors messin' with the real thing. The original formula's been good to me for a lifetime. You try and mess with that, you better be ready to face a long-haul driver with a thirst for the real deal.",
+          "suggested_improvement": "Keep the classic formula. No sugar substitutes, no artificial flavors—just the real thing."
+        },
+        "raw_outputs": {
+          "overall_appeal": "1",
+          "concept_clarity": "5",
+          "uniqueness": "3",
+          "purchase_intent": "3",
+          "most_appealing": "The original formula. No sweeteners, no gimmicks—just the real thing.",
+          "primary_concern": "I don't trust no fancy flavors messin' with the real thing. The original formula's been good to me for a lifetime. You try and mess with that, you better be ready to face a long-haul driver with a thirst for the real deal.",
+          "suggested_improvement": "Keep the classic formula. No sugar substitutes, no artificial flavors—just the real thing."
+        }
+      },
+      {
+        "name": "Elena",
+        "age": 34,
+        "segment": "skeptical_health_conscious",
+        "persona": "A 34-year-old yoga instructor who rarely drinks soda. She reads ingredient labels carefully and is wary of artificial flavoring. She would need a compelling reason to try any soft drink.",
+        "answers": {
+          "overall_appeal": 1,
+          "concept_clarity": 4,
+          "uniqueness": 4,
+          "purchase_intent": 3,
+          "most_appealing": "The idea of a naturally flavored, zero-sugar soft drink that uses real ingredients and avoids artificial additives is appealing because it aligns with my values and health priorities. It offers a satisfying alternative without compromising on quality or ethics.",
+          "primary_concern": "The artificial ingredients and lack of transparency in flavoring worry me. I need to know exactly what I'm consuming.",
+          "suggested_improvement": "Switching to a naturally sweetened, zero-sugar option with no artificial flavors."
+        },
+        "raw_outputs": {
+          "overall_appeal": "1",
+          "concept_clarity": "4",
+          "uniqueness": "4",
+          "purchase_intent": "3",
+          "most_appealing": "The idea of a naturally flavored, zero-sugar soft drink that uses real ingredients and avoids artificial additives is appealing because it aligns with my values and health priorities. It offers a satisfying alternative without compromising on quality or ethics.",
+          "primary_concern": "The artificial ingredients and lack of transparency in flavoring worry me. I need to know exactly what I'm consuming.",
+          "suggested_improvement": "Switching to a naturally sweetened, zero-sugar option with no artificial flavors."
+        }
+      },
+      {
+        "name": "David",
+        "age": 41,
+        "segment": "skeptical_health_conscious",
+        "persona": "A 41-year-old software engineer who tracks his macros and limits sugar intake. He views novelty sodas as marketing gimmicks and prioritizes nutrition over novelty.",
+        "answers": {
+          "overall_appeal": 1,
+          "concept_clarity": 4,
+          "uniqueness": 3,
+          "purchase_intent": 1,
+          "most_appealing": "The most appealing aspect is that it prioritizes nutrition over trendy nonsense.",
+          "primary_concern": "I'm concerned that it's just another marketing trick disguised as innovation. Nutrition should always come first.",
+          "suggested_improvement": "Replace artificial sweeteners with real sugar."
+        },
+        "raw_outputs": {
+          "overall_appeal": "1",
+          "concept_clarity": "4",
+          "uniqueness": "3",
+          "purchase_intent": "1",
+          "most_appealing": "The most appealing aspect is that it prioritizes nutrition over trendy nonsense.",
+          "primary_concern": "I'm concerned that it's just another marketing trick disguised as innovation. Nutrition should always come first.",
+          "suggested_improvement": "Replace artificial sweeteners with real sugar."
+        }
+      },
+      {
+        "name": "Aisha",
+        "age": 28,
+        "segment": "skeptical_health_conscious",
+        "persona": "A 28-year-old graduate student who avoids processed foods when possible. She is interested in food science but skeptical of savory-flavored sodas from a health and palatability standpoint.",
+        "answers": {
+          "overall_appeal": 2,
+          "concept_clarity": 4,
+          "uniqueness": 3,
+          "purchase_intent": 2,
+          "most_appealing": "The flavor profile that balances boldness with approachable sweetness.",
+          "primary_concern": "The artificial flavoring and potential health risks.",
+          "suggested_improvement": "Switch to a natural sweetener like stevia or erythritol."
+        },
+        "raw_outputs": {
+          "overall_appeal": "2",
+          "concept_clarity": "4",
+          "uniqueness": "3",
+          "purchase_intent": "2",
+          "most_appealing": "The flavor profile that balances boldness with approachable sweetness.",
+          "primary_concern": "The artificial flavoring and potential health risks.",
+          "suggested_improvement": "Switch to a natural sweetener like stevia or erythritol."
+        }
+      },
+      {
+        "name": "Greg",
+        "age": 44,
+        "segment": "skeptical_health_conscious",
+        "persona": "A 44-year-old parent of two who has cut back on soda for health reasons. He occasionally buys novelty items for his kids but is critical of products he sees as nutritionally empty gimmicks.",
+        "answers": {
+          "overall_appeal": 1,
+          "concept_clarity": 3,
+          "uniqueness": 3,
+          "purchase_intent": 3,
+          "most_appealing": "The most appealing aspect is that it's a fun way to get kids to eat their veggies without resorting to sugar-laden nonsense.",
+          "primary_concern": "I'm worried it's just another sugary gimmick with no real value.",
+          "suggested_improvement": "Cut out the sugar and artificial flavors. If it's not good for me, it's not worth the gimmick."
+        },
+        "raw_outputs": {
+          "overall_appeal": "1",
+          "concept_clarity": "3",
+          "uniqueness": "3",
+          "purchase_intent": "3",
+          "most_appealing": "The most appealing aspect is that it's a fun way to get kids to eat their veggies without resorting to sugar-laden nonsense.",
+          "primary_concern": "I'm worried it's just another sugary gimmick with no real value.",
+          "suggested_improvement": "Cut out the sugar and artificial flavors. If it's not good for me, it's not worth the gimmick."
+        }
+      }
+    ]
+  }
+}

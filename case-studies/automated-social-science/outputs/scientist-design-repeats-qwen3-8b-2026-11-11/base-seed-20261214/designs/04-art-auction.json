@@ -1,0 +1,107 @@
+{
+  "agents": [
+    {
+      "constraints": [
+        "Bids only when confident about value"
+      ],
+      "goal": "Maximize profit while minimizing risk",
+      "name": "Agent A",
+      "role": "Conservative bidder"
+    },
+    {
+      "constraints": [
+        "Bids aggressively when others show interest"
+      ],
+      "goal": "Achieve maximum return on investment",
+      "name": "Agent B",
+      "role": "Speculative bidder"
+    },
+    {
+      "constraints": [
+        "Only bids if others have already bid"
+      ],
+      "goal": "Observe bidding patterns without participating",
+      "name": "Agent C",
+      "role": "Passive observer"
+    }
+  ],
+  "causes": [
+    {
+      "hypothesis": "Aggressive bidding increases final price",
+      "name": "Bidding strategy",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "Aggressive",
+        "Conservative",
+        "Passive"
+      ]
+    },
+    {
+      "hypothesis": "Higher starting price leads to higher final price",
+      "name": "Starting price",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "$50",
+        "$100",
+        "$150"
+      ]
+    },
+    {
+      "hypothesis": "Experienced bidders drive up final price",
+      "name": "Bidder experience",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "Novice",
+        "Intermediate",
+        "Expert"
+      ]
+    }
+  ],
+  "information_scope": {
+    "private": [
+      {
+        "agent": "Agent A",
+        "information": [
+          "Estimated value of art",
+          "Risk tolerance"
+        ]
+      },
+      {
+        "agent": "Agent B",
+        "information": [
+          "Market research data",
+          "Financial capacity"
+        ]
+      },
+      {
+        "agent": "Agent C",
+        "information": [
+          "Bidding history",
+          "Personal budget"
+        ]
+      }
+    ],
+    "public": [
+      "Current bid",
+      "Starting price",
+      "Number of bidders"
+    ]
+  },
+  "interaction": {
+    "max_turns": 3,
+    "order": [
+      "Agent A",
+      "Agent B",
+      "Agent C"
+    ],
+    "stopping_rule": "Auction ends when no more bids are placed"
+  },
+  "outcome": {
+    "measurement_question": "What is the final price of the art piece after the auction?",
+    "name": "Final auction price",
+    "operationalization": "The highest bid accepted by the auctioneer",
+    "respondent": "Auctioneer"
+  },
+  "scenario": "3 bidders participating in an auction for a piece of art starting at fifty dollars",
+  "schema_version": "scientist-design-v1"
+}

@@ -1,0 +1,74 @@
+{
+  "scenarios": [
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "call_hash": "48f459ffd40a2423a2a0a9c49c34a56760a65ce36eb9806909384d2f410e2f3d",
+          "design_hash": "f406826d01be79f308b5f6d43c71c3e3962906bc1575ed492572c67c2f87ccb7",
+          "seed": 20261214,
+          "status": "valid"
+        }
+      ],
+      "design_file": "designs/01-mug-bargaining.json",
+      "design_hash": "f406826d01be79f308b5f6d43c71c3e3962906bc1575ed492572c67c2f87ccb7",
+      "scenario": "two people bargaining over a mug",
+      "scenario_index": 0,
+      "valid": true
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "call_hash": "4c351ff340250bef07f958478314c640b4d4ee92fd97c52424aca28b57649c08",
+          "design_hash": "61aebb0169b07505ddbb78934d7043ce6b5e54b00e3aefe4ec1d2ee0a137643c",
+          "seed": 20261215,
+          "status": "valid"
+        }
+      ],
+      "design_file": "designs/02-bail-setting.json",
+      "design_hash": "61aebb0169b07505ddbb78934d7043ce6b5e54b00e3aefe4ec1d2ee0a137643c",
+      "scenario": "a judge is setting bail for a criminal defendant who committed 50,000 dollars in tax fraud",
+      "scenario_index": 1,
+      "valid": true
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "call_hash": "22937697c943c671812c1bb6405da12ac34ec11a226c6a8e1d9a64d343d71184",
+          "design_hash": "6ca511debc2a7d36f6b1d4d544fe801decfc58be412226790a25b9c0a92ae1f5",
+          "seed": 20261216,
+          "status": "valid"
+        }
+      ],
+      "design_file": "designs/03-lawyer-interview.json",
+      "design_hash": "6ca511debc2a7d36f6b1d4d544fe801decfc58be412226790a25b9c0a92ae1f5",
+      "scenario": "A person is interviewing for a job as a lawyer",
+      "scenario_index": 2,
+      "valid": true
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "call_hash": "a8848bf53cb028bb7272cf3f1e791e3e275f09612c5b737aeebe0a6a9b02bf24",
+          "design_hash": "9503815af92d305f38380a070fff481addd77b4ca7c689cf4327a59f49d8b374",
+          "seed": 20261217,
+          "status": "valid"
+        }
+      ],
+      "design_file": "designs/04-art-auction.json",
+      "design_hash": "9503815af92d305f38380a070fff481addd77b4ca7c689cf4327a59f49d8b374",
+      "scenario": "3 bidders participating in an auction for a piece of art starting at fifty dollars",
+      "scenario_index": 3,
+      "valid": true
+    }
+  ],
+  "schema_version": 1,
+  "summary": {
+    "scenarios": 4,
+    "total_attempts": 4,
+    "valid_designs": 4
+  }
+}

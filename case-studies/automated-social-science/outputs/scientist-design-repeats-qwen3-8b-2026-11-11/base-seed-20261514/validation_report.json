@@ -1,0 +1,81 @@
+{
+  "scenarios": [
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "call_hash": "71b61ab3bc435eaab913e89ac61570e33bebc6e00c644b744626d97356c70941",
+          "design_hash": "36a2161a1db770fafafc31549fde1c30673dc71e839d70677f682a39c9a35896",
+          "seed": 20261514,
+          "status": "valid"
+        }
+      ],
+      "design_file": "designs/01-mug-bargaining.json",
+      "design_hash": "36a2161a1db770fafafc31549fde1c30673dc71e839d70677f682a39c9a35896",
+      "scenario": "two people bargaining over a mug",
+      "scenario_index": 0,
+      "valid": true
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "call_hash": "79e116fffd60e92f33e06de6883fd7e9181f975f0536d0e94470545c49ead9e1",
+          "design_hash": "49753185585af49dab6f6336a99e9a5fc4a4662d51e36bc98cc2513b3f8bdad5",
+          "seed": 20261515,
+          "status": "valid"
+        }
+      ],
+      "design_file": "designs/02-bail-setting.json",
+      "design_hash": "49753185585af49dab6f6336a99e9a5fc4a4662d51e36bc98cc2513b3f8bdad5",
+      "scenario": "a judge is setting bail for a criminal defendant who committed 50,000 dollars in tax fraud",
+      "scenario_index": 1,
+      "valid": true
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "call_hash": "20182654171e6d5283cd82040d8e2423a89c838d0729ecc043d9df4b70c29777",
+          "design_hash": "ca662c883c885c6fc394735711633dee341f99061e94b18f5748830fef241b62",
+          "seed": 20261516,
+          "status": "valid"
+        }
+      ],
+      "design_file": "designs/03-lawyer-interview.json",
+      "design_hash": "ca662c883c885c6fc394735711633dee341f99061e94b18f5748830fef241b62",
+      "scenario": "A person is interviewing for a job as a lawyer",
+      "scenario_index": 2,
+      "valid": true
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "call_hash": "5be4e36999b438e368108086ae48b2f97cbc4b34dfd3668b9e262b0a71c9ac24",
+          "error": "causes[2] missing required field: name",
+          "seed": 20261517,
+          "status": "schema_invalid"
+        },
+        {
+          "attempt": 2,
+          "call_hash": "3c445d44d9ea9af5dc24432d277d8bd4477438a43f19f79b82444330f25af475",
+          "design_hash": "04ded71e0b4bbbffbc5d78367f4fdd3d49de04635cbb2b541023894016d01c99",
+          "seed": 20261518,
+          "status": "valid"
+        }
+      ],
+      "design_file": "designs/04-art-auction.json",
+      "design_hash": "04ded71e0b4bbbffbc5d78367f4fdd3d49de04635cbb2b541023894016d01c99",
+      "scenario": "3 bidders participating in an auction for a piece of art starting at fifty dollars",
+      "scenario_index": 3,
+      "valid": true
+    }
+  ],
+  "schema_version": 1,
+  "summary": {
+    "scenarios": 4,
+    "total_attempts": 5,
+    "valid_designs": 4
+  }
+}

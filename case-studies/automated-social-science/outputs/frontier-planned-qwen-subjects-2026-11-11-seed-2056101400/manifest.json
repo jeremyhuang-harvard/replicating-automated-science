@@ -1,0 +1,22 @@
+{
+  "bundle_hash": "f3fc315b187a397c5dae2f53c4602df004134e6642ed22ba10d357ad6f064a15",
+  "config_hash": "cd2a085eb9a4b63aa69158ceb43e88875bf8e64c07e8560f0284d20669608551",
+  "latest_invocation": {
+    "cells_completed": 108,
+    "cells_failed": 0,
+    "cells_skipped": 0,
+    "cells_started": 108,
+    "completed_at": "2026-11-11T23:34:10.623964+00:00",
+    "runtime_seconds": 2130.7688721250743,
+    "started_at": "2026-11-11T22:58:39.865768+00:00",
+    "status": "complete"
+  },
+  "plan_hash": "aef7aa2b72898c896d850cfd77bf0b5c9e82bea5d0b5e584b9657910703eac97",
+  "planned_cells": 108,
+  "run_type": "frontier-planned-local-subjects",
+  "schema_version": 1,
+  "started_at": "2026-11-11T22:58:39.865756+00:00",
+  "status": "complete",
+  "updated_at": "2026-11-11T23:34:10.624151+00:00",
+  "wall_clock_budget_seconds": null
+}

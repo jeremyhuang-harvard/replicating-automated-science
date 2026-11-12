@@ -1,0 +1,56 @@
+{
+  "contrasts": {
+    "Defendant's Criminal History": 63333.333333333336,
+    "Evidence Strength": 36111.11111111112,
+    "Severity of Tax Fraud": 20555.555555555555
+  },
+  "counts": {
+    "cells": 27,
+    "complete": 27,
+    "valid_measurements": 27
+  },
+  "direction_agreement": {
+    "Defendant's Criminal History": true,
+    "Evidence Strength": true,
+    "Severity of Tax Fraud": true
+  },
+  "label": "one-draw local-model evidence; not human behavior",
+  "marginal_means": {
+    "Defendant's Criminal History": [
+      36666.666666666664,
+      59444.444444444445,
+      100000.0
+    ],
+    "Evidence Strength": [
+      56666.666666666664,
+      46666.666666666664,
+      92777.77777777778
+    ],
+    "Severity of Tax Fraud": [
+      51666.666666666664,
+      72222.22222222222,
+      72222.22222222222
+    ]
+  },
+  "ols": {
+    "coefficients": {
+      "Defendant's Criminal History": 31666.666666666668,
+      "Evidence Strength": 18055.555555555555,
+      "Severity of Tax Fraud": 10277.777777777777,
+      "intercept": 5370.370370370376
+    },
+    "features": [
+      "intercept",
+      "Severity of Tax Fraud",
+      "Defendant's Criminal History",
+      "Evidence Strength"
+    ]
+  },
+  "outcome_distribution": {
+    "max": 250000.0,
+    "mean": 65370.37037037037,
+    "median": 50000.0,
+    "min": 10000.0,
+    "n": 27
+  }
+}

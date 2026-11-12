@@ -1,0 +1,3 @@
+pipeline,levers,draws_per_cell,verdict_same_in_all_draws,verdict_flips_in_some_new_draw,fragile_1_2_cells,fragile_1_2_cells_that_flip,fragile_3_cells,fragile_3_cells_that_flip,robust,robust_that_flip,original_differs_from_pooled,single_draws_matching_pooled,single_draws,abs_t_above_2_in_every_draw,abs_t_above_2_in_no_draw,abs_t_above_2_in_some_draws,beta_sign_same_in_every_draw,predictions_held_by_draw
+Qwen scientist + Qwen subjects,12,5,10,2,4,1,0,0,8,1,1,58,60,4,5,3,10,9; 10; 10; 9; 10
+GPT-Sol scientist + Qwen subjects,20,5,15,5,2,2,4,1,13,1,1,95,100,2,4,14,15,(not scored)

@@ -1,0 +1,56 @@
+{
+  "contrasts": {
+    "Bidder Risk Tolerance": -7.7777777777777715,
+    "Bidding Strategy": 37.77777777777777,
+    "Starting Price": 77.77777777777777
+  },
+  "counts": {
+    "cells": 27,
+    "complete": 27,
+    "valid_measurements": 27
+  },
+  "direction_agreement": {
+    "Bidder Risk Tolerance": false,
+    "Bidding Strategy": true,
+    "Starting Price": true
+  },
+  "label": "one-draw local-model evidence; not human behavior",
+  "marginal_means": {
+    "Bidder Risk Tolerance": [
+      160.0,
+      176.66666666666666,
+      152.22222222222223
+    ],
+    "Bidding Strategy": [
+      133.33333333333334,
+      184.44444444444446,
+      171.11111111111111
+    ],
+    "Starting Price": [
+      127.77777777777777,
+      155.55555555555554,
+      205.55555555555554
+    ]
+  },
+  "ols": {
+    "coefficients": {
+      "Bidder Risk Tolerance": -3.888888888888889,
+      "Bidding Strategy": 18.88888888888889,
+      "Starting Price": 38.888888888888886,
+      "intercept": 109.07407407407408
+    },
+    "features": [
+      "intercept",
+      "Bidder Risk Tolerance",
+      "Starting Price",
+      "Bidding Strategy"
+    ]
+  },
+  "outcome_distribution": {
+    "max": 300.0,
+    "mean": 162.96296296296296,
+    "median": 150.0,
+    "min": 70.0,
+    "n": 27
+  }
+}

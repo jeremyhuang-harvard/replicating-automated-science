@@ -1,0 +1,9 @@
+comparison,pairs,ratings_per_pair,identical_mean,identical_min,identical_max,differ_by_2_mean
+"same prompt, different seed: EP personas, one call, full context",10,48,44.0,42,46,0.2
+"same prompt, different seed: EP personas, separate calls, context only in Q1",10,48,43.6,41,45,0.4
+"same prompt, different seed: EP personas as system prompt, separate calls, context only in Q1",10,48,40.6,39,43,0.4
+"prompt changed, any seeds: persona in user prompt vs system prompt (separate calls)",25,48,34.6,33,37,2.8
+"prompt changed, any seeds: one call with full context vs separate calls",25,48,22.0,18,25,10.6
+"all 5 seeds give the same rating: EP personas, one call, full context",,48,41,,,1
+"all 5 seeds give the same rating: EP personas, separate calls, context only in Q1",,48,38,,,1
+"all 5 seeds give the same rating: EP personas as system prompt, separate calls, context only in Q1",,48,33,,,1

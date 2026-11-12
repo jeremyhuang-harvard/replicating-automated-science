@@ -1,0 +1,81 @@
+{
+  "scenarios": [
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "call_hash": "d6b8417550bfbf8305446a62564e0bdc9db0ee123f9e13d3d3903eca3976715e",
+          "design_hash": "32eb73ad881dfd2991d7794f593f25bc305e6a835c4762ea3ee199516efbcbf5",
+          "seed": 20261714,
+          "status": "valid"
+        }
+      ],
+      "design_file": "designs/01-mug-bargaining.json",
+      "design_hash": "32eb73ad881dfd2991d7794f593f25bc305e6a835c4762ea3ee199516efbcbf5",
+      "scenario": "two people bargaining over a mug",
+      "scenario_index": 0,
+      "valid": true
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "call_hash": "c1c6e809b54a9d35249bc5519ce110954878f9dae6dd3de176d7057f1707adcc",
+          "design_hash": "d86e68778516211b75f20c23dd2a1268351429dd39b1ddb7caa27316633517b9",
+          "seed": 20261715,
+          "status": "valid"
+        }
+      ],
+      "design_file": "designs/02-bail-setting.json",
+      "design_hash": "d86e68778516211b75f20c23dd2a1268351429dd39b1ddb7caa27316633517b9",
+      "scenario": "a judge is setting bail for a criminal defendant who committed 50,000 dollars in tax fraud",
+      "scenario_index": 1,
+      "valid": true
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "call_hash": "6adf4a2344087f25f7e73043ad0303569b62d055d15771281eabbfca5d40a997",
+          "error": "Expecting ':' delimiter: line 44 column 9 (char 1611)",
+          "seed": 20261716,
+          "status": "malformed_json"
+        },
+        {
+          "attempt": 2,
+          "call_hash": "0b9fab3b284af90f16060d6185fde87e3ae6d7bd8ce87d64a9c5e1e13b895cf7",
+          "design_hash": "3fd63c517b1f4a184af0fffd81f8f1d09cd1baf0022be42384bd40569bd88654",
+          "seed": 20261717,
+          "status": "valid"
+        }
+      ],
+      "design_file": "designs/03-lawyer-interview.json",
+      "design_hash": "3fd63c517b1f4a184af0fffd81f8f1d09cd1baf0022be42384bd40569bd88654",
+      "scenario": "A person is interviewing for a job as a lawyer",
+      "scenario_index": 2,
+      "valid": true
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "call_hash": "0f513853638d6bf2cc54972a009250c11704bf2ce8d7b818509e591742a05366",
+          "design_hash": "695f571c63e70f03184857db58878e0e7d19da5750c9f3ea6864b65141371bf4",
+          "seed": 20261718,
+          "status": "valid"
+        }
+      ],
+      "design_file": "designs/04-art-auction.json",
+      "design_hash": "695f571c63e70f03184857db58878e0e7d19da5750c9f3ea6864b65141371bf4",
+      "scenario": "3 bidders participating in an auction for a piece of art starting at fifty dollars",
+      "scenario_index": 3,
+      "valid": true
+    }
+  ],
+  "schema_version": 1,
+  "summary": {
+    "scenarios": 4,
+    "total_attempts": 5,
+    "valid_designs": 4
+  }
+}

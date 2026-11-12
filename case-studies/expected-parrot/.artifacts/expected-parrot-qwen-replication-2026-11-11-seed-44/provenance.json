@@ -1,0 +1,19 @@
+{
+  "stage": "expected-parrot-replication",
+  "seed": 44,
+  "command": [
+    "~/.local/share/uv/tools/mlx-lm/bin/python",
+    "experiments/expected_parrot_qwen_replication.py",
+    "--output-dir",
+    ".artifacts/expected-parrot-qwen-replication-2026-11-11-seed-44",
+    "--seed",
+    "44",
+    "--image",
+    "image_09ac93.png"
+  ],
+  "cwd": "case-studies/expected-parrot",
+  "started_at": "2026-11-11T21:23:40.450423+00:00",
+  "completed_at": "2026-11-11T21:26:07.151306+00:00",
+  "runtime_seconds": 146.7,
+  "model": "mlx-community/Qwen3-8B-4bit"
+}

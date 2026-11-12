@@ -1,0 +1,106 @@
+{
+  "agents": [
+    {
+      "constraints": [
+        "Bids only when confident about the art's value"
+      ],
+      "goal": "Maximize profit while minimizing risk",
+      "name": "Agent A",
+      "role": "Conservative bidder"
+    },
+    {
+      "constraints": [
+        "Bids incrementally based on others' actions"
+      ],
+      "goal": "Achieve maximum gain regardless of risk",
+      "name": "Agent B",
+      "role": "Speculative bidder"
+    },
+    {
+      "constraints": [
+        "Bids based on perceived value and competition"
+      ],
+      "goal": "Outbid others without overpaying",
+      "name": "Agent C",
+      "role": "Strategic bidder"
+    }
+  ],
+  "causes": [
+    {
+      "hypothesis": "Higher confidence leads to higher bids",
+      "name": "Bidder's confidence in art value",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "High",
+        "Medium",
+        "Low"
+      ]
+    },
+    {
+      "hypothesis": "More experience leads to more strategic bidding",
+      "name": "Previous auction experience",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "Novice",
+        "Intermediate",
+        "Expert"
+      ]
+    },
+    {
+      "hypothesis": "Higher demand signals lead to increased competition",
+      "name": "Market demand signal",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "High demand",
+        "Moderate demand",
+        "Low demand"
+      ]
+    }
+  ],
+  "information_scope": {
+    "private": [
+      {
+        "agent": "Agent A",
+        "information": [
+          "Personal valuation of art",
+          "Risk tolerance level"
+        ]
+      },
+      {
+        "agent": "Agent B",
+        "information": [
+          "Estimated market value",
+          "Bid history"
+        ]
+      },
+      {
+        "agent": "Agent C",
+        "information": [
+          "Competitor's bid history",
+          "Art's provenance"
+        ]
+      }
+    ],
+    "public": [
+      "Starting bid",
+      "Current highest bid"
+    ]
+  },
+  "interaction": {
+    "max_turns": 3,
+    "order": [
+      "Agent A",
+      "Agent B",
+      "Agent C"
+    ],
+    "stopping_rule": "Auction ends when no further bids are placed"
+  },
+  "outcome": {
+    "measurement_question": "What is the final price the art sells for?",
+    "name": "Final auction price",
+    "operationalization": "The highest bid accepted by the auctioneer",
+    "respondent": "Auctioneer"
+  },
+  "scenario": "3 bidders participating in an auction for a piece of art starting at fifty dollars",
+  "schema_version": "scientist-design-v1"
+}

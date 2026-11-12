@@ -1,0 +1,353 @@
+[
+  {
+    "cell_id": "0-0-0",
+    "indices": [
+      0,
+      0,
+      0
+    ],
+    "treatments": {
+      "buyer's budget": "$5",
+      "initial offer": "$6",
+      "mediator's presence": "mediator present"
+    }
+  },
+  {
+    "cell_id": "0-0-1",
+    "indices": [
+      0,
+      0,
+      1
+    ],
+    "treatments": {
+      "buyer's budget": "$5",
+      "initial offer": "$6",
+      "mediator's presence": "mediator absent"
+    }
+  },
+  {
+    "cell_id": "0-0-2",
+    "indices": [
+      0,
+      0,
+      2
+    ],
+    "treatments": {
+      "buyer's budget": "$5",
+      "initial offer": "$6",
+      "mediator's presence": "mediator neutral"
+    }
+  },
+  {
+    "cell_id": "0-1-0",
+    "indices": [
+      0,
+      1,
+      0
+    ],
+    "treatments": {
+      "buyer's budget": "$7",
+      "initial offer": "$6",
+      "mediator's presence": "mediator present"
+    }
+  },
+  {
+    "cell_id": "0-1-1",
+    "indices": [
+      0,
+      1,
+      1
+    ],
+    "treatments": {
+      "buyer's budget": "$7",
+      "initial offer": "$6",
+      "mediator's presence": "mediator absent"
+    }
+  },
+  {
+    "cell_id": "0-1-2",
+    "indices": [
+      0,
+      1,
+      2
+    ],
+    "treatments": {
+      "buyer's budget": "$7",
+      "initial offer": "$6",
+      "mediator's presence": "mediator neutral"
+    }
+  },
+  {
+    "cell_id": "0-2-0",
+    "indices": [
+      0,
+      2,
+      0
+    ],
+    "treatments": {
+      "buyer's budget": "$9",
+      "initial offer": "$6",
+      "mediator's presence": "mediator present"
+    }
+  },
+  {
+    "cell_id": "0-2-1",
+    "indices": [
+      0,
+      2,
+      1
+    ],
+    "treatments": {
+      "buyer's budget": "$9",
+      "initial offer": "$6",
+      "mediator's presence": "mediator absent"
+    }
+  },
+  {
+    "cell_id": "0-2-2",
+    "indices": [
+      0,
+      2,
+      2
+    ],
+    "treatments": {
+      "buyer's budget": "$9",
+      "initial offer": "$6",
+      "mediator's presence": "mediator neutral"
+    }
+  },
+  {
+    "cell_id": "1-0-0",
+    "indices": [
+      1,
+      0,
+      0
+    ],
+    "treatments": {
+      "buyer's budget": "$5",
+      "initial offer": "$8",
+      "mediator's presence": "mediator present"
+    }
+  },
+  {
+    "cell_id": "1-0-1",
+    "indices": [
+      1,
+      0,
+      1
+    ],
+    "treatments": {
+      "buyer's budget": "$5",
+      "initial offer": "$8",
+      "mediator's presence": "mediator absent"
+    }
+  },
+  {
+    "cell_id": "1-0-2",
+    "indices": [
+      1,
+      0,
+      2
+    ],
+    "treatments": {
+      "buyer's budget": "$5",
+      "initial offer": "$8",
+      "mediator's presence": "mediator neutral"
+    }
+  },
+  {
+    "cell_id": "1-1-0",
+    "indices": [
+      1,
+      1,
+      0
+    ],
+    "treatments": {
+      "buyer's budget": "$7",
+      "initial offer": "$8",
+      "mediator's presence": "mediator present"
+    }
+  },
+  {
+    "cell_id": "1-1-1",
+    "indices": [
+      1,
+      1,
+      1
+    ],
+    "treatments": {
+      "buyer's budget": "$7",
+      "initial offer": "$8",
+      "mediator's presence": "mediator absent"
+    }
+  },
+  {
+    "cell_id": "1-1-2",
+    "indices": [
+      1,
+      1,
+      2
+    ],
+    "treatments": {
+      "buyer's budget": "$7",
+      "initial offer": "$8",
+      "mediator's presence": "mediator neutral"
+    }
+  },
+  {
+    "cell_id": "1-2-0",
+    "indices": [
+      1,
+      2,
+      0
+    ],
+    "treatments": {
+      "buyer's budget": "$9",
+      "initial offer": "$8",
+      "mediator's presence": "mediator present"
+    }
+  },
+  {
+    "cell_id": "1-2-1",
+    "indices": [
+      1,
+      2,
+      1
+    ],
+    "treatments": {
+      "buyer's budget": "$9",
+      "initial offer": "$8",
+      "mediator's presence": "mediator absent"
+    }
+  },
+  {
+    "cell_id": "1-2-2",
+    "indices": [
+      1,
+      2,
+      2
+    ],
+    "treatments": {
+      "buyer's budget": "$9",
+      "initial offer": "$8",
+      "mediator's presence": "mediator neutral"
+    }
+  },
+  {
+    "cell_id": "2-0-0",
+    "indices": [
+      2,
+      0,
+      0
+    ],
+    "treatments": {
+      "buyer's budget": "$5",
+      "initial offer": "$10",
+      "mediator's presence": "mediator present"
+    }
+  },
+  {
+    "cell_id": "2-0-1",
+    "indices": [
+      2,
+      0,
+      1
+    ],
+    "treatments": {
+      "buyer's budget": "$5",
+      "initial offer": "$10",
+      "mediator's presence": "mediator absent"
+    }
+  },
+  {
+    "cell_id": "2-0-2",
+    "indices": [
+      2,
+      0,
+      2
+    ],
+    "treatments": {
+      "buyer's budget": "$5",
+      "initial offer": "$10",
+      "mediator's presence": "mediator neutral"
+    }
+  },
+  {
+    "cell_id": "2-1-0",
+    "indices": [
+      2,
+      1,
+      0
+    ],
+    "treatments": {
+      "buyer's budget": "$7",
+      "initial offer": "$10",
+      "mediator's presence": "mediator present"
+    }
+  },
+  {
+    "cell_id": "2-1-1",
+    "indices": [
+      2,
+      1,
+      1
+    ],
+    "treatments": {
+      "buyer's budget": "$7",
+      "initial offer": "$10",
+      "mediator's presence": "mediator absent"
+    }
+  },
+  {
+    "cell_id": "2-1-2",
+    "indices": [
+      2,
+      1,
+      2
+    ],
+    "treatments": {
+      "buyer's budget": "$7",
+      "initial offer": "$10",
+      "mediator's presence": "mediator neutral"
+    }
+  },
+  {
+    "cell_id": "2-2-0",
+    "indices": [
+      2,
+      2,
+      0
+    ],
+    "treatments": {
+      "buyer's budget": "$9",
+      "initial offer": "$10",
+      "mediator's presence": "mediator present"
+    }
+  },
+  {
+    "cell_id": "2-2-1",
+    "indices": [
+      2,
+      2,
+      1
+    ],
+    "treatments": {
+      "buyer's budget": "$9",
+      "initial offer": "$10",
+      "mediator's presence": "mediator absent"
+    }
+  },
+  {
+    "cell_id": "2-2-2",
+    "indices": [
+      2,
+      2,
+      2
+    ],
+    "treatments": {
+      "buyer's budget": "$9",
+      "initial offer": "$10",
+      "mediator's presence": "mediator neutral"
+    }
+  }
+]

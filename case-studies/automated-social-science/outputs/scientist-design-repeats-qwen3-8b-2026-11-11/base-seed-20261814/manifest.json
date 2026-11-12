@@ -1,0 +1,80 @@
+{
+  "artifacts": {
+    "design_directory": "designs",
+    "raw_calls": "raw_calls.jsonl",
+    "validation_report": "validation_report.json"
+  },
+  "completed_at": "2026-11-11T21:20:56.843735+00:00",
+  "counts": {
+    "scenarios": 4,
+    "total_attempts": 4,
+    "valid_designs": 4
+  },
+  "max_attempts_per_scenario": 3,
+  "model": "mlx-community/Qwen3-8B-4bit",
+  "prompt_hashes": [
+    "aae84209f7074e7490cfb838a3be3669903b5a67a115925f6c9f96cc0056e40b",
+    "6aeee90d5f02cec3b6050be67f6e2fb9f5068a04c3a3b7d3dc2149e6fd50374a",
+    "c2939ed8a0da6411ff0108e52f2d7f33fea8b6c2abd2f8a66787c0c11e326de0",
+    "1946d2677793d5573c0860934d936c7ccf6a60e92991f3b734ebedfc6c7b9c51"
+  ],
+  "provider": "mlx-cli",
+  "provider_configurations": [
+    {
+      "chat_template_config": {
+        "enable_thinking": false
+      },
+      "executable": "mlx_lm.generate",
+      "max_tokens": 2200,
+      "seed": 20261814,
+      "temperature": 0.3
+    },
+    {
+      "chat_template_config": {
+        "enable_thinking": false
+      },
+      "executable": "mlx_lm.generate",
+      "max_tokens": 2200,
+      "seed": 20261815,
+      "temperature": 0.3
+    },
+    {
+      "chat_template_config": {
+        "enable_thinking": false
+      },
+      "executable": "mlx_lm.generate",
+      "max_tokens": 2200,
+      "seed": 20261816,
+      "temperature": 0.3
+    },
+    {
+      "chat_template_config": {
+        "enable_thinking": false
+      },
+      "executable": "mlx_lm.generate",
+      "max_tokens": 2200,
+      "seed": 20261817,
+      "temperature": 0.3
+    }
+  ],
+  "retry_policy": "retry only malformed JSON or schema-invalid output; accept first valid",
+  "run_type": "canonical-scientist-design-generation",
+  "scenario_set_hash": "d2bc9b891800a0c7b3a9610a696eaf39c7b2bcd4842c2f999d7e767829bbd5c6",
+  "scenarios": [
+    "two people bargaining over a mug",
+    "a judge is setting bail for a criminal defendant who committed 50,000 dollars in tax fraud",
+    "A person is interviewing for a job as a lawyer",
+    "3 bidders participating in an auction for a piece of art starting at fifty dollars"
+  ],
+  "schema_version": 1,
+  "seeds_used": [
+    20261814,
+    20261815,
+    20261816,
+    20261817
+  ],
+  "started_at": "2026-11-11T21:19:35.460878+00:00",
+  "status": "complete",
+  "temperature": 0.3,
+  "thinking_enabled": false
+}

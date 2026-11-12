@@ -1,0 +1,186 @@
+{
+  "execution": {
+    "respondent": "Interviewer",
+    "treatment_mappings": [
+      {
+        "agent": null,
+        "cause": "Legal knowledge",
+        "scope": "public",
+        "values": [
+          {
+            "instruction": "Evaluate the candidate's legal knowledge based on their responses to the interview questions.",
+            "value": "Basic legal knowledge"
+          },
+          {
+            "instruction": "Evaluate the candidate's legal knowledge based on their responses to the interview questions.",
+            "value": "Intermediate legal knowledge"
+          },
+          {
+            "instruction": "Evaluate the candidate's legal knowledge based on their responses to the interview questions.",
+            "value": "Advanced legal knowledge"
+          }
+        ]
+      },
+      {
+        "agent": null,
+        "cause": "Communication clarity",
+        "scope": "public",
+        "values": [
+          {
+            "instruction": "Assess the candidate's communication clarity based on their responses to the interview questions.",
+            "value": "Unclear"
+          },
+          {
+            "instruction": "Assess the candidate's communication clarity based on their responses to the interview questions.",
+            "value": "Moderately clear"
+          },
+          {
+            "instruction": "Assess the candidate's communication clarity based on their responses to the interview questions.",
+            "value": "Very clear"
+          }
+        ]
+      },
+      {
+        "agent": null,
+        "cause": "Confidence level",
+        "scope": "public",
+        "values": [
+          {
+            "instruction": "Assess the candidate's confidence level based on their responses to the interview questions.",
+            "value": "Low confidence"
+          },
+          {
+            "instruction": "Assess the candidate's confidence level based on their responses to the interview questions.",
+            "value": "Moderate confidence"
+          },
+          {
+            "instruction": "Assess the candidate's confidence level based on their responses to the interview questions.",
+            "value": "High confidence"
+          }
+        ]
+      }
+    ],
+    "turn_order": [
+      "Interviewer",
+      "Candidate",
+      "Note-Taker"
+    ]
+  },
+  "schema_version": "execution-design-v1",
+  "source_design": {
+    "agents": [
+      {
+        "constraints": [
+          "Evaluate based on prepared questions",
+          "Maintain neutrality",
+          "Record responses"
+        ],
+        "goal": "Assess the candidate's legal knowledge and communication skills",
+        "name": "Interviewer",
+        "role": "Hiring manager"
+      },
+      {
+        "constraints": [
+          "Answer questions without prior knowledge of the interviewer's questions",
+          "Respond within 30 seconds",
+          "Speak clearly"
+        ],
+        "goal": "Demonstrate legal competence and fit for the role",
+        "name": "Candidate",
+        "role": "Job applicant"
+      },
+      {
+        "constraints": [
+          "Cannot provide feedback to the interviewer",
+          "Record only verbal responses",
+          "Transcribe in real-time"
+        ],
+        "goal": "Accurately record the interview for later review",
+        "name": "Note-Taker",
+        "role": "Assistant"
+      }
+    ],
+    "causes": [
+      {
+        "hypothesis": "Candidates with higher legal knowledge will perform better in the interview",
+        "name": "Legal knowledge",
+        "predicted_direction": "increase",
+        "treatment_values": [
+          "Basic legal knowledge",
+          "Intermediate legal knowledge",
+          "Advanced legal knowledge"
+        ]
+      },
+      {
+        "hypothesis": "Candidates who communicate more clearly will be rated higher",
+        "name": "Communication clarity",
+        "predicted_direction": "increase",
+        "treatment_values": [
+          "Unclear",
+          "Moderately clear",
+          "Very clear"
+        ]
+      },
+      {
+        "hypothesis": "Higher confidence leads to better interview performance",
+        "name": "Confidence level",
+        "predicted_direction": "increase",
+        "treatment_values": [
+          "Low confidence",
+          "Moderate confidence",
+          "High confidence"
+        ]
+      }
+    ],
+    "information_scope": {
+      "private": [
+        {
+          "agent": "Interviewer",
+          "information": [
+            "Previous interview notes",
+            "Internal hiring criteria",
+            "Candidate's past interviews"
+          ]
+        },
+        {
+          "agent": "Candidate",
+          "information": [
+            "Interviewer's past interviews",
+            "Company's legal history",
+            "Internal hiring biases"
+          ]
+        },
+        {
+          "agent": "Note-Taker",
+          "information": [
+            "Previous interviews",
+            "Note-taking protocols",
+            "Candidate's non-verbal cues"
+          ]
+        }
+      ],
+      "public": [
+        "Interview questions",
+        "Candidate's resume",
+        "Job description"
+      ]
+    },
+    "interaction": {
+      "max_turns": 3,
+      "order": [
+        "Interviewer",
+        "Candidate",
+        "Note-Taker"
+      ],
+      "stopping_rule": "Interview ends after the candidate answers all questions and the note-taker completes the transcription"
+    },
+    "outcome": {
+      "measurement_question": "How would the interviewer rate the candidate's performance on a scale of 1 to 10?",
+      "name": "Interview success",
+      "operationalization": "The interviewer's assessment of the candidate's suitability for the role",
+      "respondent": "Interviewer"
+    },
+    "scenario": "A person is interviewing for a job as a lawyer",
+    "schema_version": "scientist-design-v1"
+  }
+}

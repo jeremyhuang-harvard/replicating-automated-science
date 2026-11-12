@@ -8,7 +8,10 @@ The only change to any saved output is path scrubbing: in four Expected Parrot f
 (`lasagna-cola-mlx-12*/manifest.json`, `expected-parrot-qwen-replication*/results.json`) the
 home-directory prefix of the Python and `mlx_lm.generate` executables was replaced by `~/`,
 and the local path of the stimulus image was replaced by its file name `image_09ac93.png`.
-No hashed field contains those values.
+No hashed field contains those values. The repeated-seed runs of November 2026 apply the same
+scrub automatically (`case-studies/run_repeated_seeds.py` rewrites the image path in each new
+`results.json` and the image argument in `provenance.json`, and writes `~` for the home directory);
+the stimulus SHA-256 is unchanged.
 
 ---
 
@@ -32,6 +35,28 @@ treatments and outcomes for a short scenario; *subject* agents act out each trea
 | `frontier-pilot-2026-10-14-schema-v1-failed/` | **failed pilot** | `assr-frontier pilot` | 4 real cells; every interaction finished but measurement parser v1 rejected all 4 measurements; kept as-is |
 | `frontier-pilot-2026-10-14/` | pilot | `assr-frontier pilot` | the same 4 cells after the parser fix (prompt version `frontier-prompts-v3`) |
 | `frontier-planned-qwen-subjects-2026-10-14/` | **GPT-Sol designs × Qwen subjects** | `assr-frontier full-run`, then `analyze` | 108 cells (27 per study, OA(27,5,3,2)), one draw each |
+
+### Repeated-seed runs (November 2026)
+
+Made by `case-studies/run_repeated_seeds.py`, which calls the same entry points with new seeds and
+new output directories and changes nothing else. Seeds are spaced so that no two runs of the same
+stage share any per-call seed value (`tests/test_results.py` checks this against `raw_calls.jsonl`).
+
+| directory | stage | produced by | what it is |
+|---|---|---|---|
+| `scientist-design-repeats-qwen3-8b-2026-11-11/base-seed-<seed>/` | **Qwen as scientist, redrawn** | `assr-replication generate-designs --base-seed <seed>` | ten more design draws, base seeds 20261114, 20261214, …, 20262014 (original: 20261014). Same files as `canonical-designs-*`, plus `provenance.json` |
+| `generated-experiments-qwen3-8b-2026-11-11-seed-<seed>/` | **Qwen designs × Qwen subjects, redrawn** | `assr_replication.generated_cli --base-seed <seed>` | four more draws of all 108 cells, base seeds 2036101400, 2046101400, 2056101400, 2066101400 (original: 2026101400) |
+| `frontier-planned-qwen-subjects-2026-11-11-seed-<seed>/` | **GPT-Sol designs × Qwen subjects, redrawn** | `assr-frontier full-run --base-seed <seed>`, then `analyze` | four more draws of all 108 cells, same base seeds as above, same design file and settings |
+
+In the `generated-experiments-*-2026-11-11-*` directories, `finalizations/<study>/` holds only
+`finalized.json`, copied byte-for-byte from the original run before the run started. The runner
+treats an existing `finalized.json` as already compiled (its resume path), so the execution design is
+held fixed and only the subject and measurement draws change; there are no compiler calls. Measurement
+failures are kept as data (cells with `measurement_valid: false` or `status: failed`); unlike the
+original frontier run, no failed measurement was recovered by a separate call.
+
+`provenance.json` (every repeated-seed run): stage, seed, the exact command (home directory shown as
+`~`), working directory, start and end time (UTC) and runtime in seconds.
 
 The GPT-Sol design bundle itself is `designs/frontier-planned-v1/designs.json`. It was written in a
 chat session with GPT Sol, not by code in `src/`, so there are no raw calls for the planning step.
@@ -106,6 +131,7 @@ segments answer 7 questions (4 ratings on 1–5, 3 open text).
 | `lasagna-cola-mlx-12-unanchored/` | MLX Qwen | the same panel after the prompt fix that discourages midpoint answers; this is the "original baseline" in the report |
 | `expected-parrot-qwen-replication/` | MLX Qwen (in-process) | first run of `experiments/expected_parrot_qwen_replication.py`: the 12 public Expected Parrot personas under two conditions |
 | `expected-parrot-qwen-replication-v2/` | MLX Qwen (in-process) | the full run: the same two conditions (identical outputs, same seeds) plus a third with the persona in the system prompt |
+| `expected-parrot-qwen-replication-2026-11-11-seed-<seed>/` | MLX Qwen (in-process) | repeated-seed runs (November 2026): the same script and three conditions with `--seed` 43, 44, 45, 46 (original: 42), made by `case-studies/run_repeated_seeds.py`; plus `provenance.json` |
 | `expected-parrot-one-slide/` | — | the summary slide: `comparison.html` source, PDF and PNG renders, `source-notes.md` |
 
 ### File types

@@ -1,0 +1,92 @@
+{
+  "agents": [
+    {
+      "constraints": [
+        "must sell mug for at least $10",
+        "cannot reveal mug's true value"
+      ],
+      "goal": "maximize profit from the sale",
+      "name": "Alice",
+      "role": "seller"
+    },
+    {
+      "constraints": [
+        "willing to pay up to $20",
+        "does not know mug's true value"
+      ],
+      "goal": "minimize cost of the mug",
+      "name": "Bob",
+      "role": "buyer"
+    }
+  ],
+  "causes": [
+    {
+      "hypothesis": "Higher reservation price leads to higher final price",
+      "name": "Alice's reservation price",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "$15",
+        "$20",
+        "$25"
+      ]
+    },
+    {
+      "hypothesis": "Higher maximum willingness to pay leads to higher final price",
+      "name": "Bob's maximum willingness to pay",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "$15",
+        "$20",
+        "$25"
+      ]
+    },
+    {
+      "hypothesis": "Higher true value leads to higher final price",
+      "name": "Mug's true value",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "$10",
+        "$15",
+        "$20"
+      ]
+    }
+  ],
+  "information_scope": {
+    "private": [
+      {
+        "agent": "Alice",
+        "information": [
+          "Alice's reservation price",
+          "mug's true value"
+        ]
+      },
+      {
+        "agent": "Bob",
+        "information": [
+          "Bob's maximum willingness to pay",
+          "mug's true value"
+        ]
+      }
+    ],
+    "public": [
+      "mug's description",
+      "mug's condition"
+    ]
+  },
+  "interaction": {
+    "max_turns": 2,
+    "order": [
+      "Alice",
+      "Bob"
+    ],
+    "stopping_rule": "agreement on price or refusal to trade"
+  },
+  "outcome": {
+    "measurement_question": "what was the final price agreed upon by Alice and Bob?",
+    "name": "final price",
+    "operationalization": "the agreed price at which the mug is sold",
+    "respondent": "Alice"
+  },
+  "scenario": "two people bargaining over a mug",
+  "schema_version": "scientist-design-v1"
+}

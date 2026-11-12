@@ -1,0 +1,108 @@
+{
+  "agents": [
+    {
+      "constraints": [
+        "Must follow legal guidelines",
+        "Cannot consider unrelated factors",
+        "Must justify decision in court"
+      ],
+      "goal": "Set bail in a way that balances the defendant's flight risk and public safety",
+      "name": "Judge",
+      "role": "Legal authority responsible for determining bail"
+    },
+    {
+      "constraints": [
+        "Must act within legal boundaries",
+        "Cannot fabricate evidence",
+        "Must respond to judge's questions"
+      ],
+      "goal": "Argue for a lower bail amount to ensure the defendant's right to a fair trial",
+      "name": "Defense Attorney",
+      "role": "Representing the defendant's interests"
+    },
+    {
+      "constraints": [
+        "Must present factual evidence",
+        "Cannot make false claims",
+        "Must respond to judge's questions"
+      ],
+      "goal": "Argue for a higher bail amount to prevent the defendant from fleeing",
+      "name": "Prosecutor",
+      "role": "Representing the state's interests"
+    }
+  ],
+  "causes": [
+    {
+      "hypothesis": "Higher flight risk increases the bail amount",
+      "name": "Flight Risk",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "Low",
+        "Medium",
+        "High"
+      ]
+    },
+    {
+      "hypothesis": "Higher public safety concerns increase the bail amount",
+      "name": "Public Safety",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "Low",
+        "Medium",
+        "High"
+      ]
+    },
+    {
+      "hypothesis": "Higher financial status decreases the bail amount",
+      "name": "Defendant's Financial Status",
+      "predicted_direction": "decrease",
+      "treatment_values": [
+        "Low",
+        "Medium",
+        "High"
+      ]
+    }
+  ],
+  "information_scope": {
+    "private": [
+      {
+        "agent": "Defense Attorney",
+        "information": [
+          "Defendant's financial status",
+          "Evidence of cooperation",
+          "Prior criminal record"
+        ]
+      },
+      {
+        "agent": "Prosecutor",
+        "information": [
+          "Evidence of flight risk",
+          "Public safety concerns",
+          "Defendant's intent"
+        ]
+      }
+    ],
+    "public": [
+      "Case details",
+      "Legal statutes",
+      "Bail guidelines"
+    ]
+  },
+  "interaction": {
+    "max_turns": 3,
+    "order": [
+      "Judge",
+      "Defense Attorney",
+      "Prosecutor"
+    ],
+    "stopping_rule": "Decision on bail amount is made by the judge after all parties have presented their arguments"
+  },
+  "outcome": {
+    "measurement_question": "What is the final bail amount determined by the judge?",
+    "name": "Bail Amount",
+    "operationalization": "The monetary amount set by the judge as bail for the defendant",
+    "respondent": "Judge"
+  },
+  "scenario": "a judge is setting bail for a criminal defendant who committed 50,000 dollars in tax fraud",
+  "schema_version": "scientist-design-v1"
+}

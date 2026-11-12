@@ -1,0 +1,106 @@
+{
+  "agents": [
+    {
+      "constraints": [
+        "Evaluate based on legal knowledge and communication skills"
+      ],
+      "goal": "Assess the candidate's suitability for the lawyer position",
+      "name": "Interviewer",
+      "role": "Hiring manager"
+    },
+    {
+      "constraints": [
+        "Answer questions without prior knowledge of the interviewer's expectations"
+      ],
+      "goal": "Demonstrate legal expertise and interview skills",
+      "name": "Candidate",
+      "role": "Job applicant"
+    },
+    {
+      "constraints": [
+        "Provide feedback on cultural fit and work ethic"
+      ],
+      "goal": "Ensure the candidate meets company standards",
+      "name": "Recruiter",
+      "role": "HR representative"
+    }
+  ],
+  "causes": [
+    {
+      "hypothesis": "Higher legal knowledge leads to better hiring decisions",
+      "name": "Legal knowledge",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "Basic legal principles",
+        "Advanced legal theory",
+        "Case law analysis"
+      ]
+    },
+    {
+      "hypothesis": "Strong communication skills improve the likelihood of being hired",
+      "name": "Communication skills",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "Clear and concise",
+        "Confusing and verbose",
+        "Confident and articulate"
+      ]
+    },
+    {
+      "hypothesis": "Better cultural fit increases the probability of hiring",
+      "name": "Cultural fit",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "High alignment with firm values",
+        "Moderate alignment",
+        "Low alignment"
+      ]
+    }
+  ],
+  "information_scope": {
+    "private": [
+      {
+        "agent": "Interviewer",
+        "information": [
+          "Previous hiring decisions",
+          "Candidate's work history"
+        ]
+      },
+      {
+        "agent": "Candidate",
+        "information": [
+          "Interviewer's past feedback",
+          "Recruiter's evaluation criteria"
+        ]
+      },
+      {
+        "agent": "Recruiter",
+        "information": [
+          "Internal hiring guidelines",
+          "Candidate's interview performance"
+        ]
+      }
+    ],
+    "public": [
+      "Interview questions",
+      "Company background"
+    ]
+  },
+  "interaction": {
+    "max_turns": 3,
+    "order": [
+      "Interviewer",
+      "Candidate",
+      "Recruiter"
+    ],
+    "stopping_rule": "The interaction stops when the hiring decision is made"
+  },
+  "outcome": {
+    "measurement_question": "Was the candidate hired based on the interview?",
+    "name": "Hiring decision",
+    "operationalization": "Whether the candidate is offered the job or not",
+    "respondent": "Recruiter"
+  },
+  "scenario": "A person is interviewing for a job as a lawyer",
+  "schema_version": "scientist-design-v1"
+}

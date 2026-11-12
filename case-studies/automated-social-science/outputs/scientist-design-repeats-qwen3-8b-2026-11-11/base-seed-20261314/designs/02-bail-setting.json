@@ -1,0 +1,116 @@
+{
+  "agents": [
+    {
+      "constraints": [
+        "Must follow bail guidelines",
+        "Cannot consider unrelated factors",
+        "Must ensure defendant appears for trial"
+      ],
+      "goal": "Set bail in a way that balances defendant's freedom with public safety",
+      "name": "Judge",
+      "role": "Legal authority responsible for determining bail"
+    },
+    {
+      "constraints": [
+        "Cannot lie under oath",
+        "Must present evidence",
+        "Cannot influence the judge's impartiality"
+      ],
+      "goal": "Argue for the lowest possible bail amount",
+      "name": "Defense Attorney",
+      "role": "Legal representative of the defendant"
+    },
+    {
+      "constraints": [
+        "Must present evidence",
+        "Cannot lie under oath",
+        "Must ensure defendant appears for trial"
+      ],
+      "goal": "Argue for a higher bail amount",
+      "name": "Prosecutor",
+      "role": "Legal representative of the state"
+    }
+  ],
+  "causes": [
+    {
+      "hypothesis": "Higher severity of tax fraud leads to higher bail amounts",
+      "name": "Severity of Tax Fraud",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "$50,000 fraud",
+        "$100,000 fraud",
+        "$250,000 fraud"
+      ]
+    },
+    {
+      "hypothesis": "A criminal history increases the bail amount",
+      "name": "Defendant's Criminal History",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "No prior convictions",
+        "One prior conviction",
+        "Multiple prior convictions"
+      ]
+    },
+    {
+      "hypothesis": "Greater financial capability of the defendant decreases bail amount",
+      "name": "Evidence of Financial Capability",
+      "predicted_direction": "decrease",
+      "treatment_values": [
+        "High income with assets",
+        "Moderate income",
+        "Low income with no assets"
+      ]
+    }
+  ],
+  "information_scope": {
+    "private": [
+      {
+        "agent": "Judge",
+        "information": [
+          "Previous bail decisions",
+          "Personal biases",
+          "Legal precedents"
+        ]
+      },
+      {
+        "agent": "Defense Attorney",
+        "information": [
+          "Client's financial records",
+          "Evidence of innocence",
+          "Witness statements"
+        ]
+      },
+      {
+        "agent": "Prosecutor",
+        "information": [
+          "Evidence of guilt",
+          "Witness credibility",
+          "Prior case outcomes"
+        ]
+      }
+    ],
+    "public": [
+      "Tax fraud amount",
+      "Criminal history",
+      "Financial capability"
+    ]
+  },
+  "interaction": {
+    "max_turns": 3,
+    "order": [
+      "Judge",
+      "Defense Attorney",
+      "Prosecutor"
+    ],
+    "stopping_rule": "Bail amount is determined after all agents present their arguments"
+  },
+  "outcome": {
+    "measurement_question": "What is the exact bail amount determined by the judge?",
+    "name": "Bail Amount",
+    "operationalization": "The monetary amount set by the judge as bail",
+    "respondent": "Judge"
+  },
+  "scenario": "a judge is setting bail for a criminal defendant who committed 50,000 dollars in tax fraud",
+  "schema_version": "scientist-design-v1"
+}

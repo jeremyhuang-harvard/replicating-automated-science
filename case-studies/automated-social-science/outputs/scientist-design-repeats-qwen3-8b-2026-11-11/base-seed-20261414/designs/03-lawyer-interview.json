@@ -1,0 +1,109 @@
+{
+  "agents": [
+    {
+      "constraints": [
+        "Evaluate based on legal knowledge and communication skills"
+      ],
+      "goal": "Assess the candidate's suitability for the lawyer position",
+      "name": "Interviewer",
+      "role": "Hiring manager"
+    },
+    {
+      "constraints": [
+        "Answer questions without prior knowledge of the interviewer's expectations"
+      ],
+      "goal": "Demonstrate legal expertise and persuasiveness",
+      "name": "Candidate",
+      "role": "Job applicant"
+    },
+    {
+      "constraints": [
+        "Cannot influence the interviewer's assessment"
+      ],
+      "goal": "Ensure the candidate meets the firm's cultural and professional standards",
+      "name": "Recruiter",
+      "role": "HR representative"
+    }
+  ],
+  "causes": [
+    {
+      "hypothesis": "Higher legal knowledge leads to a better hiring decision",
+      "name": "Legal knowledge",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "Basic legal knowledge",
+        "Advanced legal knowledge",
+        "No legal knowledge"
+      ]
+    },
+    {
+      "hypothesis": "Strong communication skills improve the likelihood of hiring",
+      "name": "Communication skills",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "Poor communication",
+        "Average communication",
+        "Excellent communication"
+      ]
+    },
+    {
+      "hypothesis": "Higher confidence during the interview increases the chance of being hired",
+      "name": "Confidence level",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "Low confidence",
+        "Moderate confidence",
+        "High confidence"
+      ]
+    }
+  ],
+  "information_scope": {
+    "private": [
+      {
+        "agent": "Interviewer",
+        "information": [
+          "Previous hiring decisions",
+          "Candidate's resume",
+          "Firm's hiring criteria"
+        ]
+      },
+      {
+        "agent": "Candidate",
+        "information": [
+          "Interviewer's past interviews",
+          "Recruiter's feedback",
+          "Company's legal case history"
+        ]
+      },
+      {
+        "agent": "Recruiter",
+        "information": [
+          "Firm's diversity goals",
+          "Candidate's interview performance",
+          "Legal team's needs"
+        ]
+      }
+    ],
+    "public": [
+      "Interview questions",
+      "Company background"
+    ]
+  },
+  "interaction": {
+    "max_turns": 3,
+    "order": [
+      "Interviewer",
+      "Candidate",
+      "Recruiter"
+    ],
+    "stopping_rule": "The interaction stops after the recruiter provides feedback on the candidate's suitability"
+  },
+  "outcome": {
+    "measurement_question": "Was the candidate hired after the interview?",
+    "name": "Hiring decision",
+    "operationalization": "Whether the candidate is offered the job based on the interview",
+    "respondent": "Interviewer"
+  },
+  "scenario": "A person is interviewing for a job as a lawyer",
+  "schema_version": "scientist-design-v1"
+}

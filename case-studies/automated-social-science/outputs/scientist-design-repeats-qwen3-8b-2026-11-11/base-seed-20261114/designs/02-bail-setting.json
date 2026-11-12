@@ -1,0 +1,108 @@
+{
+  "agents": [
+    {
+      "constraints": [
+        "Must follow legal guidelines for bail setting",
+        "Cannot consider irrelevant factors",
+        "Must ensure defendant appears for trial"
+      ],
+      "goal": "Set bail in a manner that balances defendant's right to liberty with public safety",
+      "name": "Judge",
+      "role": "Legal authority responsible for determining bail"
+    },
+    {
+      "constraints": [
+        "Must present evidence to support bail request",
+        "Cannot make false claims",
+        "Must comply with court procedures"
+      ],
+      "goal": "Argue for the lowest possible bail amount to ensure client's release",
+      "name": "Defense Attorney",
+      "role": "Legal representative of the defendant"
+    },
+    {
+      "constraints": [
+        "Must present evidence to support bail request",
+        "Cannot make false claims",
+        "Must comply with court procedures"
+      ],
+      "goal": "Argue for a higher bail amount to ensure defendant's appearance at trial",
+      "name": "Prosecutor",
+      "role": "Legal representative of the state"
+    }
+  ],
+  "causes": [
+    {
+      "hypothesis": "The defendant's financial stability reduces the perceived risk of flight",
+      "name": "Evidence of Financial Stability",
+      "predicted_direction": "decrease",
+      "treatment_values": [
+        "High",
+        "Moderate",
+        "Low"
+      ]
+    },
+    {
+      "hypothesis": "Higher severity of tax fraud increases the perceived risk to public safety",
+      "name": "Severity of Tax Fraud",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "Minor",
+        "Moderate",
+        "Major"
+      ]
+    },
+    {
+      "hypothesis": "A criminal history increases the perceived risk of flight or reoffending",
+      "name": "Prior Criminal Record",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "No Record",
+        "Misdemeanor",
+        "Felony"
+      ]
+    }
+  ],
+  "information_scope": {
+    "private": [
+      {
+        "agent": "Defense Attorney",
+        "information": [
+          "Client's financial status",
+          "Prior legal history",
+          "Evidence of cooperation"
+        ]
+      },
+      {
+        "agent": "Prosecutor",
+        "information": [
+          "Evidence of flight risk",
+          "Prior criminal history",
+          "Witness statements"
+        ]
+      }
+    ],
+    "public": [
+      "Tax fraud amount",
+      "Charge severity",
+      "Legal statutes on bail"
+    ]
+  },
+  "interaction": {
+    "max_turns": 3,
+    "order": [
+      "Judge",
+      "Defense Attorney",
+      "Prosecutor"
+    ],
+    "stopping_rule": "The judge makes the final bail decision after considering all arguments"
+  },
+  "outcome": {
+    "measurement_question": "What is the final bail amount determined by the judge?",
+    "name": "Bail Amount",
+    "operationalization": "The monetary amount set by the judge as bail for the defendant",
+    "respondent": "Judge"
+  },
+  "scenario": "a judge is setting bail for a criminal defendant who committed 50,000 dollars in tax fraud",
+  "schema_version": "scientist-design-v1"
+}

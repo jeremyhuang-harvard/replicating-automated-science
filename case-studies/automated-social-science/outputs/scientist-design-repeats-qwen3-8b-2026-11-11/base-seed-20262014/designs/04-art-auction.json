@@ -1,0 +1,107 @@
+{
+  "agents": [
+    {
+      "constraints": [
+        "Bids only if confident in value"
+      ],
+      "goal": "Maximize profit while minimizing risk",
+      "name": "Agent1",
+      "role": "Conservative Collector"
+    },
+    {
+      "constraints": [
+        "Limits bids to 150% of starting price"
+      ],
+      "goal": "Achieve high returns through strategic bidding",
+      "name": "Agent2",
+      "role": "Speculative Investor"
+    },
+    {
+      "constraints": [
+        "Bids up to 200% of starting price"
+      ],
+      "goal": "Acquire the art regardless of cost",
+      "name": "Agent3",
+      "role": "Art Enthusiast"
+    }
+  ],
+  "causes": [
+    {
+      "hypothesis": "Higher risk tolerance leads to higher final bid price",
+      "name": "Bidder's Risk Tolerance",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "Low",
+        "Medium",
+        "High"
+      ]
+    },
+    {
+      "hypothesis": "A higher starting price increases the final bid price",
+      "name": "Starting Price",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "$50",
+        "$75",
+        "$100"
+      ]
+    },
+    {
+      "hypothesis": "More experience leads to more aggressive bidding",
+      "name": "Previous Auction Experience",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "Novice",
+        "Intermediate",
+        "Expert"
+      ]
+    }
+  ],
+  "information_scope": {
+    "private": [
+      {
+        "agent": "Agent1",
+        "information": [
+          "Agent1's maximum bid",
+          "Agent1's risk tolerance"
+        ]
+      },
+      {
+        "agent": "Agent2",
+        "information": [
+          "Agent2's maximum bid",
+          "Agent2's previous auction experience"
+        ]
+      },
+      {
+        "agent": "Agent3",
+        "information": [
+          "Agent3's maximum bid",
+          "Agent3's interest in the art"
+        ]
+      }
+    ],
+    "public": [
+      "Current highest bid",
+      "Starting price",
+      "Number of bidders"
+    ]
+  },
+  "interaction": {
+    "max_turns": 3,
+    "order": [
+      "Agent1",
+      "Agent2",
+      "Agent3"
+    ],
+    "stopping_rule": "Auction ends when no further bids are placed"
+  },
+  "outcome": {
+    "measurement_question": "What is the final price paid for the art?",
+    "name": "Final Bid Price",
+    "operationalization": "The highest bid submitted by any agent at the end of the auction",
+    "respondent": "Agent who submitted the winning bid"
+  },
+  "scenario": "3 bidders participating in an auction for a piece of art starting at fifty dollars",
+  "schema_version": "scientist-design-v1"
+}

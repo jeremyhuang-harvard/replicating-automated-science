@@ -1,0 +1,353 @@
+[
+  {
+    "cell_id": "0-0-0",
+    "indices": [
+      0,
+      0,
+      0
+    ],
+    "treatments": {
+      "Defendant's Criminal History": "No prior convictions",
+      "Evidence Strength": "Weak evidence",
+      "Severity of Tax Fraud": "$50,000 fraud"
+    }
+  },
+  {
+    "cell_id": "0-0-1",
+    "indices": [
+      0,
+      0,
+      1
+    ],
+    "treatments": {
+      "Defendant's Criminal History": "No prior convictions",
+      "Evidence Strength": "Moderate evidence",
+      "Severity of Tax Fraud": "$50,000 fraud"
+    }
+  },
+  {
+    "cell_id": "0-0-2",
+    "indices": [
+      0,
+      0,
+      2
+    ],
+    "treatments": {
+      "Defendant's Criminal History": "No prior convictions",
+      "Evidence Strength": "Strong evidence",
+      "Severity of Tax Fraud": "$50,000 fraud"
+    }
+  },
+  {
+    "cell_id": "0-1-0",
+    "indices": [
+      0,
+      1,
+      0
+    ],
+    "treatments": {
+      "Defendant's Criminal History": "1 prior conviction",
+      "Evidence Strength": "Weak evidence",
+      "Severity of Tax Fraud": "$50,000 fraud"
+    }
+  },
+  {
+    "cell_id": "0-1-1",
+    "indices": [
+      0,
+      1,
+      1
+    ],
+    "treatments": {
+      "Defendant's Criminal History": "1 prior conviction",
+      "Evidence Strength": "Moderate evidence",
+      "Severity of Tax Fraud": "$50,000 fraud"
+    }
+  },
+  {
+    "cell_id": "0-1-2",
+    "indices": [
+      0,
+      1,
+      2
+    ],
+    "treatments": {
+      "Defendant's Criminal History": "1 prior conviction",
+      "Evidence Strength": "Strong evidence",
+      "Severity of Tax Fraud": "$50,000 fraud"
+    }
+  },
+  {
+    "cell_id": "0-2-0",
+    "indices": [
+      0,
+      2,
+      0
+    ],
+    "treatments": {
+      "Defendant's Criminal History": "3 prior convictions",
+      "Evidence Strength": "Weak evidence",
+      "Severity of Tax Fraud": "$50,000 fraud"
+    }
+  },
+  {
+    "cell_id": "0-2-1",
+    "indices": [
+      0,
+      2,
+      1
+    ],
+    "treatments": {
+      "Defendant's Criminal History": "3 prior convictions",
+      "Evidence Strength": "Moderate evidence",
+      "Severity of Tax Fraud": "$50,000 fraud"
+    }
+  },
+  {
+    "cell_id": "0-2-2",
+    "indices": [
+      0,
+      2,
+      2
+    ],
+    "treatments": {
+      "Defendant's Criminal History": "3 prior convictions",
+      "Evidence Strength": "Strong evidence",
+      "Severity of Tax Fraud": "$50,000 fraud"
+    }
+  },
+  {
+    "cell_id": "1-0-0",
+    "indices": [
+      1,
+      0,
+      0
+    ],
+    "treatments": {
+      "Defendant's Criminal History": "No prior convictions",
+      "Evidence Strength": "Weak evidence",
+      "Severity of Tax Fraud": "$100,000 fraud"
+    }
+  },
+  {
+    "cell_id": "1-0-1",
+    "indices": [
+      1,
+      0,
+      1
+    ],
+    "treatments": {
+      "Defendant's Criminal History": "No prior convictions",
+      "Evidence Strength": "Moderate evidence",
+      "Severity of Tax Fraud": "$100,000 fraud"
+    }
+  },
+  {
+    "cell_id": "1-0-2",
+    "indices": [
+      1,
+      0,
+      2
+    ],
+    "treatments": {
+      "Defendant's Criminal History": "No prior convictions",
+      "Evidence Strength": "Strong evidence",
+      "Severity of Tax Fraud": "$100,000 fraud"
+    }
+  },
+  {
+    "cell_id": "1-1-0",
+    "indices": [
+      1,
+      1,
+      0
+    ],
+    "treatments": {
+      "Defendant's Criminal History": "1 prior conviction",
+      "Evidence Strength": "Weak evidence",
+      "Severity of Tax Fraud": "$100,000 fraud"
+    }
+  },
+  {
+    "cell_id": "1-1-1",
+    "indices": [
+      1,
+      1,
+      1
+    ],
+    "treatments": {
+      "Defendant's Criminal History": "1 prior conviction",
+      "Evidence Strength": "Moderate evidence",
+      "Severity of Tax Fraud": "$100,000 fraud"
+    }
+  },
+  {
+    "cell_id": "1-1-2",
+    "indices": [
+      1,
+      1,
+      2
+    ],
+    "treatments": {
+      "Defendant's Criminal History": "1 prior conviction",
+      "Evidence Strength": "Strong evidence",
+      "Severity of Tax Fraud": "$100,000 fraud"
+    }
+  },
+  {
+    "cell_id": "1-2-0",
+    "indices": [
+      1,
+      2,
+      0
+    ],
+    "treatments": {
+      "Defendant's Criminal History": "3 prior convictions",
+      "Evidence Strength": "Weak evidence",
+      "Severity of Tax Fraud": "$100,000 fraud"
+    }
+  },
+  {
+    "cell_id": "1-2-1",
+    "indices": [
+      1,
+      2,
+      1
+    ],
+    "treatments": {
+      "Defendant's Criminal History": "3 prior convictions",
+      "Evidence Strength": "Moderate evidence",
+      "Severity of Tax Fraud": "$100,000 fraud"
+    }
+  },
+  {
+    "cell_id": "1-2-2",
+    "indices": [
+      1,
+      2,
+      2
+    ],
+    "treatments": {
+      "Defendant's Criminal History": "3 prior convictions",
+      "Evidence Strength": "Strong evidence",
+      "Severity of Tax Fraud": "$100,000 fraud"
+    }
+  },
+  {
+    "cell_id": "2-0-0",
+    "indices": [
+      2,
+      0,
+      0
+    ],
+    "treatments": {
+      "Defendant's Criminal History": "No prior convictions",
+      "Evidence Strength": "Weak evidence",
+      "Severity of Tax Fraud": "$200,000 fraud"
+    }
+  },
+  {
+    "cell_id": "2-0-1",
+    "indices": [
+      2,
+      0,
+      1
+    ],
+    "treatments": {
+      "Defendant's Criminal History": "No prior convictions",
+      "Evidence Strength": "Moderate evidence",
+      "Severity of Tax Fraud": "$200,000 fraud"
+    }
+  },
+  {
+    "cell_id": "2-0-2",
+    "indices": [
+      2,
+      0,
+      2
+    ],
+    "treatments": {
+      "Defendant's Criminal History": "No prior convictions",
+      "Evidence Strength": "Strong evidence",
+      "Severity of Tax Fraud": "$200,000 fraud"
+    }
+  },
+  {
+    "cell_id": "2-1-0",
+    "indices": [
+      2,
+      1,
+      0
+    ],
+    "treatments": {
+      "Defendant's Criminal History": "1 prior conviction",
+      "Evidence Strength": "Weak evidence",
+      "Severity of Tax Fraud": "$200,000 fraud"
+    }
+  },
+  {
+    "cell_id": "2-1-1",
+    "indices": [
+      2,
+      1,
+      1
+    ],
+    "treatments": {
+      "Defendant's Criminal History": "1 prior conviction",
+      "Evidence Strength": "Moderate evidence",
+      "Severity of Tax Fraud": "$200,000 fraud"
+    }
+  },
+  {
+    "cell_id": "2-1-2",
+    "indices": [
+      2,
+      1,
+      2
+    ],
+    "treatments": {
+      "Defendant's Criminal History": "1 prior conviction",
+      "Evidence Strength": "Strong evidence",
+      "Severity of Tax Fraud": "$200,000 fraud"
+    }
+  },
+  {
+    "cell_id": "2-2-0",
+    "indices": [
+      2,
+      2,
+      0
+    ],
+    "treatments": {
+      "Defendant's Criminal History": "3 prior convictions",
+      "Evidence Strength": "Weak evidence",
+      "Severity of Tax Fraud": "$200,000 fraud"
+    }
+  },
+  {
+    "cell_id": "2-2-1",
+    "indices": [
+      2,
+      2,
+      1
+    ],
+    "treatments": {
+      "Defendant's Criminal History": "3 prior convictions",
+      "Evidence Strength": "Moderate evidence",
+      "Severity of Tax Fraud": "$200,000 fraud"
+    }
+  },
+  {
+    "cell_id": "2-2-2",
+    "indices": [
+      2,
+      2,
+      2
+    ],
+    "treatments": {
+      "Defendant's Criminal History": "3 prior convictions",
+      "Evidence Strength": "Strong evidence",
+      "Severity of Tax Fraud": "$200,000 fraud"
+    }
+  }
+]

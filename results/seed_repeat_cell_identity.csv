@@ -1,0 +1,9 @@
+designs,study,cell_draw_pairs,identical_transcript,identical_outcome,share_identical_transcript,share_identical_outcome
+Qwen designs,mug bargaining,108,0,38,0.0,0.352
+Qwen designs,bail setting,108,0,90,0.0,0.833
+Qwen designs,lawyer interview,108,0,64,0.0,0.593
+Qwen designs,art auction,108,65,94,0.602,0.87
+GPT-Sol designs,mug bargaining,108,45,85,0.417,0.787
+GPT-Sol designs,bail setting,108,0,43,0.0,0.398
+GPT-Sol designs,lawyer interview,108,0,56,0.0,0.519
+GPT-Sol designs,art auction,108,7,33,0.065,0.306

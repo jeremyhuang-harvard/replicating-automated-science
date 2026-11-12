@@ -1,0 +1,116 @@
+{
+  "agents": [
+    {
+      "constraints": [
+        "Evaluate based on prepared questions",
+        "Maintain neutrality",
+        "Record responses"
+      ],
+      "goal": "Assess the candidate's legal knowledge and communication skills",
+      "name": "Interviewer",
+      "role": "Hiring manager"
+    },
+    {
+      "constraints": [
+        "Answer questions without prior knowledge of the interviewer's questions",
+        "Respond in a professional manner",
+        "Use legal terminology where appropriate"
+      ],
+      "goal": "Demonstrate legal competence and fit for the role",
+      "name": "Candidate",
+      "role": "Job applicant"
+    },
+    {
+      "constraints": [
+        "Take notes without influencing the interview",
+        "Avoid bias in recording",
+        "Ensure confidentiality"
+      ],
+      "goal": "Accurately record the interview for later review",
+      "name": "Note-Taker",
+      "role": "Support staff"
+    }
+  ],
+  "causes": [
+    {
+      "hypothesis": "Candidates with higher legal knowledge will be rated higher in the interview",
+      "name": "Legal knowledge",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "Basic legal principles",
+        "Advanced legal theory",
+        "Case law analysis"
+      ]
+    },
+    {
+      "hypothesis": "Candidates who communicate more clearly will be rated higher",
+      "name": "Communication clarity",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "Clear and concise",
+        "Ambiguous and indirect",
+        "Jargon-heavy"
+      ]
+    },
+    {
+      "hypothesis": "Candidates with higher confidence will be perceived as more competent",
+      "name": "Confidence level",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "Confident and composed",
+        "Nervous and hesitant",
+        "Passive and uncertain"
+      ]
+    }
+  ],
+  "information_scope": {
+    "private": [
+      {
+        "agent": "Interviewer",
+        "information": [
+          "Previous interview notes",
+          "Candidate's past performance",
+          "Company's hiring criteria"
+        ]
+      },
+      {
+        "agent": "Candidate",
+        "information": [
+          "Interviewer's past interviews",
+          "Company's legal cases",
+          "Interviewer's personal biases"
+        ]
+      },
+      {
+        "agent": "Note-Taker",
+        "information": [
+          "Interviewer's notes from past interviews",
+          "Candidate's prior interviews",
+          "Company's internal feedback"
+        ]
+      }
+    ],
+    "public": [
+      "Interview questions",
+      "Candidate's resume",
+      "Job description"
+    ]
+  },
+  "interaction": {
+    "max_turns": 3,
+    "order": [
+      "Interviewer",
+      "Candidate",
+      "Note-Taker"
+    ],
+    "stopping_rule": "The interview concludes after the candidate answers all prepared questions and the note-taker records the session."
+  },
+  "outcome": {
+    "measurement_question": "How would you rate the candidate's legal knowledge and communication skills on a scale of 1 to 10?",
+    "name": "Interview success",
+    "operationalization": "The interviewer's assessment of the candidate's suitability for the role",
+    "respondent": "Interviewer"
+  },
+  "scenario": "A person is interviewing for a job as a lawyer",
+  "schema_version": "scientist-design-v1"
+}

@@ -1,0 +1,442 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="764" font-family="Helvetica, Arial, sans-serif" font-size="11">
+<rect width="980" height="764" fill="white"/>
+<text x="20" y="26" font-size="16" font-weight="bold">Does a theorised lever give the same answer on 5 independent draws of its 27 cells?</text>
+<text x="20" y="46" font-size="12" fill="#444">Same designs, same prompts, new seeds for every subject and measurement call. Draw 1 is the original run.</text>
+<text x="377.0" y="84" text-anchor="middle" fill="#444">1</text>
+<text x="399.0" y="84" text-anchor="middle" fill="#444">2</text>
+<text x="421.0" y="84" text-anchor="middle" fill="#444">3</text>
+<text x="443.0" y="84" text-anchor="middle" fill="#444">4</text>
+<text x="465.0" y="84" text-anchor="middle" fill="#444">5</text>
+<text x="425.0" y="68" text-anchor="middle" fill="#444">draw</text>
+<text x="504" y="84" fill="#444">original deletion test</text>
+<text x="362" y="103" text-anchor="end">Qwen · mug bargaining · initial offer</text>
+<rect x="370" y="92" width="14" height="14" fill="#566573"/>
+<text x="377.0" y="103" text-anchor="middle" font-size="10" fill="white">✓</text>
+<rect x="392" y="92" width="14" height="14" fill="#aed6f1"/>
+<text x="399.0" y="103" text-anchor="middle" font-size="10" fill="#222">✓</text>
+<rect x="414" y="92" width="14" height="14" fill="#2e86c1"/>
+<text x="421.0" y="103" text-anchor="middle" font-size="10" fill="white">✓</text>
+<rect x="436" y="92" width="14" height="14" fill="#aed6f1"/>
+<text x="443.0" y="103" text-anchor="middle" font-size="10" fill="#222">✓</text>
+<rect x="458" y="92" width="14" height="14" fill="#aed6f1"/>
+<text x="465.0" y="103" text-anchor="middle" font-size="10" fill="#222">✓</text>
+<text x="504" y="103" fill="#2e86c1">survives 3 deletions</text>
+<text x="644" y="103" fill="#333">same verdict in every draw</text>
+<text x="362" y="121" text-anchor="end">Qwen · mug bargaining · buyer's budget</text>
+<rect x="370" y="110" width="14" height="14" fill="#566573"/>
+<text x="377.0" y="121" text-anchor="middle" font-size="10" fill="white">✗</text>
+<rect x="392" y="110" width="14" height="14" fill="#2e86c1"/>
+<text x="399.0" y="121" text-anchor="middle" font-size="10" fill="white">✗</text>
+<rect x="414" y="110" width="14" height="14" fill="#2e86c1"/>
+<text x="421.0" y="121" text-anchor="middle" font-size="10" fill="white">✗</text>
+<rect x="436" y="110" width="14" height="14" fill="#2e86c1"/>
+<text x="443.0" y="121" text-anchor="middle" font-size="10" fill="white">✗</text>
+<rect x="458" y="110" width="14" height="14" fill="#2e86c1"/>
+<text x="465.0" y="121" text-anchor="middle" font-size="10" fill="white">✗</text>
+<text x="504" y="121" fill="#2e86c1">survives 3 deletions</text>
+<text x="644" y="121" fill="#333">same verdict in every draw</text>
+<text x="362" y="139" text-anchor="end">Qwen · mug bargaining · mediator's presence</text>
+<rect x="370" y="128" width="14" height="14" fill="#d5d8dc"/>
+<text x="377.0" y="139" text-anchor="middle" font-size="10" fill="#222">✗</text>
+<rect x="392" y="128" width="14" height="14" fill="#f5b7b1"/>
+<text x="399.0" y="139" text-anchor="middle" font-size="10" fill="#222">✓</text>
+<rect x="414" y="128" width="14" height="14" fill="#f5b7b1"/>
+<text x="421.0" y="139" text-anchor="middle" font-size="10" fill="#222">✓</text>
+<rect x="436" y="128" width="14" height="14" fill="#f5b7b1"/>
+<text x="443.0" y="139" text-anchor="middle" font-size="10" fill="#222">✓</text>
+<rect x="458" y="128" width="14" height="14" fill="#f5b7b1"/>
+<text x="465.0" y="139" text-anchor="middle" font-size="10" fill="#222">✓</text>
+<text x="504" y="139" fill="#c0392b">reversed by 1 cell</text>
+<text x="644" y="139" fill="#333">4 of 4 new draws differ</text>
+<text x="362" y="157" text-anchor="end">Qwen · bail setting · Severity of Tax Fraud</text>
+<rect x="370" y="146" width="14" height="14" fill="#d5d8dc"/>
+<text x="377.0" y="157" text-anchor="middle" font-size="10" fill="#222">✓</text>
+<rect x="392" y="146" width="14" height="14" fill="#aed6f1"/>
+<text x="399.0" y="157" text-anchor="middle" font-size="10" fill="#222">✓</text>
+<rect x="414" y="146" width="14" height="14" fill="#aed6f1"/>
+<text x="421.0" y="157" text-anchor="middle" font-size="10" fill="#222">✓</text>
+<rect x="436" y="146" width="14" height="14" fill="#aed6f1"/>
+<text x="443.0" y="157" text-anchor="middle" font-size="10" fill="#222">✓</text>
+<rect x="458" y="146" width="14" height="14" fill="#aed6f1"/>
+<text x="465.0" y="157" text-anchor="middle" font-size="10" fill="#222">✓</text>
+<text x="504" y="157" fill="#e67e22">reversed by 2 cells</text>
+<text x="644" y="157" fill="#333">same verdict in every draw</text>
+<text x="362" y="175" text-anchor="end">Qwen · bail setting · Defendant's Criminal History</text>
+<rect x="370" y="164" width="14" height="14" fill="#d5d8dc"/>
+<text x="377.0" y="175" text-anchor="middle" font-size="10" fill="#222">✓</text>
+<rect x="392" y="164" width="14" height="14" fill="#2e86c1"/>
+<text x="399.0" y="175" text-anchor="middle" font-size="10" fill="white">✓</text>
+<rect x="414" y="164" width="14" height="14" fill="#2e86c1"/>
+<text x="421.0" y="175" text-anchor="middle" font-size="10" fill="white">✓</text>
+<rect x="436" y="164" width="14" height="14" fill="#2e86c1"/>
+<text x="443.0" y="175" text-anchor="middle" font-size="10" fill="white">✓</text>
+<rect x="458" y="164" width="14" height="14" fill="#aed6f1"/>
+<text x="465.0" y="175" text-anchor="middle" font-size="10" fill="#222">✓</text>
+<text x="504" y="175" fill="#2e86c1">survives 3 deletions</text>
+<text x="644" y="175" fill="#333">same verdict in every draw</text>
+<text x="362" y="193" text-anchor="end">Qwen · bail setting · Evidence Strength</text>
+<rect x="370" y="182" width="14" height="14" fill="#d5d8dc"/>
+<text x="377.0" y="193" text-anchor="middle" font-size="10" fill="#222">✓</text>
+<rect x="392" y="182" width="14" height="14" fill="#aed6f1"/>
+<text x="399.0" y="193" text-anchor="middle" font-size="10" fill="#222">✓</text>
+<rect x="414" y="182" width="14" height="14" fill="#aed6f1"/>
+<text x="421.0" y="193" text-anchor="middle" font-size="10" fill="#222">✓</text>
+<rect x="436" y="182" width="14" height="14" fill="#f5b7b1"/>
+<text x="443.0" y="193" text-anchor="middle" font-size="10" fill="#222">✗</text>
+<rect x="458" y="182" width="14" height="14" fill="#aed6f1"/>
+<text x="465.0" y="193" text-anchor="middle" font-size="10" fill="#222">✓</text>
+<text x="504" y="193" fill="#2e86c1">survives 3 deletions</text>
+<text x="644" y="193" fill="#333">1 of 4 new draws differ</text>
+<text x="362" y="211" text-anchor="end">Qwen · lawyer interview · Legal knowledge</text>
+<rect x="370" y="200" width="14" height="14" fill="#566573"/>
+<text x="377.0" y="211" text-anchor="middle" font-size="10" fill="white">✓</text>
+<rect x="392" y="200" width="14" height="14" fill="#aed6f1"/>
+<text x="399.0" y="211" text-anchor="middle" font-size="10" fill="#222">✓</text>
+<rect x="414" y="200" width="14" height="14" fill="#aed6f1"/>
+<text x="421.0" y="211" text-anchor="middle" font-size="10" fill="#222">✓</text>
+<rect x="436" y="200" width="14" height="14" fill="#2e86c1"/>
+<text x="443.0" y="211" text-anchor="middle" font-size="10" fill="white">✓</text>
+<rect x="458" y="200" width="14" height="14" fill="#aed6f1"/>
+<text x="465.0" y="211" text-anchor="middle" font-size="10" fill="#222">✓</text>
+<text x="504" y="211" fill="#2e86c1">survives 3 deletions</text>
+<text x="644" y="211" fill="#333">same verdict in every draw</text>
+<text x="362" y="229" text-anchor="end">Qwen · lawyer interview · Communication clarity</text>
+<rect x="370" y="218" width="14" height="14" fill="#566573"/>
+<text x="377.0" y="229" text-anchor="middle" font-size="10" fill="white">✓</text>
+<rect x="392" y="218" width="14" height="14" fill="#2e86c1"/>
+<text x="399.0" y="229" text-anchor="middle" font-size="10" fill="white">✓</text>
+<rect x="414" y="218" width="14" height="14" fill="#2e86c1"/>
+<text x="421.0" y="229" text-anchor="middle" font-size="10" fill="white">✓</text>
+<rect x="436" y="218" width="14" height="14" fill="#2e86c1"/>
+<text x="443.0" y="229" text-anchor="middle" font-size="10" fill="white">✓</text>
+<rect x="458" y="218" width="14" height="14" fill="#2e86c1"/>
+<text x="465.0" y="229" text-anchor="middle" font-size="10" fill="white">✓</text>
+<text x="504" y="229" fill="#2e86c1">survives 3 deletions</text>
+<text x="644" y="229" fill="#333">same verdict in every draw</text>
+<text x="362" y="247" text-anchor="end">Qwen · lawyer interview · Confidence level</text>
+<rect x="370" y="236" width="14" height="14" fill="#566573"/>
+<text x="377.0" y="247" text-anchor="middle" font-size="10" fill="white">✓</text>
+<rect x="392" y="236" width="14" height="14" fill="#2e86c1"/>
+<text x="399.0" y="247" text-anchor="middle" font-size="10" fill="white">✓</text>
+<rect x="414" y="236" width="14" height="14" fill="#2e86c1"/>
+<text x="421.0" y="247" text-anchor="middle" font-size="10" fill="white">✓</text>
+<rect x="436" y="236" width="14" height="14" fill="#2e86c1"/>
+<text x="443.0" y="247" text-anchor="middle" font-size="10" fill="white">✓</text>
+<rect x="458" y="236" width="14" height="14" fill="#2e86c1"/>
+<text x="465.0" y="247" text-anchor="middle" font-size="10" fill="white">✓</text>
+<text x="504" y="247" fill="#2e86c1">survives 3 deletions</text>
+<text x="644" y="247" fill="#333">same verdict in every draw</text>
+<text x="362" y="265" text-anchor="end">Qwen · art auction · Bidder Risk Tolerance</text>
+<rect x="370" y="254" width="14" height="14" fill="#d5d8dc"/>
+<text x="377.0" y="265" text-anchor="middle" font-size="10" fill="#222">✗</text>
+<rect x="392" y="254" width="14" height="14" fill="#aed6f1"/>
+<text x="399.0" y="265" text-anchor="middle" font-size="10" fill="#222">✗</text>
+<rect x="414" y="254" width="14" height="14" fill="#aed6f1"/>
+<text x="421.0" y="265" text-anchor="middle" font-size="10" fill="#222">✗</text>
+<rect x="436" y="254" width="14" height="14" fill="#aed6f1"/>
+<text x="443.0" y="265" text-anchor="middle" font-size="10" fill="#222">✗</text>
+<rect x="458" y="254" width="14" height="14" fill="#aed6f1"/>
+<text x="465.0" y="265" text-anchor="middle" font-size="10" fill="#222">✗</text>
+<text x="504" y="265" fill="#c0392b">reversed by 1 cell</text>
+<text x="644" y="265" fill="#333">same verdict in every draw</text>
+<text x="362" y="283" text-anchor="end">Qwen · art auction · Starting Price</text>
+<rect x="370" y="272" width="14" height="14" fill="#566573"/>
+<text x="377.0" y="283" text-anchor="middle" font-size="10" fill="white">✓</text>
+<rect x="392" y="272" width="14" height="14" fill="#2e86c1"/>
+<text x="399.0" y="283" text-anchor="middle" font-size="10" fill="white">✓</text>
+<rect x="414" y="272" width="14" height="14" fill="#2e86c1"/>
+<text x="421.0" y="283" text-anchor="middle" font-size="10" fill="white">✓</text>
+<rect x="436" y="272" width="14" height="14" fill="#2e86c1"/>
+<text x="443.0" y="283" text-anchor="middle" font-size="10" fill="white">✓</text>
+<rect x="458" y="272" width="14" height="14" fill="#2e86c1"/>
+<text x="465.0" y="283" text-anchor="middle" font-size="10" fill="white">✓</text>
+<text x="504" y="283" fill="#2e86c1">survives 3 deletions</text>
+<text x="644" y="283" fill="#333">same verdict in every draw</text>
+<text x="362" y="301" text-anchor="end">Qwen · art auction · Bidding Strategy</text>
+<rect x="370" y="290" width="14" height="14" fill="#d5d8dc"/>
+<text x="377.0" y="301" text-anchor="middle" font-size="10" fill="#222">✓</text>
+<rect x="392" y="290" width="14" height="14" fill="#aed6f1"/>
+<text x="399.0" y="301" text-anchor="middle" font-size="10" fill="#222">✓</text>
+<rect x="414" y="290" width="14" height="14" fill="#aed6f1"/>
+<text x="421.0" y="301" text-anchor="middle" font-size="10" fill="#222">✓</text>
+<rect x="436" y="290" width="14" height="14" fill="#aed6f1"/>
+<text x="443.0" y="301" text-anchor="middle" font-size="10" fill="#222">✓</text>
+<rect x="458" y="290" width="14" height="14" fill="#aed6f1"/>
+<text x="465.0" y="301" text-anchor="middle" font-size="10" fill="#222">✓</text>
+<text x="504" y="301" fill="#e67e22">reversed by 2 cells</text>
+<text x="644" y="301" fill="#333">same verdict in every draw</text>
+<text x="362" y="319" text-anchor="end">GPT-Sol · mug bargaining · Buyer budget</text>
+<rect x="370" y="308" width="14" height="14" fill="#566573"/>
+<text x="377.0" y="319" text-anchor="middle" font-size="10" fill="white">+</text>
+<rect x="392" y="308" width="14" height="14" fill="#aed6f1"/>
+<text x="399.0" y="319" text-anchor="middle" font-size="10" fill="#222">+</text>
+<rect x="414" y="308" width="14" height="14" fill="#aed6f1"/>
+<text x="421.0" y="319" text-anchor="middle" font-size="10" fill="#222">+</text>
+<rect x="436" y="308" width="14" height="14" fill="#aed6f1"/>
+<text x="443.0" y="319" text-anchor="middle" font-size="10" fill="#222">+</text>
+<rect x="458" y="308" width="14" height="14" fill="#2e86c1"/>
+<text x="465.0" y="319" text-anchor="middle" font-size="10" fill="white">+</text>
+<text x="504" y="319" fill="#2e86c1">survives 3 deletions</text>
+<text x="644" y="319" fill="#333">same verdict in every draw</text>
+<text x="362" y="337" text-anchor="end">GPT-Sol · mug bargaining · Seller reservation price</text>
+<rect x="370" y="326" width="14" height="14" fill="#566573"/>
+<text x="377.0" y="337" text-anchor="middle" font-size="10" fill="white">−</text>
+<rect x="392" y="326" width="14" height="14" fill="#aed6f1"/>
+<text x="399.0" y="337" text-anchor="middle" font-size="10" fill="#222">−</text>
+<rect x="414" y="326" width="14" height="14" fill="#2e86c1"/>
+<text x="421.0" y="337" text-anchor="middle" font-size="10" fill="white">−</text>
+<rect x="436" y="326" width="14" height="14" fill="#aed6f1"/>
+<text x="443.0" y="337" text-anchor="middle" font-size="10" fill="#222">−</text>
+<rect x="458" y="326" width="14" height="14" fill="#aed6f1"/>
+<text x="465.0" y="337" text-anchor="middle" font-size="10" fill="#222">−</text>
+<text x="504" y="337" fill="#2e86c1">survives 3 deletions</text>
+<text x="644" y="337" fill="#333">same verdict in every draw</text>
+<text x="362" y="355" text-anchor="end">GPT-Sol · mug bargaining · Seller attachment</text>
+<rect x="370" y="344" width="14" height="14" fill="#d5d8dc"/>
+<text x="377.0" y="355" text-anchor="middle" font-size="10" fill="#222">+</text>
+<rect x="392" y="344" width="14" height="14" fill="#f5b7b1"/>
+<text x="399.0" y="355" text-anchor="middle" font-size="10" fill="#222">−</text>
+<rect x="414" y="344" width="14" height="14" fill="#aed6f1"/>
+<text x="421.0" y="355" text-anchor="middle" font-size="10" fill="#222">+</text>
+<rect x="436" y="344" width="14" height="14" fill="#aed6f1"/>
+<text x="443.0" y="355" text-anchor="middle" font-size="10" fill="#222">+</text>
+<rect x="458" y="344" width="14" height="14" fill="#aed6f1"/>
+<text x="465.0" y="355" text-anchor="middle" font-size="10" fill="#222">+</text>
+<text x="504" y="355" fill="#e67e22">reversed by 2 cells</text>
+<text x="644" y="355" fill="#333">1 of 4 new draws differ</text>
+<text x="362" y="373" text-anchor="end">GPT-Sol · mug bargaining · Outside option</text>
+<rect x="370" y="362" width="14" height="14" fill="#566573"/>
+<text x="377.0" y="373" text-anchor="middle" font-size="10" fill="white">−</text>
+<rect x="392" y="362" width="14" height="14" fill="#f5b7b1"/>
+<text x="399.0" y="373" text-anchor="middle" font-size="10" fill="#222">0</text>
+<rect x="414" y="362" width="14" height="14" fill="#2e86c1"/>
+<text x="421.0" y="373" text-anchor="middle" font-size="10" fill="white">−</text>
+<rect x="436" y="362" width="14" height="14" fill="#aed6f1"/>
+<text x="443.0" y="373" text-anchor="middle" font-size="10" fill="#222">−</text>
+<rect x="458" y="362" width="14" height="14" fill="#aed6f1"/>
+<text x="465.0" y="373" text-anchor="middle" font-size="10" fill="#222">−</text>
+<text x="504" y="373" fill="#2e86c1">survives 3 deletions</text>
+<text x="644" y="373" fill="#333">1 of 4 new draws differ</text>
+<text x="362" y="391" text-anchor="end">GPT-Sol · mug bargaining · Negotiation procedure</text>
+<rect x="370" y="380" width="14" height="14" fill="#566573"/>
+<text x="377.0" y="391" text-anchor="middle" font-size="10" fill="white">+</text>
+<rect x="392" y="380" width="14" height="14" fill="#aed6f1"/>
+<text x="399.0" y="391" text-anchor="middle" font-size="10" fill="#222">+</text>
+<rect x="414" y="380" width="14" height="14" fill="#2e86c1"/>
+<text x="421.0" y="391" text-anchor="middle" font-size="10" fill="white">+</text>
+<rect x="436" y="380" width="14" height="14" fill="#aed6f1"/>
+<text x="443.0" y="391" text-anchor="middle" font-size="10" fill="#222">+</text>
+<rect x="458" y="380" width="14" height="14" fill="#2e86c1"/>
+<text x="465.0" y="391" text-anchor="middle" font-size="10" fill="white">+</text>
+<text x="504" y="391" fill="#2e86c1">survives 3 deletions</text>
+<text x="644" y="391" fill="#333">same verdict in every draw</text>
+<text x="362" y="409" text-anchor="end">GPT-Sol · bail setting · Post-offense cooperation</text>
+<rect x="370" y="398" width="14" height="14" fill="#d5d8dc"/>
+<text x="377.0" y="409" text-anchor="middle" font-size="10" fill="#222">−</text>
+<rect x="392" y="398" width="14" height="14" fill="#aed6f1"/>
+<text x="399.0" y="409" text-anchor="middle" font-size="10" fill="#222">−</text>
+<rect x="414" y="398" width="14" height="14" fill="#aed6f1"/>
+<text x="421.0" y="409" text-anchor="middle" font-size="10" fill="#222">−</text>
+<rect x="436" y="398" width="14" height="14" fill="#2e86c1"/>
+<text x="443.0" y="409" text-anchor="middle" font-size="10" fill="white">−</text>
+<rect x="458" y="398" width="14" height="14" fill="#aed6f1"/>
+<text x="465.0" y="409" text-anchor="middle" font-size="10" fill="#222">−</text>
+<text x="504" y="409" fill="#b7950b">reversed by 3 cells</text>
+<text x="644" y="409" fill="#333">same verdict in every draw</text>
+<text x="362" y="427" text-anchor="end">GPT-Sol · bail setting · Prior convictions</text>
+<rect x="370" y="416" width="14" height="14" fill="#566573"/>
+<text x="377.0" y="427" text-anchor="middle" font-size="10" fill="white">+</text>
+<rect x="392" y="416" width="14" height="14" fill="#2e86c1"/>
+<text x="399.0" y="427" text-anchor="middle" font-size="10" fill="white">+</text>
+<rect x="414" y="416" width="14" height="14" fill="#aed6f1"/>
+<text x="421.0" y="427" text-anchor="middle" font-size="10" fill="#222">+</text>
+<rect x="436" y="416" width="14" height="14" fill="#2e86c1"/>
+<text x="443.0" y="427" text-anchor="middle" font-size="10" fill="white">+</text>
+<rect x="458" y="416" width="14" height="14" fill="#aed6f1"/>
+<text x="465.0" y="427" text-anchor="middle" font-size="10" fill="#222">+</text>
+<text x="504" y="427" fill="#2e86c1">survives 3 deletions</text>
+<text x="644" y="427" fill="#333">same verdict in every draw</text>
+<text x="362" y="445" text-anchor="end">GPT-Sol · bail setting · Flight risk</text>
+<rect x="370" y="434" width="14" height="14" fill="#566573"/>
+<text x="377.0" y="445" text-anchor="middle" font-size="10" fill="white">+</text>
+<rect x="392" y="434" width="14" height="14" fill="#2e86c1"/>
+<text x="399.0" y="445" text-anchor="middle" font-size="10" fill="white">+</text>
+<rect x="414" y="434" width="14" height="14" fill="#2e86c1"/>
+<text x="421.0" y="445" text-anchor="middle" font-size="10" fill="white">+</text>
+<rect x="436" y="434" width="14" height="14" fill="#2e86c1"/>
+<text x="443.0" y="445" text-anchor="middle" font-size="10" fill="white">+</text>
+<rect x="458" y="434" width="14" height="14" fill="#aed6f1"/>
+<text x="465.0" y="445" text-anchor="middle" font-size="10" fill="#222">+</text>
+<text x="504" y="445" fill="#2e86c1">survives 3 deletions</text>
+<text x="644" y="445" fill="#333">same verdict in every draw</text>
+<text x="362" y="463" text-anchor="end">GPT-Sol · bail setting · Community ties</text>
+<rect x="370" y="452" width="14" height="14" fill="#566573"/>
+<text x="377.0" y="463" text-anchor="middle" font-size="10" fill="white">−</text>
+<rect x="392" y="452" width="14" height="14" fill="#aed6f1"/>
+<text x="399.0" y="463" text-anchor="middle" font-size="10" fill="#222">−</text>
+<rect x="414" y="452" width="14" height="14" fill="#aed6f1"/>
+<text x="421.0" y="463" text-anchor="middle" font-size="10" fill="#222">−</text>
+<rect x="436" y="452" width="14" height="14" fill="#2e86c1"/>
+<text x="443.0" y="463" text-anchor="middle" font-size="10" fill="white">−</text>
+<rect x="458" y="452" width="14" height="14" fill="#aed6f1"/>
+<text x="465.0" y="463" text-anchor="middle" font-size="10" fill="#222">−</text>
+<text x="504" y="463" fill="#2e86c1">survives 3 deletions</text>
+<text x="644" y="463" fill="#333">same verdict in every draw</text>
+<text x="362" y="481" text-anchor="end">GPT-Sol · bail setting · Evidence strength</text>
+<rect x="370" y="470" width="14" height="14" fill="#566573"/>
+<text x="377.0" y="481" text-anchor="middle" font-size="10" fill="white">+</text>
+<rect x="392" y="470" width="14" height="14" fill="#aed6f1"/>
+<text x="399.0" y="481" text-anchor="middle" font-size="10" fill="#222">+</text>
+<rect x="414" y="470" width="14" height="14" fill="#aed6f1"/>
+<text x="421.0" y="481" text-anchor="middle" font-size="10" fill="#222">+</text>
+<rect x="436" y="470" width="14" height="14" fill="#2e86c1"/>
+<text x="443.0" y="481" text-anchor="middle" font-size="10" fill="white">+</text>
+<rect x="458" y="470" width="14" height="14" fill="#aed6f1"/>
+<text x="465.0" y="481" text-anchor="middle" font-size="10" fill="#222">+</text>
+<text x="504" y="481" fill="#2e86c1">survives 3 deletions</text>
+<text x="644" y="481" fill="#333">same verdict in every draw</text>
+<text x="362" y="499" text-anchor="end">GPT-Sol · lawyer interview · Bar status</text>
+<rect x="370" y="488" width="14" height="14" fill="#d5d8dc"/>
+<text x="377.0" y="499" text-anchor="middle" font-size="10" fill="#222">+</text>
+<rect x="392" y="488" width="14" height="14" fill="#aed6f1"/>
+<text x="399.0" y="499" text-anchor="middle" font-size="10" fill="#222">+</text>
+<rect x="414" y="488" width="14" height="14" fill="#2e86c1"/>
+<text x="421.0" y="499" text-anchor="middle" font-size="10" fill="white">+</text>
+<rect x="436" y="488" width="14" height="14" fill="#2e86c1"/>
+<text x="443.0" y="499" text-anchor="middle" font-size="10" fill="white">+</text>
+<rect x="458" y="488" width="14" height="14" fill="#aed6f1"/>
+<text x="465.0" y="499" text-anchor="middle" font-size="10" fill="#222">+</text>
+<text x="504" y="499" fill="#2e86c1">survives 3 deletions</text>
+<text x="644" y="499" fill="#333">same verdict in every draw</text>
+<text x="362" y="517" text-anchor="end">GPT-Sol · lawyer interview · Legal reasoning performance</text>
+<rect x="370" y="506" width="14" height="14" fill="#d5d8dc"/>
+<text x="377.0" y="517" text-anchor="middle" font-size="10" fill="#222">+</text>
+<rect x="392" y="506" width="14" height="14" fill="#aed6f1"/>
+<text x="399.0" y="517" text-anchor="middle" font-size="10" fill="#222">+</text>
+<rect x="414" y="506" width="14" height="14" fill="#2e86c1"/>
+<text x="421.0" y="517" text-anchor="middle" font-size="10" fill="white">+</text>
+<rect x="436" y="506" width="14" height="14" fill="#2e86c1"/>
+<text x="443.0" y="517" text-anchor="middle" font-size="10" fill="white">+</text>
+<rect x="458" y="506" width="14" height="14" fill="#2e86c1"/>
+<text x="465.0" y="517" text-anchor="middle" font-size="10" fill="white">+</text>
+<text x="504" y="517" fill="#2e86c1">survives 3 deletions</text>
+<text x="644" y="517" fill="#333">same verdict in every draw</text>
+<text x="362" y="535" text-anchor="end">GPT-Sol · lawyer interview · Communication clarity</text>
+<rect x="370" y="524" width="14" height="14" fill="#566573"/>
+<text x="377.0" y="535" text-anchor="middle" font-size="10" fill="white">+</text>
+<rect x="392" y="524" width="14" height="14" fill="#2e86c1"/>
+<text x="399.0" y="535" text-anchor="middle" font-size="10" fill="white">+</text>
+<rect x="414" y="524" width="14" height="14" fill="#2e86c1"/>
+<text x="421.0" y="535" text-anchor="middle" font-size="10" fill="white">+</text>
+<rect x="436" y="524" width="14" height="14" fill="#2e86c1"/>
+<text x="443.0" y="535" text-anchor="middle" font-size="10" fill="white">+</text>
+<rect x="458" y="524" width="14" height="14" fill="#2e86c1"/>
+<text x="465.0" y="535" text-anchor="middle" font-size="10" fill="white">+</text>
+<text x="504" y="535" fill="#2e86c1">survives 3 deletions</text>
+<text x="644" y="535" fill="#333">same verdict in every draw</text>
+<text x="362" y="553" text-anchor="end">GPT-Sol · lawyer interview · Relevant experience</text>
+<rect x="370" y="542" width="14" height="14" fill="#d5d8dc"/>
+<text x="377.0" y="553" text-anchor="middle" font-size="10" fill="#222">+</text>
+<rect x="392" y="542" width="14" height="14" fill="#aed6f1"/>
+<text x="399.0" y="553" text-anchor="middle" font-size="10" fill="#222">+</text>
+<rect x="414" y="542" width="14" height="14" fill="#aed6f1"/>
+<text x="421.0" y="553" text-anchor="middle" font-size="10" fill="#222">+</text>
+<rect x="436" y="542" width="14" height="14" fill="#2e86c1"/>
+<text x="443.0" y="553" text-anchor="middle" font-size="10" fill="white">+</text>
+<rect x="458" y="542" width="14" height="14" fill="#2e86c1"/>
+<text x="465.0" y="553" text-anchor="middle" font-size="10" fill="white">+</text>
+<text x="504" y="553" fill="#b7950b">reversed by 3 cells</text>
+<text x="644" y="553" fill="#333">same verdict in every draw</text>
+<text x="362" y="571" text-anchor="end">GPT-Sol · lawyer interview · Candidate height</text>
+<rect x="370" y="560" width="14" height="14" fill="#d5d8dc"/>
+<text x="377.0" y="571" text-anchor="middle" font-size="10" fill="#222">0</text>
+<rect x="392" y="560" width="14" height="14" fill="#f5b7b1"/>
+<text x="399.0" y="571" text-anchor="middle" font-size="10" fill="#222">−</text>
+<rect x="414" y="560" width="14" height="14" fill="#f5b7b1"/>
+<text x="421.0" y="571" text-anchor="middle" font-size="10" fill="#222">−</text>
+<rect x="436" y="560" width="14" height="14" fill="#f5b7b1"/>
+<text x="443.0" y="571" text-anchor="middle" font-size="10" fill="#222">−</text>
+<rect x="458" y="560" width="14" height="14" fill="#f5b7b1"/>
+<text x="465.0" y="571" text-anchor="middle" font-size="10" fill="#222">−</text>
+<text x="504" y="571" fill="#7f8c8d">zero effect</text>
+<text x="644" y="571" fill="#333">4 of 4 new draws differ</text>
+<text x="362" y="589" text-anchor="end">GPT-Sol · art auction · Bidder A valuation</text>
+<rect x="370" y="578" width="14" height="14" fill="#d5d8dc"/>
+<text x="377.0" y="589" text-anchor="middle" font-size="10" fill="#222">+</text>
+<rect x="392" y="578" width="14" height="14" fill="#aed6f1"/>
+<text x="399.0" y="589" text-anchor="middle" font-size="10" fill="#222">+</text>
+<rect x="414" y="578" width="14" height="14" fill="#aed6f1"/>
+<text x="421.0" y="589" text-anchor="middle" font-size="10" fill="#222">+</text>
+<rect x="436" y="578" width="14" height="14" fill="#aed6f1"/>
+<text x="443.0" y="589" text-anchor="middle" font-size="10" fill="#222">+</text>
+<rect x="458" y="578" width="14" height="14" fill="#f5b7b1"/>
+<text x="465.0" y="589" text-anchor="middle" font-size="10" fill="#222">−</text>
+<text x="504" y="589" fill="#b7950b">reversed by 3 cells</text>
+<text x="644" y="589" fill="#333">1 of 4 new draws differ</text>
+<text x="362" y="607" text-anchor="end">GPT-Sol · art auction · Bidder B valuation</text>
+<rect x="370" y="596" width="14" height="14" fill="#d5d8dc"/>
+<text x="377.0" y="607" text-anchor="middle" font-size="10" fill="#222">+</text>
+<rect x="392" y="596" width="14" height="14" fill="#aed6f1"/>
+<text x="399.0" y="607" text-anchor="middle" font-size="10" fill="#222">+</text>
+<rect x="414" y="596" width="14" height="14" fill="#aed6f1"/>
+<text x="421.0" y="607" text-anchor="middle" font-size="10" fill="#222">+</text>
+<rect x="436" y="596" width="14" height="14" fill="#f5b7b1"/>
+<text x="443.0" y="607" text-anchor="middle" font-size="10" fill="#222">−</text>
+<rect x="458" y="596" width="14" height="14" fill="#aed6f1"/>
+<text x="465.0" y="607" text-anchor="middle" font-size="10" fill="#222">+</text>
+<text x="504" y="607" fill="#e67e22">reversed by 2 cells</text>
+<text x="644" y="607" fill="#333">1 of 4 new draws differ</text>
+<text x="362" y="625" text-anchor="end">GPT-Sol · art auction · Bidder C valuation</text>
+<rect x="370" y="614" width="14" height="14" fill="#d5d8dc"/>
+<text x="377.0" y="625" text-anchor="middle" font-size="10" fill="#222">+</text>
+<rect x="392" y="614" width="14" height="14" fill="#2e86c1"/>
+<text x="399.0" y="625" text-anchor="middle" font-size="10" fill="white">+</text>
+<rect x="414" y="614" width="14" height="14" fill="#aed6f1"/>
+<text x="421.0" y="625" text-anchor="middle" font-size="10" fill="#222">+</text>
+<rect x="436" y="614" width="14" height="14" fill="#2e86c1"/>
+<text x="443.0" y="625" text-anchor="middle" font-size="10" fill="white">+</text>
+<rect x="458" y="614" width="14" height="14" fill="#2e86c1"/>
+<text x="465.0" y="625" text-anchor="middle" font-size="10" fill="white">+</text>
+<text x="504" y="625" fill="#b7950b">reversed by 3 cells</text>
+<text x="644" y="625" fill="#333">same verdict in every draw</text>
+<text x="362" y="643" text-anchor="end">GPT-Sol · art auction · Bid increment</text>
+<rect x="370" y="632" width="14" height="14" fill="#566573"/>
+<text x="377.0" y="643" text-anchor="middle" font-size="10" fill="white">+</text>
+<rect x="392" y="632" width="14" height="14" fill="#2e86c1"/>
+<text x="399.0" y="643" text-anchor="middle" font-size="10" fill="white">+</text>
+<rect x="414" y="632" width="14" height="14" fill="#2e86c1"/>
+<text x="421.0" y="643" text-anchor="middle" font-size="10" fill="white">+</text>
+<rect x="436" y="632" width="14" height="14" fill="#2e86c1"/>
+<text x="443.0" y="643" text-anchor="middle" font-size="10" fill="white">+</text>
+<rect x="458" y="632" width="14" height="14" fill="#2e86c1"/>
+<text x="465.0" y="643" text-anchor="middle" font-size="10" fill="white">+</text>
+<text x="504" y="643" fill="#2e86c1">survives 3 deletions</text>
+<text x="644" y="643" fill="#333">same verdict in every draw</text>
+<text x="362" y="661" text-anchor="end">GPT-Sol · art auction · Information regime</text>
+<rect x="370" y="650" width="14" height="14" fill="#566573"/>
+<text x="377.0" y="661" text-anchor="middle" font-size="10" fill="white">−</text>
+<rect x="392" y="650" width="14" height="14" fill="#2e86c1"/>
+<text x="399.0" y="661" text-anchor="middle" font-size="10" fill="white">−</text>
+<rect x="414" y="650" width="14" height="14" fill="#2e86c1"/>
+<text x="421.0" y="661" text-anchor="middle" font-size="10" fill="white">−</text>
+<rect x="436" y="650" width="14" height="14" fill="#aed6f1"/>
+<text x="443.0" y="661" text-anchor="middle" font-size="10" fill="#222">−</text>
+<rect x="458" y="650" width="14" height="14" fill="#aed6f1"/>
+<text x="465.0" y="661" text-anchor="middle" font-size="10" fill="#222">−</text>
+<text x="504" y="661" fill="#2e86c1">survives 3 deletions</text>
+<text x="644" y="661" fill="#333">same verdict in every draw</text>
+<rect x="20" y="682" width="12" height="12" fill="#566573"/>
+<text x="38" y="692">original draw, |t| > 2</text>
+<rect x="250" y="682" width="12" height="12" fill="#d5d8dc"/>
+<text x="268" y="692">original draw, |t| ≤ 2</text>
+<rect x="480" y="682" width="12" height="12" fill="#2e86c1"/>
+<text x="498" y="692">same verdict, |t| > 2</text>
+<rect x="20" y="700" width="12" height="12" fill="#aed6f1"/>
+<text x="38" y="710">same verdict, |t| ≤ 2</text>
+<rect x="250" y="700" width="12" height="12" fill="#c0392b"/>
+<text x="268" y="710">different verdict, |t| > 2</text>
+<rect x="480" y="700" width="12" height="12" fill="#f5b7b1"/>
+<text x="498" y="710">different verdict, |t| ≤ 2</text>
+<text x="20" y="734" font-size="11" fill="#555">Verdict: Qwen levers, ✓ if Qwen's own predicted direction holds; GPT-Sol levers, sign of the high-minus-low contrast on the primary outcome.</text>
+<text x="20" y="750" font-size="11" fill="#555">|t| = |OLS coefficient| / HC1 robust SE from outcome ~ 1 + level indices, fitted separately in each draw.</text>
+</svg>

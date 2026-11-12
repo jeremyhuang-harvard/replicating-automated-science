@@ -1,0 +1,108 @@
+{
+  "agents": [
+    {
+      "constraints": [
+        "Must follow legal guidelines",
+        "Cannot consider unrelated factors",
+        "Must account for flight risk"
+      ],
+      "goal": "Set bail in a manner that balances defendant's right to freedom with public safety",
+      "name": "Judge",
+      "role": "Legal authority responsible for determining bail"
+    },
+    {
+      "constraints": [
+        "Cannot make false claims",
+        "Must present evidence",
+        "Cannot disclose confidential information"
+      ],
+      "goal": "Advocate for the defendant's release on bail",
+      "name": "Defense Attorney",
+      "role": "Legal representative of the defendant"
+    },
+    {
+      "constraints": [
+        "Cannot present irrelevant evidence",
+        "Must follow legal procedures",
+        "Cannot threaten the defendant"
+      ],
+      "goal": "Ensure defendant remains in custody to prevent flight",
+      "name": "Prosecutor",
+      "role": "Legal representative of the state"
+    }
+  ],
+  "causes": [
+    {
+      "hypothesis": "Higher flight risk leads to higher bail",
+      "name": "Flight risk",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "Low",
+        "Medium",
+        "High"
+      ]
+    },
+    {
+      "hypothesis": "Presence of assets leads to lower bail",
+      "name": "Asset forfeiture",
+      "predicted_direction": "decrease",
+      "treatment_values": [
+        "No assets",
+        "Some assets",
+        "Significant assets"
+      ]
+    },
+    {
+      "hypothesis": "More prior convictions lead to higher bail",
+      "name": "Prior criminal record",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "No prior record",
+        "One prior conviction",
+        "Multiple prior convictions"
+      ]
+    }
+  ],
+  "information_scope": {
+    "private": [
+      {
+        "agent": "Defense Attorney",
+        "information": [
+          "Defendant's financial status",
+          "Witness testimony",
+          "Evidence of intent"
+        ]
+      },
+      {
+        "agent": "Prosecutor",
+        "information": [
+          "Evidence of flight risk",
+          "Prior criminal record details",
+          "Asset location"
+        ]
+      }
+    ],
+    "public": [
+      "Tax fraud amount",
+      "Charge severity",
+      "Legal statutes"
+    ]
+  },
+  "interaction": {
+    "max_turns": 3,
+    "order": [
+      "Judge",
+      "Defense Attorney",
+      "Prosecutor"
+    ],
+    "stopping_rule": "Judge makes final bail decision after considering all inputs"
+  },
+  "outcome": {
+    "measurement_question": "What is the exact bail amount determined by the judge?",
+    "name": "Bail amount",
+    "operationalization": "The monetary amount set by the judge as bail",
+    "respondent": "Judge"
+  },
+  "scenario": "a judge is setting bail for a criminal defendant who committed 50,000 dollars in tax fraud",
+  "schema_version": "scientist-design-v1"
+}

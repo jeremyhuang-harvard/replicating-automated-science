@@ -1,0 +1,102 @@
+{
+  "agents": [
+    {
+      "constraints": [
+        "Evaluate based on experience and communication skills"
+      ],
+      "goal": "Assess the candidate's suitability for the legal position",
+      "name": "Interviewer",
+      "role": "Hiring manager"
+    },
+    {
+      "constraints": [
+        "Answer questions clearly and concisely"
+      ],
+      "goal": "Demonstrate competence and secure the job",
+      "name": "Candidate",
+      "role": "Job applicant"
+    },
+    {
+      "constraints": [
+        "Provide feedback on cultural fit"
+      ],
+      "goal": "Ensure the candidate meets the firm's standards",
+      "name": "Recruiter",
+      "role": "HR representative"
+    }
+  ],
+  "causes": [
+    {
+      "hypothesis": "Strong communication skills increase the likelihood of a job offer",
+      "name": "Communication Skills",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "Clear articulation of legal cases",
+        "Confident presentation of arguments",
+        "Effective listening"
+      ]
+    },
+    {
+      "hypothesis": "More legal experience increases the chances of receiving a job offer",
+      "name": "Legal Experience",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "1 year in corporate law",
+        "3 years in criminal law",
+        "5 years in litigation"
+      ]
+    },
+    {
+      "hypothesis": "Better alignment with firm culture increases the likelihood of a job offer",
+      "name": "Cultural Fit",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "Strong teamwork orientation",
+        "Adaptability to firm norms",
+        "Positive attitude"
+      ]
+    }
+  ],
+  "information_scope": {
+    "private": [
+      {
+        "agent": "Candidate",
+        "information": [
+          "Candidate's past legal cases",
+          "Candidate's salary expectations",
+          "Candidate's work history"
+        ]
+      },
+      {
+        "agent": "Interviewer",
+        "information": [
+          "Interviewer's personal biases",
+          "Firm's hiring trends",
+          "Interviewer's past hiring decisions"
+        ]
+      }
+    ],
+    "public": [
+      "Interviewer's firm background",
+      "Job description",
+      "Recruiter's role"
+    ]
+  },
+  "interaction": {
+    "max_turns": 3,
+    "order": [
+      "Interviewer",
+      "Candidate",
+      "Recruiter"
+    ],
+    "stopping_rule": "The interaction stops after the recruiter provides feedback on the candidate's cultural fit."
+  },
+  "outcome": {
+    "measurement_question": "Did the candidate receive a job offer after the interview?",
+    "name": "Job Offer",
+    "operationalization": "Whether the candidate receives a formal offer",
+    "respondent": "Candidate"
+  },
+  "scenario": "A person is interviewing for a job as a lawyer",
+  "schema_version": "scientist-design-v1"
+}

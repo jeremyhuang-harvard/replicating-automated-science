@@ -1,0 +1,23 @@
+{
+  "stage": "scientist-designs",
+  "seed": 20261814,
+  "command": [
+    "uv",
+    "run",
+    "assr-replication",
+    "generate-designs",
+    "--output-dir",
+    "outputs/scientist-design-repeats-qwen3-8b-2026-11-11/base-seed-20261814",
+    "--model",
+    "mlx-community/Qwen3-8B-4bit",
+    "--max-tokens",
+    "2200",
+    "--base-seed",
+    "20261814"
+  ],
+  "cwd": "case-studies/automated-social-science",
+  "started_at": "2026-11-11T21:19:35.413133+00:00",
+  "completed_at": "2026-11-11T21:20:56.849626+00:00",
+  "runtime_seconds": 81.4,
+  "model": "mlx-community/Qwen3-8B-4bit"
+}

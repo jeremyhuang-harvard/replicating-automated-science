@@ -2,6 +2,7 @@
 
 import csv
 import hashlib
+import itertools
 import importlib.util
 import json
 import re
@@ -118,3 +119,143 @@ def test_no_credentials_or_machine_paths_in_tracked_files():
         if path.suffix in {".png", ".pdf"} or path.name == "test_results.py":
             continue
         assert not pattern.search(path.read_text(errors="ignore")), name
+
+
+# ----------------------------------------------------------------------------- repeated seeds (Nov 2026)
+
+def test_every_repeated_seed_run_is_complete():
+    assert len(mr.scientist_runs()) == 11
+    assert len(mr.qwen_subject_runs()) == len(mr.sol_subject_runs()) == len(mr.parrot_runs()) == 5
+    for run in mr.qwen_subject_runs() + mr.sol_subject_runs():
+        cells = [(p.parent.name, c["cell_id"]) for p in (run / "studies").glob("*/cells.jsonl") for c in mr.load_jsonl(p)]
+        assert len(cells) == len(set(cells)) == 108, run.name
+    for run in mr.scientist_runs():
+        assert len(mr.load_json(run / "validation_report.json")["scenarios"]) == 4
+
+
+def test_repeated_runs_change_only_the_seed():
+    """Same execution designs and design bundle as the originals; only seeds differ."""
+    for run in mr.qwen_subject_runs()[1:]:
+        for study in mr.QWEN_STUDIES:
+            assert (run / "finalizations" / study / "finalized.json").read_bytes() == \
+                (mr.QWEN_RUN / "finalizations" / study / "finalized.json").read_bytes()
+            assert mr.load_json(run / "studies" / study / "finalized_design.json") == \
+                mr.load_json(mr.QWEN_RUN / "studies" / study / "finalized_design.json")
+        assert not list(run.glob("finalizations/*/raw_calls.jsonl"))  # no compiler calls were made
+    original = mr.load_json(mr.SOL_RUN / "prompt_config_snapshot.json")
+    for run in mr.sol_subject_runs()[1:]:
+        assert mr.load_json(run / "design_bundle.json") == mr.load_json(mr.SOL_RUN / "design_bundle.json")
+        snap = mr.load_json(run / "prompt_config_snapshot.json")
+        assert {k: v for k, v in snap.items() if k != "base_seed"} == \
+            {k: v for k, v in original.items() if k != "base_seed"}
+    v2 = mr.load_json(mr.parrot_runs()[0] / "results.json")
+    for run in mr.parrot_runs()[1:]:
+        res = mr.load_json(run / "results.json")
+        assert res["image"] == v2["image"] and res["model"] == v2["model"]
+        for cond in mr.PARROT_CONDITIONS:
+            assert [x["persona"] for x in res[cond]["responses"]] == [x["persona"] for x in v2[cond]["responses"]]
+
+
+def test_no_two_runs_of_a_stage_share_a_seed():
+    def seeds(paths):
+        return {mr.json.dumps(c["request"]["metadata"]["seed"]) for p in paths for c in mr.load_jsonl(p)}
+    for runs in (mr.qwen_subject_runs(), mr.sol_subject_runs()):
+        sets = [seeds(sorted((run / "studies").glob("*/raw_calls.jsonl"))) for run in runs]
+        for a, b in itertools.combinations(sets, 2):
+            assert not a & b
+    sets = [set(mr.load_json(run / "manifest.json")["seeds_used"]) for run in mr.scientist_runs()]
+    for a, b in itertools.combinations(sets, 2):
+        assert not a & b
+    assert len({mr.load_json(run / "results.json")["seed"] for run in mr.parrot_runs()}) == 5
+
+
+def test_every_committed_results_file_matches_a_fresh_build(tmp_path, monkeypatch):
+    monkeypatch.setattr(mr, "OUT", tmp_path)
+    monkeypatch.setattr(mr, "ROOT", tmp_path.parent)
+    mr.main()
+    fresh = sorted(p.name for p in tmp_path.iterdir())
+    assert fresh == sorted(p.name for p in (ROOT / "results").iterdir())
+    for name in fresh:
+        assert (tmp_path / name).read_bytes() == (ROOT / "results" / name).read_bytes(), name
+
+
+def test_repeated_qwen_subject_draws_headline():
+    q = TABLES["rep_summary"][0]
+    assert q["draws_per_cell"] == 5
+    assert (q["verdict_same_in_all_draws"], q["verdict_flips_in_some_new_draw"]) == (10, 2)
+    assert (q["fragile_1_2_cells"], q["fragile_1_2_cells_that_flip"], q["robust"], q["robust_that_flip"]) == (4, 1, 8, 1)
+    assert (q["abs_t_above_2_in_every_draw"], q["abs_t_above_2_in_some_draws"], q["abs_t_above_2_in_no_draw"]) == (4, 3, 5)
+    assert q["predictions_held_by_draw"] == "9; 10; 10; 9; 10"
+    assert (q["single_draws_matching_pooled"], q["single_draws"], q["original_differs_from_pooled"]) == (58, 60, 1)
+    stab = by_lever(TABLES["rep_qwen_stab"])
+    # the one deletion-fragile lever whose verdict changes: mediator presence fails once, holds four times
+    assert stab[("mug bargaining", "mediator's presence")]["draws_prediction_holds"] == 4
+    assert stab[("bail setting", "Severity of Tax Fraud")]["draws_prediction_holds"] == 5
+    assert stab[("art auction", "Bidding Strategy")]["draws_prediction_holds"] == 5
+    assert stab[("art auction", "Bidder Risk Tolerance")]["draws_prediction_holds"] == 0
+    assert stab[("bail setting", "Evidence Strength")]["draws_prediction_holds"] == 4
+
+
+def test_repeated_scientist_draws_headline():
+    rows = {r["scenario"]: r for r in TABLES["sci_summary"]}
+    assert all(r["draws"] == r["valid_designs"] == 11 for r in rows.values())
+    assert sum(r["invalid_attempts"] for r in rows.values()) == 5
+    assert [rows[s]["distinct_lever_sets_names"] for s in rows] == [6, 9, 6, 9]
+    assert [rows[s]["new_draws_with_original_name_set"] for s in rows] == [0, 2, 3, 0]
+    assert [rows[s]["mean_jaccard_names"] for s in rows] == [0.236, 0.242, 0.431, 0.189]
+    assert [rows[s]["mean_jaccard_concepts"] for s in rows] == [0.405, 0.415, 0.567, 0.307]
+    orig = [x for x in TABLES["sci_freq"] if x["in_original_draw"]]
+    assert len(orig) == 12 and sum(x["draws_with_lever"] - 1 for x in orig) == 68
+    freq = {(x["scenario"], x["concept"]): x for x in TABLES["sci_freq"]}
+    assert freq[("mug bargaining", "mediator's presence")]["draws_with_lever"] == 1
+    assert freq[("lawyer interview", "communication")]["draws_with_lever"] == 11
+    assert freq[("mug bargaining", "buyer's budget / willingness to pay")]["predicted_directions"] == "decrease 3; increase 6"
+
+
+def test_repeated_parrot_seeds_separate_seed_noise_from_wording():
+    rows = {r["comparison"]: r for r in TABLES["parrot_seed_agree"]}
+    same = [r for k, r in rows.items() if k.startswith("same prompt")]
+    assert [r["identical_mean"] for r in same] == [44.0, 43.6, 40.6]
+    user_vs_system = rows["prompt changed, any seeds: persona in user prompt vs system prompt (separate calls)"]
+    assert (user_vs_system["pairs"], user_vs_system["identical_mean"]) == (25, 34.6)
+    joint_vs_sep = rows["prompt changed, any seeds: one call with full context vs separate calls"]
+    assert joint_vs_sep["identical_mean"] == 22.0
+
+
+def test_repeated_sol_subject_draws_headline():
+    s = TABLES["rep_summary"][1]
+    assert s["draws_per_cell"] == 5
+    assert (s["verdict_same_in_all_draws"], s["verdict_flips_in_some_new_draw"]) == (15, 5)
+    assert (s["fragile_1_2_cells"], s["fragile_1_2_cells_that_flip"], s["fragile_3_cells"],
+            s["fragile_3_cells_that_flip"], s["robust"], s["robust_that_flip"]) == (2, 2, 4, 1, 13, 1)
+    assert (s["abs_t_above_2_in_every_draw"], s["abs_t_above_2_in_some_draws"], s["abs_t_above_2_in_no_draw"]) == (2, 14, 4)
+    assert (s["single_draws_matching_pooled"], s["single_draws"]) == (95, 100)
+    stab = by_lever(TABLES["rep_sol_stab"])
+    differ = sorted(lever for (_, lever), x in stab.items() if x["new_draws_same_verdict"] < x["new_draws"])
+    assert differ == ["Bidder A valuation", "Bidder B valuation", "Candidate height", "Outside option",
+                      "Seller attachment"]
+    assert (stab[("mug bargaining", "Outside option")]["draws_zero"],
+            stab[("mug bargaining", "Outside option")]["draws_negative"]) == (1, 4)
+
+
+def test_repeated_cells_often_replay_the_same_outcome():
+    rows = {(r["designs"], r["study"]): r for r in TABLES["cell_redraw"]}
+    assert rows[("Qwen designs", "bail setting")]["share_identical_outcome"] == 0.833
+    assert rows[("Qwen designs", "art auction")]["share_identical_transcript"] == 0.602
+    assert all(r["cell_draw_pairs"] == 108 for r in rows.values())
+
+
+def test_parrot_polarisation_is_steady_across_seeds():
+    full = [r["purchase_range"] for r in TABLES["parrot_seed_segs"]
+            if r["condition"] == "EP personas, one call, full context"]
+    assert sorted(full) == [3, 3, 3, 3, 3.25]
+
+
+def test_repeat_ledger_runtime():
+    ledger = TABLES["rep_ledger"]
+    assert len(ledger) == 22
+    assert round(sum(x["minutes"] for x in ledger)) == 237
+    assert sum(x["failed"] for x in ledger) == 2
+    assert sum(x["model_calls"] for x in ledger) == 6709
+    assert sum(x["model_calls"] for x in ledger if x["stage"] == "Qwen scientist designs") == 45
+    assert sum(x["model_calls"] for x in TABLES["ledger"]) + 6709 == 8498  # README: "nearly 8,500"

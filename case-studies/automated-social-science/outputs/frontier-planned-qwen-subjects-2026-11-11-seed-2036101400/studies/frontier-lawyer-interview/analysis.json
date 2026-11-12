@@ -1,0 +1,389 @@
+{
+  "caveat": "Descriptive one-draw local-model evidence: one model draw per OA cell, not repeated sampling and not human behavior.",
+  "counts": {
+    "complete": 27,
+    "failed": 0,
+    "rows": 27
+  },
+  "main_effect_marginals": {
+    "Bar status": [
+      {
+        "level": "not passed",
+        "level_index": 0,
+        "n": 9,
+        "outcomes": {
+          "hire": {
+            "max": 1.0,
+            "mean": 0.5555555555555556,
+            "min": 0.0,
+            "n": 9,
+            "non_null": 9,
+            "type": "binary"
+          },
+          "rating": {
+            "max": 95.0,
+            "mean": 70.0,
+            "min": 40.0,
+            "n": 9,
+            "non_null": 9,
+            "type": "bounded_number"
+          }
+        }
+      },
+      {
+        "level": "results pending",
+        "level_index": 1,
+        "n": 9,
+        "outcomes": {
+          "hire": {
+            "max": 1.0,
+            "mean": 0.6666666666666666,
+            "min": 0.0,
+            "n": 9,
+            "non_null": 9,
+            "type": "binary"
+          },
+          "rating": {
+            "max": 95.0,
+            "mean": 77.77777777777777,
+            "min": 45.0,
+            "n": 9,
+            "non_null": 9,
+            "type": "bounded_number"
+          }
+        }
+      },
+      {
+        "level": "admitted",
+        "level_index": 2,
+        "n": 9,
+        "outcomes": {
+          "hire": {
+            "max": 1.0,
+            "mean": 0.7777777777777778,
+            "min": 0.0,
+            "n": 9,
+            "non_null": 9,
+            "type": "binary"
+          },
+          "rating": {
+            "max": 95.0,
+            "mean": 81.66666666666667,
+            "min": 45.0,
+            "n": 9,
+            "non_null": 9,
+            "type": "bounded_number"
+          }
+        }
+      }
+    ],
+    "Candidate height": [
+      {
+        "level": 165,
+        "level_index": 0,
+        "n": 9,
+        "outcomes": {
+          "hire": {
+            "max": 1.0,
+            "mean": 0.8888888888888888,
+            "min": 0.0,
+            "n": 9,
+            "non_null": 9,
+            "type": "binary"
+          },
+          "rating": {
+            "max": 95.0,
+            "mean": 87.22222222222223,
+            "min": 45.0,
+            "n": 9,
+            "non_null": 9,
+            "type": "bounded_number"
+          }
+        }
+      },
+      {
+        "level": 180,
+        "level_index": 1,
+        "n": 9,
+        "outcomes": {
+          "hire": {
+            "max": 1.0,
+            "mean": 0.4444444444444444,
+            "min": 0.0,
+            "n": 9,
+            "non_null": 9,
+            "type": "binary"
+          },
+          "rating": {
+            "max": 95.0,
+            "mean": 67.77777777777777,
+            "min": 45.0,
+            "n": 9,
+            "non_null": 9,
+            "type": "bounded_number"
+          }
+        }
+      },
+      {
+        "level": 195,
+        "level_index": 2,
+        "n": 9,
+        "outcomes": {
+          "hire": {
+            "max": 1.0,
+            "mean": 0.6666666666666666,
+            "min": 0.0,
+            "n": 9,
+            "non_null": 9,
+            "type": "binary"
+          },
+          "rating": {
+            "max": 95.0,
+            "mean": 74.44444444444444,
+            "min": 40.0,
+            "n": 9,
+            "non_null": 9,
+            "type": "bounded_number"
+          }
+        }
+      }
+    ],
+    "Communication clarity": [
+      {
+        "level": "low",
+        "level_index": 0,
+        "n": 9,
+        "outcomes": {
+          "hire": {
+            "max": 1.0,
+            "mean": 0.2222222222222222,
+            "min": 0.0,
+            "n": 9,
+            "non_null": 9,
+            "type": "binary"
+          },
+          "rating": {
+            "max": 95.0,
+            "mean": 55.55555555555556,
+            "min": 40.0,
+            "n": 9,
+            "non_null": 9,
+            "type": "bounded_number"
+          }
+        }
+      },
+      {
+        "level": "medium",
+        "level_index": 1,
+        "n": 9,
+        "outcomes": {
+          "hire": {
+            "max": 1.0,
+            "mean": 0.8888888888888888,
+            "min": 0.0,
+            "n": 9,
+            "non_null": 9,
+            "type": "binary"
+          },
+          "rating": {
+            "max": 95.0,
+            "mean": 86.66666666666667,
+            "min": 50.0,
+            "n": 9,
+            "non_null": 9,
+            "type": "bounded_number"
+          }
+        }
+      },
+      {
+        "level": "high",
+        "level_index": 2,
+        "n": 9,
+        "outcomes": {
+          "hire": {
+            "max": 1.0,
+            "mean": 0.8888888888888888,
+            "min": 0.0,
+            "n": 9,
+            "non_null": 9,
+            "type": "binary"
+          },
+          "rating": {
+            "max": 95.0,
+            "mean": 87.22222222222223,
+            "min": 65.0,
+            "n": 9,
+            "non_null": 9,
+            "type": "bounded_number"
+          }
+        }
+      }
+    ],
+    "Legal reasoning performance": [
+      {
+        "level": "weak",
+        "level_index": 0,
+        "n": 9,
+        "outcomes": {
+          "hire": {
+            "max": 1.0,
+            "mean": 0.5555555555555556,
+            "min": 0.0,
+            "n": 9,
+            "non_null": 9,
+            "type": "binary"
+          },
+          "rating": {
+            "max": 95.0,
+            "mean": 70.0,
+            "min": 45.0,
+            "n": 9,
+            "non_null": 9,
+            "type": "bounded_number"
+          }
+        }
+      },
+      {
+        "level": "average",
+        "level_index": 1,
+        "n": 9,
+        "outcomes": {
+          "hire": {
+            "max": 1.0,
+            "mean": 0.7777777777777778,
+            "min": 0.0,
+            "n": 9,
+            "non_null": 9,
+            "type": "binary"
+          },
+          "rating": {
+            "max": 95.0,
+            "mean": 81.11111111111111,
+            "min": 40.0,
+            "n": 9,
+            "non_null": 9,
+            "type": "bounded_number"
+          }
+        }
+      },
+      {
+        "level": "strong",
+        "level_index": 2,
+        "n": 9,
+        "outcomes": {
+          "hire": {
+            "max": 1.0,
+            "mean": 0.6666666666666666,
+            "min": 0.0,
+            "n": 9,
+            "non_null": 9,
+            "type": "binary"
+          },
+          "rating": {
+            "max": 95.0,
+            "mean": 78.33333333333333,
+            "min": 45.0,
+            "n": 9,
+            "non_null": 9,
+            "type": "bounded_number"
+          }
+        }
+      }
+    ],
+    "Relevant experience": [
+      {
+        "level": 0,
+        "level_index": 0,
+        "n": 9,
+        "outcomes": {
+          "hire": {
+            "max": 1.0,
+            "mean": 0.6666666666666666,
+            "min": 0.0,
+            "n": 9,
+            "non_null": 9,
+            "type": "binary"
+          },
+          "rating": {
+            "max": 95.0,
+            "mean": 73.88888888888889,
+            "min": 45.0,
+            "n": 9,
+            "non_null": 9,
+            "type": "bounded_number"
+          }
+        }
+      },
+      {
+        "level": 2,
+        "level_index": 1,
+        "n": 9,
+        "outcomes": {
+          "hire": {
+            "max": 1.0,
+            "mean": 0.6666666666666666,
+            "min": 0.0,
+            "n": 9,
+            "non_null": 9,
+            "type": "binary"
+          },
+          "rating": {
+            "max": 95.0,
+            "mean": 77.22222222222223,
+            "min": 40.0,
+            "n": 9,
+            "non_null": 9,
+            "type": "bounded_number"
+          }
+        }
+      },
+      {
+        "level": 6,
+        "level_index": 2,
+        "n": 9,
+        "outcomes": {
+          "hire": {
+            "max": 1.0,
+            "mean": 0.6666666666666666,
+            "min": 0.0,
+            "n": 9,
+            "non_null": 9,
+            "type": "binary"
+          },
+          "rating": {
+            "max": 95.0,
+            "mean": 78.33333333333333,
+            "min": 45.0,
+            "n": 9,
+            "non_null": 9,
+            "type": "bounded_number"
+          }
+        }
+      }
+    ]
+  },
+  "outcome_summaries": {
+    "hire": {
+      "max": 1.0,
+      "mean": 0.6666666666666666,
+      "min": 0.0,
+      "n": 27,
+      "non_null": 27,
+      "type": "binary"
+    },
+    "rating": {
+      "max": 95.0,
+      "mean": 76.48148148148148,
+      "min": 40.0,
+      "n": 27,
+      "non_null": 27,
+      "type": "bounded_number"
+    }
+  },
+  "schema_version": 1,
+  "study_id": "frontier-lawyer-interview",
+  "study_summary": {
+    "hire_rate": 0.6666666666666666,
+    "mean_rating": 76.48148148148148
+  }
+}

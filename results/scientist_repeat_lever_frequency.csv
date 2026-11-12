@@ -1,0 +1,31 @@
+scenario,concept,draws_with_lever,valid_draws,in_original_draw,names_used,predicted_directions
+mug bargaining,buyer's budget / willingness to pay,9,11,True,bob's maximum willingness to pay; buyer's budget; buyer's budget constraint; buyer's maximum willingness to pay,decrease 3; increase 6
+mug bargaining,mug's value / quality,7,11,False,mug quality; mug's perceived value; mug's true value,increase 7
+mug bargaining,seller's reservation price,7,11,False,alice's reservation price; seller's reservation price,increase 7
+mug bargaining,opening offer,4,11,True,initial offer,decrease 1; increase 3
+mug bargaining,counteroffer,2,11,False,counteroffer,decrease 2
+mug bargaining,negotiation strategy,2,11,False,negotiation strategy,increase 2
+mug bargaining,initial price expectation,1,11,False,initial price expectation,increase 1
+mug bargaining,mediator's presence,1,11,True,mediator's presence,non_monotonic 1
+bail setting,criminal history,10,11,True,defendant's criminal history; prior criminal record,increase 10
+bail setting,offense severity,8,11,True,severity of crime; severity of tax fraud,increase 8
+bail setting,defendant's finances,4,11,False,defendant's financial status; evidence of financial capability; evidence of financial stability,decrease 4
+bail setting,evidence strength,4,11,True,evidence strength,increase 4
+bail setting,flight risk,3,11,False,defendant's flight risk; flight risk,increase 3
+bail setting,public safety,2,11,False,public safety; public safety concerns,increase 2
+bail setting,asset forfeiture,1,11,False,asset forfeiture,decrease 1
+bail setting,evidence of intent,1,11,False,evidence of intent,increase 1
+lawyer interview,communication,11,11,True,communication clarity; communication skills,increase 11
+lawyer interview,confidence level,8,11,True,confidence level,increase 8
+lawyer interview,legal knowledge,7,11,True,legal knowledge,increase 7
+lawyer interview,legal experience,4,11,False,legal experience,increase 4
+lawyer interview,cultural fit,3,11,False,cultural fit,increase 3
+art auction,bidding strategy,8,11,True,bidder b's aggressiveness; bidder strategy; bidding strategy,increase 8
+art auction,starting price,7,11,True,starting price,increase 7
+art auction,bidder experience,5,11,False,bidder experience; previous auction experience,increase 5
+art auction,bidder confidence,4,11,False,bidder a's confidence; bidder confidence; bidder's confidence in art value,increase 4
+art auction,bidder risk tolerance,3,11,True,bidder risk tolerance; bidder's risk tolerance,increase 3
+art auction,bidder budget,2,11,False,bidder c's budget limit; bidder's budget,decrease 1; increase 1
+art auction,market information,2,11,False,market demand signal; market observation,increase 2
+art auction,artistic preference,1,11,False,artistic preference,increase 1
+art auction,bidding history,1,11,False,bidding history,increase 1

@@ -1,0 +1,107 @@
+{
+  "agents": [
+    {
+      "constraints": [
+        "Bids only when confident about the artwork's value"
+      ],
+      "goal": "Maximize profit while minimizing risk",
+      "name": "Agent A",
+      "role": "Conservative Collector"
+    },
+    {
+      "constraints": [
+        "Limits bids to 20% above current price"
+      ],
+      "goal": "Achieve high returns through strategic bidding",
+      "name": "Agent B",
+      "role": "Speculative Investor"
+    },
+    {
+      "constraints": [
+        "Bids only if the artwork meets personal criteria"
+      ],
+      "goal": "Acquire the artwork for personal collection",
+      "name": "Agent C",
+      "role": "Art Enthusiast"
+    }
+  ],
+  "causes": [
+    {
+      "hypothesis": "Higher confidence in the artwork's value leads to higher bids",
+      "name": "Bidder Confidence",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "High",
+        "Medium",
+        "Low"
+      ]
+    },
+    {
+      "hypothesis": "Aggressive bidding strategies result in higher final prices",
+      "name": "Bidding Strategy",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "Aggressive",
+        "Moderate",
+        "Conservative"
+      ]
+    },
+    {
+      "hypothesis": "Preference for the artwork's style increases willingness to pay",
+      "name": "Artistic Preference",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "Strong",
+        "Neutral",
+        "Weak"
+      ]
+    }
+  ],
+  "information_scope": {
+    "private": [
+      {
+        "agent": "Agent A",
+        "information": [
+          "Personal valuation of the artwork",
+          "Risk tolerance level"
+        ]
+      },
+      {
+        "agent": "Agent B",
+        "information": [
+          "Financial capacity",
+          "Market trend analysis"
+        ]
+      },
+      {
+        "agent": "Agent C",
+        "information": [
+          "Personal criteria for acquisition",
+          "Emotional value"
+        ]
+      }
+    ],
+    "public": [
+      "Starting bid",
+      "Current highest bid",
+      "Number of bidders"
+    ]
+  },
+  "interaction": {
+    "max_turns": 3,
+    "order": [
+      "Agent A",
+      "Agent B",
+      "Agent C"
+    ],
+    "stopping_rule": "Auction ends when no further bids are placed"
+  },
+  "outcome": {
+    "measurement_question": "What is the final price paid for the artwork?",
+    "name": "Final Bid Price",
+    "operationalization": "The highest bid submitted by any agent during the auction",
+    "respondent": "The auction house"
+  },
+  "scenario": "3 bidders participating in an auction for a piece of art starting at fifty dollars",
+  "schema_version": "scientist-design-v1"
+}

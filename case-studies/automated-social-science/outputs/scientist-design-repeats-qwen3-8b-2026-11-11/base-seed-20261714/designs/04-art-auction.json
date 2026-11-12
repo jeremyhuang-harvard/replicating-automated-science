@@ -1,0 +1,109 @@
+{
+  "agents": [
+    {
+      "constraints": [
+        "Will not bid above $100",
+        "Only bids in multiples of $10"
+      ],
+      "goal": "Maximize profit while minimizing risk",
+      "name": "Agent A",
+      "role": "Conservative bidder"
+    },
+    {
+      "constraints": [
+        "Bids up to $200",
+        "Bids in increments of $5"
+      ],
+      "goal": "Achieve maximum possible profit",
+      "name": "Agent B",
+      "role": "Speculative bidder"
+    },
+    {
+      "constraints": [
+        "Bids up to $150",
+        "Bids in increments of $10"
+      ],
+      "goal": "Outbid others without revealing budget",
+      "name": "Agent C",
+      "role": "Strategic bidder"
+    }
+  ],
+  "causes": [
+    {
+      "hypothesis": "Higher risk tolerance leads to higher final bid prices",
+      "name": "Bidder's risk tolerance",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "Low",
+        "Medium",
+        "High"
+      ]
+    },
+    {
+      "hypothesis": "A higher starting price increases the final bid price",
+      "name": "Starting price",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "$50",
+        "$100",
+        "$150"
+      ]
+    },
+    {
+      "hypothesis": "A higher budget leads to higher final bid prices",
+      "name": "Bidder's budget",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "$100",
+        "$150",
+        "$200"
+      ]
+    }
+  ],
+  "information_scope": {
+    "private": [
+      {
+        "agent": "Agent A",
+        "information": [
+          "Maximum bid of $100",
+          "Bid increment of $10"
+        ]
+      },
+      {
+        "agent": "Agent B",
+        "information": [
+          "Maximum bid of $200",
+          "Bid increment of $5"
+        ]
+      },
+      {
+        "agent": "Agent C",
+        "information": [
+          "Maximum bid of $150",
+          "Bid increment of $10"
+        ]
+      }
+    ],
+    "public": [
+      "Starting price of $50",
+      "Number of bidders"
+    ]
+  },
+  "interaction": {
+    "max_turns": 8,
+    "order": [
+      "Agent A",
+      "Agent B",
+      "Agent C"
+    ],
+    "stopping_rule": "Auction ends when no more bids are placed or when the maximum bid is reached"
+  },
+  "outcome": {
+    "measurement_question": "What is the final price of the art piece after the auction concludes?",
+    "name": "Final bid price",
+    "operationalization": "The highest bid submitted by any agent at the end of the auction",
+    "respondent": "Agent C"
+  },
+  "scenario": "3 bidders participating in an auction for a piece of art starting at fifty dollars",
+  "schema_version": "scientist-design-v1"
+}

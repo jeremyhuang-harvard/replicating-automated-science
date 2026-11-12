@@ -1,0 +1,56 @@
+{
+  "contrasts": {
+    "buyer's budget": 2.166666666666666,
+    "initial offer": 0.7777777777777777,
+    "mediator's presence": -0.44444444444444464
+  },
+  "counts": {
+    "cells": 27,
+    "complete": 27,
+    "valid_measurements": 27
+  },
+  "direction_agreement": {
+    "buyer's budget": false,
+    "initial offer": true,
+    "mediator's presence": true
+  },
+  "label": "one-draw local-model evidence; not human behavior",
+  "marginal_means": {
+    "buyer's budget": [
+      5.666666666666667,
+      7.222222222222222,
+      7.833333333333333
+    ],
+    "initial offer": [
+      6.277777777777778,
+      7.388888888888889,
+      7.055555555555555
+    ],
+    "mediator's presence": [
+      7.388888888888889,
+      6.388888888888889,
+      6.944444444444445
+    ]
+  },
+  "ols": {
+    "coefficients": {
+      "buyer's budget": 1.0833333333333333,
+      "initial offer": 0.3888888888888889,
+      "intercept": 5.657407407407407,
+      "mediator's presence": -0.2222222222222222
+    },
+    "features": [
+      "intercept",
+      "initial offer",
+      "buyer's budget",
+      "mediator's presence"
+    ]
+  },
+  "outcome_distribution": {
+    "max": 9.0,
+    "mean": 6.907407407407407,
+    "median": 7.0,
+    "min": 0.0,
+    "n": 27
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "agents": [
+    {
+      "constraints": [
+        "Must follow bail statutes",
+        "Cannot consider unrelated factors",
+        "Must ensure defendant's appearance in court"
+      ],
+      "goal": "Determine an appropriate bail amount based on legal guidelines and case specifics",
+      "name": "Judge",
+      "role": "Legal authority responsible for setting bail"
+    },
+    {
+      "constraints": [
+        "Cannot make false claims",
+        "Must stay within legal boundaries",
+        "Cannot disclose confidential information"
+      ],
+      "goal": "Argue for a lower bail amount to ensure the defendant's freedom while awaiting trial",
+      "name": "Defense Attorney",
+      "role": "Legal representative of the defendant"
+    },
+    {
+      "constraints": [
+        "Cannot make false claims",
+        "Must stay within legal boundaries",
+        "Cannot disclose confidential information"
+      ],
+      "goal": "Argue for a higher bail amount to ensure the defendant does not flee or interfere with the case",
+      "name": "Prosecutor",
+      "role": "Legal representative of the state"
+    }
+  ],
+  "causes": [
+    {
+      "hypothesis": "Higher severity of tax fraud leads to higher bail amounts",
+      "name": "Severity of Tax Fraud",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "$50,000 fraud",
+        "$100,000 fraud",
+        "$200,000 fraud"
+      ]
+    },
+    {
+      "hypothesis": "A criminal history increases the likelihood of a higher bail amount",
+      "name": "Defendant's Criminal History",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "No prior convictions",
+        "1 prior conviction",
+        "3 prior convictions"
+      ]
+    },
+    {
+      "hypothesis": "Stronger evidence leads to higher bail amounts",
+      "name": "Evidence Strength",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "Weak evidence",
+        "Moderate evidence",
+        "Strong evidence"
+      ]
+    }
+  ],
+  "information_scope": {
+    "private": [
+      {
+        "agent": "Defense Attorney",
+        "information": [
+          "Defendant's financial status",
+          "Potential risks of release",
+          "Previous court behavior"
+        ]
+      },
+      {
+        "agent": "Prosecutor",
+        "information": [
+          "Evidence details",
+          "Witness credibility",
+          "Defendant's flight risk"
+        ]
+      }
+    ],
+    "public": [
+      "Tax fraud amount",
+      "Criminal history",
+      "Evidence strength"
+    ]
+  },
+  "interaction": {
+    "max_turns": 3,
+    "order": [
+      "Judge",
+      "Defense Attorney",
+      "Prosecutor"
+    ],
+    "stopping_rule": "The judge makes the final bail decision after considering all inputs"
+  },
+  "outcome": {
+    "measurement_question": "What is the final bail amount determined by the judge?",
+    "name": "Bail Amount",
+    "operationalization": "The monetary amount set by the judge as bail for the defendant",
+    "respondent": "Judge"
+  },
+  "scenario": "a judge is setting bail for a criminal defendant who committed 50,000 dollars in tax fraud",
+  "schema_version": "scientist-design-v1"
+}

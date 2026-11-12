@@ -1,0 +1,91 @@
+{
+  "agents": [
+    {
+      "constraints": [
+        "must accept a price above $5",
+        "cannot reveal mug's true value"
+      ],
+      "goal": "maximize profit from the sale",
+      "name": "Alice",
+      "role": "seller"
+    },
+    {
+      "constraints": [
+        "must pay at most $15",
+        "cannot know mug's true value"
+      ],
+      "goal": "minimize cost of the mug",
+      "name": "Bob",
+      "role": "buyer"
+    }
+  ],
+  "causes": [
+    {
+      "hypothesis": "a higher reservation price will lead to a higher final price",
+      "name": "Alice's reservation price",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "$10",
+        "$12",
+        "$15"
+      ]
+    },
+    {
+      "hypothesis": "a higher maximum willingness to pay will lead to a higher final price",
+      "name": "Bob's maximum willingness to pay",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "$10",
+        "$12",
+        "$15"
+      ]
+    },
+    {
+      "hypothesis": "a higher true value will lead to a higher final price",
+      "name": "Mug's true value",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "$8",
+        "$12",
+        "$18"
+      ]
+    }
+  ],
+  "information_scope": {
+    "private": [
+      {
+        "agent": "Alice",
+        "information": [
+          "Alice's reservation price",
+          "mug's true value"
+        ]
+      },
+      {
+        "agent": "Bob",
+        "information": [
+          "Bob's maximum willingness to pay",
+          "mug's true value"
+        ]
+      }
+    ],
+    "public": [
+      "mug's description"
+    ]
+  },
+  "interaction": {
+    "max_turns": 2,
+    "order": [
+      "Alice",
+      "Bob"
+    ],
+    "stopping_rule": "when both agents agree on a price"
+  },
+  "outcome": {
+    "measurement_question": "what is the final price agreed upon?",
+    "name": "final price",
+    "operationalization": "the amount agreed upon by Alice and Bob",
+    "respondent": "both agents"
+  },
+  "scenario": "two people bargaining over a mug",
+  "schema_version": "scientist-design-v1"
+}

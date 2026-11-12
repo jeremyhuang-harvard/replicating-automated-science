@@ -1,0 +1,92 @@
+{
+  "agents": [
+    {
+      "constraints": [
+        "must sell mug for at least $5",
+        "cannot reveal mug's true value"
+      ],
+      "goal": "maximize profit from the sale",
+      "name": "Alice",
+      "role": "seller"
+    },
+    {
+      "constraints": [
+        "willing to pay up to $10",
+        "does not know mug's true value"
+      ],
+      "goal": "minimize cost of the mug",
+      "name": "Bob",
+      "role": "buyer"
+    }
+  ],
+  "causes": [
+    {
+      "hypothesis": "Higher reservation price leads to higher final price",
+      "name": "Alice's reservation price",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "$7",
+        "$9",
+        "$11"
+      ]
+    },
+    {
+      "hypothesis": "Higher maximum willingness to pay leads to higher final price",
+      "name": "Bob's maximum willingness to pay",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "$8",
+        "$10",
+        "$12"
+      ]
+    },
+    {
+      "hypothesis": "Aggressive negotiation strategy leads to higher final price",
+      "name": "Negotiation strategy",
+      "predicted_direction": "increase",
+      "treatment_values": [
+        "aggressive",
+        "neutral",
+        "concession-based"
+      ]
+    }
+  ],
+  "information_scope": {
+    "private": [
+      {
+        "agent": "Alice",
+        "information": [
+          "mug's true value",
+          "Alice's reservation price"
+        ]
+      },
+      {
+        "agent": "Bob",
+        "information": [
+          "Bob's maximum willingness to pay",
+          "mug's true value"
+        ]
+      }
+    ],
+    "public": [
+      "mug's appearance",
+      "mug's condition"
+    ]
+  },
+  "interaction": {
+    "max_turns": 3,
+    "order": [
+      "Alice",
+      "Bob"
+    ],
+    "stopping_rule": "when both agents agree on a price or reach a maximum of 3 turns"
+  },
+  "outcome": {
+    "measurement_question": "What is the final price of the mug after negotiation?",
+    "name": "final price",
+    "operationalization": "the price agreed upon by Alice and Bob",
+    "respondent": "both agents"
+  },
+  "scenario": "two people bargaining over a mug",
+  "schema_version": "scientist-design-v1"
+}
