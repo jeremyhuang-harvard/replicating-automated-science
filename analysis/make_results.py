@@ -949,10 +949,11 @@ def svg_seed_verdicts(qwen_draws: list[dict], sol_draws: list[dict]) -> str:
             rows[(who, d["study"], d["lever"])].append(d)
     keys = list(rows)
     n = max(len(v) for v in rows.values())
-    w, left, sq, gap, top = 980, 370, 14, 4, 92
+    left, sq, gap, top = 370, 14, 4, 92
     col = sq + 8
     h = top + len(keys) * (sq + gap) + 96
     frag_x = left + n * col + 24
+    w = max(980, frag_x + 140 + 180)
     pale = {"same": "#aed6f1", "flip": "#f5b7b1", "ref": "#d5d8dc"}
     dark = {"same": "#2e86c1", "flip": "#c0392b", "ref": "#566573"}
     frag_col = {1: "#c0392b", 2: "#e67e22", 3: "#b7950b", SURVIVES: "#2e86c1", "zero effect": "#7f8c8d"}
